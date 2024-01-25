@@ -1,0 +1,33 @@
+div {align-content: center; width: auto}
+h1 { font-family: sans-serif; color: crimson; font-size: 28px; }
+h2 { font-family: sans-serif; font-size: 20px; text-align: center}
+ 
+ 
+.button_area  {margin-top: 10px;}
+.button  {
+width:70%;
+font-family:arial;
+color:white;
+font-size:16px;
+padding:10px 25px;
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+border-radius:3px;
+background:#ea5b62;
+margin:auto auto 10px;
+border:2px solid #f93e47;
+}
+.button:hover{
+border: 2px solid #ff000d;
+}
+a{
+	text-decoration:none;
+}
+.button_area p{
+	padding:0px;
+	margin:0px;
+}
+.img_responsive{
+
+	display:block;max-width:100%;height:auto
+}

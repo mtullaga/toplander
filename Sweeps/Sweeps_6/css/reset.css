@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, a,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin:0; padding:0; border:0; outline:0;text-decoration:none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+html, body{height:100%;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+body {min-width:320px;line-height:1.2;-webkit-overflow-scrolling:touch;}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {display:block;}
+nav ul {list-style:none;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content:'';content:none;}
+table {border-collapse:collapse;border-spacing:0;}
+body, input, textarea, select, button, table {-webkit-text-size-adjust:none;}
+button{outline:none;}
+ul, ol, li {list-style-type:none;}
+input, select {vertical-align:middle;}
+a {text-decoration:none;}
+a:hover, a:active, a:focus { text-decoration:none; }
+em, i, address{font-style:normal;}
+img, fieldset { border:0 }
+input[type="text"], input[type="number"], input[type="tel"], input[type="password"]{-webkit-appearance:none;appearance:none;-webkit-border-radius:0;border-radius:0;box-shadow:none;border:0 none;}
+input[type="number"]::-webkit-outer-spin-button,input[type="number"]::-webkit-inner-spin-button{-webkit-appearance:none;margin:0;}

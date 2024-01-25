@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bundle_sa.css">
+	<script src="js/jquery.min.js"></script>
+	<script>
+	window.console = window.console || function(t) {};
+
+	function getlink_ss() {
+		var tracking_link_ss = '#';
+		var campaing_link_ss;
+		window.location.replace(tracking_link_ss);
+	}
+
+	function getUrlParameter(name) {
+		name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+		var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+		var results = regex.exec(location.search);
+		return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+	};
+	</script>
+	<script type="text/javascript">
+	var sourceid = decodeURIComponent(window.location.search.match(/(\?|&)sourceid\=([^&]*)/)[1]);
+	</script>
+	<script type="text/javascript">
+	/*=============HELPER================*/
+	var Helper = (function() {
+		var data = [];
+		var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+		var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+		function setDays(d) {
+			if((d.constructor !== Array) || d.length !== 7) return false;
+			days = d;
+		}
+
+		function setMonths(m) {
+			if((m.constructor !== Array) || m.length !== 12) return false;
+			months = m;
+		}
+
+		function getDate() {
+			var now = new Date();
+			var month = typeof(months[now.getMonth()]) == 'undefined' ? now.getMonth() : months[now.getMonth()];
+			return(now.getDate()) + " " + month + " " + now.getFullYear();
+		}
+
+		function getMonth() {
+			var now = new Date();
+			var month = typeof(months[now.getMonth()]) == 'undefined' ? now.getMonth() : months[now.getMonth()];
+			return month;
+		}
+
+		function getDay() {
+			var now = new Date();
+			var day = typeof(days[now.getDay()]) == 'undefined' ? now.getDay() : days[now.getDay()];
+			return day;
+		}
+
+		function getDayOfMonth() {
+			var now = new Date();
+			var day = ('0' + now.getDate()).slice(-2);
+			return day;
+		}
+
+		function getUrlParameter(name) {
+			name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+			var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+			var results = regex.exec(location.search);
+			return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+		}
+
+		function findAncestor(element, name) {
+			while((element = element.parentElement) && !element.classList.contains(name));
+			return element;
+		}
+
+		function bindOnQuery(query, callback, action = 'click') {
+			var elements = document.querySelectorAll(query);
+			for(var i = 0; i < elements.length; i++) {
+				elements[i].addEventListener(action, callback, false);
+			}
+		}
+
+		function bindOnId(name, callback, action = 'click') {
+			var element = document.getElementById(name);
+			element.addEventListener(action, callback, false);
+		}
+
+		function replaceMarkers(text, markers) {
+			for(key in markers) {
+				var search = '%' + key + '%';
+				text = text.replace(new RegExp(search, 'g'), markers[key]);
+			}
+			return text;
+		}
+		return {
+			setDays: setDays,
+			setMonths: setMonths,
+			getDate: getDate,
+			getDay: getDay,
+			getMonth: getMonth,
+			getDayOfMonth: getDayOfMonth,
+			getUrlParameter: getUrlParameter,
+			findAncestor: findAncestor,
+			bindOnQuery: bindOnQuery,
+			bindOnId: bindOnId,
+			replaceMarkers: replaceMarkers
+		};
+	})();
+	</script>
+	<title>Telstra customer reward program</title>
+</head>
+
+<body class="modal-open">
+	<div class="tingle-modal" style="display: none;"><div class="tingle-modal-box"><div class="tingle-modal-box__content"></div><div class="tingle-modal-box__footer"><button></button></div></div></div>
+	<div class="tingle-modal" style="display: none;">
+		<div class="tingle-modal-box">
+			<div class="tingle-modal-box__content"></div>
+			<div class="tingle-modal-box__footer">
+				<button></button>
+			</div>
+		</div>
+	</div>
+	<div class="tingle-modal" style="display: none;">
+		<div class="tingle-modal-box">
+			<div class="tingle-modal-box__content"></div>
+			<div class="tingle-modal-box__footer">
+				<button></button>
+			</div>
+		</div>
+	</div>
+	<div class="tingle-modal" style="display: none;">
+		<div class="tingle-modal-box">
+			<div class="tingle-modal-box__content"></div>
+			<div class="tingle-modal-box__footer">
+				<button></button>
+			</div>
+		</div>
+	</div>
+	<header>
+		<div class="logo-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-8 col-md-offset-2 ">
+						<table style="width: 100%;">
+							<tbody>
+								<tr>
+									<td class="logo"> <img id="logo" class="clickable" src="images/s-l.png"> </td>
+									<td class="lang"> </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slogan-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-8 col-md-offset-2 slogan text-xs-left"> Telstra customer reward program </div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container body-container">
+		<div class="row">
+			<div class="lead-container col-xs-12 col-md-8 col-md-offset-2">
+				<div id="recipe-row" class="row">
+					<div class="col-xs-12 recipe-content">
+						<div class="row">
+							<div class="col-xs-1">
+								<div class="icon-round" style="background: url(images/samsung-ico.png) no-repeat;"></div>
+							</div>
+							<div class="col-xs-10 col-md-11">
+								<div class="recipe-header">
+									<div class="phrase"> Congratulations! </div>
+									<div class="date_full">
+										<script>
+										document.write(Helper.getDate())
+										</script> 
+									</div>
+								</div>
+							</div>
+						</div> We wish to thank you for the long use of a services from Telstra!
+						<br>
+						<br> Every
+						<script>
+						document.write(Helper.getDay())
+						</script>Tuesday we randomly select several users to take a short survey. In return, we offer them the chance to receive a valuable gift from our sponsors. This survey allows us to better understand users and make our products better. It will not take more than 30 seconds of your time.
+						<br>
+						<br> You can win the new <span class="marked">Apple iPad Pro + Magic Keyboard</span> or <span class="marked">Apple iPhone X</span>. All you need to do to receive a gift is to answer the following 8 questions.
+						<br>
+						<br> <strong>Remember:</strong> 100 randomly selected users have received this invitation. The number of gifts is limited.
+						<div class="timer"> You have <span class="marked"><span id="timer-mins">4</span> minutes and <span id="timer-secs">13</span> seconds</span> to answer the following questions before we give your gift to another happy user! Good luck! </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="qu-wrap col-xs-12 col-md-8 col-md-offset-2 ">
+				<div class="row">
+					<div class="qu-group col-xs-12">
+						<div class="row">
+							<div class="qu-group-header col-xs-12"> Which device are you currently using? </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> PC / Notebook </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Smartphone </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Tablet </div>
+						</div>
+					</div>
+					<div class="qu-group col-xs-12" style="display: none;">
+						<div class="row">
+							<div class="qu-group-header col-xs-12"> What operating system on your device do you use? </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Microsoft Windows </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Android </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Apple IOS </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Apple MacOs </div>
+						</div>
+					</div>
+					<div class="qu-group col-xs-12" style="display: none;">
+						<div class="row">
+							<div class="qu-group-header col-xs-12"> How long have you been using products from Telstra? </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Less than 1 year </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> More than 1 year </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Don’t know </div>
+						</div>
+					</div>
+					<div class="qu-group col-xs-12" style="display: none;">
+						<div class="row">
+							<div class="qu-group-header col-xs-12"> Do you plan on replacing your phone with another one in the near future? If so, then when? </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> I have no plans to </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Within the next six months </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Within the next year </div>
+						</div>
+					</div>
+					<div class="qu-group col-xs-12" style="display: none;">
+						<div class="row">
+							<div class="qu-group-header col-xs-12"> Do you use your mobile phone/smartphone to go online? </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Yes, regularly </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Yes, sometimes/from time to time </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> No </div>
+						</div>
+					</div>
+					<div class="qu-group col-xs-12" style="display: none;">
+						<div class="row">
+							<div class="qu-group-header col-xs-12"> Do you regularly use SIM cards for operators except for Telstra? </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> I only use Telstra </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Optus </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Telstra </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Telstra </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Other </div>
+						</div>
+					</div>
+					<div class="qu-group col-xs-12" style="display: none;">
+						<div class="row">
+							<div class="qu-group-header col-xs-12"> Are you satisfied with the quality of the connection offered by Telstra? </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Completely satisfied </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Moderately satisfied </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Very dissatisfied </div>
+						</div>
+					</div>
+					<div class="qu-group col-xs-12" style="display: none;">
+						<div class="row">
+							<div class="qu-group-header col-xs-12"> How old are you? </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Less than 18 </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> 18-25 </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> 26-34 </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> 35-54 </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> 55-64 </div>
+						</div>
+					</div>
+					<div class="qu-group col-xs-12" style="display: none;">
+						<div class="row">
+							<div class="qu-group-header col-xs-12"> What gender are you? </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Male </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Female </div>
+						</div>
+					</div>
+					<div id="qu-progress" class="col-xs-12" style="display: none;">
+						<div class="row">
+							<div class="qu-group-header col-xs-12"> </div>
+						</div>
+						<div class="row">
+							<div id="qu-progress-state" class="col-xs-6 col-md-4 col-md-offset-2 text-left"> Status </div>
+							<div id="qu-progress-percent" class="col-xs-6 col-md-4 text-right"> 0% </div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-md-8 col-md-offset-2 qu-progress-wrap">
+								<div id="qu-progress-bar"> </div>
+							</div>
+						</div>
+						<div class="row">
+							<div id="qu-checkpoint-10" rel="Answer verification" class="col-xs-10 col-md-offset-2 qu-checkpoint">
+								<table>
+									<tbody>
+										<tr>
+											<td>
+												<div id="qu-mark-10" class="qu-mark"></div>
+											</td>
+											<td> <span class="qu-checkpoint-desc">You answered all (8/8) questions</span> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="row">
+							<div id="qu-checkpoint-20" rel="IP address verification" class="col-xs-10 col-md-offset-2 qu-checkpoint">
+								<table>
+									<tbody>
+										<tr>
+											<td>
+												<div id="qu-mark-20" class="qu-mark"></div>
+											</td>
+											<td> <span class="qu-checkpoint-desc">No repeat queries were submitted from your IP address.</span> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="row">
+							<div id="qu-checkpoint-30" rel="Gift selection" class="col-xs-10 col-md-offset-2 qu-checkpoint">
+								<table>
+									<tbody>
+										<tr>
+											<td>
+												<div id="qu-mark-30" class="qu-mark"></div>
+											</td>
+											<td> <span class="qu-checkpoint-desc">Today you can claim 1 gift.</span> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div id="qu-prize" class="col-xs-12 col-md-8 col-md-offset-2" style="display: none;">
+						<div class="row">
+							<div class="qu-group-header col-xs-12"> Receive your gift now: </div>
+						</div>
+						<div class="row qu-prize-row">
+							<div class="col-xs-5 text-xs-right qu-item"> <img class="prize-image clickable" src="images/samsungs9.png"> </div>
+							<div class="col-xs-7 text-xs-left qu-prize-description"> <span class="qu-prize-name clickable">Apple iPad Pro + Magic Keyboard</span> <strong>Your price:</strong><span class="qu-yourprice-value">$3 (DHL shipping cost)</span>
+								<br> <strong>Remaining quantity:</strong> 3 units
+								<br> <a href="#" class="qu-take-it">
+									Take it
+								</a> </div>
+						</div>
+						<div class="row qu-prize-row qu-opacied">
+							<div class="col-xs-5 text-xs-right qu-item"> <img class="prize-image" src="images/note8.png"> </div>
+							<div class="col-xs-7 text-xs-left qu-prize-description"> <span class="qu-prize-name">iPhone X</span> <strong>Your price:</strong>$3 (DHL shipping cost)
+								<br> <strong>Remaining quantity: </strong>0 units
+								<br>
+								<div class="qu-btn-dis"> Out of stock </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="comment-row">
+			<div class="col-xs-12 col-md-8 col-md-offset-2 comment-container">
+				<!-- Comments head -->
+				<div class="row">
+					<div class="col-xs-12 text-center comment-header"> Comments: </div>
+				</div>
+				<!-- Comments -->
+				<div class="row comment-wrap">
+					<div class="col-xs-2 text-right"> <img class="face-round" src="images/faceza1.jpg"> </div>
+					<div class="col-xs-10 col-md-8 comment-desc"> <span class="name">Jason Davids</span>
+						<br> <strong>omg this was definitely unexpected, i thought it was some lame joke but the phone actually came in just now..</strong>
+						<br> <small class="date">44 minutes ago</small> </div>
+				</div>
+				<div class="row comment-wrap">
+					<div class="col-xs-2 text-right"> <img class="face-round" src="images/faceza2.jpg"> </div>
+					<div class="col-xs-10 col-md-8 comment-desc"> <span class="name">Randall Echardt</span>
+						<br> <strong>whoah man!! i honestly didnt think this would work but it did!! thank you!</strong>
+						<br> <small class="date">50 minutes ago</small> </div>
+				</div>
+				<div class="row comment-wrap">
+					<div class="col-xs-2 text-right"> <img class="face-round" src="images/faceza3.jpg"> </div>
+					<div class="col-xs-10 col-md-8 comment-desc"> <span class="name">Danielle Kearns</span>
+						<br> <strong>it does seem like a scam tbh, who on earth would want to give out free phones, especially new S9? does anyone even profit from dis</strong>
+						<br> <small class="date">2 hours ago</small> </div>
+				</div>
+				<div class="row comment-wrap">
+					<div class="col-xs-2 text-right"> <img class="face-round" src="images/faceza4.jpg"> </div>
+					<div class="col-xs-10 col-md-8 comment-desc"> <span class="name">Clayton Julius</span>
+						<br> <span class="marked"><strong>@Danielle Kearns</strong></span> <strong>Scams actually require stealing money and this is completely free dude. They probably landed a free stack of phones and wanna promote the website or somethin. Try it out, worked for me!</strong>
+						<br> <small class="date">3 hours ago</small> </div>
+				</div>
+				<div class="row comment-wrap">
+					<div class="col-xs-2 text-right"> <img class="face-round" src="images/faceza5.jpg"> </div>
+					<div class="col-xs-10 col-md-8 comment-desc"> <span class="name">Romario Davids</span>
+						<br> <strong>Does it even matter though if it’s legit or not? Trying out your luck is just fun, and you certainly don’t loose anything!</strong>
+						<br> <small class="date">4 hours ago</small> </div>
+				</div>
+				<div class="row comment-wrap">
+					<div class="col-xs-2 text-right"> <img class="face-round" src="images/faceza6.jpg"> </div>
+					<div class="col-xs-10 col-md-8 comment-desc"> <span class="name">Christo Johnson</span>
+						<br> <strong>This is unbelievable! I've always thought this kind of stuff is shady and pointless, but I gave this one a try because I was bored... Best decision ever! Can't believe I now have a Apple iPad Pro + Magic Keyboard!</strong>
+						<br> <small class="date">4 hours ago</small> </div>
+				</div>
+				<!-- Comment Form -->
+				<div class="row comment-wrap">
+					<div class="col-xs-12 text-center">
+						<textarea id="comment-area"></textarea>
+					</div>
+					<div class="col-xs-12 text-center"> <span id="comment-post">Send a comment</span> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-8 col-md-offset-2 copyright text-xs-center"> © Telstra 2018
+				<div class="copyright-image img-responsive"> <img src="images/rta.gif"> </div>
+				<div class="conditions"> <a href="#"> Conditions </a> </div>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;">
+		<div class="jingle-header-crutch">
+			<table>
+				<tbody>
+					<tr>
+						<td><img src="images/samsung-ico.png" alt="">
+						</td>
+						<td class="slogan"><span class="marked">Telstra customer reward program</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<script src="js/bundle_za9s.js"></script>
+	<script>
+	function alertUser(msg) {
+		alert(msg);
+	}
+	</script>
+	<script type="text/javascript">
+	//backbutton
+	! function() {
+		var t;
+		try {
+			for(t = 0; 10 > t; ++t) history.pushState({}, "", "#");
+			onpopstate = function(t) {
+				t.state && location.replace('#');
+			}
+		} catch(o) {}
+	}();
+	</script>
+	<div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="display: block;">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<br>
+					<table>
+						<tbody>
+							<tr>
+								<td> <img src="images/s-l.png" class="logo-main">
+									<p style="font-size:10.5pt"> <strong><script type="text/javascript">
+
+                        var d=new Date();
+			var weekday=new Array(7); 
+			weekday[0]="Sunday";
+			weekday[1]="Monday";
+			weekday[2]="Tuesday";
+			weekday[3]="Wednesday";
+			weekday[4]="Thursday";
+			weekday[5]="Friday";
+			weekday[6]="Saturday";
+			document.write("" + weekday[d.getDay()]);
+
+			</script> 
+<script type="text/javascript">
+				var month = new Array();
+				month[0]="January";
+				month[1]="February";
+				month[2]="March";
+				month[3]="April";
+				month[4]="May";
+				month[5]="June";
+				month[6]="July";
+				month[7]="August";
+				month[8]="September";
+				month[9]="October";
+				month[10]="November";
+				month[11]="December";                             var mydate= new Date()
+				mydate.setDate(mydate.getDate())
+				document.write(""+month[mydate.getMonth()]+" "+mydate.getDate()+", "+mydate.getFullYear()+"");
+                        </script>  
+</strong>
+									</p>
+									<br>
+									<p><b>Dear Telstra user,</b>
+									</p>
+									<br>
+									<p>Congratulations! You are one of the 100 users that we selected to receive the chance to win an <b>Apple iPad Pro + Magic Keyboard</b> or <b>Apple iPhone X</b>.</p>
+									<br> </td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="modal-footer"> <img src="images/s-line.png" alt="" class="modal-line">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+	window.onload = function() {
+		$('#myModal').modal('show');
+	};
+	</script>
+ 
+
+ 
+</body>
+
+</html>

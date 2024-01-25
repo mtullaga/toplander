@@ -1,0 +1,590 @@
+@import url('css.css');
+
+body {
+font-family: 'Roboto', sans-serif;
+}
+
+
+
+body {
+  background-color: #fff;
+}
+
+#header{
+    margin: 0;
+    padding: 0;
+    height: 55px;
+    background: #000000;
+    border-bottom: #ffffff 5px solid;
+    display: none;
+}
+
+.gridContainer {
+    margin: 0 auto;
+    padding: 0;
+    background: url(../images/netflix_bg.jpg) no-repeat top center;
+     background-repeat: no-repeat;
+	background-position: top center;
+}
+
+
+h3{
+	color:#005c9c; 
+}
+
+
+h4{
+	color:#333; 
+}
+
+.image_choice{
+    display: inline-block;
+    float: none;
+    width: 100%;
+    margin-top: 5px;
+    max-width: 300px;
+    box-shadow: 0px 0px 10px #000000;
+    margin-top: 20px;
+    
+    display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+
+}
+
+#images{
+	margin-left:1em;
+}
+
+.image_choice:hover {
+    cursor: pointer;
+    -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+#question {
+    padding-bottom: 20px;
+    height: 900px;
+}
+
+#questionfield h2,
+#questionfield p{
+    color: #ffffff;
+}
+
+#questionfield p {
+     margin-top: 50px;
+	color: #ed6456;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#question_headline {
+    display: none;
+}
+
+#page_prozess {
+    margin-top: 100px;
+    min-height: 700px;
+}
+#page_prozess p .prozess_status{
+    color: #ffffff;
+    padding: 20px;
+        font-size: 2em;
+}
+
+
+.legal_links{
+font-family: 'Roboto', sans-serif;	
+	
+}
+
+
+/*------------------ANIMATION------------------*/
+
+#blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+
+/*------------------MOBILE------------------*/
+
+
+@media (max-width: 768px) {
+		.gridContainer{
+	background-image: url("../images/bg_au_netflix_mob.jpg");
+   background-repeat: no-repeat; 
+    background-size:100%; 
+	background-color: #fff;
+}
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 370px)  {/*   iphone 5 port */ 
+	
+	h3{
+    font-size: 1.7em;
+    margin-top: 2em;
+    padding: 1px 2px 1px 1px;
+    line-height: 1.2em;
+	}
+	
+	h4{
+	 font-size: 1.5em;	
+		
+	}
+	
+	.image_choice{
+	    width:50%;
+    margin:4px 0px 0px 1px;
+		
+	}
+	
+	img{
+      max-width: 66%;
+}
+	#question{
+	height: 500px;		
+	}
+	
+	#page_prozess {
+	font-size:1em;	
+		
+	}
+	
+	#legal_links{
+    font-size: 0.6em;
+    text-align: center;
+		
+	}
+
+	
+}
+
+@media only screen and (min-width: 371px) and (max-width: 400px) {  /*   iphone 6 port */ 
+
+	h3{
+    font-size: 1.7em;
+	margin-top: 2em;
+	margin-left: 1em;
+	}
+	
+	h4{
+	 font-size: 1.5em;	
+	margin-left: 1em;
+		
+	}
+	
+	#images {
+    margin-top: 2em;
+    }
+	
+	.image_choice{
+	    width: 28%;
+    margin: 6px 42px 4px;
+	
+		
+	}
+	
+	img{
+    max-width: 122%;
+    }
+	
+	#question{
+	height: 600px;		
+	}
+	
+	#question_0{
+	margin-left: -2em;	
+	}
+	
+	#legal_links{
+    font-size: 0.8em;
+    text-align: center;
+	
+}
+}
+
+@media only screen and (min-width: 405px) and (max-width: 500px) and (max-height: 872px)  {  /*   iphone 6 plus port */ 
+
+		h3{
+    font-size: 1.9em;
+	margin-top: 2em;
+	margin-left: 1em;
+	}
+	
+	h4{
+	font-size: 1.9em;	
+	margin-left: 1em;
+		
+	}
+	
+	#images {
+    margin-top: 2em;
+    }
+	
+	.image_choice{
+	width: 30%;
+    margin: 0px 42px 4px;
+}
+		
+	
+	img{
+        max-width: 100%;
+    }
+	
+	#question{
+	height: 600px;		
+	}
+	
+	#question_0{
+	margin-left: -2em;	
+	}
+	
+	#legal_links{
+    font-size: 0.8em;
+    text-align: center;
+	
+}
+}
+
+@media only screen and (min-width: 640px) and (max-width: 760px)  {    /*   iphone 6 and 6Plus land */ 
+
+	
+	h3{
+    font-size: 2.5em;
+    margin-top: 3em;
+    margin-left: 1em;
+	}
+	
+	h4{
+	 font-size: 2em;	
+	margin-left: 1em;		
+	}
+	
+	
+	#question{
+	height: 980px;		
+	}
+	
+	#question_0{
+	margin-left: -2em;		
+	}
+	
+	#legal_links{
+    font-size: 0.8em;
+	text-align: center;
+}
+	
+		.image_choice{
+	width: 30%;
+    margin: 0px 0px 0px;	
+	}
+	
+	img{
+     max-width: 93%;
+    }
+	
+
+	
+	#images {
+    margin-top: -2em;
+}
+}
+
+
+@media only screen and (min-width: 500px) and (max-width: 568px)  {    /*   iphone 5 land */
+
+	h3{
+    font-size: 2.2em;
+	margin-top: 2em;
+	margin-left: 1em;
+	}
+	
+	h4{
+	 font-size: 2em;	
+	margin-left: 1em;		
+	}
+	
+	#question{
+	height: 800px;		
+	}
+	
+	#question_0{
+	margin-left: -2em;		
+	}
+	
+	
+	.image_choice{
+	width: 30%;
+    margin: 0px 0px 0px;	
+	}
+	
+	img{
+     max-width: 93%;
+    }
+	
+}
+
+
+@media only screen and (min-width: 760px) and (max-width: 775px)  {    /*   iPads Port */ 
+
+	h3{
+       font-size: 3.3em;
+    margin-top: 2.2em;
+    width: 90%;
+    margin-left: 1em;
+	}
+	
+	h4{
+	font-size: 2.6em;
+    margin-left: 1em;
+    margin-top: -0.8em;	
+	}
+	
+.image_choice{
+    width: 32%;
+    margin: 0px 2px 0px;
+	}
+	
+
+    #question{
+	height: auto;		
+	}
+	
+	#question_0{
+	margin-left: -2em;		
+	}
+	
+	#legal_links{
+	font-size: 1.6em;		
+	}
+	
+	
+}
+
+
+@media only screen and (min-width: 776px) and (max-width: 984px)  {    /*   Nexus Port */
+	
+	.gridContainer{
+	background-size: 130%;	
+		
+	}
+ 
+h3{
+    font-size: 3.3em;
+    margin-top: 2.2em;
+	}
+	
+	h4{
+	font-size: 2.6em;
+    margin-left: 1em;
+    margin-top: -0.8em;	
+	}
+	
+		
+.image_choice{
+	width: 40%;
+    margin: 0px 0px 0px;	
+	}
+	
+	img{
+    max-width: 115%;
+}
+
+    #question{
+	height: auto;		
+	}
+	
+	#question_0{
+	margin-left: -2em;		
+	}
+	
+	#legal_links{
+	font-size: 1.6em;	
+		
+	}
+	
+}
+
+
+
+@media only screen and (min-width: 776px) and (max-width: 1024px) {    /*   iPads Land */ 
+
+	h3{
+        font-size: 3.5em;
+    margin-top: 1.8em;
+	}
+	
+	h4{
+	font-size: 2.2em;
+    margin-top: -0.8em;
+	}
+	
+	.image_choice {
+    width: 210px;
+  }
+	
+
+    #question{
+	height: auto;		
+	}
+	
+	#question_0{
+	margin-left: -2em;		
+	}
+	
+	#legal_links{
+	font-size: 1.6em;	
+}
+	img{
+	    max-width: 93%;	
+		
+	}
+	
+}
+
+
+@media only screen and (min-width: 1025px) {    /*  Desktop */ 
+	
+
+	.gridContainer{
+
+	background-repeat: no-repeat;
+	
+	}	
+	
+	h3{
+font-size: 4.5em;
+    margin-top: 1.2em;
+    line-height: 1.1em;
+	max-width:65%;
+	margin-left:3.8em;
+}
+	
+	h4{
+	font-size: 3.2em;
+    margin-top: -0.8em;
+	letter-spacing: 1px;
+	}
+	
+	.image_choice {
+    width: 280px;
+    margin-right: -50px;
+    margin-left: -23px;
+}
+
+
+    #question{
+	height: auto;		
+	}
+	
+	#question_0{
+	margin-left: -2em;		
+	}
+	
+	#legal_links{
+	font-size: 1em;
+	margin-top:10em;	
+}
+	
+	#prozess_status_1,
+	#prozess_status_2,
+	prozess_status_3{
+		
+	font-size: 1em;	
+	}
+	
+}
+
+
+@media only screen and (min-width: 481px){
+    
+    .image_choice {
+        max-width: 380px;
+    }
+
+}
+    
+@media only screen and (min-width: 769px){
+    
+    #page_prozess p .prozess_status,
+    #questionfield p {
+        font-size: 2.4em;
+    }
+    
+    #question {
+        padding-top: 20px;
+        min-height: 245px;
+        margin: 0;
+    }
+    #left img {
+        padding-top: 20px;
+    }
+}
+	
+@media only screen and (min-width: 1100px) {
+        #page_prozess p .prozess_status,
+        #questionfield p {
+        font-size: 3em;
+    }
+    .image_choice {
+        max-width: 500px;
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+    
+}
+
+@media only screen and (min-width: 1280px) {
+    #page_prozess p .prozess_status,
+        #questionfield p {
+        font-size: 2em;
+    }
+    .image_choice {
+        max-width: 800px;
+        margin-right: 1px;
+        margin-left: 1px;
+    }
+    
+}
+
+
+.footer_content{
+    font-size: 10px;
+    color: #8f8f8f;
+    padding-bottom: 5px;
+    margin-top: 200px;
+}
+.footer_content a {
+    color: #8f8f8f;
+}
+#legal_links {
+    text-align: center;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}

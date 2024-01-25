@@ -1,0 +1,12 @@
+img#menue, img#user{
+	display:none
+}
+img#logo{
+	width: 320px
+}
+#header{
+	background: #f1f1f1;
+}
+#header2{
+	display: none;
+}
