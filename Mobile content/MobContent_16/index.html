@@ -1,0 +1,2480 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<base href="">
+	<base href="">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<style>
+	#confirmation-legal-wrapper,
+	#confirmation-incentivized-wrapper,
+	.confirmation-op_confirm-wrapper {
+		position: fixed !important;
+		z-index: 1000;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		background: rgba(0, 0, 0, 0.6);
+		top: 0;
+	}
+	.bupper-popup-block {
+		display: table;
+		width: 50%;
+		max-width: 460px;
+		margin: 18% auto;
+		left: 0;
+		right: 0;
+		min-height: 100px;
+		background-color: #eee;
+		border-radius: 10px;
+		border: 10px rgba(255, 255, 255, 1) solid;
+		padding: 20px;
+		position: absolute;
+		color: rgba(0, 0, 0, 1);
+	}
+	.accept-confirmation,
+	.decline-confirmation {
+		border-radius: 5px;
+		border: none;
+		background-color: rgba(0, 153, 204, 1);
+		color: rgba(255, 255, 255, 1);
+		padding: 5px;
+		margin: 3px;
+	}
+	.accept-confirmation:hover,
+	.decline-confirmation:hover {
+		border-radius: 5px;
+		border: none;
+		background-color: rgba(0, 128, 192, 1);
+		color: rgba(255, 255, 255, 1);
+		padding: 5px;
+	}
+	.msisdn-input,
+	.msisdn-input:focus {
+		text-align: center;
+	}
+	.transbtn {
+		color: inherit;
+		text-decoration: none;
+	}
+	@media screen and (max-width: 780px) {
+		.bupper-popup-block {
+			margin: 33% auto;
+			min-height: 100px;
+			left: 20%;
+			right: 20%;
+			position: absolute;
+			top: 25%;
+			background-color: #eee;
+			border-radius: 10px;
+			/*padding:20px;*/
+		}
+	}
+	@media screen and (max-width: 480px) {
+		.bupper-popup-block {
+			width: 70%;
+			margin: 40% auto;
+			min-height: 100px;
+			left: 5%;
+			right: 5%;
+			position: absolute;
+			top: 10%;
+			background-color: #eee;
+			border-radius: 10px;
+			/*padding:20px;*/
+		}
+	}
+	</style>
+	<style>
+	/* ---------------------------- top hooks and bottom hooks layout styling ------------------------------ */
+	
+	.footer,
+	.toplegal,
+	.hook-topLeft,
+	.hook-topCenter,
+	.hook-topRight,
+	.hook-bottomLeft,
+	.hook-bottomCenter,
+	.hook-bottomRight,
+	.hook-beforeSubmit,
+	.hook-afterSubmit,
+	.hook-beforeInput,
+	.hook-afterInput,
+	.component-msg {
+		font-size: 11px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: normal;
+	}
+	.footer a {
+		color: inherit;
+	}
+	.footer,
+	.toplegal {
+		text-align: justify;
+		display: table;
+		width: 100%;
+	}
+	.toplegal p {
+		margin: 0;
+	}
+	.popup-bottom,
+	.popup-top {
+		display: table-row;
+	}
+	.hook-confirmationBodyStart,
+	hook-confirmationBodyEnd {
+		padding: 5px;
+		text-align: center;
+	}
+	.hook-confirmationBodyStart {
+		margin-top: 10px;
+	}
+	.hook-confirmationBodyEnd {
+		margin-bottom: 10px;
+	}
+	.hook-topLeft,
+	.hook-topCenter,
+	.hook-topRight {
+		margin: 0;
+		top: 0;
+	}
+	.hook-confirmationTopLeft,
+	.hook-confirmationTopCenter,
+	.hook-confirmationTopRight {
+		margin: 0;
+	}
+	.hook-topLeft,
+	.hook-bottomLeft,
+	.hook-confirmationTopLeft,
+	.hook-confirmationBottomLeft {
+		text-align: left;
+	}
+	.hook-topCenter,
+	.hook-bottomCenter {
+		text-align: justify;
+	}
+	.hook-topRight,
+	.hook-bottomRight,
+	.hook-confirmationTopRight,
+	.hook-confirmationBottomRight {
+		text-align: right;
+	}
+	.hook-confirmationTopCenter,
+	.hook-confirmationBottomCenter {
+		text-align: center;
+	}
+	.hook-bottomLeft,
+	.hook-bottomCenter,
+	.hook-bottomRight,
+	.hook-topLeft,
+	.hook-topCenter,
+	.hook-topRight {
+		display: table-cell;
+		padding: 5px;
+		vertical-align: top;
+	}
+	.hook-confirmationTopLeft,
+	.hook-confirmationTopCenter,
+	.hook-confirmationTopRight,
+	.hook-confirmationBottomLeft,
+	.hook-confirmationBottomCenter,
+	.hook-confirmationBottomRight {
+		display: table-cell;
+		padding: 5px;
+	}
+	/* ---------------------------- end top hooks and bottom hooks layout styling ------------------------------ */
+	</style>
+	<style>
+	@import url('css.css');
+	@import url('css.1.css');
+	/* RESET */
+	
+	html,
+	body,
+	div,
+	span,
+	applet,
+	object,
+	iframe,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	blockquote,
+	pre,
+	a,
+	abbr,
+	acronym,
+	address,
+	big,
+	cite,
+	code,
+	del,
+	dfn,
+	em,
+	img,
+	ins,
+	kbd,
+	q,
+	s,
+	samp,
+	small,
+	strike,
+	strong,
+	sub,
+	sup,
+	tt,
+	var,
+	b,
+	u,
+	i,
+	center,
+	dl,
+	dt,
+	dd,
+	ol,
+	ul,
+	li,
+	fieldset,
+	form,
+	label,
+	legend,
+	table,
+	caption,
+	tbody,
+	tfoot,
+	thead,
+	tr,
+	th,
+	td,
+	article,
+	aside,
+	canvas,
+	details,
+	embed,
+	figure,
+	figcaption,
+	footer,
+	header,
+	hgroup,
+	menu,
+	nav,
+	output,
+	ruby,
+	section,
+	summary,
+	time,
+	mark,
+	audio,
+	video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	
+	article,
+	aside,
+	details,
+	figcaption,
+	figure,
+	footer,
+	header,
+	hgroup,
+	menu,
+	nav,
+	section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol,
+	ul {
+		list-style: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	/** Float Clearing **/
+	
+	.clearfix:before,
+	.clearfix:after {
+		content: "";
+		display: table;
+	}
+	.clearfix:after {
+		clear: both;
+	}
+	.clearfix {
+		zoom: 1;
+		/* ie 6/7 */
+	}
+	/* END OF RESET */
+	
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+		background-color: #1C1C1C;
+		color: #fff;
+		font-family: Arial, Helvetica, sans-serif;
+		height: 100%;
+		overflow-x: hidden;
+	}
+	* {
+		-webkit-touch-callout: none;
+		-webkit-text-size-adjust: none;
+		-webkit-font-smoothing: antialiased;
+	}
+	.container {
+		width: auto;
+		max-width: 620px;
+		margin: auto;
+		text-align: center;
+		position: relative;
+	}
+	.sports-logo {
+		background: url("images/sports-logo.svg") no-repeat center;
+		width: 100px;
+		height: 30px;
+		background-size: contain;
+		float: left;
+	}
+	.uhd-logo {
+		background: url("images/4k-logo.svg") no-repeat left;
+		width: 100px;
+		height: 19px;
+		background-size: contain;
+		float: left;
+		margin-top: 0px;
+		position: relative;
+		left: 20px;
+		top: 5px;
+	}
+	a.btn {
+		display: block;
+		height: auto;
+		font-size: 2em;
+		line-height: 1.4;
+		padding: 10px 0 0 24px;
+	}
+	.ar a.btn {
+		font-size: 1.7em;
+	}
+	.btn,
+	.submit-button,
+	.oc2sms-button {
+		width: 100%;
+		box-sizing: border-box;
+		border-radius: 50px;
+		color: #fff;
+		margin: 12px auto;
+		cursor: pointer;
+		display: block;
+		font-size: 32px;
+		padding: 4px 12px 4px 28px;
+		text-align: center;
+		text-decoration: none;
+		background: rgb(135, 0, 23);
+		background: -moz-linear-gradient(0deg, rgba(135, 0, 23, 1) 0%, rgba(247, 128, 76, 1) 100%);
+		background: -webkit-linear-gradient(0deg, rgba(135, 0, 23, 1) 0%, rgba(247, 128, 76, 1) 100%);
+		background: linear-gradient(0deg, rgba(135, 0, 23, 1) 0%, rgba(247, 128, 76, 1) 100%);
+		filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#870017", endColorstr="#f7804c", GradientType=1);
+		border: solid 1px #D32424;
+		-webkit-box-shadow: 0px 6px 9px -2px rgba(244, 73, 20, 0.5);
+		-moz-box-shadow: 0px 6px 9px -2px rgba(244, 73, 20, 0.5);
+		box-shadow: 0px 6px 9px -2px rgba(244, 73, 20, 0.5);
+		font-family: 'Barlow Condensed', sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		text-transform: uppercase;
+		min-height: 70px;
+		position: relative;
+	}
+	.submit-button::before,
+	.btn::before {
+		content: '';
+		background: url("images/play-icon.svg") no-repeat center;
+		background-size: contain;
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		left: 22px;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		opacity: 0.75;
+	}
+	.btn-2 {
+		width: 100%;
+		max-width: 280px;
+		position: relative;
+		top: 60px;
+	}
+	.button-group a input {
+		color: white;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.button-group a {
+		text-decoration: none;
+	}
+	.footer {
+		z-index: 4;
+		padding: 40px 0;
+		display: block;
+		color: #cbd4ec;
+		opacity: 1;
+		max-width: 460px;
+		margin: 10px auto;
+		position: relative;
+		text-align: center;
+		font-size: 10px;
+	}
+	.footer img {
+		width: 110px;
+		display: block;
+		margin: 10px auto;
+	}
+	.footer a {
+		color: #cbd4ec;
+		display: inline;
+	}
+	.modal {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 9;
+		display: none;
+		position: fixed;
+		background-color: rgba(0, 0, 0, 0.65);
+	}
+	.modal.active {
+		display: block;
+	}
+	.modal .modalContent {
+		top: 50%;
+		left: 50%;
+		width: 280px;
+		padding: 10px;
+		height: 300px;
+		display: block;
+		position: absolute;
+		text-align: center;
+		border-radius: 15px;
+		background-color: #000;
+		background-size: 100% auto;
+		margin: -160px 0px 0px -150px;
+		background-position: top center;
+	}
+	.modal .modalContent h1 {
+		margin: 0;
+		padding: 0;
+		color: #fff200;
+		font-size: 36px;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-family: 'Luckiest Guy', cursive;
+		text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+	}
+	.modal .modalContent h2 {
+		padding: 0;
+		color: #fff;
+		margin: 5px 0;
+		font-size: 18px;
+		text-transform: uppercase;
+		text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+	}
+	.modal .modalContent .btn {
+		width: 240px;
+	}
+	.animated {
+		-webkit-animation-duration: 1s;
+		animation-duration: 1s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+	.animated.infinite {
+		-webkit-animation-iteration-count: infinite;
+		animation-iteration-count: infinite;
+	}
+	.fadeIn {
+		-webkit-animation-name: fadeIn;
+		animation-name: fadeIn;
+	}
+	@-webkit-keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+	.zoomIn {
+		-webkit-animation-name: zoomIn;
+		animation-name: zoomIn;
+	}
+	@-webkit-keyframes zoomIn {
+		from {
+			opacity: 0;
+			-webkit-transform: scale3d(0.3, 0.3, 0.3);
+			transform: scale3d(0.3, 0.3, 0.3);
+		}
+		50% {
+			opacity: 1;
+		}
+	}
+	@keyframes zoomIn {
+		from {
+			opacity: 0;
+			-webkit-transform: scale3d(0.3, 0.3, 0.3);
+			transform: scale3d(0.3, 0.3, 0.3);
+		}
+		50% {
+			opacity: 1;
+		}
+	}
+	.bounceInDown {
+		-webkit-animation-name: bounceInDown;
+		animation-name: bounceInDown;
+	}
+	@-webkit-keyframes bounceInDown {
+		from, 60%, 75%, 90%, to {
+			-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+			animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		}
+		0% {
+			opacity: 0;
+			-webkit-transform: translate3d(0, -3000px, 0);
+			transform: translate3d(0, -3000px, 0);
+		}
+		60% {
+			opacity: 1;
+			-webkit-transform: translate3d(0, 25px, 0);
+			transform: translate3d(0, 25px, 0);
+		}
+		75% {
+			-webkit-transform: translate3d(0, -10px, 0);
+			transform: translate3d(0, -10px, 0);
+		}
+		90% {
+			-webkit-transform: translate3d(0, 5px, 0);
+			transform: translate3d(0, 5px, 0);
+		}
+		to {
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+		}
+	}
+	@keyframes bounceInDown {
+		from, 60%, 75%, 90%, to {
+			-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+			animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		}
+		0% {
+			opacity: 0;
+			-webkit-transform: translate3d(0, -3000px, 0);
+			transform: translate3d(0, -3000px, 0);
+		}
+		60% {
+			opacity: 1;
+			-webkit-transform: translate3d(0, 25px, 0);
+			transform: translate3d(0, 25px, 0);
+		}
+		75% {
+			-webkit-transform: translate3d(0, -10px, 0);
+			transform: translate3d(0, -10px, 0);
+		}
+		90% {
+			-webkit-transform: translate3d(0, 5px, 0);
+			transform: translate3d(0, 5px, 0);
+		}
+		to {
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+		}
+	}
+	.bounceInUp {
+		-webkit-animation-name: bounceInUp;
+		animation-name: bounceInUp;
+	}
+	@-webkit-keyframes bounceInUp {
+		from, 60%, 75%, 90%, to {
+			-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+			animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		}
+		from {
+			opacity: 0;
+			-webkit-transform: translate3d(0, 3000px, 0);
+			transform: translate3d(0, 3000px, 0);
+		}
+		60% {
+			opacity: 1;
+			-webkit-transform: translate3d(0, -20px, 0);
+			transform: translate3d(0, -20px, 0);
+		}
+		75% {
+			-webkit-transform: translate3d(0, 10px, 0);
+			transform: translate3d(0, 10px, 0);
+		}
+		90% {
+			-webkit-transform: translate3d(0, -5px, 0);
+			transform: translate3d(0, -5px, 0);
+		}
+		to {
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+		}
+	}
+	@keyframes bounceInUp {
+		from, 60%, 75%, 90%, to {
+			-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+			animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		}
+		from {
+			opacity: 0;
+			-webkit-transform: translate3d(0, 3000px, 0);
+			transform: translate3d(0, 3000px, 0);
+		}
+		60% {
+			opacity: 1;
+			-webkit-transform: translate3d(0, -20px, 0);
+			transform: translate3d(0, -20px, 0);
+		}
+		75% {
+			-webkit-transform: translate3d(0, 10px, 0);
+			transform: translate3d(0, 10px, 0);
+		}
+		90% {
+			-webkit-transform: translate3d(0, -5px, 0);
+			transform: translate3d(0, -5px, 0);
+		}
+		to {
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+		}
+	}
+	@keyframes sleepy {
+		from {
+			background-position: 0px;
+		}
+		to {
+			background-position: -556px;
+		}
+	}
+	@-webkit-keyframes sleepy {
+		from {
+			background-position: 0px;
+		}
+		to {
+			background-position: -556px;
+		}
+	}
+	@keyframes point {
+		from {
+			background-position: -556px;
+		}
+		to {
+			background-position: -1112px;
+		}
+	}
+	@-webkit-keyframes point {
+		from {
+			background-position: -556px;
+		}
+		to {
+			background-position: -1112px;
+		}
+	}
+	.BtnLang {
+		display: block;
+		width: 100%;
+		max-width: 80px;
+		height: 25px;
+		background-color: #ffea00;
+		position: absolute;
+		right: 4px;
+		border: none;
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+		border: 1px solid #ffdd00;
+		font-size: 14px;
+		z-index: 100000;
+	}
+	.hide {
+		display: none;
+	}
+	.show {
+		display: block;
+	}
+	.pricepoint {
+		color: white;
+		font-size: 14px;
+		text-align: center;
+		margin: 0 auto 10px;
+	}
+	.box {
+		position: relative;
+	}
+	.logo-bottom {
+		display: block;
+		overflow: hidden;
+	}
+	.logo-bottom img {
+		width: 200px;
+	}
+	.root.click-flow .logo-bottom {
+		margin-top: 40px;
+	}
+	.DisclaimerPlace {
+		color: white;
+		font-size: 11px;
+		margin: 0 auto;
+		max-width: 600px;
+		margin: auto;
+	}
+	.phone-input {
+		display: -webkit-flex;
+		display: flex;
+		margin: auto;
+		overflow: hidden;
+		border: 1px solid #dbdbdb;
+		border-radius: 25px;
+		-webkit-align-items: center;
+		align-items: center;
+	}
+	.phone-input * {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 1em;
+	}
+	.phone-input .phone {
+		background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI3LjQ0MiAyNy40NDIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI3LjQ0MiAyNy40NDI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8Zz4KCTxwYXRoIGQ9Ik0xOS40OTQsMEg3Ljk0OEM2Ljg0MywwLDUuOTUxLDAuODk2LDUuOTUxLDEuOTk5djIzLjQ0NmMwLDEuMTAyLDAuODkyLDEuOTk3LDEuOTk3LDEuOTk3aDExLjU0NiAgIGMxLjEwMywwLDEuOTk3LTAuODk1LDEuOTk3LTEuOTk3VjEuOTk5QzIxLjQ5MSwwLjg5NiwyMC41OTcsMCwxOS40OTQsMHogTTEwLjg3MiwxLjIxNGg1LjdjMC4xNDQsMCwwLjI2MSwwLjIxNSwwLjI2MSwwLjQ4MSAgIHMtMC4xMTcsMC40ODItMC4yNjEsMC40ODJoLTUuN2MtMC4xNDUsMC0wLjI2LTAuMjE2LTAuMjYtMC40ODJDMTAuNjEyLDEuNDI5LDEwLjcyNywxLjIxNCwxMC44NzIsMS4yMTR6IE0xMy43MjIsMjUuNDY5ICAgYy0wLjcwMywwLTEuMjc1LTAuNTcyLTEuMjc1LTEuMjc2czAuNTcyLTEuMjc0LDEuMjc1LTEuMjc0YzAuNzAxLDAsMS4yNzMsMC41NywxLjI3MywxLjI3NFMxNC40MjMsMjUuNDY5LDEzLjcyMiwyNS40Njl6ICAgIE0xOS45OTUsMjEuMUg3LjQ0OFYzLjM3M2gxMi41NDdWMjEuMXoiIGZpbGw9IiMwMDAwMDAiLz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K);
+		width: 50px;
+		height: 50px;
+		background-position: center;
+		background-size: 70%;
+		background-repeat: no-repeat;
+		background-color: #ececec;
+		margin-right: 0.5em;
+	}
+	.phone-input .flag {
+		width: 50px;
+		height: 50px;
+		font-size: 30px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.phone-input .country-code {
+		color: #acacac;
+		margin-left: 0.5em;
+	}
+	.phone-input input.text-input {
+		-webkit-flex: 1;
+		flex: 1;
+		min-width: 0;
+		margin-left: 0.5em;
+		margin-right: 2px;
+		border: 0;
+		outline: none;
+	}
+	.phone-input .checkmark-container {
+		width: 40px;
+		height: 40px;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-align-items: center;
+		align-items: center;
+		-webkit-justify-content: flex-end;
+		justify-content: flex-end;
+	}
+	.phone-input .checkmark-container img {
+		width: 100%;
+		height: 100%;
+		display: inline-block;
+	}
+	.checkmark__circle {
+		stroke-dasharray: 166;
+		stroke-dashoffset: 166;
+		stroke-width: 2;
+		stroke-miterlimit: 10;
+		stroke: #7ac142;
+		fill: none;
+		-webkit-animation: stroke 0.5.7s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+		animation: stroke 0.5.7s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+	}
+	.checkmark__icon,
+	.errormark__icon {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		display: block;
+		stroke-width: 2;
+		stroke: #fff;
+		stroke-miterlimit: 10;
+		box-shadow: inset 0px 0px 0px #7ac142;
+		-webkit-animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+		animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+	}
+	.checkmark__check {
+		-webkit-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+		stroke-dasharray: 48;
+		stroke-dashoffset: 48;
+		-webkit-animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+		animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+	}
+	@-webkit-keyframes stroke {
+		100% {
+			stroke-dashoffset: 0;
+		}
+	}
+	@keyframes stroke {
+		100% {
+			stroke-dashoffset: 0;
+		}
+	}
+	@-webkit-keyframes scale {
+		0%, 100% {
+			-webkit-transform: none;
+			transform: none;
+		}
+		50% {
+			-webkit-transform: scale3d(1.1, 1.1, 1);
+			transform: scale3d(1.1, 1.1, 1);
+		}
+	}
+	@keyframes scale {
+		0%, 100% {
+			-webkit-transform: none;
+			transform: none;
+		}
+		50% {
+			-webkit-transform: scale3d(1.1, 1.1, 1);
+			transform: scale3d(1.1, 1.1, 1);
+		}
+	}
+	@-webkit-keyframes fill {
+		100% {
+			box-shadow: inset 0px 0px 0px 30px #7ac142;
+		}
+	}
+	@keyframes fill {
+		100% {
+			box-shadow: inset 0px 0px 0px 30px #7ac142;
+		}
+	}
+	.phone-entry .phone-input {
+		background: #ffffff;
+		border: 3px solid #dbdbdb;
+	}
+	.phone-entry .phone-input input.text-input {
+		font-size: 128%;
+	}
+	.phone-entry .error,
+	.pin-entry .error {
+		background: #fdb844c7;
+		direction: rtl;
+		padding: 0.4em 2.4em;
+		margin: auto;
+		border-radius: 10px;
+		text-align: center;
+		color: black;
+	}
+	.phone-entry .loading,
+	.pin-entry .loading {
+		background: #79797973;
+		direction: rtl;
+		padding: 1px;
+		margin: auto;
+		border-radius: 10px;
+		text-align: center;
+		color: white;
+		font-size: 200%;
+		height: 54px;
+		position: relative;
+		z-index: 4;
+	}
+	.phone-entry .btn,
+	.pin-entry .btn {
+		margin-top: 12px;
+	}
+	.btn.mo-link {
+		min-height: 40px;
+	}
+	/*# sourceMappingURL=main.c24b56fe.css.map*/
+	
+	.holder {
+		max-width: 380px;
+		margin: auto;
+	}
+	.BtnLangPlace {
+		position: absolute;
+		top: 0;
+		z-index: 10;
+		width: 100px;
+		right: 0;
+	}
+	.header {
+		background-color: #1C1C1C;
+		padding: 5px 15px;
+		width: auto;
+		direction: ltr;
+		height: 34px;
+	}
+	.header-red {
+		color: red;
+		text-align: center;
+		display: block;
+		font-weight: bold;
+		font-size: 1.2em;
+		margin-bottom: 20px;
+		margin-top: 6px;
+	}
+	.creative {
+		padding: 10px;
+	}
+	.phone-entry {
+		/* display: none; */
+		
+		box-sizing: border-box;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		z-index: 3;
+		background-color: rgba(28, 28, 28, 0.9);
+		padding: 30px 15px;
+		width: 100%;
+		height: 100vh;
+		margin: auto;
+	}
+	.phone-entry.pin {
+		display: block;
+	}
+	.phone-entry.pin > .disclaimer-container.fade-in,
+	.no-animation {
+		animation: none !important;
+	}
+	.label-name {
+		display: block;
+		font-size: 1.3em;
+		margin-block-start: 0.83em;
+		margin-block-end: 0.83em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.state-send-sms {
+		z-index: 99;
+		position: absolute;
+		top: 100px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		max-width: 300px;
+	}
+	.state-first-click {
+		display: none;
+		top: 150px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	.call-buttons {
+		max-width: 300px;
+		position: absolute;
+		top: 130px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		height: 85px;
+		z-index: -1;
+	}
+	.liftup {
+		z-index: 9;
+	}
+	.call-buttons .price-point {
+		position: absolute;
+		bottom: 0;
+		margin: auto;
+		left: 0;
+		right: 0;
+	}
+	.persuasive,
+	.overlay {
+		background: rgba(0, 0, 0, 0.8);
+		height: 100vh;
+		width: 100%;
+		position: absolute;
+		display: none;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		z-index: 2;
+	}
+	.phone-wrapper {
+		/* display: none; */
+		
+		width: auto;
+		max-width: 320px;
+		margin: auto;
+	}
+	.loader {
+		height: 70px;
+		width: 70px;
+		position: relative;
+		top: 50px;
+		margin: auto;
+		background-image: url("images/spinner1.svg");
+	}
+	/***** LOADER *****/
+	
+	.lds-default {
+		display: inline-block;
+		position: relative;
+		width: 64px;
+		height: 64px;
+	}
+	.lds-default div {
+		position: absolute;
+		width: 5px;
+		height: 5px;
+		background: red;
+		border-radius: 50%;
+		animation: lds-default 1.2s linear infinite;
+	}
+	.lds-default div:nth-child(1) {
+		animation-delay: 0s;
+		top: 29px;
+		left: 53px;
+	}
+	.lds-default div:nth-child(2) {
+		animation-delay: -0.1s;
+		top: 18px;
+		left: 50px;
+	}
+	.lds-default div:nth-child(3) {
+		animation-delay: -0.2s;
+		top: 9px;
+		left: 41px;
+	}
+	.lds-default div:nth-child(4) {
+		animation-delay: -0.3s;
+		top: 6px;
+		left: 29px;
+	}
+	.lds-default div:nth-child(5) {
+		animation-delay: -0.4s;
+		top: 9px;
+		left: 18px;
+	}
+	.lds-default div:nth-child(6) {
+		animation-delay: -0.5s;
+		top: 18px;
+		left: 9px;
+	}
+	.lds-default div:nth-child(7) {
+		animation-delay: -0.5.7s;
+		top: 29px;
+		left: 6px;
+	}
+	.lds-default div:nth-child(8) {
+		animation-delay: -0.7s;
+		top: 41px;
+		left: 9px;
+	}
+	.lds-default div:nth-child(9) {
+		animation-delay: -0.8s;
+		top: 50px;
+		left: 18px;
+	}
+	.lds-default div:nth-child(10) {
+		animation-delay: -0.9s;
+		top: 53px;
+		left: 29px;
+	}
+	.lds-default div:nth-child(11) {
+		animation-delay: -1s;
+		top: 50px;
+		left: 41px;
+	}
+	.lds-default div:nth-child(12) {
+		animation-delay: -1.1s;
+		top: 41px;
+		left: 50px;
+	}
+	@keyframes lds-default {
+		0%, 20%, 80%, 100% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(1.5);
+		}
+	}
+	.play-btn,
+	.play-btn2 {
+		background: url("images/play.svg") no-repeat;
+		width: auto;
+		height: 100px;
+		background-size: contain;
+		background-position: center;
+		cursor: pointer;
+	}
+	#myProgress {
+		width: 100%;
+		background-color: #000000;
+	}
+	#myBar,
+	#myBar2 {
+		width: 1%;
+		height: 10px;
+		background-color: #e71e29;
+		display: none;
+	}
+	.loading-bar,
+	.loading-bar2 {
+		position: relative;
+		max-width: 280px;
+		margin: auto;
+		position: relative;
+		top: 5vh;
+		width: auto;
+		text-align: center;
+	}
+	.loading-text {
+		margin-top: 10px;
+		position: relative;
+		z-index: 3;
+	}
+	.loading-text:lang(ar) {
+		direction: rtl;
+	}
+	.blink-2 {
+		animation: blink-2 0.9s infinite both;
+	}
+	@keyframes blink-2 {
+		0% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0.2;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	.displayBlock {
+		display: block !important;
+	}
+	.hideBtn-2 {
+		display: none !important;
+	}
+	#myBar2.animateLoader {
+		-webkit-transition: width 1s ease-in-out;
+		-moz-transition: width 1s ease-in-out;
+		-o-transition: width 1s ease-in-out;
+		transition: width 1s ease-in-out;
+		width: 90%;
+		display: block;
+	}
+	.play-btn {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		top: 130px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	.msisdn-title,
+	.thankyou-title,
+	.oc2sms-title,
+	.mo-title,
+	.pin-title-2 {
+		font-weight: bold;
+		text-align: center;
+		margin: 0 auto 20px;
+		font-size: 30px;
+		font-family: 'Barlow Condensed', sans-serif;
+		font-weight: 700;
+		font-style: normal;
+	}
+	.thankyou-container {
+		margin-top: 25%;
+	}
+	.pin-title {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.2;
+		text-align: center;
+	}
+	.ar .pin-title {
+		font-size: 20px;
+	}
+	.input-container {
+		width: auto;
+		background-color: white;
+		height: 48px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		border-radius: 50px;
+		border: solid 2px #d4d4d4;
+		direction: ltr;
+	}
+	.msisdn-group {
+		margin-left: 40px;
+	}
+	.msisdn-group input {
+		font-size: 24px;
+		width: 200px;
+		text-align: left;
+		height: 44px;
+		background: transparent;
+		border: none;
+		margin-left: 0;
+		padding: 0 15px;
+	}
+	.msisdn-group input:focus {
+		text-align: left;
+	}
+	.input-container::before {
+		content: '';
+		background-color: transparent;
+		position: absolute;
+		width: 60px;
+		height: 100%;
+		left: 0;
+		background-image: url("images/phone-icon.svg");
+		background-size: 34%;
+		background-repeat: no-repeat;
+		background-position: center;
+		padding-left: 0;
+	}
+	.input-container.pin::before {
+		background-image: url("lock.svg");
+	}
+	.input-container.pin input {
+		font-size: 20px;
+		width: 202px;
+		background: transparent;
+		border: none;
+		text-align: center;
+		margin: 0 auto;
+		height: 38px;
+	}
+	.hook-bottomCenter {
+		display: block;
+		text-align: center;
+	}
+	.hook-afterInput {
+		text-align: center;
+		margin: 10px auto 0;
+	}
+	.hook-block a {
+		color: #27d3fb;
+	}
+	@-webkit-keyframes slide-in-bottom {
+		0% {
+			-webkit-transform: translateY(1000px);
+			transform: translateY(1000px);
+			opacity: 0;
+		}
+		100% {
+			-webkit-transform: translateY(0);
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+	@keyframes slide-in-bottom {
+		0% {
+			-webkit-transform: translateY(1000px);
+			transform: translateY(1000px);
+			opacity: 0;
+		}
+		100% {
+			-webkit-transform: translateY(0);
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+	.component-msg {
+		text-align: center;
+		font-size: 12px;
+		line-height: 1.2;
+	}
+	.mo-container {
+		text-align: center;
+	}
+	@media screen and (max-width: 320px) {
+		.play-btn,
+		.play-btn2 {
+			height: 67px;
+		}
+	}
+	.lang-btn {
+		position: absolute;
+		max-width: 100%;
+		font-size: 12px;
+		font-weight: bold;
+		padding: 6px 12px 4px 12px;
+		right: 10px;
+		top: 5px;
+		color: #f74f4c;
+		background-color: transparent;
+		border: solid 1px #f74f4c;
+		border-radius: 50px;
+		z-index: 10;
+		min-height: 30px;
+		width: 70px;
+		line-height: inherit;
+	}
+	.ar,
+	.ar .msisdn-title,
+	.ar .thankyou-title,
+	.ar .oc2sms-title,
+	.ar .mo-title,
+	.ar .pin-title-2 {
+		direction: rtl;
+		font-family: 'Tajawal', sans-serif;
+	}
+	input {
+		direction: ltr;
+	}
+	.errMsg {
+		color: red;
+		text-align: center;
+		display: block;
+		margin-bottom: 10px;
+	}
+	:disabled,
+	.msisdn-submit-disable {
+		background: #b5b5b5;
+		color: #989898;
+		border: none;
+		box-shadow: none;
+		cursor: not-allowed;
+	}
+	.keyword {
+		font-size: 23px;
+		font-weight: bold;
+		color: #fffa28;
+	}
+	.or {
+		margin: 15px auto;
+		position: relative;
+		display: block;
+	}
+	.video-player {
+		font-size: 16px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		direction: ltr;
+		width: auto;
+		max-width: 620px;
+		background: rgb(28, 28, 28);
+		background: -moz-linear-gradient(180deg, rgba(28, 28, 28, 0) 0%, rgba(28, 28, 28, 0.5130427170868348) 52%, rgba(28, 28, 28, 1) 100%);
+		background: -webkit-linear-gradient(180deg, rgba(28, 28, 28, 0) 0%, rgba(28, 28, 28, 0.5130427170868348) 52%, rgba(28, 28, 28, 1) 100%);
+		background: linear-gradient(180deg, rgba(28, 28, 28, 0) 0%, rgba(28, 28, 28, 0.5130427170868348) 52%, rgba(28, 28, 28, 1) 100%);
+		filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#1c1c1c", endColorstr="#1c1c1c", GradientType=1);
+		height: 55px;
+		margin: -76px auto 0;
+		padding-top: 23px;
+		position: relative;
+	}
+	.control {
+		background: url("images/pause.svg") no-repeat center;
+		background-size: contain;
+		width: 30px;
+		height: 18px;
+	}
+	.bar {
+		background-color: white;
+		height: 1px;
+		width: 48%;
+		margin: 0 20px;
+		position: relative;
+	}
+	.bar::before {
+		content: '';
+		background-color: white;
+		border-radius: 50px;
+		width: 15px;
+		height: 15px;
+		position: absolute;
+		left: 0;
+		top: -8px;
+	}
+	.dots-menu {
+		background: url("images/dots-menu.svg") no-repeat center;
+		background-size: contain;
+		width: 20px;
+		height: 20px;
+		margin: 0 10px;
+	}
+	.hd-text {
+		color: #F7504C;
+		font-weight: bold;
+	}
+	.share-content {
+		font-size: 12px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		direction: ltr;
+		width: auto;
+		max-width: 620px;
+		margin: auto;
+		position: relative;
+		background-color: #1c1c1c;
+	}
+	.heart-container {
+		float: left;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.heart {
+		background: url("images/heart.svg") no-repeat center;
+		background-size: contain;
+		width: 20px;
+		height: 20px;
+		margin: 0 5px;
+	}
+	.heart-text {
+		margin-right: 50px;
+	}
+	.comments-content span {
+		margin: 0 5px;
+	}
+	.video-player-container {
+		display: block;
+		direction: ltr;
+		position: relative;
+		margin: auto;
+		font-family: Arial, Helvetica, sans-serif;
+		background-color: black;
+	}
+	.video-img {
+		height: 78vh;
+		width: auto;
+		background: url("images/rooney.png") no-repeat center;
+		background-size: cover;
+	}
+	video.video-img {
+		position: relative;
+		left: -40%;
+	}
+	.video-img::after {
+		content: '';
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;
+		background: rgb(28, 28, 28);
+		background: -moz-linear-gradient(180deg, rgba(28, 28, 28, 0.804359243697479) 0%, rgba(28, 28, 28, 0.07326680672268904) 8%, rgba(28, 28, 28, 0) 56%, rgba(28, 28, 28, 0.7371323529411764) 88%, rgba(28, 28, 28, 1) 100%);
+		background: -webkit-linear-gradient(180deg, rgba(28, 28, 28, 0.804359243697479) 0%, rgba(28, 28, 28, 0.07326680672268904) 8%, rgba(28, 28, 28, 0) 56%, rgba(28, 28, 28, 0.7371323529411764) 88%, rgba(28, 28, 28, 1) 100%);
+		background: linear-gradient(180deg, rgba(28, 28, 28, 0.804359243697479) 0%, rgba(28, 28, 28, 0.07326680672268904) 8%, rgba(28, 28, 28, 0) 56%, rgba(28, 28, 28, 0.7371323529411764) 88%, rgba(28, 28, 28, 1) 100%);
+		filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#1c1c1c", endColorstr="#1c1c1c", GradientType=1);
+	}
+	.blur-top {
+		background: rgb(28, 28, 28);
+		background: -moz-linear-gradient(180deg, rgba(28, 28, 28, 0.8491771708683473) 0%, rgba(28, 28, 28, 0) 100%);
+		background: -webkit-linear-gradient(180deg, rgba(28, 28, 28, 0.8491771708683473) 0%, rgba(28, 28, 28, 0) 100%);
+		background: linear-gradient(180deg, rgba(28, 28, 28, 0.8491771708683473) 0%, rgba(28, 28, 28, 0) 100%);
+		filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#1c1c1c", endColorstr="#1c1c1c", GradientType=1);
+		height: 70px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: -2px;
+		margin: auto;
+		z-index: 1;
+	}
+	.spinner-container {
+		margin: auto;
+		z-index: 1;
+	}
+	.spinner {
+		background: url("images/spinner.svg") no-repeat center;
+		background-size: contain;
+		height: 140px;
+		width: auto;
+	}
+	.hook-topCenter {
+		background-color: black;
+		font-size: 12px;
+		text-align: center;
+	}
+	.breaker {
+		width: 90%;
+		max-width: 470px;
+		background-color: #ffffff;
+		height: 1px;
+		margin: 20px auto 0;
+		opacity: 0.4;
+	}
+	.col-3 {
+		direction: ltr;
+		float: left;
+		width: 33.33%;
+		font-size: 15px;
+	}
+	.col-3 img {
+		width: 12px;
+	}
+	.col-wrapper {
+		font-family: Arial, Helvetica, sans-serif;
+		margin: 10px auto;
+		max-width: 760px;
+		width: auto;
+		display: block;
+	}
+	.oswald {
+		font-family: 'Oswald', sans-serif;
+	}
+	.disclaimer-container {
+		display: block;
+		position: relative;
+		left: 0;
+		right: 0;
+		margin: auto;
+		bottom: 79px;
+	}
+	:focus {
+		outline: 0;
+		outline-color: transparent;
+		outline-style: none;
+	}
+	.fade-in {
+		animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 5s both;
+	}
+	@-webkit-keyframes fade-in {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	@keyframes fade-in {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	@media screen and (min-width: 720px) {
+		.video-img {
+			height: 57vh;
+		}
+		.disclaimer-container {
+			bottom: inherit;
+		}
+		.container,
+		.video-player,
+		.share-content {
+			max-width: 1024px;
+		}
+		.heart-text {
+			margin-right: 174px;
+		}
+		.breaker {
+			max-width: 570px;
+		}
+		.comments-content span {
+			margin: 0 15px;
+		}
+	}
+	@media screen and (min-width: 620px) {
+		video.video-img {
+			left: 0;
+		}
+	}
+	@media screen and (max-width: 375px) {
+		.video-player {
+			font-size: 3vw;
+		}
+		.share-content {
+			font-size: 2.8vw;
+		}
+		.col-3 {
+			font-size: 4vw;
+		}
+	}
+	@media screen and (max-height: 520px) {
+		.disclaimer-container {
+			bottom: 0;
+		}
+	}
+	#addAnimation {
+		display: none;
+	}
+	#addAnimation.fade-in {
+		display: block;
+		animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 5s both;
+	}
+	.ooreedooLabel {
+		font-size: 15px;
+		margin: 20px 0;
+		display: block;
+	}
+	#component-msg-LABEL2 span {
+		font-size: 18px;
+		margin-bottom: 10px;
+		display: block;
+		font-weight: bold;
+	}
+	.topLegals {
+		text-align: center;
+		margin: 10px auto;
+	}
+	.msisdn-input {
+		padding-left: 75px;
+		text-indent: 50px;
+	}
+	#op-logo .operator-logo {
+		width: 100%;
+		height: 55px;
+		max-width: 300px;
+		margin: 10px auto;
+	}
+	#op-logo .operator-logo img {
+		width: auto !important;
+		transform: scale(0.9);
+	}
+	#KW_VIVA img {
+		transform: scale(0.5) !important;
+		margin-top: -9px;
+	}
+	</style>
+	<title>Sports Video</title>
+</head>
+
+<body>
+	
+	<form id="mainForm" action="#">
+		 
+		<div class="toplegal">
+			<div class="topLegals"></div>
+		</div>
+		<div class="container ar">
+			<div id="root">
+				<div class="root en pin-flow">
+					<div class="top-legals">
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<style>
+			.footer {
+				display: none;
+			}
+			.show {
+				display: block;
+			}
+			</style>
+			<script type="text/javascript">
+			function checkifempty() {
+				if($('#msisdn-submit-button').hasClass('msisdn-submit-disable')) {
+					$(".msisdn-group").removeClass('valid');
+				} else {
+					$(".msisdn-group").addClass('valid');
+				}
+			}
+			jQuery(document).ready(function() {
+				setInterval("checkifempty()", 100);
+			});
+			</script>
+			<script type="text/javascript">
+			var maxNum = [8];
+			var minNum = [8];
+			var pinMin = 4;
+			var js_validate = true;
+			var acceptedNumericInputs = [
+				// latin
+				'0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+				// arabic
+				'٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩',
+				// some more arabic
+				'۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹',
+			];
+			$(document).ready(function() {
+				$('#mainForm').submit(checkValidity);
+				// restrict phone input
+				$('.numeric-field').keypress(function(key) {
+					if(key.charCode == 13) { // enter key
+						return true;
+					}
+					return acceptedNumericInputs.indexOf(key.key) > -1;
+				});
+				// restrict alphanumeric pin input
+				$('.alphanumeric-field').keypress(function(key) {
+					if(key.charCode == 13) { // enter key
+						return true;
+					}
+					var pattern = new RegExp("[a-zA-Z0-9]");
+					return pattern.test(key.key);
+				});
+				$('.numeric-field,.alphanumeric-field').each(function() {
+					var element = this;
+					var jqElement = $(element);
+					focusInput(jqElement);
+					checkInputCompleted(jqElement);
+					var previousValue = element.value;
+					setInterval(function() {
+						if(element.value != previousValue) {
+							previousValue = element.value;
+							checkInputCompleted(jqElement);
+						}
+					}, 50);
+				});
+			});
+
+			function focusInput(input) {
+				var id = input.attr('id');
+				var index = Number(id.substr(id.indexOf('_') + 1));
+				var type = id.search('msisdn') != -1 ? 'msisdn' : 'pin';
+				input.focus(function() {
+					setTimeout((function(el) {
+						var strLength = el.value.length;
+						return function() {
+							if(el.setSelectionRange !== undefined) {
+								el.setSelectionRange(strLength, strLength);
+							} else {
+								$(el).val(el.value);
+							}
+						}
+					}(this)), 5);
+				});
+				if(type == 'msisdn') {
+					if(index == 0) {
+						$('#' + type + '_' + index).focus();
+					}
+				} else {
+					input.focus();
+				}
+			}
+
+			function checkInputCompleted(input) {
+				var id = input.attr('id');
+				var index = Number(id.substr(id.indexOf('_') + 1));
+				var type = id.search('msisdn') != -1 ? 'msisdn' : 'pin';
+				var min = 0;
+				if(type == 'msisdn') {
+					min = minNum[index];
+				} else {
+					min = pinMin;
+				}
+				if(input.val().length >= min) {
+					input.attr('finish', 'true');
+				} else {
+					input.removeAttr("finish");
+				}
+				checkAllInputCompleted(type);
+			}
+
+			function checkAllInputCompleted(type) {
+				if(type == 'msisdn') {
+					for(var i = 0; i < minNum.length; i++) {
+						if($('#' + type + '_' + i).attr('finish') != 'true') {
+							disableSubmit(type);
+							return;
+						}
+					}
+				} else {
+					if($('#' + type).attr('finish') != 'true') {
+						disableSubmit(type);
+						return;
+					}
+				}
+				enableSubmit(type);
+			}
+
+			function disableSubmit(buttonType) {
+				$('#' + buttonType + '-submit-button').attr("disabled", "disabled").removeClass(buttonType + '-submit-button').addClass(buttonType + '-submit-disable');
+			}
+
+			function enableSubmit(buttonType) {
+				$('#' + buttonType + '-submit-button').removeAttr("disabled", "disabled").addClass(buttonType + '-submit-button').removeClass(buttonType + '-submit-disable');
+			}
+
+			function checkMsisdnValid(e) {
+				var operatorsPrefixes = {
+					'KW_VIVA': [],
+					'KW_ZAIN': [],
+					'KW_OOREDOO': []
+				}
+				var prefixes = ['66', '65', '60', '99', '97', '98', '94', '55', '50', '51', '67', '69', '6', '5', '9'];
+				var portable = false;
+				var errType = 0; //0 = no error, 1 = not a number, 2 = prefix not mismatch, 3 = operator mismatch, 4 = too less number, 5 = too many number,
+				var errMsg = {
+					"OPERATOR_MISMATCH": "OPERATOR_MISMATCH",
+					"NOT_VALID_MSISDN": "NOT_VALID_MSISDN",
+					"OPERATOR_NOT_SELECTED": "OPERATOR_NOT_SELECTED"
+				};
+				if($("#operator").val() == "-none-") {
+					errType = 6;
+				}
+				emptyErrorMsg()
+				$("input.msisdn").each(function() {
+					var msisdn = getLatinDigits($(this).val());
+					// Force update msisdn to digits due to few functions
+					// takes value directly from #msisdn_0
+					$(this).val(msisdn);
+					var index = Number($(this).attr('id').substr(7));
+					var reg = /^\d+$/;
+					var result = reg.test(msisdn);
+					if(!result && errType == 0) {
+						errType = 1;
+					} else if(msisdn.length < minNum[index] && errType == 0) {
+						errType = 4;
+					} else if(msisdn.length > maxNum[index] && errType == 0) {
+						errType = 5;
+					} else if($(this).attr('id') == "msisdn_0") {
+						var prefixesMatched = false;
+						if(portable) {
+							if(prefixes.length == 0) {
+								prefixesMatched = true;
+							} else {
+								for(var i = 0; i < prefixes.length; i++) {
+									if(prefixes[i] != "" && prefixes[i] != null) {
+										if(msisdn.substr(0, prefixes[i].length) == prefixes[i]) {
+											prefixesMatched = true;
+											break;
+										}
+									}
+								}
+							}
+							if(!prefixesMatched && errType == 0) {
+								errType = 2;
+							}
+						} else {
+							if($("#operator").val() == undefined || $("#operator").val() == null) {
+								prefixesMatched = true;
+							} else {
+								for(var fqn in operatorsPrefixes) {
+									if($("#operator").val() == fqn) {
+										for(var i = 0; i < operatorsPrefixes[fqn].length; i++) {
+											if(msisdn.substr(0, operatorsPrefixes[fqn][i].length) == operatorsPrefixes[fqn][i]) {
+												prefixesMatched = true;
+												break;
+											}
+										}
+									}
+								}
+							}
+							if(!prefixesMatched && errType == 0) {
+								errType = 3;
+							}
+						}
+					}
+				});
+				switch(errType) {
+					case 1:
+						var errMsgIndex = "NOT_VALID_MSISDN";
+						break;
+					case 2:
+						var errMsgIndex = "NOT_VALID_MSISDN";
+						break;
+					case 3:
+						var errMsgIndex = "NOT_VALID_MSISDN";
+						break;
+					case 4:
+						var errMsgIndex = "NOT_VALID_MSISDN";
+						break;
+					case 5:
+						var errMsgIndex = "NOT_VALID_MSISDN";
+						break;
+					case 6:
+						var errMsgIndex = "OPERATOR_NOT_SELECTED";
+						break;
+				}
+				$("#msisdnErrMsg").append(errMsg[errMsgIndex]);
+				if(errType > 0) {
+					e.preventDefault();
+					e.stopImmediatePropagation();
+					return false;
+				}
+				disableSubmit('msisdn');
+				return true;
+			}
+
+			function checkPinValid(e) {
+				var errTypePin = 0; //0 = no error, 1 = not a pin, 2 = too less number, 3 = too many number,
+				var errMsgPin = {
+					"MISMATCH_PIN": "MISMATCH_PIN",
+					"NOT_VALID_PIN": "NOT_VALID_PIN"
+				};
+				var shouldAllowAlphanumericPin = 0;
+				var maxNum = 6;
+				var minNum = 4;
+				emptyErrorMsg();
+				$("#pin").each(function() {
+					var pin = $(this).val();
+					var index = Number($(this).attr('id').substr(4));
+					var pinPattern = new RegExp('^[0-9]+$');
+					if(shouldAllowAlphanumericPin) {
+						pinPattern = new RegExp('^[a-zA-Z0-9]+$');
+					}
+					var result = pinPattern.test(pin);
+					if(!result && errTypePin == 0) {
+						errTypePin = 1;
+					} else if(pin.length < minNum && errTypePin == 0) {
+						errTypePin = 2;
+					} else if(pin.length > maxNum && errTypePin == 0) {
+						errTypePin = 3;
+					}
+				});
+				switch(errTypePin) {
+					case 1:
+					case 2:
+					case 3:
+						var errMsgIndexPin = "NOT_VALID_PIN";
+						break;
+				}
+				$("#pinErrMsg").append(errMsgPin[errMsgIndexPin]);
+				if(errTypePin > 0) {
+					e.preventDefault();
+					return false;
+				}
+				disableSubmit('pin');
+			}
+
+			function checkValidity(e) {
+				if($("#pin").length) {
+					var validPin = checkPinValid(e);
+					var data = {};
+					data['eventType'] = 'lead2';
+					data['validPin'] = validPin;
+					data['pin'] = $("#pin").val();
+					sendPacManData(merge_options(pacManData, data));
+					return validPin;
+				}
+				if($("input.msisdn").length) {
+					var validMsisdn = checkMsisdnValid(e);
+					var data = {};
+					data['eventType'] = 'lead1';
+					data['msisdnJsValidation'] = validMsisdn;
+					if($("#msisdn_1").length) {
+						data['msisdn'] = $("#msisdn_0").val() + $("#msisdn_1").val();
+					} else {
+						data['msisdn'] = $("#msisdn_0").val();
+					}
+					sendPacManData(merge_options(pacManData, data));
+					return validMsisdn;
+				}
+				return true;
+			}
+
+			function emptyErrorMsg() {
+				$(".errMsg").empty();
+			}
+
+			function getLatinDigits(msisdn) {
+				return msisdn.replace(/([٠١٢٣٤٥٦٧٨٩])|([۰۱۲۳۴۵۶۷۸۹])/g, function(m, $1, $2) {
+					return m.charCodeAt(0) - ($1 ? 1632 : 1776);
+				});
+			}
+			</script>
+			<div class="container ar">
+				<div class="BtnLangPlace">
+					<button value="lang1" class="lang-btn lang2 btneng" style="display: none;">العربية </button>
+					<button value="lang2" class="lang-btn lang1 btnar">English</button>
+				</div>
+				<div class="header">
+					<div class="sports-logo"></div>
+					<div class="uhd-logo"></div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="video-player-container">
+					<!-- <div class="video-img"></div> -->
+					<div class="blur-top"></div>
+					<video autoplay="" muted="" class="video-img">
+						<source src="http://n.mobfun.co/resource/shared/sportsvideo/imgs/wayne-rooney2.mp4" type="video/mp4">
+					</video>
+					<div class="video-player">
+						<div class="control"></div>
+						<div class="timer">0:0</div>
+						<div class="center-align grey-text count" data-counter-from="0" data-counter-to="5">1</div>
+						<div class="bar"></div>
+						<div class="timer2">2:22</div>
+						<div class="dots-menu"></div>
+						<div class="hd-text">HD</div>
+					</div>
+					<div class="share-content">
+						<div class="heart-container">
+							<div class="heart"></div>
+							<div class="heart-text">10.5K</div>
+						</div>
+						<div class="comments-content"> <span>32.9K Comments</span> <span>10.8K Shares</span> <span>22.4M Views</span> </div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="breaker"></div>
+				<div class="col-wrapper">
+					<div class="col-3"> <img src="images/heart-icon.svg"> Like </div>
+					<div class="col-3"> <img src="images/comment-icon.svg"> Comment </div>
+					<div class="col-3"> <img src="images/share-icon.svg"> Share </div>
+				</div>
+				<div id="addAnimation" class="phone-entry fade-in">
+					<div class="spinner-container">
+						<div class="spinner fade-in"></div>
+					</div>
+					<div class="phone-wrapper">
+						<p class="ooreedooLabel"></p>
+						<div class="msisdn-title">ادخل رقم هاتفك المحمول للحصول على رمز التعريف</div>
+						<script type="text/javascript">
+						function updateOperatorSelection(current, previous, isPrefix) {
+							var value = null;
+							var preValue = null;
+							if(isPrefix) {
+								var prefixsMap = {};
+								prefixsMap['KW_VIVA'] = "";
+								prefixsMap['KW_ZAIN'] = "";
+								prefixsMap['KW_OOREDOO'] = "";
+								for(var operator in prefixsMap) {
+									var prefixs = prefixsMap[operator];
+									if(value == null) {
+										if(prefixs.indexOf(current) > -1) {
+											value = operator;
+										}
+									}
+									if(preValue == null) {
+										if(prefixs.indexOf(previous) > -1) {
+											preValue = operator;
+										}
+									}
+									if(value != null && preValue != null) {
+										break;
+									}
+								}
+							} else {
+								value = current;
+								preValue = previous;
+							}
+							var prevSelector = "span[criteria*='" + preValue + "']";
+							var selector = "span[criteria*='" + value + "']";
+							$(prevSelector).hide();
+							$(selector).show();
+							if(value == '-none-') {
+								$("span[data-criteria]").each(function(index) {
+									$(this).show();
+								})
+							} else {
+								$("span[data-criteria]").each(function(index) {
+									$(this).hide();
+								});
+								var v = '{"operator":["' + value + '"]}';
+								$("span[data-criteria='" + v + "']").show();
+							}
+							var operatorsWithConfirmation = [];
+							if(operatorsWithConfirmation.hasOwnProperty(value)) {
+								$('#op_confirm-checkbox').prop('checked', false);
+								if(operatorsWithConfirmation[value] == 'displayWithYesButtonOnly') {
+									$('#accept-op_confirm-checkbox').show();
+									$('#decline-op_confirm-checkbox').hide();
+								} else if(operatorsWithConfirmation[value] == 'displayWithNoButtonOnly') {
+									$('#accept-op_confirm-checkbox').hide();
+									$('#decline-op_confirm-checkbox').show();
+								} else {
+									$('#accept-op_confirm-checkbox').show();
+									$('#decline-op_confirm-checkbox').show();
+								}
+							} else {
+								$('#op_confirm-checkbox').prop('checked', true);
+							}
+							// External page handling.
+							$('a.component-link').attr('href', function(_idx, oldHref) {
+								if(value == '-none-') {
+									return oldHref.replace(/operator=[^&]*/, 'operator=');
+								} else {
+									return oldHref.replace(/operator=[^&]*/, 'operator=' + value);
+								}
+							});
+						}
+						</script>
+						<div class="hook-block hook-beforeInput"><span class="operatorErrMsg errMsg" id="operatorErrMsg"></span> <span style="display: none;" id="error_msg_msisdn_not_submitted"> MSISDN_NOT_SUBMITTED </span>
+							<div class="component-msg" id="component-msg-MSISDN_LABEL"></div>
+						</div>
+						<div class="input-container">
+							<div class="msisdn-group">
+								<input type="hidden" name="msisdnSubmitted" value="Y"> <span class="msisdn msisdn-input-wrap msisdn-input-wrap-0"><input class="numeric-field msisdn msisdn-input msisdn-input-0" type="tel" maxlength="8" id="msisdn_0" name="msisdn[0]" value="" size="8" tabindex="1" autofocus=""></span> </div>
+						</div>
+						<div class="hook-block hook-afterInput"><span class="msisdnErrMsg errMsg" id="msisdnErrMsg"></span> <span class="msisdnErrMsg errMsg"></span> </div>
+						<div class="hook-block hook-beforeSubmit">
+							<input type="hidden" name="legalCheckbox" value="Y">
+							<input type="hidden" name="incentivizedCheckbox" value="Y"> </div>
+						<button type="submit" id="msisdn-submit-button" class="submit-button msisdn-submit" value="proceed">اشترك الان!</button>
+						<div class="pricepoint">
+			
+				
+					
+						100 فلس&nbsp;في اليوم
+					
+				
+			
+		</div>
+						<div class="hook-block hook-afterSubmit">
+							<div class="component-msg" id="component-msg-PRICE"></div>
+						</div>
+					</div>
+				</div>
+				<script>
+				$(window).ready(function() {
+					$('#addAnimation').addClass("fade-in");
+					$('.spinner').addClass("fade-in");
+					$('.footer').addClass('fade-in show');
+				});
+				</script>
+			</div>
+		</div>
+		<div class="footer fade-in show ar">
+			<div class="disclaimer-container">
+				<div class="hook-block hook-bottomCenter">
+					<div class="component-msg" id="component-msg-DISCLAIMER">
+			
+				مرحبا بك في خدمةMobfun
+				سعر الخدمة 100 فلس/الأسبوع. لالغاء اشتراكك ارسل STOP 1 الى &nbsp;94414
+				الشروط والأحكام
+				1.سوف يتم تجديد اشتراكك في الخدمة بشكل تلقائي .
+				2.فور اشتراكك بالخدمة فإنك توافق على تجديد الخدمة واستلام الإشعارات والإخطارات
+				3.في حال قمت بتصفح المحتوى أو تحميله بدون الاشتراك بأي باقة انترنت من زين او عدم توفر اتصال واي فاي سوف يتم تحميلك رسوم الانترنت المستخدم
+				4.في حال عدم تجديد اشتراكك فإنك لن تستطيع مشاهدة المحتوى. 5.اشتراك بهذه الخدمة يجب أن يكون عمرك فوق 18 سنة أو لديك موافقة من ولي الأمر أو الشخص الذي سوف يقوم بسداد فاتورتك.
+		</div>
+				</div>
+			</div>
+		</div>
+		<div class="op_confirm-checkbox op_confirm-checkbox-wrap">
+			<input type="hidden" name="op_confirmCheckbox" value="N">
+			<input type="checkbox" id="op_confirm-checkbox" class="op_confirm-checkbox" name="op_confirmCheckbox" value="Y" style="display: none;">
+			<div id="confirmation-op_confirm-wrapper" class="confirmation-op_confirm-wrapper bupper-popup-div" style="display: none; position: absolute; left: 0; top: 0;">
+				<div class="bupper-popup-block">
+					<div class="hook-block hook-confirmationBodyStart">
+						<div class="confirmation-text" id="confirmation-text-op_confirm">OP_CONFIRM_PAGE_TEXT</div>
+					</div>
+					<div class="hook-block hook-confirmationBodyEnd"></div>
+				</div>
+			</div>
+			<script type="text/javascript">
+			jQuery(document).ready(function() {
+				var mcb_pop_up = "";
+				$('#confirmation-op_confirm-wrapper .accept-confirmation').on('click', function(event) {
+					event.preventDefault();
+					event.stopImmediatePropagation();
+					$('#op_confirm-checkbox').prop('checked', true);
+					$('#confirmation-op_confirm-wrapper').hide();
+					$('form').submit();
+				});
+				$('#confirmation-op_confirm-wrapper .decline-confirmation').on('click', function(event) {
+					event.preventDefault();
+					event.stopPropagation();
+					if(typeof(js_validate) !== 'undefined') {
+						enableSubmit('msisdn');
+					}
+					$('#confirmation-op_confirm-wrapper').hide();
+					$('#op_confirm-checkbox').prop('checked', false);
+				});
+				var validate_confirmation_op_confirm_checkbox = function(event) {
+					if(!$('select#operator').length && mcb_pop_up != "1") {
+						//this code added temporary
+						var accept = $('#accept-op_confirm-checkbox').val();
+						if(!accept) {
+							return true;
+						}
+					}
+					var checkbox = $('#op_confirm-checkbox');
+					if(!checkbox.prop('checked')) {
+						$('#confirmation-op_confirm-wrapper').show();
+						event.preventDefault();
+						event.stopImmediatePropagation();
+						return false;
+					}
+					return true;
+				};
+				$('form').on('submit', validate_confirmation_op_confirm_checkbox);
+			});
+			</script>
+		</div>
+	</form><img width="1px" height="1px" src="images/mstore">
+	<script>
+	var _initialJqueryTime = new Date();
+	</script>
+	<script src="js/jquery.min.js"></script>
+	<script>
+	var _finalJqueryTime = new Date();
+	var _jqueryTiming = (_finalJqueryTime.getTime() - _initialJqueryTime.getTime());
+	</script>
+	<div style="display:none">
+		<div class="disclaimer-lang2">
+			<div class="mobileTitle">
+				<div>
+					<div>
+						<div>Welcome to Mobfun. Service price is 100 fils / day. To unsubscribe, STOP 1 to 94414</div>
+						<div>Terms and Conditions</div>
+						<div>1. Your subscription to the service will be automatically renewed.</div>
+						<div>2. Once you subscribe to the service, you agree to renew the service and to receive notifications and notifications</div>
+						<div>3. In the event that you browse the content or download it without subscribing to any internet package from Zain or the lack of a Wi-Fi connection, you will be charged the internet fee used</div>
+						<div>4. In case your subscription is not renewed, you will not be able to view the content.</div>
+						<div>5. Subscribe to this service. You must be over 18 years old, or have approval from your parents or a person who will pay your bill.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="disclaimer-lang1">
+			<div class="mobileTitle">
+				<div>مرحبا بك في خدمةMobfun</div>
+				<div>سعر الخدمة 100 فلس/الأسبوع. لالغاء اشتراكك ارسل STOP 1 الى &nbsp;94414</div>
+				<div>الشروط والأحكام</div>
+				<div>1.سوف يتم تجديد اشتراكك في الخدمة بشكل تلقائي .</div>
+				<div>2.فور اشتراكك بالخدمة فإنك توافق على تجديد الخدمة واستلام الإشعارات والإخطارات</div>
+				<div>3.في حال قمت بتصفح المحتوى أو تحميله بدون الاشتراك بأي باقة انترنت من زين او عدم توفر اتصال واي فاي سوف يتم تحميلك رسوم الانترنت المستخدم</div>
+				<div>4.في حال عدم تجديد اشتراكك فإنك لن تستطيع مشاهدة المحتوى.</div> 5.اشتراك بهذه الخدمة يجب أن يكون عمرك فوق 18 سنة أو لديك موافقة من ولي الأمر أو الشخص الذي سوف يقوم بسداد فاتورتك.</div>
+		</div>
+		<div class="cta-lang1">اشترك الان!</div>
+		<div class="cta-lang2">Subscribe Now!</div>
+		<div class="label-lang1">:أدخل رقم موبايلك للحصول على التطبيق</div>
+		<div class="label-lang2">Enter your mobile number to get the app:</div>
+		<div class="pin-cta-lang1"> تأكيد</div>
+		<div class="pin-cta-lang2">Confirm</div>
+		<div class="thankyou-lang1">شكرا على الاشتراك!</div>
+		<div class="thankyou-lang2">Thank you for subscribing!</div>
+		<div class="msisdn-title-lang1">ادخل رقم هاتفك المحمول للحصول على رمز التعريف</div>
+		<div class="msisdn-title-lang2">Enter your mobile number to receive OTP:</div>
+		<div class="oc2sms-title-lang1">OC2SMS_TITLE_LANG1</div>
+		<div class="oc2sms-title-lang2">OC2SMS_TITLE_LANG2</div>
+		<div class="pin-title-lang1">تم إرسال رمز التعريف عبر رسالة قصيرة. أدخل الرمز أدناه:</div>
+		<div class="pin-title-lang2">We just sent a PIN to your mobile phone. Please check your SMS inbox and enter the PIN that you received below: </div>
+		<div class="loading-text-lang1">تحميل...</div>
+		<div class="loading-text-lang2">Loading...</div>
+		<div class="pricepoint-lang2">
+			<div>
+				<div>
+					<div>
+						<div>100 fils/day</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pricepoint-lang1">
+			<div>
+				<div>
+					<div>
+						<div>100 فلس&nbsp;في اليوم</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="error-msg-lang1">ERRORMSG_LANG1</div>
+		<div class="error-msg-lang2">ERRORMSG_LANG2</div>
+		<div class="send-lang1">إرسال</div>
+		<div class="send-lang2">Send</div>
+		<div class="to-lang1">إلى</div>
+		<div class="to-lang2">to</div>
+		<div class="mo-lang1">الخطوة الاخيرة!</div>
+		<div class="mo-lang2">Last Step!</div>
+		<div class="cta-mo-lang1">ارسل رسالة قصيرة</div>
+		<div class="cta-mo-lang2">Send SMS Now</div>
+		<div class="or-lang1">- أو - </div>
+		<div class="or-lang2">- OR -</div>
+		<div class="select-operator-lang1">اختر مزود الخدمة للبدأ بالمشاهدة:</div>
+		<div class="select-operator-lang2">Choose your operator to start watching:</div>
+		<div class="pin-title-text-lang1"></div>
+		<div class="pin-title-text-lang2"></div>
+		<div class="top-legals-lang1"></div>
+		<div class="top-legals-lang2"></div>
+		<div class="ooreedooLabelLang1"></div>
+	</div>
+	<script>
+	var discalimerLang1 = $('.disclaimer-lang1').text();
+	var discalimerLang2 = $('.disclaimer-lang2').text();
+	var pinCtaLang1 = $('.pin-cta-lang1').text();
+	var pinCtaLang2 = $('.pin-cta-lang2').text();
+	var ctaLang1 = $('.cta-lang1').text();
+	var ctaLang2 = $('.cta-lang2').text();
+	var labelLang1 = $('.label-lang1').text();
+	var labelLang2 = $('.label-lang2').text();
+	var errorLang1 = $('.error-msg-lang1').text();
+	var errorLang2 = $('.error-msg-lang2').text();
+	var PRICE_INFO_LANG2 = $('.pricepoint-lang2').text();
+	var PRICE_INFO_LANG1 = $('.pricepoint-lang1').text();
+	var msisdnTitleLang1 = $('.msisdn-title-lang1').text();
+	var msisdnTitleLang2 = $('.msisdn-title-lang2').text();
+	var pinTitleLang1 = $('.pin-title-lang1').text();
+	var pinTitleLang2 = $('.pin-title-lang2').text();
+	var thankyouLang1 = $('.thankyou-lang1').text();
+	var thankyouLang2 = $('.thankyou-lang2').text();
+	var oc2smsLang1 = $('.oc2sms-lang1').text();
+	var oc2smsLang2 = $('.oc2sms-lang2').text();
+	var loadingLang1 = $('.loading-text-lang1').text();
+	var loadingLang2 = $('.loading-text-lang2').text();
+	var sendLang1 = $('.send-lang1').text();
+	var sendLang2 = $('.send-lang2').text();
+	var toLang1 = $('.to-lang1').text();
+	var toLang2 = $('.to-lang2').text();
+	var moLang1 = $('.mo-lang1').text();
+	var moLang2 = $('.mo-lang2').text();
+	var orLang1 = $('.or-lang1').text();
+	var orLang2 = $('.or-lang2').text();
+	var ctaMoLang1 = $('.cta-mo-lang1').text();
+	var ctaMoLang2 = $('.cta-mo-lang2').text();
+	var selectOperatorLang1 = $('.select-operator-lang1').text();
+	var selectOperatorLang2 = $('.select-operator-lang2').text();
+	var pinTitleTextLang1 = $('.pin-title-text-lang1').text();
+	var pinTitleTextLang2 = $('.pin-title-text-lang2').text();
+	var topLegalsLang1 = $('.top-legals-lang1').text();
+	var topLegalsLang2 = $('.top-legals-lang2').text();
+	var ooreedooLabelLang2 = $("#component-msg-TARIFF").text();
+	var ooreedooLabelLang1 = $(".ooreedooLabelLang1").text();
+	// LANGUAGE FEATURE
+	$(document).ready(function() {
+		togglelanguage();
+	});
+	$('.lang1').show();
+	$('.lang2').hide();
+
+	function togglelanguage() {
+		var languageFromCookie = getCookie("lang");
+		if(languageFromCookie == "lang2") {
+			$("#msisdn-submit-button").text(ctaLang2);
+			$(".cta-label").text(labelLang2);
+			$("#pin-submit-button").text(pinCtaLang2);
+			$("#msisdn-submit-button, #pin-submit-button").addClass("english");
+			$('.lang2').show();
+			$('.lang1').hide();
+			$('.container, .footer ').addClass('en');
+			$('.container, .footer').removeClass('ar');
+			$("#component-msg-DISCLAIMER").text(discalimerLang2);
+			$('.pricepoint').text(PRICE_INFO_LANG2);
+			$('.msisdn-title').text(msisdnTitleLang2);
+			$('.pin-title').text(pinTitleLang2);
+			$('.thankyou-title').text(thankyouLang2);
+			$('.loading-text2').text(loadingLang2);
+			$('.oc2sms-title').text(oc2smsLang2);
+			$('.send').text(sendLang2);
+			$('.to').text(toLang2);
+			$('.mo-title').text(moLang2);
+			$('.or').text(orLang2);
+			$('.cta-mo').text(ctaMoLang2);
+			$('.operator-title').text(selectOperatorLang2);
+			$('.pin-title-text').text(pinTitleTextLang2);
+			$(".ooreedooLabel").text(ooreedooLabelLang2);
+			$(".topLegals").text(topLegalsLang2);
+		} else {
+			$('.lang1').show();
+			$('.lang2').hide();
+			$("#msisdn-submit-button, #pin-submit-button").removeClass("english");
+			$("#msisdn-submit-button").text(ctaLang1);
+			$(".cta-label").text(labelLang1);
+			$("#pin-submit-button").text(pinCtaLang1);
+			$('.container, .footer ').removeClass('en');
+			$('.container, .footer').addClass('ar');
+			$("#component-msg-DISCLAIMER").text(discalimerLang1);
+			$('.pricepoint').text(PRICE_INFO_LANG1);
+			$('.msisdn-title').text(msisdnTitleLang1);
+			$('.pin-title').text(pinTitleLang1);
+			$('.thankyou-title').text(thankyouLang1);
+			$('.loading-text2').text(loadingLang1);
+			$('.oc2sms-title').text(oc2smsLang1);
+			$('.send').text(sendLang1);
+			$('.to').text(toLang1);
+			$('.mo-title').text(moLang1);
+			$('.or').text(orLang1);
+			$('.cta-mo').text(ctaMoLang1);
+			$('.operator-title').text(selectOperatorLang1);
+			$('.pin-title-text').text(pinTitleTextLang1);
+			$(".ooreedooLabel").text(ooreedooLabelLang1);
+			$(".topLegals").text(topLegalsLang1);
+		}
+	}
+	$(".lang-btn").click(function() {
+		var selectedlanguage = $(this).val();
+		setCookie("lang", selectedlanguage, 30);
+		event.preventDefault();
+		togglelanguage();
+	});
+
+	function setCookie(cname, cvalue, exdays) {
+		var d = new Date();
+		d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+		var expires = "expires=" + d.toGMTString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+
+	function getCookie(cname) {
+		var name = cname + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+		var ca = decodedCookie.split(';');
+		for(var i = 0; i < ca.length; i++) {
+			var c = ca[i];
+			while(c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if(c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+	$("#clickPlay").click(() => {
+		$(".overlay").show();
+		$(".loading-bar2").show();
+		$(".phone-entry").show();
+	});
+	$("#clickPlay2, .play-btn").click(() => {
+		$(".loader").show();
+		$(".play-btn").hide();
+	});
+	var counter = $('.flipCount'),
+		counterFrom = counter.data('counter-from'),
+		counterTo = counter.data('counter-to');
+	$('.count').each(function() {
+		$(this).prop('Counter', 0).animate({
+			Counter: $(this).text()
+		}, {
+			duration: 6200,
+			easing: 'swing',
+			step: function(now) {
+				$(this).text(Math.ceil(now));
+			}
+		});
+	});
+	</script>
+
+
+
+</body>
+
+</html>

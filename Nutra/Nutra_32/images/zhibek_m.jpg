@@ -1,0 +1,1049 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>omnicpa.ru - товарная CPA партнерская программа</title>
+ 
+<link href="/favicon.ico" rel="shortcut icon">
+<meta name="viewport" content="min-width=device-width, initial-scale=1.0">
+ 
+<!--[if lte IE 7]><link rel="stylesheet" href="/css/ie7.css" media="screen, projection"><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" media="screen, projection"><![endif]-->
+ 
+ 
+ 
+ 
+ 
+<link rel="stylesheet" href="/css/lp2/style.css?v=51">
+<link rel="stylesheet" href="/css/lp2/adaptive.css?v=1">
+<link rel="stylesheet" href="/css/fancyboxlatest.css">
+<script src="/js/lp2.js?v=13"></script>
+<script>
+        // GA ---
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-87402242-1', 'auto');
+        // FB --
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+            document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1842120452724536');
+    </script>
+<noscript>
+<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1842120452724536&ev=PageView&noscript=1"/>
+</noscript>
+ 
+<script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter41408934 = new Ya.Metrika({
+                        id:41408934,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+<noscript>
+<div>
+<img src="https://mc.yandex.ru/watch/41408934" style="position:absolute; left:-9999px;" alt=""/>
+</div>
+</noscript>
+ 
+ 
+<script type="text/javascript">
+        var _tmr = window._tmr || (window._tmr = []);
+        _tmr.push({id: "2841663", type: "pageView", start: (new Date()).getTime()});
+        (function (d, w, id) {
+            if (d.getElementById(id)) return;
+            var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+            ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+            var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+            if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+        })(document, window, "topmailru-code");
+    </script>
+<noscript>
+<div style="position:absolute;left:-10000px;">
+<img src="//top-fwz1.mail.ru/counter?id=2841663;js=na" style="border:0;" height="1" width="1" alt="Рейтинг@Mail.ru"/>
+</div>
+</noscript>
+ 
+<script>
+        ga('set', 'dimension4', '0');
+        fbq('track', 'Ping', {isLogin: 2});
+    </script>
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=LCLcLVUINWPHd9uEy8B/t2gH60bxMWsmN3QUT*42nfppEhd5NxoB/Q6Zt331icWfHiYExQzZ/j4ej14BExvlpfvPgKSCe30CSVNlWVV0DMLkLR3CJF4s8ma4k/dpt/wfU5bO6E2lmpvhIj5ycyimr8WmI1rFyqmy0hUCyWYDdJk-&pixel_id=1000051032';</script>
+<script type="text/javascript">
+        $(window).load(function() {yaCounter41408934.reachGoal('isLogin_2');});
+    </script>
+<script type="text/javascript">
+        var _tmr = window._tmr || (window._tmr = []);
+        _tmr.push({ id: "2841663", type: "reachGoal", goal: "isLogin_2", value: 1 });
+    </script>
+<script>
+        ga('send', 'pageview');
+        fbq('track', 'PageView');
+    </script>
+</head>
+<body>
+<div class="wrapper">
+<header class="header">
+<style>.ForgotPassword-el-successMessage{color:green;font-size:14px;margin-left:40px;font:14px/24px Panton-Regular;margin-right:35px;}</style>
+<div class="wrap" id="AuthContainer">
+<div class="right">
+<span class="enter">Вход</span>
+<span class="border"></span>
+<span class="registration">Регистрация</span>
+<form class="authorization_form Auth-el-signinForm" method="post">
+<div class="close"></div>
+<div class="form_title">Вход</div>
+<input type="text" name="signin[username]" class="input_block email" placeholder="Ваш e-mail" id="signin_username"/> <input type="password" name="signin[password]" class="input_block password" placeholder="Ваш пароль" id="signin_password"/> <input type="checkbox" name="signin[remember]" style="display:none;" checked="checked" id="signin_remember"/> <span class="enter_button Auth-el-signinFormSubmit">Войти</span>
+<div class="clear"></div>
+<span class="forgot Auth-el-showPopup1">Забыл пароль?</span>
+<input type="submit" style="display: none;">
+</form>
+<form class="reminder_form ForgotPassword-el-recoverForm">
+<div class="close"></div>
+<div class="form_title">забыли пароль</div>
+<div class="text_1">Введите ваш адрес электронной почты</div>
+<input class="input_block email" name="forgot_password[username]" placeholder="Ваш e-mail" type="text">
+<div style="display: none; padding: 0px;" class="ForgotPassword-el-successMessage">
+На указанный E-Mail отправлено письмо с дальнейшими инструкциями
+</div>
+<span class="send_password_button">Отправить</span>
+<div class="text_2">
+Инструкции для смены пароля будут<br/> высланы на Ваш E-mail
+</div>
+</form>
+<form class="registration_form Auth-el-registerForm">
+<div class="close"></div>
+<div class="form_title">Регистрация</div>
+<input type="text" name="sf_guard_user[username]" class="input_block email" placeholder="Ваш e-mail" id="sf_guard_user_username"/> <input type="text" name="sf_guard_user[cpa_club_nick]" class="input_block name" placeholder="Ваше имя" id="sf_guard_user_cpa_club_nick"/> <input type="text" name="sf_guard_user[skype]" class="input_block skype" placeholder="Ваш Skype" id="sf_guard_user_skype"/> <input type="password" name="sf_guard_user[password]" class="input_block password" placeholder="Ваш пароль" id="sf_guard_user_password"/> <input type="password" name="sf_guard_user[password_again]" class="input_block confirm_password" placeholder="Подтвердить пароль" id="sf_guard_user_password_again"/> <input type="text" name="sf_guard_user[wallet]" class="input_block wmr" placeholder="WMR Кошелек" id="sf_guard_user_wallet"/> <span class="registration_button Auth-el-registerFormSubmit"">Зарегистрироваться</span>
+                    </form>
+    </div>
+</div>
+
+<script>
+    $(function(){
+        $('#AuthContainer').Auth({
+            url:{
+                login: '/login',
+                signin: '/login',
+                checkUsername: '/login',
+                loginSuccess: '/offer'
+            }
+        });
+    });
+</script>
+
+<script>
+    $(function(){
+        $('#AuthContainer').ForgotPassword({
+            url:{
+                recover: '/guard/forgot_password',
+                checkUsername: '/guard/forgot_password'
+            }
+        });
+    });
+</script>
+    </header>
+    <section class="section_1">
+        <div class="wrap">
+            <div class="logo"></div>
+            <h1 class="title">
+                <span class="big_title">Товарная CPA</span>
+                <span class="small_title">Партнерская программа</span>
+            </h1>
+
+            <div class="offer ga_view_block" ga-page="/lp/offer">
+                <div class="left">
+                    <div class="left_title">АКТУАЛЬНЫЕ ОФЕРЫ</div>
+
+                    
+                        <div data-index="artrodex" class="offer_block_artrodex offer_blocks" >
+                            <img class="offer_image" src="http://static1.omnicpa.ru/img/lp2/offers/artrodex-fs8.png?v=2" alt="artrodex">
+                            <div class="text_title">Artrodex - крем для суставов</div>
+                            <div class="text">
+                                Основные активные компоненты хондроитин и глюкозамин, содержащиеся в уникальных пантах марала. 
+				Помогает при артрите и артрозе. Избавляет от боли в суставах и восстанавливает их функции без 
+				операций. Эффективен при остеохондрозе.                            </div>
+                        </div>
+
+                    
+                        <div data-index="dezintox" class="offer_block_dezintox offer_blocks" style="display: none;">
+                            <img class="offer_image" src="http://static2.omnicpa.ru/img/lp2/offers/dezintox-fs8.png?v=2" alt="dezintox">
+                            <div class="text_title">Dezintox - средство от паразитов </div>
+                            <div class="text">
+                                Избавляет от любого вида гельминтов и паразитов. Препарат используется как для непосредственной 
+				терапии уже зараженного организма, так и в профилактических целях.                            </div>
+                        </div>
+
+                    
+                        <div data-index="hypertostop" class="offer_block_hypertostop offer_blocks" style="display: none;">
+                            <img class="offer_image" src="http://static3.omnicpa.ru/img/lp2/offers/hypertostop-fs8.png?v=2" alt="hypertostop">
+                            <div class="text_title">Hypertostop - средство от гипертонии </div>
+                            <div class="text">
+                                Нормализует артериальное давление, улучшает работу сердца, очищает сосуды от шлаков и 
+				укрепляет стенки сосудов.  Воздействует на причину болезни, снижая риск инсульта и инфаркта до нуля.                            </div>
+                        </div>
+
+                    
+                        <div data-index="papilovir" class="offer_block_papilovir offer_blocks" style="display: none;">
+                            <img class="offer_image" src="http://static4.omnicpa.ru/img/lp2/offers/papilovir-fs8.png?v=2" alt="papilovir">
+                            <div class="text_title">Папиловир - средство от папиллом и бородавок</div>
+                            <div class="text">
+                                Избавляет от дефектов на коже и устраняет саму причину их появления, папилломавирус человека. 
+				Состав папиловира включает только натуральные растительные компоненты, действие которых направлено 
+				на выведение токсинов из организма, подавление активности вируса папилломы и предотвращение появления 
+				бородавок и папиллом.                            </div>
+                        </div>
+
+                    
+                        <div data-index="easyslim" class="offer_block_easyslim offer_blocks" style="display: none;">
+                            <img class="offer_image" src="http://static5.omnicpa.ru/img/lp2/offers/easyslim-fs8.png?v=2" alt="easyslim">
+                            <div class="text_title">EasySlim - капли для похудения</div>
+                            <div class="text">
+                                Устраняет все возможные причины избыточного веса, расщепляет жир. Уникальный состав позволяет справиться
+				 с малоподвижным образом жизни, лишним аппетитом и обменными процессами в организме, замедленность которых 
+				 приводит к набору лишнего веса.                             </div>
+                        </div>
+
+                    
+                        <div data-index="dialock" class="offer_block_dialock offer_blocks" style="display: none;">
+                            <img class="offer_image" src="http://static1.omnicpa.ru/img/lp2/offers/dialock-fs8.png?v=2" alt="dialock">
+                            <div class="text_title">Dialock - средство от диабета</div>
+                            <div class="text">
+                                Комплекс на основе масел, эковытяжек лекарственных растений и природных компонентов, обладающий высоким 
+				терапевтическим эффектом. Нормализует выработку инсулина естественным образом, укрепляет общие защитные 
+				свойства организма. А также предотвращает тяжелые осложнения, вызванные диабетом.                            </div>
+                        </div>
+
+                    
+                        <div data-index="silentnight" class="offer_block_silentnight offer_blocks" style="display: none;">
+                            <img class="offer_image" src="http://static2.omnicpa.ru/img/lp2/offers/silentnight-fs8.png?v=2" alt="silentnight">
+                            <div class="text_title">Silent Night Spray - спрей от храпа</div>
+                            <div class="text">
+                                Инновационное средство для спокойного сна. Снижает вибрацию тканей мягкого нёба, стабилизирует 
+				функциональность ротоглотки, устраняет мышечное напряжение в гортани, обладает приятным вкусом мяты и
+				 цитрусовых. Полностью состоит из натуральных компонентов, безопасен, эффективен и прост в применении.                            </div>
+                        </div>
+
+                    
+                        <div data-index="novastep" class="offer_block_novastep offer_blocks" style="display: none;">
+                            <img class="offer_image" src="http://static3.omnicpa.ru/img/lp2/offers/novastep-fs8.png?v=2" alt="novastep">
+                            <div class="text_title">Novastep - крем от грибка ногтей и ног</div>
+                            <div class="text">
+                                Новая уникальная запатентованная формула, которая борется с грибком стопы и ногтей, неприятным запахом и 
+				зудом. Останавливает развитие дрожжей и грибков, оказывает разрушительное действие на грибок. Дезинфицирует,
+				 подсушивает, дарит приятный аромат надолго. Кроме того, средство, великолепно увлажняет и питает кожу ног,
+				  убирает натоптыши и огрубелости, отшелушивает, заживляет трещины.                            </div>
+                        </div>
+
+                    
+                        <div data-index="prostazin" class="offer_block_prostazin offer_blocks" style="display: none;">
+                            <img class="offer_image" src="http://static4.omnicpa.ru/img/lp2/offers/prostazin-fs8.png?v=2" alt="prostazin">
+                            <div class="text_title">Prostazin - средство от простатита</div>
+                            <div class="text">
+                                Действует как при остром, так и хроническом простатите. Нормализирует процесс мочеиспускания, укрепляет 
+				мужское здоровье. Эффективен при аденоме и гиперплазие предстательной железы.                             </div>
+                        </div>
+
+                    
+                        <div data-index="gepareo" class="offer_block_gepareo offer_blocks" style="display: none;">
+                            <img class="offer_image" src="http://static5.omnicpa.ru/img/lp2/offers/gepareo-fs8.png?v=2" alt="gepareo">
+                            <div class="text_title">Gepareo - средство для восстановления печени</div>
+                            <div class="text">
+                                Оказывает стимулирующее действие на клетки печени и способствует восстановлению их структуры, очищает,
+				 нормализует основные функции печени. Положительно влияет не только на печень, но и на весь организм в целом.                             </div>
+                        </div>
+
+                    
+                        <div data-index="gastrolax" class="offer_block_gastrolax offer_blocks" style="display: none;">
+                            <img class="offer_image" src="http://static1.omnicpa.ru/img/lp2/offers/gastrolax-fs8.png?v=2" alt="gastrolax">
+                            <div class="text_title">Gastrolax - средство для ЖКТ</div>
+                            <div class="text">
+                                Биогенный комплекс природных экстрактов, оказывающих направленное действие при локальных заболеваниях, 
+				воспалениях и нарушениях работы ЖКТ, таких как гастрит, язва желудка и двенадцатиперстной кишки, а также
+				 борется с изжогой, вздутием и дисбактериозом.                            </div>
+                        </div>
+
+                    
+                    <div class="clear"></div>
+                </div>
+                <div class="right">
+                    <span class="text_price">Цена на ленде: </span><span class="val_price">2000</span><span class="price_currency"></span>
+                    <div class="clear"></div>
+                    <div class="range_wrap">
+                        <input id="range" type="range" value="1290" min="990" max="1485" data-rangeslider>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="reward">
+                        <span class="text_reward">Награда в динамике: </span>
+                <span class="text_val"><span class="reward_from"></span> - <span class="reward_to"></span>
+              </span>
+                        <span class="reward_currency"></span>
+                    </div>
+                    <div class="geo">
+                        <span class="abbreviation">Гео:</span>
+                        <ul class="bxslider flag_slider">
+                            <!--
+                            <li class="slide">
+                              <img name="kz" src="/img/lp2/flags_currency/kz_flag.jpg" alt="flag">
+                            </li>
+                            -->
+                            <li class="slide">
+                                <img name="ru" src="http://static2.omnicpa.ru/img/lp2/flags_currency/ru_flag.jpg" alt="flag">
+                            </li>
+                            <!--
+                            <li class="slide">
+                              <img name="ua" src="/img/lp2/flags_currency/ua_flag.jpg" alt="flag">
+                            </li>
+                            -->
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="eps">
+                        <div class="abbreviation">EПС</div>
+                        <div class="wrap_strip">
+                            <div class="strip"><span style="right: -35px;" class="strip_val"></span></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="cr">
+                        <div class="abbreviation">CR</div>
+                        <div class="wrap_strip">
+                            <div class="strip"><span  style="right: -45px;" class="strip_val"></span></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="approve">
+                        <div class="abbreviation">Aпрув</div>
+                        <div class="wrap_strip">
+                            <div class="strip"><span class="strip_val"></span></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="upsell">
+                        <div class="abbreviation">Апсейлинг</div>
+                        <div class="wrap_strip">
+                            <div class="strip"><span class="strip_val"></span></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="buyout">
+                        <div class="abbreviation">Выкуп</div>
+                        <div class="wrap_strip">
+                            <div class="strip"><span class="strip_val"></span></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="total">
+                        <span class="text_total">Итого за лид: </span><span class="total_val">820</span>
+                        <span class="total_currency"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="section_2 ga_view_block" ga-page="/lp/offers_slider">
+        <div class="wrap">
+            <ul class="bxslider items_slider">
+
+                
+                    <li class="slide offer_slide offer_slide_selected">
+                        <a href="#" class="offer_slider_link" data-index="artrodex">
+                            <img class="offer_slide_img" src="http://static3.omnicpa.ru/img/lp2/offers/artrodex_prev-fs8.png" alt="necessary thing">
+                        </a>
+                    </li>
+
+                
+                    <li class="slide offer_slide ">
+                        <a href="#" class="offer_slider_link" data-index="dezintox">
+                            <img class="offer_slide_img" src="http://static4.omnicpa.ru/img/lp2/offers/dezintox_prev-fs8.png" alt="necessary thing">
+                        </a>
+                    </li>
+
+                
+                    <li class="slide offer_slide ">
+                        <a href="#" class="offer_slider_link" data-index="hypertostop">
+                            <img class="offer_slide_img" src="http://static5.omnicpa.ru/img/lp2/offers/hypertostop_prev-fs8.png" alt="necessary thing">
+                        </a>
+                    </li>
+
+                
+                    <li class="slide offer_slide ">
+                        <a href="#" class="offer_slider_link" data-index="papilovir">
+                            <img class="offer_slide_img" src="http://static1.omnicpa.ru/img/lp2/offers/papilovir_prev-fs8.png" alt="necessary thing">
+                        </a>
+                    </li>
+
+                
+                    <li class="slide offer_slide ">
+                        <a href="#" class="offer_slider_link" data-index="easyslim">
+                            <img class="offer_slide_img" src="http://static2.omnicpa.ru/img/lp2/offers/easyslim_prev-fs8.png" alt="necessary thing">
+                        </a>
+                    </li>
+
+                
+                    <li class="slide offer_slide ">
+                        <a href="#" class="offer_slider_link" data-index="dialock">
+                            <img class="offer_slide_img" src="http://static3.omnicpa.ru/img/lp2/offers/dialock_prev-fs8.png" alt="necessary thing">
+                        </a>
+                    </li>
+
+                
+                    <li class="slide offer_slide ">
+                        <a href="#" class="offer_slider_link" data-index="silentnight">
+                            <img class="offer_slide_img" src="http://static4.omnicpa.ru/img/lp2/offers/silentnight_prev-fs8.png" alt="necessary thing">
+                        </a>
+                    </li>
+
+                
+                    <li class="slide offer_slide ">
+                        <a href="#" class="offer_slider_link" data-index="novastep">
+                            <img class="offer_slide_img" src="http://static5.omnicpa.ru/img/lp2/offers/novastep_prev-fs8.png" alt="necessary thing">
+                        </a>
+                    </li>
+
+                
+                    <li class="slide offer_slide ">
+                        <a href="#" class="offer_slider_link" data-index="prostazin">
+                            <img class="offer_slide_img" src="http://static1.omnicpa.ru/img/lp2/offers/prostazin_prev-fs8.png" alt="necessary thing">
+                        </a>
+                    </li>
+
+                
+                    <li class="slide offer_slide ">
+                        <a href="#" class="offer_slider_link" data-index="gepareo">
+                            <img class="offer_slide_img" src="http://static2.omnicpa.ru/img/lp2/offers/gepareo_prev-fs8.png" alt="necessary thing">
+                        </a>
+                    </li>
+
+                
+                    <li class="slide offer_slide ">
+                        <a href="#" class="offer_slider_link" data-index="gastrolax">
+                            <img class="offer_slide_img" src="http://static3.omnicpa.ru/img/lp2/offers/gastrolax_prev-fs8.png" alt="necessary thing">
+                        </a>
+                    </li>
+
+                
+            </ul>
+
+            <script>
+                $(function(){
+                    var busy = false;
+                    $(document).on('click', '.offer_slider_link', function(evt){
+                        if(!busy){
+                            busy = true;
+                            $('.offer_slide').removeClass('offer_slide_selected')
+                            $(this).closest('.offer_slide').addClass('offer_slide_selected');
+                            var index = $(this).data('index');
+                            $('.offer_blocks').fadeOut(300)
+                            $('.offer_block_' + index).stop().delay(300).fadeIn(300, function(){
+                                busy = false;
+                            });
+                            $("[data-rangeslider]").val(1290).change();
+                        }
+                        return false;
+                    });
+                });
+            </script>
+
+        </div>
+    </div>
+
+    <section class="section_3 ga_view_block" ga-page="/lp/pay_for_upsales">
+        <div class="section_3_bg"></div>
+        <div class="wrap">
+            <div class="section_3_bg_img">
+                <span class="box_1">990 ₽</span>
+                <span class="box_2">2900 ₽</span>
+                <span class="box_3">4400 ₽</span>
+                <span class="bag_1">369 ₽</span>
+                <span class="bag_2">1254 ₽</span>
+                <span class="bag_3">2149 ₽</span>
+          <span class="weight">
+            <span class="small">минимальный чек</span>
+            4200 ₽
+          </span>
+                <span class="cement">1100 ₽</span>
+            </div>
+            <h2 class="title">Платим за апсеилы!</h2>
+            <div class="left">
+                <div class="left_title">Динамик</div>
+                <ul class="left_ul">
+                    <li>Прозрачная и честная схема оплаты</li>
+                    <li>Учитывает размер чека клиента при расчётах награды</li>
+                    <li>На крупных лидах платит больше!</li>
+                    <li>Не злоупотребляет апсеилами</li>
+                    <li>Имеет выше апрув</li>
+                </ul>
+                <div class="clear"></div>
+                <div class="left_text">Чаще выгоднее классической схемы</div>
+            </div>
+            <div class="right">
+                <div class="right_title">Статика</div>
+                <ul class="right_ul">
+                    <li>Классическая схема оплаты за действие</li>
+                    <li>Не учитывает особеностей Вашего трафика и его платёжеспособности</li>
+                    <li>Ограничивает отдел продаж минимальным чеком</li>
+                </ul>
+                <div class="clear"></div>
+                <div class="right_text">Не учитывает состав и “жирность” лида</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section_4 ga_view_block" ga-page="/lp/use_to_know">
+        <div class="wrap">
+            <h2 class="title">Полезно знать</h2>
+        </div>
+        <div class="wrap_items">
+            <div class="items">
+                <div class="item">
+                    <div class="img_wrap">
+                        <div class="item1-fs8" alt="Мгновенные"></div>
+                    </div>
+                    <span class="bold">Мгновенные</span> выплаты по клику
+                </div>
+                <div class="item">
+                    <div class="img_wrap">
+                        <div class="item2-fs8" alt="Прозрачность"></div>
+                    </div>
+                    <span class="bold">Прозрачность</span>
+                    <br>
+                    <span class="small">(предоставляем записи обработки трафика)</span>
+                </div>
+                <div class="item">
+                    <div class="img_wrap">
+                        <div class="item3-fs8" alt="Собственный"></div>
+                    </div>
+                    Собственный
+                    <br>
+                    отдел продаж <span class="bold">24/7</span>
+                </div>
+                <div class="item">
+                    <div class="img_wrap">
+                        <div class="item4-fs8" alt="Трекинг"></div>
+                    </div>
+                    Колл-<span class="bold">трекинг</span>
+                </div>
+                <div class="item">
+                    <div class="img_wrap">
+                        <div class="item5-fs8" alt="Рекламодатель"></div>
+                    </div>
+                    <span class="bold">Прямой</span> рекламодатель
+                    <br>
+                    <span class="small">(повышенные отчисления)</span>
+                </div>
+                <div class="item">
+                    <div class="img_wrap">
+                        <div class="item6-fs8" alt="Продвинутые"></div>
+                    </div>
+                    <span class="bold">Продвинутые</span> API, Ping-back
+                </div>
+                <div class="item">
+                    <div class="img_wrap">
+                        <div class="item7-fs8" alt="Статистика"></div>
+                    </div>
+                    <span class="bold">Очень глубокая</span> и расширенная
+                    <br>
+                    статистика с гибким интерфейсом
+                    <br>
+                    <span class="small">(заменит любой трекер)</span>
+                </div>
+                <div class="item">
+                    <div class="img_wrap">
+                        <div class="item8-fs8" alt="Пул"></div>
+                    </div>
+                    <span class="bold">Широкий</span> пул
+                    <br>
+                    транзиток и лендингов
+                </div>
+                <div class="item">
+                    <div class="img_wrap">
+                        <div class="item9-fs8" alt="Оперативно"></div>
+                    </div>
+                    <span class="bold">Оперативно</span> добавим
+                    <br>
+                    любой ленд по запросу
+                </div>
+                <div class="item">
+                    <div class="img_wrap">
+                        <div class="item10-fs8" alt="Аналитика"></div>
+                    </div>
+                    Веб-<span class="bold">аналитика</span>
+                </div>
+                <div class="item">
+                    <div class="img_wrap">
+                        <div class="item11-fs8" alt="Адекватный"></div>
+                    </div>
+                    <span class="bold">Адекватный</span> саппорт и прямой контакт
+                    <br>
+                    с тех специалистами по запросу
+                </div>
+                <div class="item">
+                    <div class="img_wrap">
+                        <div class="item12-fs8" alt="Тестрование"></div>
+                    </div>
+                    <span class="bold">А/В</span> тестрование
+                </div>
+                <div class="item">
+                    <div class="img_wrap">
+                        <div class="item13-fs8" alt="Платим"></div>
+                    </div>
+                    <span class="bold">Платим</span> за апсеилы
+                </div>
+                <div class="item">
+                    <div class="img_wrap">
+                        <div class="item14-fs8" alt="Гибкая"></div>
+                    </div>
+                    <span class="bold">Гибкая</span> настройка ссылок
+                    <br>
+                    для слива трафика
+                </div>
+                <div class="item">
+                    <div class="img_wrap">
+                        <div class="item15-fs8" alt="Дожимаем"></div>
+                    </div>
+                    <span class="bold">Дожимаем</span> трафик в соцсетях
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_5 ga_view_block" ga-page="/lp/social_boosting">
+        <div class="section_5_bg"></div>
+        <div class="wrap">
+            <div class="facebook"></div>
+            <div class="linkedin"></div>
+            <div class="instagram"></div>
+            <div class="google_plus"></div>
+            <div class="vk"></div>
+            <div class="twitter"></div>
+            <div class="omnicpa"></div>
+            <h2 class="title">ДОЖИМ ТРАФИКА В СОЦСЕТЯХ</h2>
+            <div class="left">
+                <iframe class="video" src="https://www.youtube.com/embed/63i2WAPwcVI" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="right">
+                <div class="right_text">
+                    Наша команда пытается выжать максимум прибыли из трафика. В случае если лендинг не смог довести пользователя к покупке, наши операторы связываются с пользователем посредством социальных сетей и обрабатывая его персональные возражения дожимают до совершения заказа.
+                </div>
+                <div class="reg_botton">Зарегистрироваться</div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+
+
+    <section class="section_6 ga_view_block" ga-page="/lp/news">
+        <div class="wrap">
+            <h2 class="title">Новости</h2>
+            <div class="news">
+
+                <div class="big_new_1 big_news" style="display: none;">
+                    <div class="news_title_wrap">
+                        <div class="news_title left">Обновленная статистика теперь подробнее любого трекера</div>
+                        <div class="date right">26/12/2016</div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="news_left">
+                        <img class="news_image" src="http://static4.omnicpa.ru/img/lp2/news/news_2_big-fs8.png" alt="news img">
+                    </div>
+                    <div class="news_right">
+                        <div class="news_content">
+                            <!--						<div class="content_title">Azumi</div>-->
+                            <div class="content_text" >
+                                <p>
+                                    К огромному списку фильтров добавлены такие как город, ОС, ширина экрана. Вы больше не
+                                    ограничены стандартными группировками, создавайте свои собственные многоуровневые
+                                    группировки по различным параметрам в любом порядке как вам удобнее и привычнее.
+                                </p>
+                                <p>
+                                    Не забываем, кроме того по каждому лиду мы предоставляем записи и логи звонков.
+                                    Вы можете комментировать работу оператора, прямо из интерфейса статистики, за грубые
+                                    ошибки оператора полагается компенсация. Работай с омницпа, зарабатывай больше как никогда либо.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="big_new_2 big_news" style="display: none;">
+                    <div class="news_title_wrap">
+                        <div class="news_title left">Обновленный интерфейс выбора оферов</div>
+                        <div class="date right">29/12/2016</div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="news_left">
+                        <img class="news_image" src="http://static5.omnicpa.ru/img/lp2/news/news_1_big-fs8.png" alt="news img">
+                    </div>
+                    <div class="news_right">
+                        <div class="news_content">
+                            <div class="content_text" >
+                                <p>
+                                    Долгими тестированиями, кровью и потом, обновлен интерфейс выбора офера.
+                                    Новый дизайн представлен в виде плиток, аналогично сервису google картинки. Вам больше
+                                    не придется переходить куда-либо, полная настройка потока происходит на одной странице,
+                                    начиная от цены товары, выбора схемы работы и заканчивая постбеком и настройкой стороннего
+                                    сервиса веб аналитики.
+                                </p>
+                                <p>
+                                    Ко всему прочему каждый офер обзавелся такими параметрами, как процент апрува, апсейла, выкупа.
+                                </p>
+                                <p>
+                                    И это еще не все, теперь даже каждый лендиг и прокладка имеет не только показатели cr, epc, но и процент апрува, апсейла, выкупа.
+                                    А предпросмотр лендигов и прокладок в виде плиток не оставит никого равнодушным.
+                                </p>
+                                <p>
+                                    Выбирайте оферы с шильдиком "горячий", с лучшими показателями апрува и апсейла, как на самом
+                                    офере, так и на лендинге/прокладке. Лей в омницпа, зарабатывай на апсейлах.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="big_new_3 big_news" >
+                    <div class="news_title_wrap">
+                        <div class="news_title left">Увеличение отчислений на схеме за апсейлы</div>
+                        <div class="date right">30/12/2016</div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="news_left">
+                        <img class="news_image" src="http://static1.omnicpa.ru/img/lp2/news/news_3_big.png" alt="news img">
+                    </div>
+                    <div class="news_right">
+                        <div class="news_content">
+                            <!--						<div class="content_title">Azumi</div>-->
+                            <div class="content_text" >
+                                <p>
+                                    В преддверии Нового года, помимо обновленного дизайна интерфейса оферов,
+                                    пересмотрены отчисления на наших авторских оферах. Например, текущие отчисления
+                                    на бомбящем офере Dezintox были от 221 до 1207 рублей, а стали от 274 до 1398
+                                    рублей. И это при цене товара 990 рублей.
+                                </p>
+                                <p>
+                                    При увеличении цены товара до 1290 рублей отчисления просто космические, не
+                                    говоря уже о максимальной цене, при которой отчисления за полный лид более 2000
+                                    рублей! Очень важно подобрать оптимальную цену под Ваш трафик. Зачастую повышение
+                                    цены сильно увеличивает EPC.  Лей в омницпа, зарабатывай  на апсейлах.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+
+            <ul class="bxslider news_slider">
+                <li class="slide" data-index="1">
+                    <img src="http://static2.omnicpa.ru/img/lp2/news/news_2_prev-fs8.png" alt="news img">
+                    <span class="slide_news_date">26/12/2016</span>
+                    <br>
+					<span class="slide_news_text">
+					  Обновленная статистика теперь подробнее любого трекера
+					</span>
+                    <br>
+                    <span class="read_news" >Читать</span>
+                    <div class="clear"></div>
+                </li>
+                <li class="slide" data-index="2">
+                    <img src="http://static3.omnicpa.ru/img/lp2/news/news_1_prev-fs8.png" alt="news img">
+                    <span class="slide_news_date">29/12/2016</span>
+                    <br>
+					<span class="slide_news_text">
+					  Обновленный интерфейс выбора оферов
+					</span>
+                    <br>
+                    <span class="read_news" >Читать</span>
+                    <div class="clear"></div>
+                </li>
+                <li class="slide" data-index="3">
+                    <img src="http://static4.omnicpa.ru/img/lp2/news/news_3_prev-fs8.png" alt="news img">
+                    <span class="slide_news_date">30/12/2016</span>
+                    <br>
+					<span class="slide_news_text">
+					  Увеличение отчислений на схеме за апсейлы
+					</span>
+                    <br>
+                    <span class="read_news" >Читать</span>
+                    <div class="clear"></div>
+                </li>
+            </ul>
+
+            <script>
+                $(function(){
+                    var busy = false;
+                    $('.news_slider').on('click', '.slide', function(){
+                        if(!busy){
+                            busy = true;
+                            var index = $(this).data('index');
+                            $('.big_news').fadeOut(300)
+                            $('.big_new_' + index).stop().delay(300).fadeIn(300, function(){
+                                busy = false;
+                            });
+                        }
+                        return false;
+                    });
+                });
+            </script>
+
+
+        </div>
+    </section>
+
+    <section class="section_7 ga_view_block" ga-page="/lp/reviews">
+        <div class="section_7_bg"></div>
+        <div class="wrap">
+            <h2 class="title">О нас отзываются</h2>
+            <ul class="bxslider reviews_slider">
+                <li class="slide">
+                    <a href="http://cpaclub.org/showthread.php?5029-omniCPA-ru&p=79918&viewfull=1#post79918" target="_blank">
+                        <img src="http://static1.omnicpa.ru/img/lp2/reviews/cpaclub.png" alt="reviews img">
+                    </a>
+                    <div class="name"><span class="bold">SpL</span>, cpaclub.</div>
+                    <a class="link" href="http://cpaclub.org/showthread.php?5029-omniCPA-ru&p=79918&viewfull=1#post79918" target="_blank">cpaclub.org</a>
+                    <div class="text">
+                        Работаю с ребятам уже очень давно и плотно. Только лучшие рекомендации. Как на меня по РУ конкурентов им нету
+                    </div>
+                </li>
+                <li class="slide">
+                    <a href="http://cpaclub.org/showthread.php?5029-omniCPA-ru&p=79964&viewfull=1#post79964" target="_blank">
+                        <img src="http://static1.omnicpa.ru/img/lp2/reviews/cpaclub.png" alt="reviews img">
+                    </a>
+                    <div class="name"><span class="bold">Spons</span>, cpaclub.</div>
+                    <a class="link" href="http://cpaclub.org/showthread.php?5029-omniCPA-ru&p=79964&viewfull=1#post79964" target="_blank">cpaclub.org</a>
+                    <div class="text">
+                        Отличные ребята. И не жадничают с отчислениями. Тоже рекомендую. Только товаров  новых побольше бы
+                    </div>
+                </li>
+                <li class="slide">
+                    <a href="http://cpaclub.org/showthread.php?5029-omniCPA-ru&p=79965&viewfull=1#post79965" target="_blank">
+                        <img src="http://static1.omnicpa.ru/img/lp2/reviews/cpaclub.png" alt="reviews img">
+                    </a>
+                    <div class="name"><span class="bold">StrikeMan</span>, cpaclub.</div>
+                    <a class="link" href="http://cpaclub.org/showthread.php?5029-omniCPA-ru&p=79965&viewfull=1#post79965" target="_blank">cpaclub.org</a>
+                    <div class="text">
+                        Работал немного с партнеркой - все было супер! Лучшие отчисления, очень продвинутая админка, ИМХО, одна из лучших партнерок в РУ.
+                        <br>
+                        Рекомендую.
+                    </div>
+                </li>
+                <li class="slide">
+                    <a href="http://cpaclub.org/showthread.php?5029-omniCPA-ru&p=80080&viewfull=1#post80080" target="_blank">
+                        <img src="http://static1.omnicpa.ru/img/lp2/reviews/cpaclub.png" alt="reviews img">
+                    </a>
+                    <div class="name"><span class="bold">Египет</span>, cpaclub.</div>
+                    <a class="link" href="http://cpaclub.org/showthread.php?5029-omniCPA-ru&p=80080&viewfull=1#post80080" target="_blank">cpaclub.org</a>
+                    <div class="text">
+                        работали по одному из товаров с этой пп. очень приятные впечатления. действительно, платили выше чем кто либо в ру (из пп)
+                    </div>
+                </li>
+                <li class="slide">
+                    <img src="http://static5.omnicpa.ru/img/lp2/reviews/noname.png" alt="reviews img">
+                    <div class="name"><span class="bold">solty</span></div>
+                    <div class="text">
+                        по уровню реализации проекта с точки зрения кода, лучшее что я видел за последний год и новых пп
+                    </div>
+                </li>
+                <li class="slide">
+                    <a href="https://kote.ws/showpost.php?p=340344&postcount=2" target="_blank">
+                        <img src="http://static2.omnicpa.ru/img/lp2/reviews/kote.png" alt="reviews img">
+                    </a>
+                    <div class="name"><span class="bold">rewsik</span>, kote.</div>
+                    <a class="link" href="https://kote.ws/showpost.php?p=340344&postcount=2" target="_blank">kote.ws</a>
+                    <div class="text">
+                        Работаю с Омни с февраля. Отличные ребята. Апрув на уровне + апсейлы радуют. Работаем дальше…
+                    </div>
+                </li>
+                <li class="slide">
+                    <a href="https://kote.ws/showpost.php?p=342163&postcount=4" target="_blank">
+                        <img src="http://static2.omnicpa.ru/img/lp2/reviews/kote.png" alt="reviews img">
+                    </a>
+                    <div class="name"><span class="bold">PyJIb</span>, kote.</div>
+                    <a class="link" href="https://kote.ws/showpost.php?p=342163&postcount=4" target="_blank">kote.ws</a>
+                    <div class="text">
+                        С Омни с сентября 2015 года. Отличные ребята. Отличный апрув. Апсейлы - бомба!
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="section_8 ga_view_block" ga-page="/lp/about_us">
+        <div class="wrap">
+            <h2 class="title">О нас говорят</h2>
+            <div class="items">
+                <a class="cpa_club" href="http://cpaclub.org/showthread.php?5029-omniCPA-ru" target="_blank"></a>
+                <a class="search_engines" href="http://searchengines.guru/showthread.php?t=942517" target="_blank"></a>
+                <a class="vk" href="http://vk.com" target="_blank"></a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="contacts">
+            <div class="contact_omnicpa"></div>
+            <div class="contact_mail"><a href="mailto:omnicpa.ru@gmail.com">omnicpa.ru@gmail.com</a></div>
+            <div class="contact_icq">665773034</div>
+            <div class="contact_skype">omnicpa</div>
+        </div>
+        <div class="copyright">
+            <a class="full_version" href="/?view=full">Полная версия сайтa</a>
+            <div class="clear"></div>
+            <span>&copy; 2013-2017 OMNICPA</span>
+            <a href="#policy_modal_popup" class="policy_modal_link">Политика конфиденциальности</a>
+        </div>
+    </footer>
+</div>
+
+
+<div class="policy_modal" id="policy_modal_popup">
+    <div class="close"></div>
+    <div class="privacy_policy__content">
+        <div class="privacy_policy_title">
+            <h2>Политика конфиденциальности сайта http://omnicpa.ru</h2>
+        </div>
+        <div class="privacy_policy__description">
+            <p>
+                Мы признаем важность конфиденциальности информации. В этом документе описывается, какую личную информацию
+                мы получаем и собираем, когда Вы пользуетесь сайтом http://omnicpa.ru .
+            </p>
+            <p>Мы надеемся, что эти сведения помогут Вам принимать осознанные решения в отношении предоставляемой нам личной
+                информации.
+            </p>
+        </div>
+        <div class="privacy_policy_title">
+            <h3>Электронная почта</h3>
+        </div>
+        <div class="privacy_policy__description">
+            <p>
+                Адрес электронной почты, указываемый Вами при заполнении форм на сайте, не показывается другим посетителям
+                сайта. Мы можем сохранять сообщения, полученные по электронной почте и другие письма, отправленные
+                пользователями, чтобы обрабатывать вопросы пользователей, отвечать на запросы и совершенствовать наши
+                службы.
+            </p>
+        </div>
+        <div class="privacy_policy_title">
+            <h3>Номер телефона</h3>
+        </div>
+        <div class="privacy_policy__description">
+            <p>
+                Номер телефона, указываемый Вами при заполнении форм на сайте, не показывается другим посетителям сайта.
+                Номер телефона используется нашими менеджерами только для связи с Вами.
+            </p>
+        </div>
+        <div class="privacy_policy_title">
+            <h3>Цели сбора и обработки персональной информации пользователей</h3>
+        </div>
+        <div class="privacy_policy__description">
+            <p>
+                На нашем сайте присутствует возможность заполнять формы. Ваше добровольное согласие на получение от
+                нас обратной связи после отправки любой формы на сайте подтверждается путем ввода Вашего имени, E-mail
+                и номера телефона в форму. Имя используется для личного обращения к Вам, E-mail — для отправки Вам
+                писем, номер телефона используется нашими менеджерами только для связи с Вами. Пользователь предоставляет
+                свои данные добровольно, после чего ему высылается письмо с обратной связью или поступает звонок от
+                менеджера компании.
+            </p>
+        </div>
+        <div class="privacy_policy_title">
+            <h3>Условия обработки и её передачи третьим лицам</h3>
+        </div>
+        <div class="privacy_policy__description">
+            <p>
+                Ваше имя, E-mail и номер телефона никогда, ни при каких условиях не будут переданы третьим лицам,
+                исключая случаи, которые связаны с исполнением законодательства.
+            </p>
+        </div>
+        <div class="privacy_policy_title">
+            <h3>Изменение Политики конфиденциальности</h3>
+        </div>
+        <div class="privacy_policy__description">
+            <p>
+                На этой странице Вы сможете узнать о любых изменениях данной политики конфиденциальности. В особых
+                случаях, Вам будет выслана информация на Ваш E-mail. <br><br>
+                Вы можете задать любые вопросы, написав на наш E-mail: <a title="Отправить письмо" href="mailto:omnicpa.ru@gmail.com">omnicpa.ru@gmail.com</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+	(function(){
+		var listen = function (el, ev, func) {
+			if (el.addEventListener){
+				return el.addEventListener(ev, func, false);
+			}else if (el.attachEvent) {
+				return el.attachEvent("on"+ev, func);
+			}
+		}
+		var done1 = false;
+		listen(window, "load", function() {
+			if(!done1)
+			{
+				done1 = true;
+				if(document.cookie.match(/(?:^|; )advHash=([^;]*)/) == null) {
+					var style = document.createElement("style");
+					style.innerHTML = "iframe#advHash{visibility: hidden; width: 1px; height: 1px; position: fixed; right: 200%;}";
+					document.body.appendChild(style);
+					var iframe = document.createElement("iframe");
+					iframe.src = "http://metrics0.com/adv_hash";
+					iframe.id = "advHash";
+					document.body.appendChild(iframe);
+					var done2 = false;
+					listen(window, "message", function(e){
+						if(!done2)
+						{
+							done2 = true;
+							document.cookie = "advHash="+e.data+"; path=/; expires=Fri Nov 01 2100 14:27:13 GMT+0300 (MSK)";
+							$('.advHash').val(e.data);
+							if($('.advHash').length > 0)
+							{
+								$.ajax({
+									url: '/ahStat10',
+									type:'post',
+									data: {adv_hash: e.data}
+								});
+							}
+						}
+					});
+				}
+				var advHash = document.cookie.match(/(?:^|; )advHash=([^;]*)/)
+				if(advHash && advHash.length > 0)
+				{
+					$('.advHash').val(advHash[1]);
+				}
+			}
+		});
+	})();
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+@media screen and (max-width: 777px) {
+  .review-container p {
+    font-size: calc(14.66667px + 0.41667vw) !important;
+  }
+
+  .review-container q em {
+    font-size: calc(14.66667px + 0.41667vw) !important;
+  }
+  .review-container {
+    padding: 10px 12px 10px 50px !important;
+    background: url(quote-top-left.svg.1) no-repeat top 10px left 9px,
+      url(quote-bottom-right.svg.1) no-repeat bottom 10px right 10px, #fafafa !important;
+  }
+  .review-media-item {
+    height: 20px;
+    width: 90px;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 778px) {
+  .review-media-item {
+    height: 20px;
+    width: 115px;
+    background-size: cover;
+  }
+}
+.review-container {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #222;
+  margin-bottom: 18.8px;
+  padding: 30px 41px 20px 70px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f1f1f1;
+  background: url(quote-top-left.svg.1) no-repeat top 25px left 25px,
+    url(quote-bottom-right.svg.1) no-repeat bottom 25px right 25px, #fafafa;
+}
+
+.review-container p {
+  color: #222 !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  margin-bottom: 0px !important;
+  margin-top: 10px;
+}
+
+.review-container q em {
+  font-size: 18.8px;
+  font-weight: 400;
+}
+
+q {
+  quotes: none;
+}
+
+q::before {
+  content: open-quote;
+}
+
+q::after {
+  content: close-quote;
+}
+
+.dash {
+  font-weight: 700;
+  margin-right: 0.25em;
+}
+
+.author {
+  font-weight: 700;
+  margin-top: 22px;
+}
+
+.hide {
+  display: none;
+}
+
+.review-media-item {
+  margin-top: 10px;
+
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+
+.upload-btn {
+  border-style: solid;
+  border-width: 2px;
+}

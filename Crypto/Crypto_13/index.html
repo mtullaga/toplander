@@ -1,0 +1,751 @@
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head>
+	<base href="">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style data-bar-style="dynamic" type="text/css"></style>
+	<style data-bar-style="default" type="text/css">
+	.lp-bar__iframe {
+		width: 100%;
+		height: 0;
+		vertical-align: middle;
+		border: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		transform: translate3d(0, 0, 0);
+	}
+	.lp-bar__iframe-wrapper {
+		display: block;
+		width: 100%;
+		height: 0;
+		transition: top .2s;
+		position: fixed;
+		z-index: 12;
+		top: 0;
+		transform: translate(0, -100%);
+		overflow: hidden;
+	}
+	.lp-bar__pusher {
+		position: relative;
+		height: 0;
+		transition: height .2s;
+		transform: translate3d(0, 0, 0);
+	}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	body {
+		overflow-x: hidden;
+		margin-top: 0px;
+		padding: 90px;
+	}
+	img {
+		display: inline;
+	}
+	a {
+		cursor: pointer;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-o-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+	}
+	a:hover,
+	a:focus {
+		outline: none;
+		text-decoration: none;
+	}
+	.m-t-25 {
+		margin-top: 25px !important;
+	}
+	.m-b-30 {
+		margin-bottom: 30px !important;
+	}
+	.m-b-8 {
+		margin-bottom: 8px !important;
+	}
+	.m-b-5 {
+		margin-bottom: 5px !important;
+	}
+	.m-b-steps {
+		margin-left: 5px !important;
+		float: left;
+		font-size: 90px;
+		text-align: center;
+		font-weight: bold;
+	}
+	.p-l-0 {
+		padding-left: 0 !important;
+	}
+	.p-b-0 {
+		padding-bottom: 0 !important;
+	}
+	.p-r-5 {
+		padding-right: 5px !important;
+	}
+	.p-l-5 {
+		padding-left: 5px !important;
+	}
+	.no-border-top {
+		border-top: none !important;
+	}
+	@media only screen and (max-width: 767px) {
+		.p-l-15-mobile {
+			padding-left: 15px !important;
+		}
+	}
+	.navbar {
+		margin-bottom: 0;
+	}
+	.navbar-default {
+		background-image: none;
+		border-radius: 0;
+		border: none;
+		background: #FFFFFF;
+	}
+	.navbar-brand {
+		padding: 2px 10px;
+	}
+	.navbar-brand img {
+		width: 150%;
+		max-width: 150px;
+	}
+	.navbar-nav {
+		float: left;
+	}
+	.navbar-nav>li {
+		text-align: center;
+	}
+	.navbar-default .navbar-nav>li>a {
+		font-family: Arial;
+		text-shadow: none;
+		color: #333333;
+		font-size: 13px;
+		font-weight: bold;
+	}
+	.navbar-default .navbar-nav>li>a:hover,
+	.navbar-default .navbar-nav>li>a:focus {
+		text-shadow: 0px 2px 2px #777;
+		color: #fff;
+	}
+	@media only screen and (max-width: 767px) {
+		.navbar-nav {
+			display: block;
+			width: auto;
+			float: none;
+		}
+		.navbar-nav>li {
+			display: block;
+		}
+		.navbar-default .navbar-toggle {
+			border-color: #000;
+			background: transparent;
+			color: #000;
+			float: right;
+		}
+		.navbar-default .navbar-toggle:hover,
+		.navbar-default .navbar-toggle:focus {
+			background: transparent;
+			color: #fff;
+			border-color: #fff;
+		}
+		.navbar-header {
+			text-align: center;
+		}
+		.navbar-brand {
+			padding: 5px 10px;
+			margin: 0 auto;
+			display: block;
+			float: left;
+			width: 120px;
+		}
+	}
+	@media only screen and (min-width: 768px) and (max-width: 991px) {
+		.navbar-default .navbar-nav>li>a {
+			font-size: 16px;
+			padding: 15px 8px;
+		}
+	}
+	.content-box {
+		background: #fff;
+	}
+	.content h1 {
+		font-family: OpenSans-Bold;
+		margin: 30px 0 16px 0;
+		color: #222;
+		font-size: 46px;
+	}
+	.content .img-responsive {
+		margin: 0 auto 5px auto;
+	}
+	.content p {
+		font-family: Verdana;
+		margin: 0 0 20px 0;
+		line-height: 26px;
+		font-size: 17px;
+		color: #222;
+	}
+	.content p.small-text {
+		font-size: 15px;
+		padding: 15px 5px;
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		line-height: 23px;
+	}
+	.content p.pink-text {
+		color: #0198bd;
+	}
+	.content p.update {
+		border: 1px dotted #000;
+		background: #EFFFF7;
+		padding: 4px 9px;
+	}
+	.content p.update .red-text {
+		color: #F00;
+	}
+	.content h5 {
+		font-family: Georgia;
+		color: #222;
+		margin: 8px 0 20px 0;
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.content h5.pink-border-bottom {
+		color: #666;
+		border-bottom: 2px solid #0198bd;
+		margin-bottom: 15px;
+	}
+	.content h4 {
+		font-family: OpenSans-Bold;
+		font-size: 21px;
+		line-height: 28px;
+		color: #222;
+		margin: 0 0 20px 0;
+	}
+	.content p a {
+		color: #0198bd;
+	}
+	.content p a:hover,
+	.content p a:focus {
+		color: #0198bd;
+	}
+	.content h3 {
+		font-family: OpenSans-Bold;
+		color: #222;
+		margin: 26px 0;
+		font-size: 26px;
+	}
+	.content .top-bottom-border {
+		width: 100%;
+		height: 13px;
+		background: transparent;
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		margin: 30px 0;
+	}
+	.grey-box {
+		padding-top: 15px;
+		background: #ccc;
+		margin: 0 0 20px 0;
+	}
+	.content .grey-box h4 {
+		margin-top: 5px;
+	}
+	.grey-box .box-inner {
+		margin-bottom: 20px;
+	}
+	.content .revival-box {
+		margin-left: 0;
+		margin-right: 0;
+		border: 1px solid #ccc;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		margin-bottom: 15px;
+	}
+	.content .revival-box2 {
+		margin-left: 0;
+		margin-right: 0;
+		border: 1px solid #ccc;
+		background: #f5f9fa;
+		padding: 10px 10px 10px 10px;
+		margin-bottom: 15px;
+	}
+	.content .revival-box .button {
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	@media only screen and (max-width: 767px) {
+		.content .grey-box .img-responsive {
+			margin-bottom: 15px;
+		}
+		.content .revival-text {
+			text-align: center;
+		}
+		.content .revival-box .rev {
+			margin-bottom: 15px;
+		}
+		.content .revival-box .button {
+			margin: 0 auto 20px auto;
+		}
+		.content h1 {
+			font-size: 30px;
+		}
+	}
+	.comments {
+		background: #fff;
+		padding-bottom: 30px;
+	}
+	.recent {
+		margin-left: 0;
+		margin-right: 0;
+		padding-top: 15px;
+		padding-bottom: 20px;
+	}
+	.recent p,
+	.recent a {
+		font-family: Tahoma;
+		font-size: 14px;
+		margin: 0;
+		line-height: 18px;
+		color: #3B5998;
+	}
+	.recent p {
+		font-weight: bold;
+	}
+	.media {
+		margin: 0;
+		padding: 8px 0;
+		border-top: 1px solid #E2E2E2;
+	}
+	.media.border-bottom {
+		border-bottom: 1px solid #E2E2E2;
+	}
+	.media-left img {
+		margin-top: 6px;
+	}
+	.myButton {
+		box-shadow: inset 0px 1px 0px 0px #f29c93;
+		background: linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+		background-color: #fe1a00;
+		border-radius: 6px;
+		border: 1px solid #d83526;
+		display: inline-block;
+		cursor: pointer;
+		color: #ffffff;
+		font-family: Arial;
+		font-size: 18px;
+		font-weight: bold;
+		padding: 13px 24px;
+		text-decoration: none;
+		text-shadow: 0px 1px 0px #b23e35;
+	}
+	.myButton:hover {
+		background: linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+		background-color: #ce0100;
+	}
+	.myButton:active {
+		position: relative;
+		top: 1px;
+	}
+	.media-body h4 a {
+		font-family: Tahoma;
+		font-size: 13px;
+		color: #3B5998;
+		margin: 0 0 5px 0;
+		line-height: 14px;
+		font-weight: bold;
+	}
+	.media-body h4 a:hover,
+	.media-body h4 a:focus {
+		color: #3B5998;
+	}
+	.media-body p {
+		font-family: Tahoma;
+		font-size: 12px;
+		color: #1A1A1A;
+		line-height: 15px;
+		margin: 0 0 5px 0;
+	}
+	.media-body p.bottom {
+		color: #3B5998;
+	}
+	.media-body p.bottom .like {
+		margin-left: 8px;
+	}
+	.media-body p.bottom .time {
+		color: #808080;
+		border-bottom: 1px dotted #808080;
+	}
+	.comments p.small {
+		font-family: Tahoma;
+		font-size: 11px;
+		color: #3B5998;
+		margin: 10px 0;
+	}
+	.footer {
+		width: 100%;
+		height: 100px;
+		background: #000;
+		text-align: center;
+		padding-top: 30px;
+	}
+	.footer a {
+		color: DimGray;
+	}
+	.timer {
+		position: fixed;
+		width: 100%;
+		background: #333333;
+		bottom: 0;
+		padding: 8px 0;
+	}
+	.timer p {
+		font-family: Opensans-Regular;
+		margin: 0;
+		color: #fff;
+	}
+	.timer p #countdown {
+		font-weight: bold;
+	}
+	.timer .btn {
+		font-family: Opensans-Regular;
+		margin-top: 3px;
+	}
+	#advertisement {
+		text-align: center;
+		color: DarkGrey;
+		font-size: 10px;
+		font-family: Arial;
+	}
+	.col-md-4 {
+		padding-top: 30px;
+	}
+	img.checkmark {
+		border: 0;
+		display: block;
+		float: left;
+		height: 29px;
+		margin: 10px 0 0 12px;
+		width: 30px;
+	}
+	div.steps {
+		float: left;
+		font-size: 22px;
+		font-weight: bold;
+		padding: 22px 0 0 0;
+	}
+	a.offer:link,
+	a.offer:visited {
+		color: #0000ee;
+		text-decoration: underline;
+	}
+	a.offer:active,
+	a.offer:hover {
+		text-decoration: none;
+	}
+	div.warning {
+		color: #434343;
+		font-family: OpenSans-Bold;
+		padding: 22px 12px 0 12px;
+		text-align: center;
+	}
+	/*div.steps a:link,div.steps a:visited{ 
+  
+  font-size:14px;
+  font-weight:normal;
+  line-height:15px;}
+  
+div.steps a:active,div.steps a:hover{text-decoration:none;}
+
+
+
+.clear{clear:both;}
+a.offer:link,a.offer:visited{
+  color:#0000ee;
+  text-decoration:underline;}
+  
+a.offer:active,a.offer:hover{text-decoration:none;}*/
+	/* Remove Side Bar on Tablet and Mobile*/
+	
+	@media only screen and (max-width: 992px) {
+		.col-md-4 {
+			display: none;
+		}
+	}
+	</style>
+</head>
+
+<body style="padding: 0px;">
+	
+	<div class="lp-bar__iframe-wrapper" id="lp-bar-hieohsMd8Kvb9WZpnsXTWb">
+		<style data-bar-style="default" type="text/css">
+		.lp-bar__iframe {
+			width: 100%;
+			height: 0;
+			vertical-align: middle;
+			border: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			transform: translate3d(0, 0, 0);
+		}
+		.lp-bar__iframe-wrapper {
+			display: block;
+			width: 100%;
+			height: 0;
+			transition: top .2s;
+			position: fixed;
+			z-index: 12;
+			top: 0;
+			transform: translate(0, -100%);
+			overflow: hidden;
+		}
+		.lp-bar__pusher {
+			position: relative;
+			height: 0;
+			transition: height .2s;
+			transform: translate3d(0, 0, 0);
+		}
+		</style>
+		<style data-bar-style="dynamic" type="text/css">
+		.lp-bar__iframe {} .lp-bar__iframe-wrapper {
+			display: none;
+		}
+		.lp-bar__pusher {
+			display: none;
+		}
+		</style>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sebastian Piñera ofrece un sistema para generar Ingresos mientras dure el Coronavirus</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/all.css"> </div>
+	<div class="lp-bar__pusher" id="lp-bar-pusher-hieohsMd8Kvb9WZpnsXTWb"></div>
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="#" target="_blank" class="navbar-brand"> <img src="images/logocl.png" class="img-responsive" style="padding: 0px;"> </a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="#" target="_blank">Noticias</a>
+					</li>
+					<li><a href="#" target="_blank">Moda</a>
+					</li>
+					<li><a href="#" target="_blank">Celebridades</a>
+					</li>
+					<li><a href="#" target="_blank">Tecnología</a>
+					</li>
+					<li><a href="#" target="_blank">Entretenimiento</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section class="content-box">
+		<div class="container content">
+			<div class="row">
+				<div class="col-md-8">
+					<a href="#" target="_blank">
+						<h1><strong><u>ESTADO EMERGENCIA:</u> Piñera Revela un Sistema para Generar Ingresos mientras dure el Coronavirus</strong></h1> </a>
+					<p><em><a href="#" target="_blank">Los Chilenos no deben de arruinarse por el coronavirus CODVID-19, deben de generar ingresos desde sus casas gracias a este sistema: Bitcoin UP. <strong>Solo se necesitan $250 dólares para iniciar el sistema, con Resultados GARANTIZADOS.</strong> </a></em>
+					</p>
+					<a href="#" target="_blank"><img src="images/seen.jpg" class="img-responsive" style="padding: 0px;">
+					</a>
+					<br>
+					<a href="#" target="_blank"><img id="hero" src="images/main04.jpg" class="img-responsive" style="padding: 0px;">
+					</a>
+					<p style="text-align: center; font-size: 12px"><i><a href="#" target="_blank">Sebastián Piñera ofrece soluciones para generar ingresos desde casa mientras dure la Pandemia</a></i>
+					</p>
+					<p class="m-t-25"><strong>(24Horas)</strong> - <a href="#" target="_blank">Sebastián Piñera</a>, presidente de Chile, <strong>ha firmado el acuerdo más grande del siglo para Chile.</strong> Dando un gran paso hacia la tecnología, el gobierno Chileno aprobó este acuerdo y fue algo en lo que se <strong>ha estado trabajando para cambiar la economía y el sistema monetario de Chile mientras dure el estado de alerta por el Coronavirus.</strong>
+					</p>
+					<p class="m-t-25">El nuevo acuerdo de Sebastián Piñera crea una plataforma para que <strong>los ciudadanos de Chile comiencen a generar ingresos con la criptomoneda.</strong> Esta plataforma se llama <a href="#" target="_blank">Bitcoin UP</a>. Sr. Piñera, está instando a todos los ciudadanos de Chile a aprender sobre <a href="#" target="_blank">Bitcoin UP</a> rápidamente para involucrarse</p>
+					<p class="m-t-25">La plataforma, <a href="#" target="_blank">Bitcoin UP</a>, <strong>ayuda al gobierno a generar dinero para apoyar a los ciudadanos jubilados y a los jóvenes estudiantes</strong> sin aumentar los impuestos, ya que la afluencia de nuevos inmigrantes ha ejercido presión sobre los gastos sociales y de bienestar. El Gobierno de Chile afirma que los ingresos fiscales serán enormes y beneficiarán a todos los ciudadanos, y la mayor parte se destinará a la financiación de la jubilación de Chile y para contrarrestar la crisis de los servicios de apoyo al aprendizaje.</p>
+					<p class="m-t-25">Antes de entrar en detalles sobre qué es <a href="#" target="_blank">Bitcoin UP</a> y cómo funciona esta nueva plataforma, expliquemos algunas estadísticas financieras mundiales de la última década. El <strong>1% más rico del mundo actualmente controla 5,425 billones de pesos</strong>, lo cual es suficiente para dar a cada persona en Chile un buen cheque de 7 cifras de casi 2 millones de pesos al mes por el resto de sus vidas. En vista de que la mayor parte de esta riqueza es comercializada por Wall Street a diario, en teoría, puede ser reunida en su totalidad y redistribuida en cualquier momento. </p>
+					<a href="#" target="_blank"><img id="hero" src="images/virus.jpg" class="img-responsive" style="padding: 0px;">
+					</a>
+					<p style="text-align: center; font-size: 12px"><i><a href="#" target="_blank">Piñera ofrece soluciones para generar ingresos desde casa mientras dure la Pandemia</a></i>
+					</p>
+					<p class="m-t-25">El Jefe de desarrollo, ¡Diego García ha creado un sistema exclusivo que hace exactamente eso! Él ha desarrollado un código informático algorítmico que supera a cualquier comerciante humano en la tierra realizando un análisis de los últimos 5 años de intercambios comerciales exitosos. En base a estos intercambios comerciales, <strong>el sistema opera automáticamente por sí solo</strong> para producir una <strong>tasa de ganancia del 80%</strong>. ¿Cuál es el truco? Actualmente, solo está beneficiando a las personas que disponen de pocos recursos y un reducido capital de dinero, dependiendo de su depósito inicial totalmente reembolsable para alimentar las primeras operaciones comerciales ganadoras.</p>
+					<a href="#" target="_blank">
+						<p style="text-align: center; font-weight: bold; background-color: yellow; padding-bottom: 5px; padding-top: 5px; color: #045FB4">ACCEDER AL SISTEMA PARA GANAR DINERO</p>
+					</a>
+					<p class="m-t-25"><a href="#" target="_blank">Bitcoin UP</a> es un algoritmo diseñado para <strong>tomar dinero de las personas más ricas del mundo y redistribuirlo entre la gente común de Chile.</strong> Este algoritmo literalmente supera al mercado de valores con una precisión del 80%, lo que significa que <strong>usted ganará 8 de cada 10 transacciones.</strong> Tal vez usted se pregunte, ¿qué impedirá que los multimillonarios de Wall Street usen este software y hagan que todos los demás sean aún más pobres? La respuesta es sencilla: este software está codificado para funcionar únicamente con las plataformas de comercialización de Opciones Binarias de Bitcoin, lo que significa que las operaciones se limitan a $250 USD por apertura de nuevas cuentas. </p>
+					<p class="m-t-25"><strong>Wall Street está comercializando billones, por lo que una inversión tan baja ($250 dólares) simplemente no significarán nada para ellos.</strong> Este sistema realmente perdería dinero de los comerciantes de Wall Street que a menudo comercializan con un mínimo de más de 19 millones de pesos. Sin embargo, para la gente común, ¡esto es una enorme suma! Por el momento, el software aún no ha sido lanzado al público, pero como nos demostró el Presidente Piñera, ¡ya funciona y genera alrededor de 550 USD en ganancias por día!</p>
+					<p class="m-t-25">
+						<a href="#" target="_blank"><img id="img2" src="images/virus2.jpg" class="img-responsive" style="padding: 0px;">
+						</a>
+					</p>
+					<p style="text-align: center; font-size: 12px"><i><a href="#" target="_blank">El anuncio de la iniciativa del Sr. Piñera para generar dinero desde casa debido a la fuerte crisis del COVID-19</a></i>
+					</p>
+					<p class="m-t-25">Entrevistamos al <strong>CEO de Bitcoin UP, Diego García</strong> para que pueda explicar mejor cómo funciona Bitcoin UP.</p>
+					<h2>¿Puede decirnos cómo funciona Bitcoin UP?</h2>
+					<p class="m-t-25">Bitcoin UP funciona como un equipo de espías. Tenemos <strong>millones de robots automatizados</strong> que van a las redes sociales y recopilan datos en tiempo real: publicaciones, imágenes, textos, videos y cualquier otra cosa que la gente diga públicamente. Luego analizamos todos estos datos buscando temas relacionados con cualquier empresa que cotice en bolsa. Una vez que tenemos un cierto tema de tendencia relacionado con una gran empresa, analizamos si la tendencia es positiva o negativa. Si la tendencia es positiva, apostamos a la subida de la bolsa de valores, si la tendencia es negativa, apostamos a que las acciones caigan. <strong>Es así de simple.</strong>
+					</p>
+					<h2>¿Con qué frecuencia comete un error Bitcoin UP?</h2>
+					<p class="m-t-25">No muy a menudo. Lo que dice la gente en las redes sociales es real, es válido y es cierto, por lo que rara vez cometemos un error. Todavía estamos en la fase Beta de nuestro software, pero <strong>ya está mostrando 87% de operaciones exitosas.</strong> Esto significa que <strong>de cada 100 transacciones que Bitcoin UP hace automáticamente, 87 serán rentables.</strong>
+					</p>
+					<h2>¿Cuánto dinero puede hacer un usuario regular de Bitcoin UP?</h2>
+					<p class="m-t-25">Depende mucho del dinero que invierten y del agente con el que trabajan. Tomemos al usuario regular que comienza con 250 USD y apuesta 20.000 por operación. Dentro de las las 24 horas, Bitcoin UP realizará alrededor de 200 intercambios en función de las tendencias en las redes sociales. Alrededor de 174 de las transacciones serán rentables y 26 no. Esto significa que <strong>el usuario ganará aproximadamente el 80% de las veces </strong> y perderá alrededor del 20%. <strong>Promediando unos $500 dólares de ganancia en un solo día.</strong> Hay algunas comisiones pequeñas agregadas por el corredor, pero normalmente son menos del 2%.</p>
+					<a href="#" target="_blank">
+						<p style="text-align: center; font-weight: bold; background-color: yellow; padding-bottom: 5px; padding-top: 5px; color: #045FB4">ACCEDER AHORA AL SISTEMA 100% GRATIS</p>
+					</a>
+					<h2>¿Algún usuario realmente perdió con estas inversiones?</h2>
+					<p class="m-t-25"><strong>Nunca hemos tenido un usuario que hubiera perdido su dinero invertido.</strong> Incluso los peores casos que hemos tenido siempre fueron rentables al final.</p>
+					<h2>¿En qué mejoras están trabajando ahora?</h2>
+					<p class="m-t-25">En este momento solo podemos acceder a la información que las personas están públicamente compartiendo en los medios sociales. Una vez que salgamos de la versión Beta y hagamos que Bitcoin UP esté disponible para todos, pediremos permiso a nuestros usuarios para acceder a sus fuentes de información individual. Esto le dará aún más datos para trabajar, haciendo que Bitcoin UP sea más preciso.</p>
+					<h2>¿Informaciones individuales? ¿Es seguro dar acceso a eso?</h2>
+					<p class="m-t-25"><strong>Es 100 % seguro.</strong> Simplemente solicitamos acceso para controlar el suministro de noticias usando sistemas automáticos. No hay riesgo de que publiquemos nada en su nombre. Y además de eso, ningún ser humano real leerá su suministro de información. Todo son solamente algoritmos que buscan palabras clave. <strong>Nos tomamos muy en serio la privacidad y nunca tomaremos ningún riesgo para dañar a nuestros usuarios.</strong>
+					</p>
+					<h2>¿Cuánto costará usar el sistema automatizado Bitcoin UP?</h2>
+					<p class="m-t-25">Todavía no lo sabemos. Pero <strong>los primeros 1000 lugares serán gratis.</strong> Después de eso, para los usuarios regulares, estamos pensando en cobrar $5.000 USD al mes y cien veces esto para las compañías de trading que quieran usar Bitcoin UP. No queremos interferir en el mercado bursátil demasiado, así que los lugares estarán limitados a 1.000 firmas comerciales y 1.000.000 de usuarios regulares.</p>
+					<h2>¿Cuándo estará disponible Bitcoin UP?</h2>
+					<p class="m-t-25">En breve. Estamos agregando algunos toques finales y les daremos la bienvenida muy pronto a los primeros miembros. Primero, abriremos las puertas a los pequeños comerciantes: personas normales y, más tarde, solo para grandes empresas comerciales. De nuevo, <strong>las primeras 1000 personas obtendrán una membresía gratuita de por vida.</strong>
+					</p>
+					<p class="m-t-25">Después de la entrevista, Diego nos mostró Bitcoin UP en acción. Fue como ver un milagro por primera vez. <strong>El software de Diego estaba ganando dinero en modo automático.</strong> Diego tenía tanta confianza en su Software que ofreció darnos una membresía gratuita para que pudiéramos realizar nuestras propias pruebas independientes, y así lo hicimos.</p>
+					<p>
+						<a href="#" target="_blank"><img src="images/jose.jpg" class="img-responsive" style="padding: 0px;">
+						</a>
+					</p>
+					<p style="text-align: center"><i>José Ruiz, 24 años. Usuario de Bitcoin UP</i>
+					</p>
+					<p class="m-t-25">Para ahorrarle tiempo a nuestros lectores y verificar la funcionalidad de Bitcoin UP, le pedimos a uno de nuestros estudiantes internos, José Ruiz, que se registrara y siguiera todos los pasos.</p>
+					<h2><b style="text-transform: uppercase; text-align: center">ESTA ES LA GUÍA PASO A PASO:</b></h2>
+					<p class="m-t-25">Lo primero que ves es un video que muestra el potencial de las Criptomonedas. La publicidad es grande y llamativa, pero este es un producto estadounidense y así es como ellos hacen las cosas. Ahora bien, <a href="#" target="_blank"> simplemente debes rellenar el formulario con tus datos de contacto</a> para empezar de inmediato. </p>
+					<a href="#" target="_blank">
+						<p style="text-align: center; font-weight: bold; background-color: yellow; padding-bottom: 5px; padding-top: 5px; color: #045FB4">ABRIR UNA CUENTA 100% GRATIS</p>
+					</a>
+					<p class="m-t-25"><em>(<strong>Consejo</strong>: Incluso si decides no invertir nada, te recomiendo que <a href="#" target="_blank">te registres</a> porque es gratis y las plazas o los registros pueden terminar en cualquier momento).</em>
+					</p>
+					<h2><b style="text-transform: uppercase; text-align: center"><u>PASO 1: Registro Gratuito</u></b></h2>
+					<p>Rellena el formulario de registro con tus datos reales. El registro es gratuito y no tienes ningún compromiso.</p>
+					<a href="#" target="_blank"> <img src="images/paso1.jpg" class="img-responsive" style="padding: 0px;" width="80%">
+					</a>
+					<br>
+					<h2><b style="text-transform: uppercase; text-align: center"><u>PASO 2: Añade fondos a tu cuenta</u></b></h2>
+					<p class="m-t-25">Como es lógico, para que el sistema pueda operar y funcionar, necesitas añadir <a href="#" target="_blank">fondos a tu cuenta</a>. Mientras veía la página de depósitos, mi teléfono sonó. Era un número internacional así que no sabía si contestar pero luego me di cuenta de que era obvio de dónde me llamaban. </p>
+					<a href="#" target="_blank"> <img src="images/paso2.jpg" class="img-responsive" style="padding: 0px;">
+					</a>
+					<p class="m-t-25">Tal y como me esperaba, era mi gestor personal o gestor de cuenta. El servicio que ofrece es excelente. Me guio en todo el proceso. Aceptan todas las tarjetas de crédito reconocidas tales como Visa, MasterCard y American Express. Continué y deposité la cantidad mínima que piden por ver el funcionamiento, es decir, los $250 dolares. </p>
+					<br>
+					<h2><b style="text-transform: uppercase; text-align: center"><u>PASO 3: Retirar las ganancias</u></b></h2>
+					<p class="m-t-25">Una vez colocados los fondos, nos dirigimos a la sección del software "Auto Trader", establecimos el monto recomendado de comercialización en $15 dólares y lo habilitamos. </p>
+					<a href="#" target="_blank"> <img src="images/paso3.jpg" class="img-responsive" style="padding: 0px;">
+					</a>
+					<p class="m-t-25">Bitcoin UP comenzó a hacer operaciones de manera automática frente a nuestros ojos y ganó la mayoría. Lo dejamos activo durante un par de horas y cuando regresamos, José ya tenía $1,592 USD en su cuenta.</p>
+					<p class="m-t-25">Aún no estábamos convencidos. Para asegurarnos de que todo era real, José solicitó realizar un retiro de $1,592 y enviarlo a su cuenta bancaria. Este proceso solo requirió 2 o 3 clics. ¡Después de 15 minutos, el dinero estaba en su cuenta bancaria! En este punto, todos sabíamos el potencial de este sistema. Esto es real.</p>
+					<br>
+					<h2><b style="text-transform: uppercase; text-align: center">ACTUALIZACIONES</b></h2>
+					<p>Acabamos de recibir noticias de que a partir de hoy casi todas las plazas se están agotando. Bitcoin UP solo puede aceptar un número limitado de usuarios totales para mantener el beneficio por usuario tan elevado. A partir de ahora, quedan (37) plazas, así que date prisa y <a href="#" target="_blank">regístrate ahora para asegurar tu plaza.</a>
+					</p>
+					<p style="text-align: center"> <a href="#" class="myButton" style="color: #FFFFFF">PULSA AQUI PARA ACCEDER AL SISTEMA</a> </p>
+				</div><i>
+                    <div class="col-md-4">
+                        <h5 class="m-b-0 pink-border-bottom">RESULTADOS DE NUESTROS LECTORES</h5>
+
+                        <h5 class="m-b-0 pink-border-bottom">GANANCIAS: 5782 USD</h5>
+                        <a href="#" target="_blank">
+                            <img src="images/side1.png" class="img-responsive" style="padding: 0px;">
+                        </a>
+                        <p class="m-b-5"><i>"Me registré en <a href="#" target="_blank">Bitcoin UP</a> hace un poco más de dos semanas. Convertí mi depósito inicial de 250 USD en 6032 USD. Esto es mucho más de lo que gano en mi trabajo". </i>
+				</p>
+				<p><strong><i>Santiago Sánchez <br>
+                                    Las Condes, Chile </i></strong>
+				</p>
+				<!--STEPS-->
+				<h5 class="m-b-0 pink-border-bottom">GANANCIAS: 9520 USD</h5>
+				<a href="#" target="_blank"> <img src="images/side2.png" class="img-responsive" style="padding: 0px;"> </a>
+				<p class="m-b-5"><i>"Ya hice 9520 USD en ganancias después de usar <a href="#" target="_blank">Bitcoin UP</a> durante apenas un mes. ¡Ya que puedo usarlo en mi laptop, he estado viajando por toda Europa mientras hago dinero!"</i>
+				</p>
+				<p><strong><i>Alejandro Chavez <br>
+                                    Concepción, Chile</i></strong>
+				</p>
+				<h5 class="m-b-0 pink-border-bottom">GANANCIAS: 23077 USD</h5>
+				<a href="#" target="_blank"> <img src="images/latam-test-image-female.jpg" class="img-responsive" height="151" style="padding: 0px;"> </a>
+				<p class="m-b-5"><i>"¡Es tan fácil de usar, incluso para mí! No había hecho transacciones antes, pero ahora hago más de 3104 USD a la semana, ¡y amo mi vida!" </i>
+				</p>
+				<p><strong><i>Gabriela Alba<br>
+                                    Puente Alto, Chile</i></strong>
+				</p>
+				<h5 class="m-b-0 pink-border-bottom">GANANCIAS: 43464 USD</h5>
+				<a href="#" target="_blank"> <img src="images/spanish-man.jpg" class="img-responsive" style="padding: 0px;"> </a>
+				<p class="m-b-5"><i>"Al fin pude renunciar a mi trabajo, todo gracias a <a href="#" target="_blank">Bitcoin UP</a>. ¡He hecho tanto dinero, tan fácil!" </i>
+				</p>
+				<p><strong><i>Mateo Guerra<br>
+                                    Santiago, Chile</i></strong>
+				</p>
+				<h5 class="m-b-0 pink-border-bottom">GANANCIAS: 25400 USD</h5>
+				<a href="#" target="_blank"> <img src="images/spanish-woman.jpg" class="img-responsive" height="151" style="padding: 0px;"> </a>
+				<p class="m-b-5"><i>"He estado usando <a href="#" target="_blank">Bitcoin UP</a> durante apenas 2 semanas y ya pagó mis vacaciones por Europa."</i>
+				</p>
+				<p><strong><i>Sofia Hernandez<br>
+                                    San Bernardo, Chile</i></strong>
+				</p>
+				<h5 class="m-b-0 pink-border-bottom">GANANCIAS: 11880 USD</h5>
+				<a href="#" target="_blank"> <img src="images/spanish-friends.jpg" class="img-responsive" style="padding: 0px;"> </a>
+				<p class="m-b-5"><i>"Me uní con mis mejores amigos y juntos hemos ganado muchísimo después de tan solo 3 semanas. El robot de las transacciones hace todo el trabajo por ti. Juntos hemos hecho más de 430,77 USD a la semana." </i>
+				</p>
+				<p><strong><i>Tomas Cato &amp; David Flores<br>
+                                    Arica, Chile</i></strong>
+				</p>
+				<h5 class="m-b-0 pink-border-bottom">GANANCIAS: 1275 USD</h5>
+				<a href="#" target="_blank"> <img src="images/latam-test-image-female(3).jpg" class="img-responsive" height="151" style="padding: 0px;"> </a>
+				<p class="m-b-5"><i>"Mi novio fue quien me contó de esto, me cambió la vida. He hecho más de 413,95 USD a la semana durante más de un mes, con menos de 30 minutos de trabajo al día."</i>
+				</p>
+				<p><strong><i>Victoria Perez<br>
+                                    Santiago, Chile</i></strong>
+				</p>
+				<h5 class="m-b-0 pink-border-bottom"><b>Para empezar, sigue estos 3 sencillos pasos:</b></h5>
+				<div class="row revival-box2">
+					<div> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAMAAACKeiw+AAAARVBMVEVMaXHz19Pyy8bywbnyta3yq6Dwn5PwlYbwiXnwf23vc2DvaVTvXUfuUjreTTYgCwh/LB8AAAAAAADuUjrvXUfvc2DwlYb1ylcrAAAAE3RSTlMACBQiLjpIVGJueoeToaWvu7zbifL2qAAAAKxJREFUeNqd0dEWgiAMBmDM0BBWyar3f9QGZ4nyn3nRbj+Z2z9nlv8wmXgjYvKWLsRM06nOZueiwRyqaLR0EOVkDh1F6XLy45OVxuPQ67Eed9GlfZ2Pj0M3VsadRpOTPH465BbmOwPPFLfWw9pz0uOlunHPU0kxyNRUDgHsRaWptJadetYb8Is1TPw3l9K4kOcfO2Q9g7ZG1u51LmTNo2WN7K5EsSryVv8w1J6/qkcOpapWznsAAAAASUVORK5CYII=" style="vertical-align: bottom; float: left; padding: 0px;">
+						<h4 style="padding-top:5px">Paso 1:</h4> </div>
+					<div>
+						<p class="m-b-5"><a href="#" target="_blank"><strong>Regístrate para crear una cuenta. Es gratis. </strong> </a> </p>
+						<div style="text-align: center;">
+							<a href="#" target="_blank"> <img src="images/registro.jpg" class="img-responsive rev" style="border: 1px solid grey; padding: 0px;"> </a>
+						</div>
+					</div>
+				</div>
+				<div class="row revival-box2">
+					<div> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAMAAACKeiw+AAAARVBMVEVMaXHz19Pyy8bywbnyta3yq6Dwn5PwlYbwiXnwf23vc2DvaVTvXUfuUjreTTYgCwh/LB8AAAAAAADuUjrvXUfvc2DwlYb1ylcrAAAAE3RSTlMACBQiLjpIVGJueoeToaWvu7zbifL2qAAAAKxJREFUeNqd0dEWgiAMBmDM0BBWyar3f9QGZ4nyn3nRbj+Z2z9nlv8wmXgjYvKWLsRM06nOZueiwRyqaLR0EOVkDh1F6XLy45OVxuPQ67Eed9GlfZ2Pj0M3VsadRpOTPH465BbmOwPPFLfWw9pz0uOlunHPU0kxyNRUDgHsRaWptJadetYb8Is1TPw3l9K4kOcfO2Q9g7ZG1u51LmTNo2WN7K5EsSryVv8w1J6/qkcOpapWznsAAAAASUVORK5CYII=" style="vertical-align: bottom; float: left; padding: 0px;">
+						<h4 style="padding-top:5px">Paso 2:</h4> </div>
+					<div>
+						<p class="m-b-5"> <a href="#" target="_blank"><strong>Deposita la cantidad mínima de $250 usd.</strong> </a> </p>
+						<div style="text-align: center;">
+							<a href="#" target="_blank"> <img src="images/deposito.jpg" class="img-responsive rev" style="border: 1px solid grey; padding: 0px;"> </a>
+						</div>
+					</div>
+				</div>
+				<div class="row revival-box2">
+					<div> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAMAAACKeiw+AAAARVBMVEVMaXHz19Pyy8bywbnyta3yq6Dwn5PwlYbwiXnwf23vc2DvaVTvXUfuUjreTTYgCwh/LB8AAAAAAADuUjrvXUfvc2DwlYb1ylcrAAAAE3RSTlMACBQiLjpIVGJueoeToaWvu7zbifL2qAAAAKxJREFUeNqd0dEWgiAMBmDM0BBWyar3f9QGZ4nyn3nRbj+Z2z9nlv8wmXgjYvKWLsRM06nOZueiwRyqaLR0EOVkDh1F6XLy45OVxuPQ67Eed9GlfZ2Pj0M3VsadRpOTPH465BbmOwPPFLfWw9pz0uOlunHPU0kxyNRUDgHsRaWptJadetYb8Is1TPw3l9K4kOcfO2Q9g7ZG1u51LmTNo2WN7K5EsSryVv8w1J6/qkcOpapWznsAAAAASUVORK5CYII=" style="vertical-align: bottom; float: left; padding: 0px;">
+						<h4 style="padding-top:5px">Paso 3:</h4> </div>
+					<div>
+						<p class="m-b-5"> <a href="#" target="_blank"><strong>¡Retira las ganancias a tu cuenta bancaria!</strong> </a> </p>
+						<div style="text-align: center;">
+							<a href="#" target="_blank"> <img src="images/retirada.jpg" class="img-responsive rev" style="border: 1px solid grey; padding: 0px;"> </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			</i>
+		</div>
+		<div class="row"></div>
+		</div><i>
+            <div class="container comments">
+                <div class="row border-top"></div>
+
+
+            </div>
+
+            <div class="col-md-4"></div>
+
+        </i> </section><i>
+
+    </i> 
+
+
+ 
+</body>
+
+</html>

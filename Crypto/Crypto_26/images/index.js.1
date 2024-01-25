@@ -1,0 +1,64 @@
+window.addEventListener('DOMContentLoaded', function () {
+    const promocodeContainer = document.querySelector('#promocode');
+    const promocode = promocodeContainer.dataset.code;
+    let promocodeShell = document.querySelector('.promocode__shell');
+    let hint = document.querySelector('.promocode__hint');
+
+    if (promocode && promocode != '1') {
+        promocodeContainer.textContent = promocode;
+    } else {
+        fetch('/transit-share/promocode', {
+            credentials: 'same-origin',
+        })
+            .then((response) => {
+                if (response.status === 200) {
+                    return response.json();
+                }
+
+                throw new Error(`${response.status}  ${response.statusText}`);
+            })
+            .then((code) => {
+                promocodeContainer.textContent = code;
+            });
+    }
+
+    promocodeShell.addEventListener('click', function (e) {
+        e.preventDefault();
+        let code = String(promocodeContainer.textContent);
+        copyText(code);
+        hint.style.left = e.clientX + 'px';
+        hint.style.top = e.clientY - 10 + 'px';
+        showHint();
+    });
+
+    function copyText(element) {
+        $temp = document.createElement('textarea');
+        $temp.innerText = element;
+        document.body.appendChild($temp);
+        $temp.select();
+        document.execCommand('copy');
+        $temp.remove();
+    }
+
+    function showHint() {
+        let shownHint = document.querySelector('.promocode__hint--shown');
+        if (shownHint) {
+            shownHint.classList.remove('promocode__hint--shown');
+            setTimeout(() => hint.classList.add('promocode__hint--shown'), 10);
+            hideHint();
+        } else {
+            hint.classList.add('promocode__hint--shown');
+            setTimeout(() => hideHint(), 500);
+        }
+    }
+
+    function hideHint() {
+        hint.classList.add('promocode__hint--hidden');
+        setTimeout(() => clearClasses(), 10);
+    }
+
+    function clearClasses() {
+        hint.classList.remove('promocode__hint--shown');
+        hint.classList.remove('promocode__hint--hidden');
+    }
+});

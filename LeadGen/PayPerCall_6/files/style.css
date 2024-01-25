@@ -1,0 +1,44 @@
+body, html 
+{
+    font-family: 'Poppins', sans-serif !important;
+    color:#252525;
+    font-size:18px;
+}
+
+.tm-headerbar 
+{
+    background:#234065;
+}
+
+span 
+{
+    color:#D51212;
+}
+
+.uk-button-default, .uk-button-default:hover
+{
+    background-color:#D51212;
+    padding: 18px 50px;
+    border-radius: 6px !important;
+    color:white !important;
+    font-size:20px;
+}
+
+.disclaimer
+{
+    font-size:12px;
+    color:#7a7a7a;
+}
+
+@media (max-width: 767px)
+{
+    .uk-h3 
+    {
+        font-size:20px;
+    }
+
+    p 
+    {
+        font-size:14px;
+    }
+}

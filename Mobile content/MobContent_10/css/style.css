@@ -1,0 +1,881 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+	display: block; }
+
+ol, ul {
+	list-style: none; }
+
+em, h1, h2, h3, h4, h5, h6 {
+	font-style: inherit;
+	font-weight: inherit;
+}
+
+/** Float Clearing **/
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+
+.footer strong { font-weight: bold;}
+.operator-group {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #666;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  width:220px;
+  margin:10px auto;
+}
+.operator-group:before, .operator-group:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 9px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 4px dashed;
+  border-color: #888 transparent;
+  pointer-events: none;
+}
+.operator-group:before {
+  border-bottom-style: solid;
+  border-top: none;
+}
+.operator-group:after {
+  margin-top: 7px;
+  border-top-style: solid;
+  border-bottom: none;
+}
+
+.operator-selection {
+  position: relative;
+  width: 130%;
+  margin: 0;
+  height:30px;
+  padding: 5px 10px;
+  font-size: 15px;
+  color: #333;
+  background: #f2f2f2;
+  background: rgba(0, 0, 0, 0) !important;
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.operator-selection:focus {
+  z-index: 3;
+  width: 100%;
+  color: #394349;
+  outline: 2px solid #ccc;
+  outline-offset: -2px;
+}
+
+.operator-selection > option {
+  margin: 3px;
+  padding: 6px 8px;
+  text-shadow: none;
+  background: #f2f2f2;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+   appearance: none;
+}
+
+/*
+*/
+
+/* ----------------- IE 8 customized css for height:auto --------------------*/
+
+@media \0screen {
+  .imgIE8 { 
+  	width: auto; /* for ie 8 */
+  }
+}
+
+/* ----------------- IMG 100% ------------------*/
+
+.img100pct{width:100%;}
+
+/* ----------------- OC2SMS Button remove underline ------------------*/
+
+a{
+	text-decoration:none;
+	}
+
+
+
+
+
+
+.operator-logo-group{
+	max-width:300px;
+	margin:5px auto;
+	}
+
+.oc2sms-button .viva{
+	background-image: url("../images/viva.jpg");
+	background:#fff !important;
+	width:80%;
+	min-width: 120px;
+	max-width: 125px;
+	height:85px;
+	border:none;
+	margin:5px 3px;
+	outline: none;
+	cursor: pointer;color:transparent;
+	color:rgba(255,255,255,0);
+	text-shadow: none;
+	border-radius: 7px;
+	display: inline-block;
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.75);
+	animation:none;
+	-webkit-animation:none;
+	padding:0px;
+	}
+
+.oc2sms-button .ooredoo{
+	background-image: url("../images/ooredoo.jpg");
+	background:#fff !important;
+	width:80%;
+	min-width: 120px;
+	max-width: 125px;
+	height:85px;
+	border:none;
+	margin:5px 3px;
+	outline: none;
+	cursor: pointer;color:transparent;
+	color:rgba(255,255,255,0);
+	color: transparent;
+	text-shadow: none;
+	border-radius: 7px;
+	display: inline-block;
+	box-shadow: 0px 1px 4px rgba(0,0,0,0.5);
+	animation:none;
+	-webkit-animation:none;
+	padding:0px;
+	}
+
+#op-logo .operator-logo{
+	background:#fff !important;
+	width:80%;
+	min-width: 120px;
+	max-width: 125px;
+	height:85px;
+	border:none;
+	margin:5px 3px;
+	outline: none;
+	cursor: pointer;color:transparent;
+	color:rgba(255,255,255,0);
+	color: transparent;
+	text-shadow: none;
+	border-radius: 7px;
+	display: inline-block;
+	box-shadow: 0px 1px 4px rgba(0,0,0,0.5);
+	animation:none;
+	-webkit-animation:none;
+	padding:0px;
+	}
+
+#op-logo .operator-logo img{
+	width:90%;
+	}
+	
+
+	@media screen and (max-width: 320px){
+	#op-logo .operator-logo{min-width: 90px;}
+		
+	}
+	
+	
+
+
+
+
+	
+
+/*#KW_OOREDOO{
+		background: url("../images//resource/shared/marketing_assets/operators/KW/ooredoo.png") #fff center center no-repeat;
+		width:80%;
+		min-width: 120px;
+		max-width: 125px;
+		height:85px;
+		border:none;
+		margin:10px 3px;
+		outline: none;
+		cursor: pointer;color:transparent;
+		color:rgba(255,255,255,0);
+		text-shadow: none;
+		border-radius: 7px;
+		display: inline-block;
+		box-shadow: 0px 2px 2px rgba(0,0,0,0.75);
+		animation:none;
+		-webkit-animation:none;
+	}
+	
+	#KW_VIVA{
+		background: url("../images//resource/shared/marketing_assets/operators/KW/viva.jpg") #fff center center no-repeat;
+		width:80%;
+		min-width: 120px;
+		max-width: 125px;
+		height:85px;
+		border:none;
+		margin:10px 3px;
+		outline: none;
+		cursor: pointer;color:transparent;
+		color:rgba(255,255,255,0);
+		text-shadow: none;
+		border-radius: 7px;
+		display: inline-block;
+		box-shadow: 0px 2px 2px rgba(0,0,0,0.75);
+		animation:none;
+		-webkit-animation:none;
+	}
+	
+	
+	
+	@media screen and (max-width: 320px){
+	#KW_OOREDOO,#KW_VIVA{min-width: 90px;}
+		
+	}*/
+
+	
+	#confirmation-legal-wrapper,#confirmation-incentivized-wrapper, .confirmation-op_confirm-wrapper{
+	position:fixed !important;
+	z-index:1000;
+	width:100%;
+	height: 100%;
+	text-align:center;
+	background:rgba(0,0,0,0.6);
+	top: 0;
+	}
+	
+.bupper-popup-block{
+	display:table;
+	width:50%;
+	max-width: 460px;
+	margin:18% auto;
+	left: 0;
+	right: 0;
+	min-height:100px;
+	background-color:#eee;
+	border-radius:10px;
+	border:10px rgba(255,255,255,1) solid;
+	padding:20px;
+	position:absolute;
+	color:rgba(0,0,0,1);
+	}
+
+.accept-confirmation,.decline-confirmation{
+	border-radius:5px;
+	border:none;
+	background-color:rgba(0,153,204,1) ;
+	color:rgba(255,255,255,1);
+	padding:5px; margin:3px;
+	}
+
+.accept-confirmation:hover,.decline-confirmation:hover{
+	border-radius:5px;
+	border:none;
+	background-color:rgba(0,128,192,1);
+	color:rgba(255,255,255,1);
+	padding:5px;
+	}
+	
+.msisdn-input, .msisdn-input:focus { 
+	text-align:center;
+}
+
+.transbtn{color:inherit; text-decoration:none;}
+	
+@media screen and (max-width: 780px){
+.bupper-popup-block{
+	margin:33% auto;
+	min-height:100px;left:20%;right:20%;position:absolute;top:25%;
+	background-color:#eee;
+	border-radius:10px;
+	/*padding:20px;*/
+	}
+}
+
+@media screen and (max-width: 480px){
+.bupper-popup-block{
+	width:70%; margin:40% auto;
+	min-height:100px;left:5%;right:5%;position:absolute;top:10%;
+	background-color:#eee;
+	border-radius:10px;
+	/*padding:20px;*/
+	}
+}
+
+
+
+
+
+
+/* ---------------------------- top hooks and bottom hooks layout styling ------------------------------ */
+.footer,
+.toplegal,
+.hook-topLeft,
+.hook-topCenter,
+.hook-topRight,
+.hook-bottomLeft,
+.hook-bottomCenter,
+.hook-bottomRight,
+.hook-beforeSubmit,
+.hook-afterSubmit,
+.hook-beforeInput,
+.hook-afterInput,
+.component-msg{
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	}
+	
+.footer a{
+	color:inherit;
+	}
+
+.footer, .toplegal {text-align: justify; display:table; width:100%;} 
+
+.toplegal p {margin: 0;}
+
+.popup-bottom, .popup-top{display:table-row;}
+
+.hook-confirmationBodyStart, hook-confirmationBodyEnd{padding:5px; text-align:center;}
+.hook-confirmationBodyStart{margin-top:10px;}
+.hook-confirmationBodyEnd{margin-bottom:10px;}
+
+.hook-topLeft, .hook-topCenter, .hook-topRight{margin:0; top:0;}
+.hook-confirmationTopLeft, .hook-confirmationTopCenter, .hook-confirmationTopRight{margin:0;}
+
+.hook-topLeft, .hook-bottomLeft, .hook-confirmationTopLeft, .hook-confirmationBottomLeft{text-align:left;}
+.hook-topCenter, .hook-bottomCenter{text-align:justify;}
+.hook-topRight, .hook-bottomRight, .hook-confirmationTopRight, .hook-confirmationBottomRight{text-align:right;}
+.hook-confirmationTopCenter, .hook-confirmationBottomCenter{text-align:center;}
+
+.hook-bottomLeft, .hook-bottomCenter, .hook-bottomRight, .hook-topLeft, .hook-topCenter, .hook-topRight {display:table-cell; padding:5px; vertical-align: top;}
+.hook-confirmationTopLeft, .hook-confirmationTopCenter, .hook-confirmationTopRight, .hook-confirmationBottomLeft, .hook-confirmationBottomCenter, .hook-confirmationBottomRight
+{display:table-cell; padding:5px;}
+
+
+/* ---------------------------- end top hooks and bottom hooks layout styling ------------------------------ */
+html,
+body {
+	color: #fff;
+	background-color: #000;
+	background-position: top left;
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-family: tahoma;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* .logo{
+	height: 30px;
+	width:200px;
+	margin: auto;
+	background-image: url("../images//resource/shared/generic/logo_mobiotv.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+} */
+
+.wrap {
+	max-width: 400px;
+	margin: auto;
+	padding: 0 10px;
+	clear: both;
+	margin-top: 20px;
+}
+
+.box {
+	background: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    position: relative;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    max-width: 350px;
+    margin: 0 auto;
+    /* margin: 25vh auto; */
+    padding: 20px 10px 20px 10px;
+    -webkit-box-shadow: 0em 0.625em 0.625em 0em rgba(0, 0, 0, 0.15);
+    box-shadow: 0em 0.625em 0.625em 0em rgba(0, 0, 0, 0.15);
+    background: #f9f9f9;
+    border: 2px solid #e8e8e8;
+    color: #000;
+    display: block;
+}
+
+.pin.box::after {
+	content: '';
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	border-radius: 8px;
+	top: -13px;
+	right: 0;
+	left: 0;
+	z-index: 9;
+	margin: auto;
+	background-color: white;
+	transform: rotate(45deg);
+}
+
+.creative {
+	height: 50vh;
+	width: 100%;
+	background-image: url("../images/streaming.png");
+	background-position: top center;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+
+
+.creative-pin {
+	height: 250px;
+	width: 280px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: auto;
+	background-position: center;
+	margin-bottom: -65px;
+
+}
+
+.main-title-box {
+	margin-top: 2vh;
+	margin-bottom: 8vh;
+	z-index: 1;
+	position: relative;
+}
+
+#mainTitle,
+.mainTitle,
+#pinTitle {
+	text-align: center;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 1.3em;
+	max-width: 340px;
+	margin: 5vh auto auto;
+}
+
+
+.subTitle {
+	font-size: 16px;
+	max-width: 80%;
+	margin: 20px auto auto;
+}
+
+#moTitle {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.cta-title {
+	font-size: 14px;
+	padding: 0 20px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.wrapper {
+	margin: 0 auto;
+	position: relative;
+	max-width: 500px;
+	min-height: 90vh;
+}
+
+.footer {
+	max-width: 420px;
+    margin: 0px auto;
+    position: relative;
+    display: block;
+}
+
+
+@media (max-width: 320px){
+    .footer {
+        margin: 60px auto;
+
+    }
+   
+}
+
+
+.top-txt {
+	font-size: 15px;
+	max-width: 320px;
+	margin: 18px auto;
+	text-align: center;
+	font-weight: 600;
+}
+
+.instructions {
+	margin: 20px auto;
+	max-width: 300px;
+	text-align: center;
+}
+
+.or {
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/** MSISDN AND PIN INPUTS START **/
+.msisdn-input,
+.pin-input {
+	border: 3px solid #0172E5;
+	background-color: rgba(239, 239, 239, 0.83);
+	border-radius: 4px;
+	font-size: 20px;
+	padding: 8px;
+	text-align: center;
+	margin-bottom: 4px;
+	border-radius: 8px;
+}
+
+.msisdn-input {
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.pin-input {
+	width: 200px;
+	font-weight: bold;
+	padding-left: 2ch;
+	margin: 0 auto;
+	height: 55px;
+}
+
+.msisdn-input:focus,
+.pin-input:focus {
+	border: 3px solid #0172E5;
+}
+
+/** input icons **/
+.pin-input {
+	background:#eeeded url("../images/icon-password-gray.png") 12px center no-repeat;
+}
+
+.pin-input:focus {
+	background:#eeeded url("../images/icon-password-black.png") 12px center no-repeat;
+}
+
+/* START INPUT - country flag country code */
+.msisdn-input {
+	font-size: 4ch;
+	max-width: 300px;
+	width: 100%;
+	height: 56px;
+	text-align: left !important;
+	direction: ltr;
+	text-indent: 50px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.msisdn-input,
+.msisdn-input:focus {
+	text-align: left;
+}
+
+.msisdn-input-wrap {
+	position: relative;
+	display: block;
+	max-width: 300px;
+	margin: auto;
+}
+
+.msisdn-input-wrap::after {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 15px;
+	bottom: 16px;
+	background-image: url("../images/phone-black.svg");
+	background-repeat: no-repeat;
+	background-size: 30px;
+}
+
+#component-msg-MSISDN_LABEL {
+	margin: 20px auto 10px auto;
+	line-height: 1.2em;
+	color: #000;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+
+/** MSISDN AND PIN INPUTS END **/
+
+/** CTA BTN STYLES START **/
+.msisdn-submit-button,
+.msisdn-submit-disable,
+.pin-submit-button,
+.pin-submit-disable,
+.ussd-button,
+.btn {
+	background-color: #cccccc;
+	background-image: none;
+	color: #a5a5a5;
+	box-shadow: 0 1px 1.5px rgba(0, 0, 0, .15);
+	box-shadow: 0 1px 1.5px rgba(0, 0, 0, .25);
+	color: #fff;
+	font-size: 1.8em;
+	border: none;
+	width: 100%;
+	max-width: 300px;
+	height: 55px;
+	text-decoration: none;
+	text-align: center;
+	margin: auto;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 400;
+	margin-top: 5px;
+	border-radius: 8px;
+}
+
+#dialTitle{
+	position: relative;
+	font-size: 14px;
+	margin-top: 12vh;
+}
+
+#instructionTitle{
+	color: #000;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+
+.pin-submit-button,
+.msisdn-submit-button,
+.btn,
+.ussd-button,
+.oc2sms-button {
+	background-color: #0172E5;
+
+	color: #fff;
+	font-size: 1.8em;
+	border: none;
+	border-radius: 8px;
+	width: 100%;
+	max-width: 300px;
+
+	text-decoration: none;
+	text-align: center;
+	margin: auto;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	font-weight: 400;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.oc2sms-button {
+	margin-bottom: 4px;
+}
+
+.msisdn-group,
+.msisdn-submit-button,
+#pinwrap {
+	position: relative;
+}
+
+/** CTA BTN STYLES ENDS **/
+
+.errMsg {
+	color: red;
+	font-size: 12px;
+	/* padding: 5px 0 3px 0; */
+	display: block;
+}
+
+#component-msg-DISCLAIMER {
+	padding: 20px;
+}
+
+.valid:before {
+	display: none;
+}
+
+.keys {
+	font-size: 16px;
+}
+
+.keyword,
+.shortcode {
+	font-size: 18px;
+	color: #000000;
+	font-weight: 700;
+}
+
+.spacing {
+	margin-bottom: 20px;
+}
+
+.component-msg a {
+	position: relative;
+	z-index: 10;
+	color: #0070ff;
+	margin: 0 auto 40px;
+	display: block;
+}
+
+#component-msg-MSISDN_LABEL {
+	margin: 20px auto 10px auto;
+	line-height: 1.9em;
+
+}
+
+.hook-beforeInput {
+	margin-top: 20px;
+}
+
+#component-msg-PINLABEL {
+	max-width: 300px;
+	margin: auto;
+}
+
+#section_pin_tq {
+	padding: 5vh;
+	position: relative;
+	line-height: 2em;
+}
+
+.pinooreedooLabel{
+	margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.ooreedooLabel{
+font-size: 15px;
+margin: 20px 0;
+display: block;
+}
+
+#component-msg-TARIFF, #component-msg-PRICEPIN{
+	display: none;
+}
+
+#component-msg-LABEL2 span, #component-msg-MSISDNLABEL p span {
+font-size: 18px;
+    margin-bottom: 10px;
+display: block;
+font-weight: bold;
+line-height: 1.3em;
+}
+
+.select-operator {
+	font-size: 16px;
+    font-weight: bold;
+}
+
+#resend-pin-button {
+	display: none;
+} 
+    
+    
+
+
+
+
+
+
+.msisdn-input-wrap::before {
+    content: '(+965)';
+    position: absolute;
+    color: black;
+    z-index: 1;
+    left: 46px;
+    top: 11px;
+    font-size: 25px;
+}
+
+.msisdn-input {
+    padding-left: 75px;
+}
+
+#op-logo .operator-logo{
+    width: 100%;
+	height: 55px;
+	max-width: 300px;
+	margin: 10px auto;
+	
+}
+
+#op-logo .operator-logo img{
+	width: auto !important;
+	transform: scale(0.9);
+}
+
+#KW_VIVA img{
+    transform: scale(0.5) !important;
+	margin-top: -9px;
+}
+

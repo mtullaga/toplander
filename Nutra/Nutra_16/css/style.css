@@ -1,0 +1,73 @@
+
+body {
+  background: #eee url(extra_clean_paper.png);
+}
+footer.page-footer .footer-copyright {
+    overflow: hidden;
+    background-color: rgba(0,0,0,.2);
+    font-size: .9rem;
+    color: rgba(255,255,255,.6);
+}
+
+
+
+.ff2{
+display:none;
+}
+
+
+@media (max-width: 868px){
+.ff2{
+display:block;
+}
+.ff3{
+display:none;
+}
+}
+
+                        form{
+                        position: relative;
+                        }
+            
+            
+
+#demo{
+font-size: 40px;
+}
+
+ 
+  input {
+    width: 85%;
+    margin-bottom: 30px;
+    border: 2px solid #222;
+    padding: 5px;
+    height: 30px;
+    border-radius: 10px;
+}
+.order_block h3{
+    padding-top: 15px;
+    text-align: center;
+    margin: -50px 0;
+  font-size: 20px !important;
+}
+.submit-form {
+
+    width: 85%;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #d4282c;
+    border-radius: 20px;
+    -webkit-animation: a 1s infinite alternate;
+    animation: a 1s infinite alternate;
+    cursor: pointer;
+    font-weight: 700;
+
+}
+
+        @media screen and (max-width: 480px) {
+            input {
+                width: 90%
+            }
+        }                    

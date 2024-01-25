@@ -1,0 +1,1 @@
+(()=>{"use strict";var t;t=".".concat("attrakt--button-selector"),window.acf&&window.acf.addAction("render_block_preview/type=".concat("attrakt--button-selector"),(function(){document.querySelectorAll(t).forEach((function(t){t.querySelectorAll("a").forEach((function(t){t.addEventListener("click",(function(t){t.preventDefault()}))}))}))}))})();

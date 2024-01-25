@@ -1,0 +1,78 @@
+#button-front {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  border-radius: 5px;
+  min-height: 70px;
+  font-size: 25px;
+  font-weight: 700;
+  hyphens: none;
+  line-height:37px;
+  letter-spacing: -0.5px;
+  padding: 16px;  
+  transition: box-shadow 0.2s linear, background-color 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.text-img {
+  display: flex;
+  align-items: center;
+  line-height: 26px;
+
+}
+#button-front:hover {
+  background-color: var(--hover-background-color) !important;
+}
+#button-front svg:not(.button-img) {
+  width: 20px;
+  height: 20px;
+  margin-bottom: -4px;
+  margin-left: 10px;
+}
+
+.button-img {
+  width: 20px;
+  height: 20px;
+  margin-bottom: -3px !important;
+  margin-left: 10px;
+}
+
+.button-label {
+  margin-right: 7px;
+}
+
+
+@media screen and (max-width: 1140px) {
+  #button-front {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.5px;
+    padding: 16px;  
+    text-align: center;
+    transition: box-shadow 0.2s linear, background-color 0.2s ease-in-out;
+  
+  }
+
+  #button-front svg:not(.button-img) {
+    width: 15px;
+    height: 15px;
+    margin-bottom: -3px;
+    margin-left: 8px;
+  
+  }
+  .button-img {
+    width: 15px;
+    height: 15px;
+    margin-bottom: -2px !important;
+    margin-left: 8px;
+  }
+
+  .button-label {
+    margin-right: 5px;
+  }
+
+}

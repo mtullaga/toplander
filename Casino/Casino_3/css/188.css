@@ -1,0 +1,44 @@
+body > header {
+  display: none !important;
+  visibility: hidden !important; }
+
+footer {
+  display: none !important;
+  visibility: hidden !important; }
+
+.navbar-fixed-top {
+  display: none !important;
+  visibility: hidden !important; }
+
+.footer-top {
+  display: none !important;
+  visibility: hidden !important; }
+
+.sidebar {
+  display: none !important;
+  visibility: hidden !important;
+ }
+
+.fil-ariane {
+  display: none !important;
+  visibility: hidden !important; }
+
+section.contenu-article > aside.img-links-wrapper {
+  display: none !important;
+  visibility: hidden !important; }
+
+article.article > div.article_comments_part {
+  display: none !important;
+  visibility: hidden !important; }
+
+body > div.pub {
+  display: none !important;
+  visibility: hidden !important; }
+
+.OUTBRAIN {
+  display: none !important;
+  visibility: hidden !important; }
+
+.ligatus {
+  display: none !important;
+  visibility: hidden !important; }

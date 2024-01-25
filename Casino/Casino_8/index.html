@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<base href="">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=yes">
+	<link href="css/css.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery.js"></script>
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<script src="js/spi.js"></script>
+</head>
+<title>CONGRATULATIONS!</title>
+
+<body style="">
+	<div class="section-logo"><img src="images/YG-logo.png">
+	</div>
+	<div class="container">
+		<div class="row phase--1 restrict-width">
+			<div class="col-xs-12">
+				<div class="padding-side">
+					<p class="main-text"><strong class="flash" style="color: red;">CONGRATULATIONS!</strong>
+					</p>
+					<p>You are eligible to spin the Wheel of Bonus
+						<br>Offer ends in <b><span id="time">14:31</span></b> minutes
+						<br>Spin the wheel to see what you have won!</p>
+				</div>
+				<button class="gold-btn btn" onclick="startSpin()">SPIN THE WHEEL</button>
+			</div>
+		</div>
+		<div class="row phase--2 restrict-width">
+			<div class="col-xs-12">
+				<div class="padding-side">
+					<p class="main-text--large"><strong>Hurrah!</strong>
+					</p>
+					<p class="text-large">You’ve won <strong>125 free chances to <br>win this jackpot for FREE:</strong>
+					</p> <span class="progressive15 progressive-jackpot-ticker" data-jackpot-id="15">$3,883,517.52</span>
+				</div> <a class="gold-btn btn" href="#">USE MY 125 SPINS NOW</a>
+			</div>
+		</div>
+		<div class="spinner-container"><img class="spinner" src="images/wheel.png"> <img class="pointer" src="images/pointer.png">
+		</div>
+	</div>
+	<p>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$(document).progressiveJackpotTicker({});
+		});
+		var t = 13200;
+		var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+		if(isChrome) {} else {
+			t = 14600;
+		}
+
+		function startSpin() {
+			$(".phase--1").fadeOut(1000);
+			$(".spinner").addClass("spinAround");
+			setTimeout(function() {
+				setTimeout(function() {
+					$(".phase--2").fadeIn(1000);
+				}, 200);
+			}, 6800);
+		}
+		</script>
+	</p>
+	<div id="directions_extension" style="display:none;"></div>
+	<p>
+		<script>
+		function startTimer(duration, display) {
+			var timer = duration,
+				minutes, seconds;
+			setInterval(function() {
+				minutes = parseInt(timer / 60, 10)
+				seconds = parseInt(timer % 60, 10);
+				minutes = minutes < 10 ? "0" + minutes : minutes;
+				seconds = seconds < 10 ? "0" + seconds : seconds;
+				display.textContent = minutes + ":" + seconds;
+				if(--timer < 0) {
+					timer = duration;
+				}
+			}, 1000);
+		}
+		window.onload = function() {
+			var fiveMinutes = 60 * 15,
+				display = document.querySelector('#time');
+			startTimer(fiveMinutes, display);
+		};
+		</script>
+	</p>
+</body>
+
+</html>

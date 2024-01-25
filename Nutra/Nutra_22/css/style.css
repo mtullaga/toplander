@@ -1,0 +1,130 @@
+html {
+  scroll-behavior: smooth; }
+
+.buruan {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+  margin-bottom: 20px; }
+  .buruan__container {
+    width: 100%;
+    background: #fe531c;
+    background: linear-gradient(180deg, #fe531c, #9a2601);
+    border-radius: 20px; }
+  .buruan__header {
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-weight: bold;
+    color: white;
+    font-size: 64px;
+    text-align: center;
+    line-height: 0.8;
+    padding-top: 40px; }
+    @media (max-width: 420px) {
+      .buruan__header {
+        font-size: 48px; } }
+  .buruan__subheader {
+    color: white;
+    font-size: 26px;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.6; }
+    @media (max-width: 420px) {
+      .buruan__subheader {
+        font-size: 18px; } }
+  .buruan__text {
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    padding: 14px 20px;
+    line-height: 1.6; }
+    @media (max-width: 420px) {
+      .buruan__text {
+        font-size: 16px;
+        padding: 0 20px; } }
+  .buruan__text-2 {
+    color: #ee9066;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.6;
+    padding: 20px 30px; }
+    @media (max-width: 420px) {
+      .buruan__text-2 {
+        font-size: 16px;
+        padding: 8px 20px 10px; } }
+
+.price {
+  box-shadow: inset 0px 15px 20px -20px #000;
+  -webkit-box-shadow: inset 0px 15px 20px -20px #000;
+  background-color: white;
+  border-radius: 14px;
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  @media (max-width: 420px) {
+    .price {
+      padding-top: 20px;
+      padding-bottom: 20px; } }
+  .price__title {
+    color: black;
+    font-size: 30px;
+    line-height: 1.6;
+    margin-right: 10px; }
+    @media (max-width: 568px) {
+      .price__title {
+        font-size: 20px; } }
+    @media (max-width: 420px) {
+      .price__title {
+        font-size: 18px; } }
+  .price__price {
+    font-family: "Paytone One", sans-serif;
+    color: #ff0101;
+    font-size: 56px;
+    line-height: 1.6;
+    border-bottom: 2px dotted #ff0000;
+    margin-left: 10px;
+    margin-top: -16px; }
+    @media (max-width: 568px) {
+      .price__price {
+        font-size: 38px; } }
+    @media (max-width: 420px) {
+      .price__price {
+        font-size: 26px; } }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .form__input {
+    width: calc(100% - 40px);
+    border-style: solid;
+    border-color: #eeeeee;
+    border-width: 1px;
+    border-radius: 60px;
+    padding: 12px 20px;
+    outline: none;
+    margin: 10px 0;
+    font-size: 16px; }
+  .form__submit {
+    box-shadow: 0px 15px 20px -20px #000;
+    -webkit-box-shadow: 0px 15px 20px -20px #000;
+    border-radius: 60px;
+    cursor: pointer;
+    background-color: white;
+    color: #ff0101;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+    border: 0;
+    width: 280px;
+    height: 60px;
+    margin-top: 10px; }
+    @media (max-width: 420px) {
+      .form__submit {
+        font-size: 20px;
+        width: 240px;
+        height: 46px; } }

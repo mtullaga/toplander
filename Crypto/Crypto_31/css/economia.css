@@ -1,0 +1,293 @@
+ .icon-esperti-banche{background:url(sprite-esperti.svg.html) no-repeat;width:115px;height:84px}
+ .icon-esperti-casa{background:url(sprite-esperti.svg.html) 0 13.658536585365853% no-repeat;width:110px;height:66px}
+ .icon-esperti-diritti{background:url(sprite-esperti.svg.html) 0 25.08361204013378% no-repeat;width:75px;height:83px}
+ .icon-esperti-energia{background:url(sprite-esperti.svg.html) 0 38.19672131147541% no-repeat;width:69px;height:71px}
+ .icon-esperti-famiglia{background:url(sprite-esperti.svg.html) 0 49.11147011308562% no-repeat;width:41px;height:62px}
+ .icon-esperti-fisco{background:url(sprite-esperti.svg.html) 0 59.70636215334421% no-repeat;width:73px;height:68px}
+ .icon-esperti-lavoro{background:url(sprite-esperti.svg.html) 0 69.32907348242811% no-repeat;width:54px;height:55px}
+ .icon-esperti-pensione{background:url(sprite-esperti.svg.html) 0 81.36439267886855% no-repeat;width:63px;height:80px}
+ .icon-esperti-telefonia{background:url(sprite-esperti.svg.html) 0 90.46104928457869% no-repeat;width:52px;height:52px}
+ .icon-esperti-trasporti{background:url(sprite-esperti.svg.html) 0 100% no-repeat;width:92px;height:60px}
+ .section-economia .block-12:before,.section-economia .block-2:before,.section-economia .block-3:before,.section-economia .block-4:before,.section-economia .block-6:before,.section-economia .block-8:before{background-color:#ff7600}
+ .section-economia .block-12.from-rep:before,.section-economia .block-2.from-rep:before,.section-economia .block-3.from-rep:before,.section-economia .block-4.from-rep:before,.section-economia .block-6.from-rep:before,.section-economia .block-8.from-rep:before{background-color:#dedede}
+ .section-economia section:not(.block-cover) .entry-title{color:#1a1a1a}
+ .section-economia section:not(.block-cover) .entry-title a:hover{color:#ff7600}
+ .section-economia section:not(.block-cover) .entry-subtitle,.section-economia section:not(.block-cover) .entry-subtitle a{color:#505050}
+ .section-economia section:not(.block-cover) .block-overtitle,.section-economia section:not(.block-cover) .entry-subtitle a:hover{color:#ff7600}
+ .section-economia section:not(.block-cover) .block-overtitle a{color:inherit}
+ .section-economia section:not(.block-cover) .block-overtitle a:hover{color:#1a1a1a}
+ .section-economia section:not(.block-cover) .entry-links a{color:#3a3a3a}
+ .section-economia section:not(.block-cover) .entry-links a:hover,.section-economia section:not(.block-cover) .entry-overtitle,.section-economia section:not(.block-cover) .entry-overtitle a{color:#ff7600}
+ .section-economia section:not(.block-cover) .entry-overtitle a:hover{color:#1a1a1a}
+ .section-economia [class^=block-].soft-news{background:#FDE8D2}
+ .section-economia [class^=block-].soft-news:before{background:#ff7600}
+ .section-economia [class^=block-].soft-news:after{background:#FDE8D2}
+ .section-economia [class^=block-].soft-news .block-overtitle,.section-economia [class^=block-].soft-news .entry-links,.section-economia [class^=block-].soft-news .entry-overtitle{color:#ff7600}
+ .section-economia [class^=block-].soft-news .block-overtitle a:hover,.section-economia [class^=block-].soft-news .entry-links a:hover,.section-economia [class^=block-].soft-news .entry-overtitle a:hover{color:#1a1a1a}
+ .section-economia [class^=block-].soft-news .block-overtitle{border-color:#FDE8D2}
+ .section-economia [class^=block-].soft-news .entry-subtitle a,.section-economia [class^=block-].soft-news .entry-title a{color:#1a1a1a}
+ .section-economia [class^=block-].soft-news .entry-subtitle a:hover,.section-economia [class^=block-].soft-news .entry-title a:hover{color:#ff7600}
+ .section-economia [class^=block-].soft-news .share-and-comment{border-color:#FFC089}
+ .section-economia [class^=block-].soft-news .share-and-comment,.section-economia [class^=block-].soft-news .share-text{color:#FFC089!important}
+ .section-economia .hot-topics_wrapper{background-color:#fff;max-width:1046px;margin:0 auto;padding:23px 33px 0;display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;white-space:nowrap;border-left:1px solid #d6d6d6;border-right:1px solid #d6d6d6}
+ .section-economia .hot-topics_wrapper .hot-topics_title{color:#ff7600;font-size:13px;line-height:32px;text-transform:uppercase;font-weight:500}
+ .section-economia .hot-topics_wrapper ul.hot-topics{white-space:nowrap;overflow:hidden;padding:0 8px;margin-top:0}
+ .section-economia .hot-topics_wrapper ul.hot-topics li{display:inline-block;line-height:32px;margin:0 4px 0 0;padding:0 8px}
+ .section-economia .hot-topics_wrapper ul.hot-topics li a{color:#2d2d2d;font-size:13px;font-weight:400;line-height:13px}
+ .section-economia .hot-topics_wrapper ul.hot-topics li:hover{background-color:#FDE8D2}
+ .section-economia .hot-topics_wrapper ul.hot-topics li:hover a{color:#ff7600}
+ .section-economia.has_domination .hot-topics_wrapper{margin:0 auto;max-width:996px}
+ .section-economia .read-all,.section-economia .rep-button{background-color:#454545;padding:12px 24px;color:#fff;font-weight:400;font-size:16px;text-transform:uppercase;margin:0 auto 16px}
+ .section-economia .read-all:hover,.section-economia .rep-button:hover{background-color:#ff7600}
+ .section-economia .rep-section-menu>li.active>a,.section-economia .rep-section-menu>li>a:hover{border-top-color:#ff7600;color:#ff7600}
+ .section-economia .rep-section-menu a:hover,.section-economia .rep-section-submenu li.active a{color:#ff7600}
+ .section-economia #rep-slim-header .header-content:after{background-color:#ff7600!important}
+ .section-economia .rep-main-search{border-left:none}
+ .section-economia #gs-social-follow [class*=rep-icon-]:hover,.section-economia .rep-main-search button{color:#ff7600}
+ .section-economia .search_label{font-size:20px;padding:8px 8px 16px;border-bottom:1px dashed #ff7600;display:block;width:100%}
+ .section-economia .search_label+.type-list{border-top:none}
+ .section-economia .pagination .active a,.section-economia .pagination a:hover{color:#ff7600}
+ .section-economia .widget-blog,.section-economia .widget-box,.section-economia .widget-network{margin:8px 8px 24px!important;padding:0}
+ .section-economia .widget-blog h4,.section-economia .widget-box h4,.section-economia .widget-network h4{color:#ff7600}
+ .section-economia .widget-blog h4.widget-box_label,.section-economia .widget-box h4.widget-box_label,.section-economia .widget-network h4.widget-box_label{border-bottom:1px solid #ff7600}
+ .section-economia .widget-blog a.widget-blog_overtitle,.section-economia .widget-box a.widget-blog_overtitle,.section-economia .widget-network a.widget-blog_overtitle{color:#ff7600}
+ .section-economia .widget-blog a.widget-blog_overtitle:hover,.section-economia .widget-box a.widget-blog_overtitle:hover,.section-economia .widget-network a.widget-blog_overtitle:hover{color:#333}
+ .section-economia .widget-blog a.widget-box_link,.section-economia .widget-box a.widget-box_link,.section-economia .widget-network a.widget-box_link{background:#ff7600}
+ .section-economia .widget-blog a.widget-box_link:hover,.section-economia .widget-box a.widget-box_link:hover,.section-economia .widget-network a.widget-box_link:hover{background:#333}
+ .section-economia .widget-blog .widget-blog_title a:hover,.section-economia .widget-blog .widget-box_title a:hover,.section-economia .widget-box .widget-blog_title a:hover,.section-economia .widget-box .widget-box_title a:hover,.section-economia .widget-network .widget-blog_title a:hover,.section-economia .widget-network .widget-box_title a:hover{color:#ff7600}
+ .section-economia .main-search-input{width:auto;text-align:left}
+ .section-economia .main-search-input:focus{background:#FDE8D2;border-color:#ff7600}
+ .section-economia .type-list{border-top:1px #d6d6d6 dotted}
+ .section-economia .type-list:after,.section-economia .type-list:before{display:none}
+ .section-economia .type-list li{padding-top:16px;border-bottom:1px #d6d6d6 dotted;padding-bottom:16px}
+ .section-economia .type-list article.entry{margin-bottom:32px}
+ .section-economia .type-list article.entry figure img{width:316px}
+ .row{text-align:left!important}
+ .inner-margin{margin:0 8px}
+ .inner-column-4 .entry{margin-bottom:16px!important}
+ .section-esperti .block-4 .entry{margin-top:16px}
+ .sequence-8.media-1 .media-figure{float:left;margin:0 16px 0 0}
+ .read-all,.rep-button{background-color:#454545;padding:12px 24px;color:#fff;font-weight:400;font-size:16px;text-transform:uppercase;margin:0 auto 16px}
+ .read-all:hover,.rep-button:hover{background-color:#007CFF}
+ .repubblica_economia_affari-e-finanza .read-all{display:none}
+ .inner-container{position:relative}
+ .inner-container:after{content:"";display:table;clear:both}
+ .sidebar-content{float:right;width:326px}
+ .shared-detail *{box-sizing:content-box}
+ #glossary .row .column-8 .block-8 h1.block-overtitle,#list .row .column-8 .block-8 h1.block-overtitle{font-size:30px;font-weight:900;color:#1a1a1a;margin:8px 0 16px;padding-bottom:16px;border-bottom:1px #d6d6d6 dotted;display:block}
+ #list .column-8 .entry{padding-top:8px;border-bottom:1px #d6d6d6 dotted;padding-bottom:8px}
+ .from-bloomberg{border-top:transparent}
+ .from-bloomberg .media-figure img{max-width:70px;overflow:hidden}
+ .from-bloomberg:before{display:none}
+ .from-bloomberg h1.block-overtitle{border-top:8px solid #2800D7;padding:14px 0 18px 20px;margin-bottom:16px;margin-top:0;background:url(bloomberg-logo.svg.html) 40px no-repeat #2800D7!important;margin-left:0;text-indent:-9999px}
+ .from-bloomberg h1.block-overtitle a{display:block;width:100%;height:100%}
+ .column-4 .from-bloomberg:before{width:100px;height:40px;padding-left:16px;background-size:100px 40px!important;background-position:center center!important}
+ .column-4 .from-bloomberg h1.block-overtitle{font-size:18px;text-indent:-9999px;overflow:hidden}
+ .column-4 .from-bloomberg article.media-4{padding-bottom:24px}
+ .from-affari-finanza:before{width:70px;height:70px;margin-right:2px;background-image:url(af-logo.svg.html);background-position:center center;background-repeat:no-repeat;background-size:70px;left:-1px;top:0}
+ .from-affari-finanza h1.block-overtitle{margin-top:0;color:#1a1a1a}
+ .from-affari-finanza h1.block-overtitle span{color:#d6d6d6;font-size:25px}
+ .section-economia em.author,.section-economia p.summary{padding-left:10px!important}
+ .section-economia #social-bar-detail{width:65px;margin-left:5px}
+ .section-economia #social-bar-detail .gig-button-container{width:65px!important}
+ .section-economia #social-bar-detail .kw-notification-container a{background-position:22px -2055px}
+ .section-economia .block-6.soft-news{padding-bottom:16px!important}
+ .section-economia .block-overtitle,.section-economia .entry-overtitle,.section-economia .type-opinion h1.block-overtitle{color:#ff7600}
+ .section-economia .entry-links a{color:#3a3a3a}
+ .section-economia .entry-links a:hover{color:#ff7600}
+ .section-economia .from-economia:before{background-color:#d6d6d6}
+ .section-economia .from-economia h1 a::before{content:'Archivio '}
+ .section-economia .from-finanza .block-overtitle{border-top-color:#252525;color:#252525}
+ .section-economia .from-finanza .block-overtitle a,.section-economia .from-finanza .block-overtitle a:before{color:#252525}
+ .section-economia .from-finanza .block-overtitle:hover{cursor:pointer;border-top-color:#181818;color:#181818}
+ .section-economia .from-finanza .block-overtitle:hover a{color:#181818}
+ .section-economia .from-finanza .entry-overtitle,.section-economia .from-finanza .entry-overtitle a{color:#252525}
+ .section-economia .from-finanza:before{background-color:#d6d6d6}
+ .section-economia .from-finanza h1 a::before{content:'Archivio '}
+ .section-economia .from-lavoro .block-overtitle{border-top-color:#CD1B09;color:#CD1B09}
+ .section-economia .from-lavoro .block-overtitle a,.section-economia .from-lavoro .block-overtitle a:before{color:#CD1B09}
+ .section-economia .from-lavoro .block-overtitle:hover{cursor:pointer;border-top-color:#b51808;color:#b51808}
+ .section-economia .from-lavoro .block-overtitle:hover a{color:#b51808}
+ .section-economia .from-lavoro .entry-overtitle,.section-economia .from-lavoro .entry-overtitle a{color:#CD1B09}
+ .section-economia .from-lavoro:before{background-color:#d6d6d6}
+ .section-economia .sequence-6.media-3 .media-figure img{width:233px}
+ .section-economia .esperti-header{width:calc(100% - 16px);margin:0 auto 20px}
+ .section-economia .esperti-header:after{content:"";display:table;clear:both}
+ .section-economia .esperti-header .esperti-header-left{padding-left:80px;float:left;position:relative;overflow:hidden;padding-top:20px}
+ .section-economia .esperti-header .esperti-header-left h2.esperti-title{font-size:24px;font-weight:700;text-transform:uppercase;margin-bottom:10px;margin-left:0;color:#ff7600}
+ .section-economia .esperti-header .esperti-header-left .author{font-size:13px}
+ .section-economia .esperti-header .esperti-header-left:before{position:absolute;bottom:0;left:0;content:'';margin:auto}
+ .section-economia .esperti-header .esperti-header-left.casa:before{background:url(sprite-esperti.svg.html) 0 13.658536585365853% no-repeat;width:110px;height:66px;transform:scale(.637) translate(-30px,17px)}
+ .section-economia .esperti-header .esperti-header-left.energia:before{background:url(sprite-esperti.svg.html) 0 38.19672131147541% no-repeat;width:69px;height:71px;transform:scale(.65) translate(12px,12px)}
+ .section-economia .esperti-header .esperti-header-left.fisco:before{background:url(sprite-esperti.svg.html) 0 59.70636215334421% no-repeat;width:73px;height:68px;transform:scale(.65) translate(7px,17px)}
+ .section-economia .esperti-header .esperti-header-left.pensioni:before{background:url(sprite-esperti.svg.html) 0 81.36439267886855% no-repeat;width:63px;height:80px;transform:scale(.65) translate(12px,22px)}
+ .section-economia .esperti-header .esperti-header-left.banche-e-assicurazioni:before{background:url(sprite-esperti.svg.html) no-repeat;width:115px;height:84px;transform:scale(.5) translate(-35px,30px)}
+ .section-economia .esperti-header .esperti-header-left.diritti-consumatori:before{background:url(sprite-esperti.svg.html) 0 25.08361204013378% no-repeat;width:75px;height:83px;transform:scale(.637) translate(6px,24px)}
+ .section-economia .esperti-header .esperti-header-left.telefonia:before{background:url(sprite-esperti.svg.html) 0 90.46104928457869% no-repeat;width:52px;height:52px;transform:scale(.8) translate(20px,0)}
+ .section-economia .esperti-header .esperti-header-left.trasporti:before{background:url(sprite-esperti.svg.html) 0 100% no-repeat;width:92px;height:60px;transform:scale(.65) translate(-10px,16px)}
+ .section-economia .esperti-header .esperti-header-left.famiglia:before{background:url(sprite-esperti.svg.html) 0 49.11147011308562% no-repeat;width:41px;height:62px;transform:scale(.8) translate(25px,8px)}
+ .section-economia .esperti-header .esperti-header-left.lavoro:before{background:url(sprite-esperti.svg.html) 0 69.32907348242811% no-repeat;width:54px;height:55px;transform:scale(.65) translate(-10px,16px)}
+ .section-economia .esperti-header .esperti-header-right{float:right;text-align:right}
+ .section-economia .esperti-header .esperti-header-right a.question{color:#616161;display:block;font-size:16px;text-decoration:underline}
+ .section-economia .esperti-header .esperti-header-right a.question:hover{color:#545454;text-decoration:none}
+ .section-economia .esperti-header .esperti-header-right a.disclosure{font-weight:700;font-size:16px;display:block}
+ .section-economia .esperti-header .esperti-header-right a.disclosure:hover{color:#ff7600}
+ .section-economia .block-utility{display:-ms-flexbox;display:flex;margin:0 8px 16px;-ms-flex-pack:distribute;justify-content:space-around}
+ .section-economia .block-utility a{width:45%;background-color:#fff;border:1px solid #ff7600;display:block;text-align:center;padding:10px;text-transform:uppercase;color:#ff7600;font-weight:900;font-size:14px}
+ .section-economia .block-utility a:hover{background-color:#e66a00;color:#fff}
+ .section-economia .overtitle-detail{font-size:15px;font-weight:900;text-transform:uppercase;margin-left:15px}
+ .section-economia .overtitle-detail a{color:#fff;padding:5px 10px;background-color:#ff7600}
+ .section-economia .overtitle-detail a:hover{background-color:#e66a00}
+ .affari-finanza-logo-head{height:70px;line-height:70px;margin:21px 8px 29px;padding-left:80px;font-size:30px;font-weight:900;color:#000;text-transform:uppercase;background-color:#d6d6d6;background-image:url(af-logo.svg.html);background-position:0 0;background-repeat:no-repeat}
+ .affari-finanza-logo-head span{font-size:25px;color:#ed1e25}
+ h2.speciali-logo-head{height:67px;line-height:51px;margin:0 8px 29px;font-size:30px;font-weight:900;color:#000;text-transform:uppercase;position:relative}
+ h2.speciali-logo-head span{font-size:25px;color:#ed1e25}
+ h2.speciali-logo-head span.title-speciale{font-weight:400;font-size:35px;text-transform:capitalize}
+ h2.speciali-logo-head:before{display:block;content:'';width:266px;height:8px;position:absolute;top:-8px;left:0;background-color:#d6d6d6}
+ h2.speciali-logo-head:after{display:block;content:'';width:8px;height:8px;position:absolute;top:-8px;left:266px;background-color:#fff}
+ h2.speciali-logo-head[class*=speciale-]{border-bottom:1px solid #dedede;border-top:8px solid #d6d6d6}
+ h2.speciali-logo-head.speciale-rapporti{border-top-color:#F29400;border-bottom-color:#F29400}
+ h2.speciali-logo-head.speciale-rapporti .title-speciale{color:#F29400}
+ h2.speciali-logo-head.speciale-dossier,h2.speciali-logo-head.speciale-focus,h2.speciali-logo-head.speciale-guide{border-top-color:#147165;border-bottom-color:#147165}
+ h2.speciali-logo-head.speciale-dossier .title-speciale,h2.speciali-logo-head.speciale-focus .title-speciale,h2.speciali-logo-head.speciale-guide .title-speciale{color:#147165}
+ .menu-speciale-affarifinanza{line-height:51px;margin:0 8px 16px;font-size:30px;font-weight:900;color:#000;text-transform:uppercase;position:relative}
+ .menu-speciale-affarifinanza span{font-size:25px;color:#ed1e25}
+ .menu-speciale-affarifinanza span.menu-speciali-title{font-weight:400;font-size:35px;text-transform:initial;margin-left:4px}
+ [class*=menu-speciali-]{border-bottom:1px solid #dedede;border-top:4px solid #d6d6d6;margin-bottom:16px;position:relative}
+ .menu-speciali-rapporti{border-top-color:#F29400;border-bottom-color:#F29400}
+ .menu-speciali-rapporti:before{display:block;content:'';width:60px;height:4px;position:absolute;top:-4px;left:0;background-color:#d6d6d6}
+ .menu-speciali-rapporti:after{display:block;content:'';width:4px;height:4px;position:absolute;top:-4px;left:60px;background-color:#fff}
+ .menu-speciali-rapporti .menu-speciali-title{color:#F29400;border-top:0;border-bottom:0}
+ .menu-speciali-dossier,.menu-speciali-focus,.menu-speciali-guide{border-top-color:#147165;border-bottom-color:#147165}
+ .menu-speciali-dossier:before,.menu-speciali-focus:before,.menu-speciali-guide:before{display:block;content:'';width:60px;height:4px;position:absolute;top:-4px;left:0;background-color:#d6d6d6}
+ .menu-speciali-dossier:after,.menu-speciali-focus:after,.menu-speciali-guide:after{display:block;content:'';width:4px;height:4px;position:absolute;top:-4px;left:60px;background-color:#fff}
+ .menu-speciali-dossier .menu-speciali-title,.menu-speciali-focus .menu-speciali-title,.menu-speciali-guide .menu-speciali-title{color:#147165;border-top:0;border-bottom:0}
+ .menu-focus{padding:16px;margin:0 8px 16px;border:1px solid #d6d6d6;position:relative}
+ .menu-focus .rep-icon-bottom-arrow{transition:all .1s ease-out}
+ .menu-focus a{display:block;cursor:pointer;font-weight:900;font-size:22px;text-transform:uppercase}
+ .menu-focus a .rep-icon-bottom-arrow{position:absolute;top:20px;right:20px}
+ .menu-focus a:hover{color:#ff7600}
+ .menu-focus .menu-focus-panel{display:none}
+ .menu-focus .menu-focus-panel ul li a{font-weight:900;font-size:16px;line-height:24px;border-bottom:1px solid #d6d6d6;padding:16px 0}
+ .menu-focus.active .rep-icon-bottom-arrow{transform:rotate(-180deg)}
+ .menu-focus.active .menu-focus-panel{display:block}
+ h2.rubriche-logo-head-eurobarometro{height:60px;line-height:60px;margin:21px 8px 29px;padding-left:100px;font-size:30px;font-weight:900;color:#000;text-transform:uppercase;background-color:#d6d6d6;background-image:url(eurobarometro.png.html);background-position:0 0;background-repeat:no-repeat}
+ h2.rubriche-logo-head-affari-in-piazza{height:60px;line-height:60px;margin:21px 8px 29px;padding-left:100px;font-size:30px;font-weight:900;color:#000;text-transform:uppercase;background-color:#d6d6d6;background-image:url(Affari-piazza.png.html);background-position:0 0;background-repeat:no-repeat}
+ h2.rubriche-logo-head-fashion-finanza{height:60px;line-height:60px;margin:21px 8px 29px;padding-left:100px;font-size:30px;font-weight:900;color:#000;text-transform:uppercase;background-color:#d6d6d6;background-image:url(fashion-finanza.png.html);background-position:0 0;background-repeat:no-repeat}
+ h2.rubriche-logo-head-policy{height:60px;line-height:60px;margin:21px 8px 29px;padding-left:100px;font-size:30px;font-weight:900;color:#000;text-transform:uppercase;background-color:#d6d6d6;background-image:url(policy.png.html);background-position:0 0;background-repeat:no-repeat}
+ h2.affari-finanza-speciali-header{height:70px;margin:21px 8px 14px;padding-left:80px;font-size:24px;font-weight:900;line-height:32px;color:#fff;text-transform:uppercase;background-color:#1B5692;background-image:url(af-logo.svg.html);background-position:0 0;background-repeat:no-repeat}
+ h2.affari-finanza-speciali-header a{color:#fff}
+ h2.affari-finanza-speciali-header a:hover{color:#ddd}
+ h2.affari-finanza-speciali-header p{display:block;font-size:15px;font-weight:400;line-height:17px;text-transform:none}
+ h2.affari-finanza-speciali-header p a{color:#fff}
+ h2.affari-finanza-speciali-header p a:hover{color:#ddd}
+ .affari-finanza-speciali-menu{margin:15px 8px 32px;display:-ms-flexbox;display:flex;-ms-flex-flow:row wrap;flex-flow:row wrap}
+ .affari-finanza-speciali-menu ul{display:-ms-flexbox;display:flex;-ms-flex-flow:row wrap;flex-flow:row wrap}
+ .affari-finanza-speciali-menu ul li{font-size:15px;line-height:27px;text-transform:uppercase;padding:0 10px 0 0;margin-right:10px;border-right:1px solid #d6d6d6}
+ .affari-finanza-speciali-menu ul li:last-child{border-right:none}
+ .affari-finanza-speciali-menu #searchform{display:-ms-flexbox;display:flex;margin-left:auto}
+ .affari-finanza-speciali-menu #searchform input#search{font-family:'Eugenio Sans Text','Helvetica Neue',Helvetica,Arial,sans-serif;border:1px solid #ccc;margin-right:5px;border-radius:3px;padding:5px}
+ .affari-finanza-speciali-menu #searchform button{background-color:#ff7600;border-radius:3px;padding:5px 10px;color:#fff;text-transform:uppercase;font-weight:900}
+ article.osserva-italia-banner{width:316px;margin:0 8px 16px}
+ article.osserva-italia-banner a{color:#085691}
+ article.osserva-italia-banner a:hover{color:#074879}
+ article.osserva-italia-banner h1{font-size:18px;font-weight:700}
+ article.osserva-italia-banner p{font-size:15px;font-weight:400}
+ article.osserva-italia-banner p img{margin-top:10px;margin-right:5px}
+ article.osserva-italia-gerenze{width:calc(100% - 16px);margin:0 auto 20px;position:relative}
+ article.osserva-italia-gerenze h5{border-top:4px solid #ed1e25;padding:0 0 21px 13px;margin-left:42px;margin-top:0;color:#1a1a1a;font-size:18px}
+ article.osserva-italia-gerenze:before{content:'';width:40px;height:40px;position:absolute;left:-1px;top:0;background-size:40px 40px!important;background-position:center center!important;margin-right:2px;background-color:#ed1e25!important;background-image:url(af-logo.svg.html);background-repeat:no-repeat;z-index:100}
+ .section-esperti h2.esperti-title{font-size:32px;color:#ff7600;font-weight:900;text-transform:uppercase;margin-left:8px;margin-bottom:24px}
+ .glossary-navigation ol{display:-ms-flexbox;display:flex;margin:30px 0}
+ .glossary-navigation ol li{-ms-flex-positive:1;flex-grow:1;list-style:none;display:block;background-color:#fff;box-shadow:-1px 3px 3px 0 rgba(0,0,0,.18);border-radius:3px;margin-right:7px;text-align:center}
+ .glossary-navigation ol li a{text-decoration:none;color:#1a1a1a;transition:all .2s ease-out;font-size:14px;text-transform:uppercase;line-height:22px}
+ .glossary-navigation ol li:hover{background-color:#ff7600;cursor:pointer}
+ .glossary-navigation ol li:hover a{color:#fff}
+ .glossary-search{display:-ms-flexbox;display:flex;font-weight:900;font-size:16px;line-height:32px;-ms-flex-align:center;align-items:center}
+ .glossary-search-label{text-transform:uppercase}
+ .glossary-search-input{border:1px solid #d6d6d6;-ms-flex:1 1 auto;flex:1 1 auto;margin:0 32px;font-size:16px;height:30px;padding:0 5px}
+ .glossary-search-button{background:#454545;color:#fff;padding:0 20px}
+ .glossary-result{margin-top:24px;font-size:16px}
+ .glossary-result strong{font-size:18px}
+ .glossary-list{margin-top:24px}
+ .glossary-list li{list-style:none;padding:16px 0;border-top:1px dotted #d6d6d6}
+ .glossary-list li a{font-size:20px;line-height:23px;font-weight:700;text-transform:uppercase}
+ .glossary-list li a:hover{color:#ff7600}
+ .detail-glossary-container h1{font-size:40px;line-height:42px;color:#000;font-family:Arial;text-transform:uppercase;border-bottom:1px solid #d6d6d6;padding-bottom:16px}
+ .detail-glossary-container .glossary-text{margin-top:16px;font-family:Arial;font-size:16px;line-height:20px;padding-bottom:16px;border-bottom:4px solid #d6d6d6}
+ .bottom-content{clear:both;padding-top:20px}
+ .bottom-content section h1.block-overtitle{color:#000}
+ .bottom-content li{font-size:16px;font-weight:700;text-transform:uppercase;padding:5px 0;border-bottom:1px dotted #d6d6d6}
+ .bottom-content li:last-child{border-bottom:none}
+ form.esperti-ricerca{padding:0 16px}
+ form.esperti-ricerca:after{content:"";display:table;clear:both}
+ form.esperti-ricerca .widget-input_text{float:left;width:50%;width:calc(50% - 20px);margin-right:20px}
+ form.esperti-ricerca .widget-select{float:left;width:calc(50% - 20px);margin-left:20px}
+ form.esperti-ricerca .widget-select:after{top:44px;margin-top:0}
+ form.esperti-ricerca .widget-button_submit{float:right}
+ form.esperti-ricerca .widget-button_submit button{text-transform:uppercase}
+ .rep-section-menu{font-size:12px!important}
+ .rep-section-menu>li.osserva-italia a{color:#ed1e25}
+ .rep-section-menu>li.listino a,.rep-section-menu>li.portafoglio a{color:#9f9f9f}
+ form.eco-ricerca{padding:16px 16px 16px 44px;background:#F1F1F2}
+ .block-search-result{color:#686868;display:block;border-bottom:1px solid #ff7600;position:relative;font-size:15px;line-height:15px;font-weight:400;margin-top:16px;z-index:10;padding:16px 0;margin-bottom:16px}
+ .block-search-result strong{font-weight:900;color:#000}
+ .has_middle1 #adv-Middle1{padding-top:9px;border-top:4px #dedede solid}
+ .rep-main-search{position:relative}
+ .main-search-input{width:260px}
+ #TLB_ul_result{position:absolute;top:31px;background:#fff;z-index:1001;border:1px solid #dedede;border-top:none}
+ #TLB_ul_result .titleView{cursor:pointer;border-bottom:1px #dedede solid;padding:5px 10px}
+ #TLB_ul_result .titleView:hover{background:#dedede;border-color:#ccc}
+ #glossary-lemma{border-left:5px solid #ff7600;margin:30px auto;width:80%}
+ #glossary-lemma .glossary-overtitle{margin:0 10px;text-transform:uppercase;font-weight:900;color:#666;font-size:14px}
+ #glossary-lemma .glossary-title-lemma{font-size:32px;line-height:36px;text-transform:uppercase;margin:15px 0 10px 10px}
+ #glossary-lemma .glossary-title-lemma a{color:#000}
+ #glossary-lemma .glossary-title-lemma a:hover{text-decoration:none;color:#ff7600}
+ #glossary-lemma .glossary-lemma-description{margin-left:10px;font-size:16px;line-height:23px;margin-bottom:0!important}
+ #taboola-right-rail-thumbnails .trc_rbox_container,#taboola-right-rail-thumbnails-2nd .trc_rbox_container{direction:ltr;text-align:left;width:306px;margin:0 auto 16px;border:1px solid #ccc;padding:10px}
+ #taboola-below-article-thumbnails .trc_rbox_container,#taboola-below-article-thumbnails-2nd .trc_rbox_container{direction:ltr;text-align:left;width:auto;margin:0 auto 16px;border:none;padding:10px}
+ .block-affari-finanza-social{background-color:#ebebeb;margin:0 8px 16px;width:316px;display:-ms-flexbox;display:flex}
+ .block-affari-finanza-social strong{display:block;font-weight:900;text-transform:uppercase;font-size:24px;line-height:62px;margin-left:16px}
+ .block-affari-finanza-social a{font-size:32px;margin-left:16px;line-height:60px}
+ .block-affari-finanza-social a:hover{color:#ff7600}
+ #speciali-home #social-share-top{margin:0 0 16px 16px}
+ .body-text table caption{font:700 16px/20px Arial,Helvetica,sans-serif;padding:10px 0}
+ .body-text table td{padding:6px;border-bottom:1px solid #eee;font-size:15px}
+ .body-text table tbody tr th{color:#ff7808;background-color:transparent;border-left:1px solid #eee}
+ .body-text table thead tr th{height:40px;background-color:#ff7808!important;padding:4px;font:700 14px/12px Arial,Helvetica,sans-serif;letter-spacing:-.05em;border-right:1px solid #eee}
+ .body-text table tbody tr th{text-align:left!important;text-transform:uppercase;border-bottom:1px solid #eee;letter-spacing:-.05em;font-size:15px}
+ .economia_rapporti_osserva-italia_conad h1:before{background-image:url(collaborazione-conad3.jpg.html);width:185px;height:25px;content:'';position:absolute;top:0;right:0;display:block}
+ .economia_rapporti_impresa-italia_intesasanpaolo h1:before{background-image:url(a_cura_intesasanpaolo.jpg.html);width:227px;height:17px;content:'';position:absolute;top:0;right:0;display:block}
+ .economia_rapporti_paesedigitale_ibm h1:before{background-image:url(acuradi-ibm.jpg.html);width:158px;height:31px;content:'';position:absolute;top:0;right:0;display:block}
+ .economia_rapporti_paesedigitale_digi-report h1:before{background-image:url(acuradi-digital.jpg.html);width:257px;height:35px;content:'';position:absolute;top:0;right:0;display:block}
+ .economia_rapporti_obiettivo-capitale_focus h1:before{background-image:url(incollab-focus.jpg.html);width:302px;height:30px;content:'';position:absolute;top:0;right:0;display:block}
+ .economia_rapporti_osserva-italia_edison h1:before{background-image:url(collaborazione-conad3.jpg.html);width:185px;height:25px;content:'';position:absolute;top:0;right:0;display:block}
+ .economia_rapporti_energitalia_lascossa h1:before{background-image:url(acuradi-edison.jpg.html);width:157px;height:32px;content:'';position:absolute;top:0;right:0;display:block}
+ .economia_rapporti_energitalia_smartkilowatt h1:before{background-image:url(acuradi-es.jpg.html);width:133px;height:30px;content:'';position:absolute;top:0;right:0;display:block}
+ .economia_rapporti_osserva-italia_osservacibo h1:before{background-image:url(collaborazione-conad3.jpg.html);width:185px;height:25px;content:'';position:absolute;top:0;right:0;display:block}
+ .economia_rapporti_osserva-italia_cibamente h1:before{background-image:url(collaborazione-vaso-pandora.jpg.html);width:173px;height:25px;content:'';position:absolute;top:5px;right:0;display:block}
+ .economia_rapporti_mondo5g_osservatorio-telco h1:before{background-image:url(collaborazione-tim.svg.html);width:115px;height:25px;content:'';position:absolute;top:5px;right:0;display:block}
+ .index-rubriche{margin:0 0 16px;position:relative;border-bottom:1px #dedede dotted}
+ .index-rubriche figure{float:left;margin:0 16px 0 0;width:84px;height:60px}
+ .index-rubriche figure a img{display:block}
+ .index-rubriche .rubriche-content{margin-bottom:32px}
+ .index-rubriche .rubriche-content .rubriche-title a{font-size:24px;line-height:40px}
+ .index-rubriche .rubriche-content .rubriche-subtitle a:hover,.index-rubriche .rubriche-content .rubriche-title a:hover{color:#ff7600}
+ h2.economia-del-mare-speciali-header{height:51px;margin:21px 8px 24px;padding-left:67px;font-size:30px;font-weight:900;line-height:40px;text-transform:uppercase;background-color:#dedede;vertical-align:middle;display:inline-block;width:980px;background-image:url(economiadelmare.png.html);background-position:0 0;background-repeat:no-repeat}
+ h2.economia-del-mare-speciali-header a{color:#000;vertical-align:middle}
+ h2.economia-del-mare-speciali-header a:hover{color:#ff7600}
+ h2.economia-del-mare-speciali-header p{display:block;font-size:13px;font-weight:400;line-height:14px;text-transform:none}
+ h2.economia-del-mare-speciali-header p a{color:#fff}
+ h2.economia-del-mare-speciali-header p a:hover{color:#ddd}
+ .economia-del-mare-speciali-menu{margin:15px 8px 32px;display:-ms-flexbox;display:flex;position:relative}
+ .economia-del-mare-speciali-menu ul li{display:inline;font-size:15px;text-transform:uppercase;margin-right:11px;padding:2px 11px 2px 0;border-right:1px solid #d6d6d6}
+ .economia-del-mare-speciali-menu ul li:last-child{border-right:none;margin-right:none;padding-right:none}
+ .economia-del-mare-speciali-menu #searchform{position:absolute;right:0}
+ .economia-del-mare-speciali-menu #searchform input#search{height:27px;font-family:Lato;border:1px solid #ccc;margin-right:5px;border-radius:3px;padding:5px}
+ .economia-del-mare-speciali-menu #searchform button{background-color:#ff7600;border-radius:3px;padding:5px 20px;color:#fff;text-transform:uppercase;font-weight:900}
+ #adv-osservatori [id*=adv-boxino]{margin-bottom:20px}
+ #adv-osservatori{display:none}
+ #adv-osservatori .osservatori{background-image:url(af-logo.svg.html);background-position:6px 6px;background-size:23%;background-repeat:no-repeat;padding-left:36px;text-transform:uppercase;font-size:13px}
+ h2.salone-risparmio-speciali-header{height:50px;margin:21px 8px 14px;padding-left:70px;font-size:30px;font-weight:900;line-height:50px;color:#fff;text-transform:uppercase;background-color:#1B5692;background-image:url(head-salone-risparmio.png.html);background-position:0 0;background-repeat:no-repeat}
+ h2.salone-risparmio-speciali-header a{color:#fff}
+ h2.salone-risparmio-speciali-header a:hover{color:#ddd}

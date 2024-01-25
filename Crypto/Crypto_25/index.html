@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html class=" -moz-"><head>
+ 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/medias.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script language="Javascript">
+    function date_en(d) {
+        var dayNames = new Array("Sunday", "Monday", "Tuesday", "Wednesday",
+            "Thursday", "Friday", "Saturday");
+        var monthNames = new Array(
+            "January", "February", "March", "April", "May", "June", "July",
+            "August", "September", "October", "November", "December");
+        var now = new Date();
+        now.setDate(now.getDate() + d);
+        document.write(dayNames[now.getDay()] + ", " +
+            monthNames[now.getMonth()] + " " +
+            now.getDate() + ", " + now.getFullYear());
+    }
+    function date_it(d) {
+        var dayNames = new Array("Domenica", "Lunedi", "Martedì", "Mercoledì",
+            "Giovedi", "Venerdì", "Sabato");
+        var monthNames = new Array(
+            "Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio",
+            "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre");
+        var now = new Date();
+        now.setDate(now.getDate() + d);
+        document.write(dayNames[now.getDay()] + "." +
+            now.getDate() + " " + monthNames[now.getMonth()]
+             + " " + now.getFullYear());
+    }
+    function date_de(d) {
+        var dayNames = new Array("Sonntag", "Montag", "Dienstag", "Mittwoch",
+            "Donnerstag", "Freitag", "Samstag");
+        var monthNames = new Array(
+            "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli",
+            "August", "September", "Oktober", "November", "Dezember");
+        var now = new Date();
+        now.setDate(now.getDate() + d);
+        document.write(dayNames[now.getDay()] + " " +
+            now.getDate() + ". " + monthNames[now.getMonth()]
+            + " " + now.getFullYear());
+    }
+    function date_de_v1(d) {
+        var dayNames = new Array("Sonntag", "Montag", "Dienstag", "Mittwoch",
+            "Donnerstag", "Freitag", "Samstag");
+        var monthNames = new Array(
+            "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli",
+            "August", "September", "Oktober", "November", "Dezember");
+        var now = new Date();
+        now.setDate(now.getDate() + d);
+        document.write(dayNames[now.getDay()] + ", dem " +
+            now.getDate() + ". " + monthNames[now.getMonth()]
+            + " " + now.getFullYear());
+    }
+    function date_no(d) {
+        var dayNames = new Array("Søndag", "Mandag", "Tirsdag", "Onsdag",
+            "Torsdag", "Fredag", "Lørdag");
+        var monthNames = new Array(
+            "Januar", "Februar", "Mars", "April", "Kan", "Juni", "Juli",
+            "August", "September", "Oktober", "November", "Desember");
+        var now = new Date();
+        now.setDate(now.getDate() + d);
+        document.write(dayNames[now.getDay()] + ", " +
+            now.getDate() + ". " + monthNames[now.getMonth()]
+            + " " + now.getFullYear());
+    }
+    function date_se(d) {
+        var dayNames = new Array("Söndag", "Måndag", "Tisdag", "Onsdag",
+            "Torsdag", "Fredag", "Lördag");
+        var monthNames = new Array(
+            "Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli",
+            "Augusti", "September", "Oktober", "November", "December");
+        var now = new Date();
+        now.setDate(now.getDate() + d);
+        document.write(dayNames[now.getDay()] + ", " +
+            now.getDate() + " " + monthNames[now.getMonth()]
+            + " " + now.getFullYear());
+    }
+    function date_fi(d) {
+        var dayNames = new Array("Sunnuntai", "Maanantai", "Tiistai", "Keskiviikko",
+            "Torstai", "Perjantai", "Lauantai");
+        var monthNames = new Array(
+            "Tammikuu", "Helmikuu", "Maaliskuu", "Huhtikuu", "Saattaa", "Kesäkuu", "Heinäkuu",
+            "Elokuu", "Syyskuu", "Lokakuu", "Marraskuu", "Joulukuu");
+        var now = new Date();
+        now.setDate(now.getDate() + d);
+        document.write(dayNames[now.getDay()] + ", " +
+            now.getDate() + ". " + monthNames[now.getMonth()]
+            + " " + now.getFullYear());
+    }
+    function date_da(d) {
+        var dayNames = new Array("Søndag", "Mandag", "Tirsdag", "Onsdag",
+            "Torsdag", "Fredag", "Lørdag");
+        var monthNames = new Array(
+            "Januar", "Februar", "Marts", "April", "Maj", "Juni", "Juli",
+            "August", "September", "Oktober", "November", "December");
+        var now = new Date();
+        now.setDate(now.getDate() + d);
+        document.write(dayNames[now.getDay()] + ", " +
+            now.getDate() + ". " + monthNames[now.getMonth()]
+            + " " + now.getFullYear());
+    }
+    function date_ar(d) {
+        var monthNames = new Array(
+            "كانون الثاني", " فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو",
+            "أغسطس", "سبتمبر", " اكتوبر", " نوفمبر", "ديسمبر");
+        var now = new Date();
+        now.setDate(now.getDate() + d);
+        document.write(now.getDate() + "  " + monthNames[now.getMonth()]
+            + " " + now.getFullYear());
+    }
+    function date_nl(d) {
+        var dayNames = new Array("zondag", "maandag", "dinsdag", "woensdag",
+            "donderdag", "vrijdag", "zaterdag");
+        var monthNames = new Array(
+            "Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli",
+            "Augustus", "September", "Oktober", "November", "December");
+        var now = new Date();
+        now.setDate(now.getDate() + d);
+        document.write(dayNames[now.getDay()] + ", " +
+            now.getDate() + " " + monthNames[now.getMonth()]
+            + " " + now.getFullYear());
+    }
+    function date_pl(d) {
+        var dayNames = new Array("Niedziela", "Poniedziałek", "Wtorek", "Sroda",
+            "Czwartek", "Piątek", "Sobota");
+        var monthNames = new Array(
+            "Stycznia", "Lutego", "Marca", "Kwietnia", "Maja", "Czerwca", "Lipca",
+            "Sierpnia", "Września", "Października", "Listopada", "Grudnia");
+        var now = new Date();
+        now.setDate(now.getDate() + d);
+        document.write(dayNames[now.getDay()] + ". " +
+            now.getDate() + " " + monthNames[now.getMonth()]
+            + ", " + now.getFullYear());
+    }
+    function date_br(d) {
+        var dayNames = new Array("Domingo", "Segunda-feira", "terça", "Quarta-feira",
+            "Quinta-feira", "Sexta-feira", "sábado");
+        var monthNames = new Array(
+            "Janeiro", "Fevereiro", "Marcha", "Abril", "Maio", "Junho", "Julho",
+            "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
+        var now = new Date();
+        now.setDate(now.getDate() + d);
+        document.write(dayNames[now.getDay()] + ", " +
+            now.getDate() + " de " + monthNames[now.getMonth()]
+            + " de " + now.getFullYear());
+    }
+    function date_br(d) {
+        var dayNames = new Array("Domingo", "Segunda-feira", "terça", "Quarta-feira",
+            "Quinta-feira", "Sexta-feira", "sábado");
+        var monthNames = new Array(
+            "Janeiro", "Fevereiro", "Marcha", "Abril", "Maio", "Junho", "Julho",
+            "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
+        var now = new Date();
+        now.setDate(now.getDate() + d);
+        document.write(dayNames[now.getDay()] + ", " +
+            now.getDate() + " de " + monthNames[now.getMonth()]
+            + " de " + now.getFullYear());
+    }
+    function date_es(d) {
+        var dayNames = new Array("domingo", "lunes", "martes", "miércoles",
+            "jueves", "viernes", "sábado");
+        var monthNames = new Array(
+            "enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
+            "ggosto", "septiembre", "octubre", "noviembre", "diciembre");
+        var now = new Date();
+        now.setDate(now.getDate() + d);
+        document.write(dayNames[now.getDay()] + ", " +
+            now.getDate() + " de " + monthNames[now.getMonth()]
+            + " de " + now.getFullYear());
+    }
+    function date_cz(d) {
+        var dayNames = new Array("Neděle", "pondělí", "úterý", "středa",
+            "Čtvrtek", "pátek", "sobota");
+        var monthNames = new Array(
+            "ledna", "února", "března", "dubna", "května", "června", "července",
+            "srpna", "září", "října", "listopadu", "prosince");
+        var now = new Date();
+        now.setDate(now.getDate() + d);
+        document.write(dayNames[now.getDay()] + ", " +
+            now.getDate() + ". " + monthNames[now.getMonth()]
+            + " " + now.getFullYear());
+    }
+</script>
+
+<title>SHAKEN Government of  by the Discovery of NEW Underground Banking System</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/stylef2ad.css">
+<style>
+    .container-fluid {  margin-bottom: 10px;  }
+  .join-bton-cta{  width: 80%;  font-size: 24px;  padding: 12px;  font-weight: 600;  }
+  @media screen and (max-width: 767px){  .join-bton-cta{  width: 100%;  }  }
+</style>
+<script language="Javascript">
+    function dtime(d) {
+        var monthNames = new Array("Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober ", "November", "Dezember");
+        var now = new Date();
+        now.setDate(now.getDate() + d + 1);
+        document.write((now.getDate())  + ".  " + monthNames[now.getMonth()] + " " + now.getFullYear());
+    }
+</script>
+</head>
+     
+	<body class="container-fluid">
+	
+ 
+
+
+
+
+
+
+<div class="container">
+    <div class="breaking-news-bar">
+        <h3>Eilmeldung</h3>
+    </div>
+    <div class="main-content">
+        <div class="col-lg-8">
+            <div class="row">
+                <div class="news-content news-content1-de">
+                    <a class="heading heading1-de" href="#">
+                      Regierung Deutschlands ERSCHÜTTERT nach der Entdeckung eines NEUEN Untergrund-Bankensystems <br> (Kündigen Sie Ihren Job in 30 Tagen!)
+                    </a>
+                    <br><br>
+                    <span style="font-size: 18px">Deutsche bedienen sich dessen, um durchschnittlich 450 €/Tag zu verdienen und ihre Jobs zu kündigen! Nachrichten</span>
+                    <a href="#">
+                        <img src="images/news_deborah1.jpg" alt="news">
+                    </a>
+                    <p>
+                        <br>
+                    </p><p class="updated" itemprop="datePublished">
+                    Aktualisiert: <time itemprop="datePublished" pubdate="" datetime="2014-10-14T10:22-04:00">
+                            <script type="text/javascript">dtime(-1);</script>3.  August 2020
+                        </time>
+                    </p>
+                    <p>
+                        <span style="font-weight: bold">Sie können jetzt
+ einem neuen Untergrund-Bankensystem beitreten, das hier in Deutschland 
+an Popularität gewonnen hat. Das unglaubliche daran ist, wie schnell 
+eine kleine Einzahlung auf dieses Konto zu einem Vermögen heranwachsen 
+kann - selbst im heutigen "nichtszahlenden" Zinsumfeld.</span>
+                    </p>
+
+                    <br>
+                    <p>Beispielsweise: Ein junger Mann namens Jonas 
+Harald tätigte kürzlich eine Einzahlung in Höhe von 250 € in diese neue 
+Art von Konto. Über seine unglaubliche Entdeckung berichtete er 
+Reportern das folgende:</p>
+
+                    <br>
+                    <p>
+                        <span style="font-weight: bold">"Jeden Morgen ging ich online... und sah, dass das Konto wuchs!"</span>
+                    </p>
+
+                    <br>
+                    <p>Jonas konnte sein Glück kaum fassen. Nur vier 
+Monate des Wachstums und beinahe kaum Initiative von seiner Seite und er
+ hatte ein Vermögen von 886.000 € angehäuft. All das mit seiner 
+ursprünglichen Einzahlung von 250 €.</p>
+
+                    <br>
+                    <p>Es mag Sie erstaunen, zu erfahren, dass... er 
+sein Geld nicht bei einer Offshore-Bank parkte oder in eine 
+risikoträchtige Währung investierte. Und er kaufte keine Aktien oder 
+andere Anlagen, die Banken uns in der Vergangenheit verkaufen wollten. 
+Tatsächlich haben wir in unseren 20 Jahren Erfahrung im 
+Finanzjournalismus nichts Vergleichbares zu dem, was Jonas mit seinem 
+Geld machte gesehen. </p>
+
+                    <br>
+                    <p>Nachdem er von seinen Erfahrungen las, 
+ermöglichte unser Geschäftsführer unverzüglich einem Team von 15 
+erfahrenen Finanzjournalisten, eine umfassende Recherche zu dieser neuen
+ Art von Konto durchzuführen.</p>
+
+                    <br>
+                    <p><span style="font-weight: bold">Das Ergebnis dieser Recherche schockierte uns. Und wir nehmen an, dass das Ergebnis Sie ähnlich beeinflussen wird.</span>
+                    </p>
+
+                    <br>
+                    <p>Mehr als 500.000 deutsche Bürger haben Konten in 
+beinahe sämtlichen Städten des Landes eröffnet. Diese Menschen 
+verzeichnen irrsinnige Gewinne auf ihren Konten. Ein anderer junger 
+Mann, Tim Lehner, der kürzlich 1.000 € auf sein Konto einzahlte, sah es 
+auf beinahe 5 Millionen Euro wachsen. Oder Gisela Fuchs, deren 
+ursprüngliche Einzahlung zu einem kleinen Vermögen heranwuchs, das sie 
+nutzte, um ein atemberaubendes Schloss mit 15 Schlafzimmern in 
+Schottland zu erstehen.<br>
+                      Experten sind sich einig, dass Sie durch den 
+Transfer eines geringen Betrags Ihres Geldes auf diese 100 % 
+kostenlosen, zuverlässigen, sicheren und komplett privaten Konten 
+mindestens das 50-fache des Ertrags eines herkömmlichen Sparbuchs, Aktie
+ oder anderer Wertanlagen erwirtschaften werden.</p>
+
+                    <br>
+                    <p>Woher können Sie wissen, ob dieses 
+"Untergrund"-Konto für Sie ideal ist? Nun, anfänglich können Sie das 
+schwer wissen, doch wenn Sie wenigstens 250 - 1.000 € auf Ihrem Sparbuch
+ haben, haben Sie Ihrer Familie gegenüber eine moralische Verpflichtung -
+ für Ihren eigenen Wohlstand und den Ihrer zukünftigen Generationen - um
+ diese Konten wenigstens näher zu begutachten.</p>
+
+                    <br>
+                  <p style="text-align: center">
+                    <a class="btn btn-danger join-bton-cta" type="button" href="#">KLICKEN SIE HIER!</a></p>
+                  <br>
+                    <p><span style="font-weight: bold">Wie Sie Ihren Wohlstand im 21. Jahrhundert erhöhen können</span></p>
+
+                    <br>
+                    <p>Diese Art von Konto tauchte erstmals im Jahre 
+2009 auf, kurz nach der Kredit-, Immobilien- und Bankenkrise. Es ist 
+kein Geheimnis, dass Leute auf der ganzen Welt Angst davor hatten, was 
+mit dem Finanzsystem passieren würde. Das war der Zeitpunkt, zu dem 
+dieses Untergrund-Bankensystem begann, an Beliebtheit zu gewinnen.</p>
+
+                    <br>
+                    <p>Und anders als das traditionelle Bankwesen, ist 
+dieses System nicht an eine spezielle Regierung gebunden. Es ist nicht 
+an eine spezielle Währung oder an eine spezifische Bank gebunden. Im 
+Grunde genommen ist es absolut krisensicher.</p>
+
+                    <br>
+                    <p>Und was wirklich schockierend ist... Diese Konten
+ machen täglich Menschen überall auf der Welt steinreich. Ob Sie 
+Praktikant, Lehrer, Manager oder gar arbeitslos sind. Eine geringe 
+Einzahlung von bloß 500 € zu Beginn dieses Monats wäre bis zum heutigen 
+Tag auf mehr als 22.500 € explodiert.</p>
+
+                    <br>
+                    <p>Unsere Beweise zeigen, dass dieses neue 
+Untergrund-Bankkonto im kommenden Jahr mehr Millionäre schaffen wird als
+ Google an dem Tag, an dem es an die Börse ging. Denken Sie darüber 
+nach: Im Jahre 2013 besaßen lediglich etwa 100.000 Menschen eines dieser
+ Konten. Heute kommen bereits mehr als 14 Millionen in den Genuss dieses
+ Untergrund-Bankensystems.</p>
+                    <br>
+                    <p>Die Summe an Geld, die in das System einfließt, 
+wächst täglich. Tatsächlich waren vor einem Jahr etwa 100 Millionen € in
+ diesem System hinterlegt. Heute sind es bereits 30 Milliarden Euro und 
+Experten behaupten, dass der Markt innerhalb der nächsten Jahre in den 
+Billionen-Bereich wachsen wird.</p>
+
+                    <br>
+                    <p>Unsere Nachforschungen ergaben, dass einige 
+Londoner Elite-Banker dem traditionellen Bankensystem stillschweigend 
+den Rücken kehren und nun ihr eigenes Geld - einen Großteil ihres 
+persönlichen Vermögens - tief in diesem Untergrund-Bankensystem anlegen.</p>
+
+                    <br>
+                    <p>Da dieses Konto nichts mit Gold, Silber, Aktien, 
+Anleihen, Optionen oder anderen Finanzinstrumenten, von denen Sie gehört
+ haben mögen zu tun hat...müssen Sie sich kein Wissen komplexer 
+Investitionen aneignen. Sie besuchen einfach eine Webseite, (Details 
+dazu finden Sie am Ende dieses Sonderberichts), machen Ihre Angaben, 
+eröffnen ein Konto und leisten eine Einzahlung in beliebiger Höhe. 
+Sodann lehnen Sie sich zurück und entspannen, während ein geringer 
+Betrag wie 250 € sich in 500 €, 1.000 €, 5.000 € oder gar mehr 
+verwandelt.</p>
+
+                    <br>
+                    <p>Der lebenswandelnde Reichtum, den normale 
+Menschen anhäuften, indem sie diesem revolutionären neuen "Bankkonto" 
+eine Chance gaben, ist absolut real. Obgleich Sie davon nicht im TV oder
+ in den Nachrichten hören werden, transferieren viele der Reichen und 
+Mächtigen bereits Geld auf ihre neuen Konten.</p>
+
+                    <br>
+                    <p><span style="font-weight: bold">Die Gelegenheit, so früh bei einem bedeutenden Paradigmenwechsel einzusteigen, wird sich womöglich nie wieder bieten. </span>
+                    </p>
+
+                    <br>
+                    <p>Was noch faszinierender an diesen neuen Konten 
+ist, ist wie reiche Banker sie verwenden, um nicht nur ihr eigenes 
+Vermögen zu vermehren, sondern auch, um sie dieses zu verdecken - alle 
+Transaktionen werden 100 % anonym sein und daher bietet dieses System 
+komplette Privatsphäre. Und das Beste daran: Die deutsche Regierung kann
+ nicht auf Ihr Konto zugreifen, nicht einmal in Zeiten finanzieller 
+Krise. </p>
+
+                    <br>
+                    <p><i>Warum ist das bedeutend?</i></p>
+
+                    <br>
+                    <p>Jeder weiß, dass die Staatsverschuldung sich 
+innerhalb der letzten 10 Jahre verdoppelt hat und mit BREXIT, Trump und 
+dem Versagen beim Flicken des internationalen Finanzsystems nach dem 
+letzten Crash ist es nur eine Frage der Zeit, bevor die nächste 
+Finanzkrise uns treffen wird. Und dieses Mal wird die Regierung nicht 
+über die Mittel verfügen, um Ihre Bank zu retten, unabhängig davon, ob 
+es sich um die Deutsche Bank, Commerzbank, Hypovereinsbank oder die 
+Postbank handelt.</p>
+
+                    <br>
+                    <p>Heute, am <script type="text/javascript">dtime(-1);</script>3.  August 2020 ist es legal, ein "Untergrund-Bankkonto" zu eröffnen. Und 
+das Beste daran ist die Tatsache, dass Sie für diese Art der 
+Bankdienstleistung nicht vermögend sein müssen. Sie können einfach 
+anfangen, indem Sie einen geringen Betrag wie 250 € auf dieses 100 % 
+sichere und risikofreie Bankkonto einzahlen und Gewinne mit dem Klick 
+Ihrer Maus erwirtschaften.
+                    </p>
+
+                    <br>
+                    <p>Es gibt KEIN MAXIMUM. Vermögende Individuen 
+könnten 5 Millionen €, 10 Millionen € oder gar 100 Millionen € 
+hinterlegen. Und sie alle könnten dem Wachstum ihres Kontos zusehen und 
+ihre Einzahlung innerhalb weniger Wochen auf mindestens das SECHSFACHE 
+vermehren.</p>
+
+                    <br>
+                    <p><span style="font-weight: bold">Das Bankensystem....und die Währung der Zukunft.</span></p>
+
+                    <br>
+                    <p>Es handelt sich um etwas, das sich 
+"Kryptowährung" nennt. Nein, es sind keine eigentlichen Münzen. Es ist 
+bloß der Name einer digitalen Währung wie Bitcoin (BTC) oder Ethereum 
+(ETH). Währungen, die Sie allein kontrollieren...und Sie können 
+entscheiden, ob Sie aussteigen möchten. Die Regierung kann sie nicht 
+beschlagnahmen. Und der Wert ist erstaunlicherweise gewachsen, sodass 
+täglich mehrere neue Millionäre geboren wurden.</p>
+
+                    <br>
+                    <p>Beispielsweise hat sich Bitcoins Wert um das 
+879.999-fache gesteigert. Mit einer Einzahlung von nur 1.200 € hätten 
+Sie heute ein Vermögen von mindestens 1 Milliarde €. Und hätten Sie in 
+eine andere digitale Währung wie Ethereum investiert, hätten Sie allein 
+in der letzten Woche Gewinne in Höhe von 4.500 % eingefahren! </p>
+
+                    <br>
+                    <p>Hätten Sie zu Jahresbeginn Bitcoin erstanden, 
+hätten Sie für die geringe Einzahlung von 3.532 € ein 3-Millionen-Euro 
+Anwesen kaufen können. Ein neuer 2017 Bentley hätte Sie 986 € gekostet. 
+Und ein Rolex-Spitzenmodell, normalerweise 50.000 €+ teuer, hätte Sie 
+gerade einmal 350 € gekostet.</p>
+
+                    <br>
+                    <p>Und Kryptowährungen haben enorme Sprünge zur 
+Mainstream-Akzeptanz gemacht. Geldautomaten werden im Wochentakt 
+geschlossen. Tausende von Unternehmen akzeptieren bereits digitale 
+Währungen. Die Regierung sah sich gezwungen, einzugestehen, dass die 
+Katze aus dem Sack ist. Und selbst Banken wissen, dass das die Zukunft 
+ist. </p>
+
+                    <br>
+                    <p>
+                        <span style="font-weight: bold">Und was den Einstieg rechtfertigt, ist die Tatsache, wie leicht er von der Hand geht. </span>
+                    </p>
+
+                    <br>
+                    <p>Jeder kann dies in kürzester Zeit meistern. Sie 
+benötigen keine vorherige Investmenterfahrung oder einen 
+wirtschaftlichen Hintergrund. Sie brauchen keine Bildung oder einen 
+Abschluss. Noch müssen Sie ein Mathematik-Experte sein. Keine harte 
+Arbeit ist erforderlich und nichts muss verkauft werden. Sie müssen 
+keine Kontrolle abgeben oder komplizierten Richtlinien folgen. Raterei 
+oder "Glück" sind kein Faktor. Sobald Sie angefangen haben, reichen 
+einige wenige Stunden pro Woche, um Ihr Konto aufrecht zu erhalten und 
+Ihr Vermögen wachsen zu sehen. Und Sie können all das von daheim aus 
+machen oder von wo auch immer es Ihnen beliebt, während Sie Ihren 
+täglichen Geschäften nachgehen.</p>
+
+                    <br>
+                    <p>Selbstverständlich mögen Sie Ihre Zweifel daran 
+haben, dass etwas derart Einfaches so profitabel sein kann und eine 
+derartige Bedrohung für das traditionelle Bankensystem darstellen kann. 
+Aus diesem Grund haben wir uns dazu entschlossen, das System zu testen -
+ und selbst unsere Skeptiker wurden umgehauen.</p>
+
+                    <br>
+                    <p><span style="font-weight: bold">Das System wird auf die Probe gestellt</span></p>
+
+                    <br>
+                    <p>Es war nicht schwer, einen Freiwilligen zu 
+finden. Unser Posteingang wurde mit Anfragen überflutet und wir 
+entschieden uns letztlich für Janine Braun als die Glückliche. Sie ist 
+eine 44-jährige Mutter und lebt in Leverkusen zusammen mit ihrem Ehemann
+ und ihren zwei Kindern. Als Teilzeit-Krankenschwester konnte sie stets 
+die Rechnungen zahlen, doch sie war nie in der Lage, einen 
+wohlverdienten Urlaub mit ihrer Familie zu machen. Und ohne 
+Computer-Kenntnisse, Abschlüsse oder Wissen darüber, wie der Finanzmarkt
+ funktioniert, qualifizierte sie sich als ultimative Testperson.
+                    </p>
+                    <br>
+                    <p><i>"Als erstes erstellte ich ein kostenloses 
+Konto auf der Kryptowährungs-Systemseite. Ich brauchte nur 2 Minuten, um
+ Name, E-Mail-Adresse, Telefonnummer und Passwort einzugeben. Um das 
+System zu aktivieren, überwies ich 150 € in mein neues 
+Online-Portemonnaie. Da es sich nur um eine Saldenübertragung handelt 
+kostete es mich nichts. Ich wusste zweifellos, dass ich mein Geld 
+jederzeit zurücktransferieren konnte."</i></p>
+
+                    <br>
+                    <p><i>"Am nächsten Tag loggte ich mich auf der Seite
+ ein. Ich war ein wenig nervös...ich öffnete das Dashboard und dachte 
+ich hätte einen Fehler gemacht - war das mein Konto? Ich prüfte den 
+Kontonahmen in der Ecke doppelt, doch ja, es war meins. Ich konnte 
+sehen, dass meine Bilanz zu diesem Zeitpunkt 1.224,53 € betrug. 
+Unglaublich! In nur 12 Stunden, während ich schlief, hatte das Konto 
+1.076,47 € Gewinn mit meiner ursprünglichen Einzahlung von 150 € 
+gemacht."</i></p>
+
+                    <br>
+                    <p><i>"Ich schrieb dem persönlichen Mentor meines 
+Kontos. Erstaunlicherweise war er nicht so verblüfft wie ich. "Das ist 
+normal", sagte er. "Tatsächlich verdienen viele Leute mehr als das 
+innerhalb der ersten 12 Stunden." Ich war schwer beeindruckt, dass 
+dieses Ding wirklich funktionierte."</i></p>
+
+                    <br>
+                    <p><i>"Am dritten Tag nachdem mein Konto erstellt 
+wurde, hatte ich mich endgültig eingearbeitet. Es war so einfach und 
+nicht nur das, mir war bewusst, wie ich so viel Geld verdiente. Bevor 
+ich mich in dieser Nacht schlafen legte, zeigte meine Geldbörse 
+unglaubliche 7.453 € an."</i>
+                    </p>
+
+                    <br>
+                    <p><i>"Je mehr Geld ich machte, desto mehr konnte 
+ich potenziell verdienen erklärte mir mein Mentor. Ich kaufte einige 
+weitere digitale Währungen und in nur 4 bemerkenswerten Tagen hatte ich 
+genug verdient, um mit meiner Familie die Welt zu bereisen; erster 
+Klasse! Sie wussten nicht einmal etwas von meinem Erfolg. Ich buchte ein
+ Zimmer in einem 5-Sterne-Hotel für das Wochenende, um ihnen von dieser 
+unglaublichen Geschichte zu berichten. Ich entschied mich dazu, unsere 
+Schulden zu begleichen, sodass wir in Zukunft mehr unserer Träume 
+verwirklichen könnten.
+                            <span style="font-weight: bold">	<a href="#">Dieses Geld wird unsere Leben verändern."</a></span>”</i>
+                    </p>
+
+                    <br>
+                    <p><span style="font-weight: bold">Warum es KRITISCH ist, dass Sie genau jetzt Ihr Konto eröffnen</span></p>
+
+                    <br>
+                    <p>Sie können es sich einfach nicht leisten, diesen 
+Zug zu verpassen. Das Akzeptanzniveau für Kryptwährungen steht davor, zu
+ explodieren. Während es wächst, werden sie ihre Nutzer weiterhin 
+steinreich machen und jeden Euro in 10 €, 100 € oder gar wesentlich mehr
+ verwandelt...in bloßen Wochen. Und Sie können praktische nichts 
+verlieren, da die Plattform eine vollständige Erstattung Ihrer 
+Initialeinzahlung garantiert.</p>
+
+                    <br>
+                    <p>
+                        <span style="font-weight: bold">Wie können Sie von dieser Einmal-Im-Jahrhundert-Chance profitieren?</span>
+                    </p>
+
+                    <br>
+                    <p>Aufgrund der extrem hohen Nachfrage sind bloß 
+noch 100 Plätze frei. Kandidaten werden auf "Wer zuerst kommt, mahlt 
+zuerst"-Basis akzeptiert. </p>
+
+                    <br>
+                    <p>Die Regierung und große Unternehmen haben bereits
+ Kenntnis genommen und versuchen alles in ihrer Macht, um dieses System 
+in die Knie zu zwingen und den Zugriff vom Internet für ewig zu 
+verschließen.</p>
+                    <br>
+
+                    <br>
+                    <p><a href="#" style="color: green; font-weight: bold">Klicken Sie auf diesen Link, um herauszufinden, ob Sie noch beitreten können!</a></p>
+
+                    <br>
+                    <p>Solange Sie auf der nächsten Seite keine Fehlermeldung sehen, haben Sie noch eine Chance.</p>
+
+                    <br>
+                    <p><a href="#" style="color: green;  font-weight: bold">Klicken Sie auf diesen Link, um herauszufinden, ob Sie noch beitreten können!</a></p>
+
+                    <br>
+                    <p><i>*Füllen Sie sämtliche Angaben mit den korrekten Informationen aus, um Enttäuschungen zu vermeiden.</i></p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="row">
+                <div class="side-news side-news1-de">
+                    <div class="article">
+                        <h3>IN DEN MEDIEN</h3>
+                        <a href="#">
+                            <img src="images/sidenews10.jpg" class="img-responsive">
+                        </a>
+                        <p>
+                          Ein lokaler Bankmanager, der anonym bleiben 
+möchte, sagt, "Selten sehen Sie Gelegenheiten wie diese. Ich bin 
+erstaunt, dass es so schnell an die Öffentlichkeit gelangte."
+                        </p>
+                    </div>
+                    <div class="article">
+                        <h3>FAZ</h3>
+                        <a href="#">
+                        </a>
+                        <p>
+                          Es scheint, als würde eine neue Generation Reicher dank dieses Auto-Handelsphänomens geboren.
+                        </p>
+                    </div>
+                    <div class="article">
+                        <h3>HANDELSBLATT</h3>
+                        <a href="#">
+                        </a>
+                        <p>
+                          Das könnte die deutsche Wirtschaft für immer 
+verändern! Solche Fortschritte in moderner Technologie haben bereits zu 
+dauerhaften Umbrüchen geführt. Ihre Beliebtheit ist keine Überraschung. 
+Mit dem Brexit und sämtlichen ähnlich schweren Problematiken könnte dies
+ alles verändern.
+                        </p>
+                    </div>
+                    <div class="article">
+                        <h3>SOZIALE NETZWERKE</h3>
+                        <a href="#">
+                            <img src="images/twitter_buzz.gif" class="img-responsive">
+                        </a>
+                        <p>
+                            <br>
+                          astrogirl: "@JessMerck: ja, als ich letztes Mal nachschaute, waren noch etwa 39 Plätze frei:<a href="#">Hier</a>"<br>
+                          Vor 1 Stunde
+                            <br><br>
+                          truong290: "So glücklich! Habe diese Woche meinen ersten Scheck über 2.223,28 € erhalten!"<br>
+                          Vor 4 Stunde
+                            <br><br>
+                          sukikawaii710: "@jarret_allen: Ich habe in 
+letzter Zeit viel davon gehört, wo hast du dich dafür angemeldet?"<br>
+                          Vor 5 Stunden
+                            <br><br>
+                          allen_woo52: "Bisher der beste Tag mit dem <a href="#">Auto Trading Program</a>. Habe heute bisher 454,29 € verdient. ^_^"
+                          <br>
+                          Vor 6 Stunden
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div id="feedback_1HsYymlsW4NLzXtW1" style="font-family: Tahoma;">
+        <div class="fbFeedbackContent" id="uz1cxy_1">
+            <div class="stat_elem">
+                <div class="uiHeader uiHeaderTopBorder uiHeaderNav composerHider">
+                    <div class="clearfix uiHeaderTop">
+                        <a href="#" class="uiHeaderActions rfloat">Kommentar hinzufügen</a>
+                        <div>
+                            <h4 tabindex="0" class="uiHeaderTitle">
+                                <div class="uiSelector inlineBlock orderSelector lfloat uiSelectorNormal">
+                                    <div class="wrap">
+                                        <a href="#" class="uiSelectorButton uiButton uiButtonSuppressed" role="button" aria-haspopup="1" aria-expanded="false" data-label="683 comments" data-length="60" rel="toggle"><span class="uiHeaderActions">Jüngste Kommentare</span></a>
+                                        <div class="uiSelectorMenuWrapper uiToggleFlyout"></div>
+                                    </div>
+                                </div>
+                                <span class="phm indicator"></span>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="uiList fbFeedbackPosts">
+                <li class="fbFeedbackPost fbFirstPartyPost uiListItem fbTopLevelComment uiListItem uiListVerticalItemBorder" id="fbc_10150877187848759_22497027_10150877337728759">
+                    <div class="UIImageBlock clearfix">
+                        <a href="#" class="postActor UIImageBlock_Image UIImageBlock_MED_Image" tabindex="-1" aria-hidden="true">
+                            <img class="img" src="images/gavin.jpg" width="50" height="50">
+                        </a>
+                        <div class="UIImageBlock_Content UIImageBlock_MED_Content">
+                            <div class="postContainer fsl fwb fcb">
+                                <a href="#" class="profileName">Gerald Haber</a>
+                                <div class="postContent fsm fwn fcg">
+                                    <div class="postText">
+                                      Ich erinnere mich daran, als 
+Bitcoin auf dem Markt kam. Ich habe nie auch nur einen zweiten Gedanken 
+daran verschwendet. Den Fehler mache ich kein zweites Mal.
+                                    </div>
+                                    <div class="stat_elem">
+                                        <div class="action_links fsm fwn fcg">
+                                            <a id="uz1cxy_5" href="#">Antworten </a>
+                                            <span class="dotpos">.</span>
+                                            <a href="#" class="uiBlingBox postBlingBox" data-ft="{&quot;tn&quot;:&quot;O&quot;}"><i class="img sp_comments sx_comments_Synes godt om"></i><span class="text">13</span></a>
+                                            <span class="dotpos">.</span>
+                                            <a href="#" class="fbUpDownVoteOption hidden_elem" rel="async-post">Gefällt mir</a>
+                                            <span class="dotpos">.</span>
+                                            <abbr class="timestamp">Jetzt gerade</abbr>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fsm fwn fcg"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="fbFeedbackPost fbFirstPartyPost uiListItem fbTopLevelComment uiListItem uiListVerticalItemBorder" id="fbc_10150877187848759_22497027_10150877337728759">
+                    <div class="UIImageBlock clearfix">
+                        <a href="#" class="postActor UIImageBlock_Image UIImageBlock_MED_Image" tabindex="-1" aria-hidden="true">
+                            <img class="img" src="images/ian.jpg" width="50" height="50">
+                        </a>
+                        <div class="UIImageBlock_Content UIImageBlock_MED_Content">
+                            <div class="postContainer fsl fwb fcb">
+                                <a href="#" class="profileName">Igor Jäger</a>
+                                <div class="postContent fsm fwn fcg">
+                                    <div class="postText">OMG, ich hasse
+ mich gerade. 2012 dachte ich darüber nach, Bitcoin zu kaufen, habe es 
+jedoch nie getan. 200 € damals hätten mir heute rund 150 Millionen € 
+eingebracht, aber 40t in vier Jahren sind auch in Ordnung. Ich bin 
+dabei!
+                                    </div>
+                                    <div class="stat_elem">
+                                        <div class="action_links fsm fwn fcg">
+                                            <a id="uz1cxy_5" href="#">Antworten </a>
+                                            <span class="dotpos">.</span>
+                                            <a href="#" class="uiBlingBox postBlingBox" data-ft="{&quot;tn&quot;:&quot;O&quot;}"><i class="img sp_comments sx_comments_Synes godt om"></i><span class="text">6</span></a>
+                                            <span class="dotpos">.</span>
+                                            <a href="#" class="fbUpDownVoteOption hidden_elem" rel="async-post">Gefällt mir</a>
+                                            <span class="dotpos">.</span>
+                                            <abbr class="timestamp">Vor 13 Minuten</abbr>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fsm fwn fcg"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="fbFeedbackPost fbFirstPartyPost uiListItem fbTopLevelComment uiListItem uiListVerticalItemBorder" id="fbc_10150877187848759_22497027_10150877337728759">
+                    <div class="UIImageBlock clearfix">
+                        <a href="#" class="postActor UIImageBlock_Image UIImageBlock_MED_Image" tabindex="-1" aria-hidden="true">
+                            <img class="img" src="images/scot.jpg" width="50" height="50">
+                        </a>
+                        <div class="UIImageBlock_Content UIImageBlock_MED_Content">
+                            <div class="postContainer fsl fwb fcb">
+                                <a href="#" class="profileName">Sascha Werter</a>
+                                <div class="postContent fsm fwn fcg">
+                                    <div class="postText">Ich kämpfe mit
+ mir. Bitcoin oder Ethereum? Bitcoin wird fast garantiert mehr wert, 
+aber der Anstieg ist etwas schleppender. Ethereum verlässt den Bahnhof 
+und wird groß auszahlen, WENN sie Bitcoins Modell kopiert.</div>
+                                    <div class="stat_elem">
+                                        <div class="action_links fsm fwn fcg">
+                                            <a id="uz1cxy_5" href="#">Antworten </a> <span class="dotpos">.</span>
+                                            <a href="#" class="uiBlingBox postBlingBox" data-ft="{&quot;tn&quot;:&quot;O&quot;}">
+                                                <i class="img sp_comments sx_comments_Synes godt om"></i><span class="text">19</span>
+                                            </a>
+                                            <span class="dotpos">.</span>
+                                            <a href="#" class="fbUpDownVoteOption hidden_elem" rel="async-post">Gefällt mir</a>
+                                            <span class="dotpos">.</span>
+                                            <abbr class="timestamp">Vor 46 Minuten</abbr>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="postReplies fsm fwn fcg">
+                                <div id="uz1cxy_4">
+                                    <ul class="uiList fbFeedbackReplies">
+                                        <li class="fbFeedbackPost fbFirstPartyPost uiListItem fbCommentAntworten  uiListItem uiListVerticalItemBorder" id="fbc_10150877337728759_22500369_10150877995903759_Antworten ">
+                                            <div class="UIImageBlock clearfix">
+                                                <a href="#" class="postActor UIImageBlock_Image UIImageBlock_MED_Image" tabindex="-1" aria-hidden="true">
+                                                    <img class="img" src="images/jake.jpg" width="50" height="50">
+                                                </a>
+                                                <div class="UIImageBlock_Content UIImageBlock_MED_Content">
+                                                    <div class="postContainer fsl fwb fcb">
+                                                        <a href="#" class="profileName">Janine Roland</a>
+                                                        <div class="postContent fsm fwn fcg">
+                                                            <div class="postText">Einfache Lösung, Kumpel. Kauf beide. Das ist mein Plan
+                                                            </div>
+                                                            <div class="stat_elem">
+                                                                <div class="action_links fsm fwn fcg">
+                                                                    <a id="uz1cxy_8" href="#">Antworten </a> <span class="dotpos">.</span>
+                                                                    <a href="#" class="fbUpDownVoteOption hidden_elem" rel="async-post">Gefällt mir</a>
+                                                                    <span class="dotpos">.</span>
+                                                                    <abbr class="timestamp">Vor 25 Minuten</abbr>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="postReplies fsm fwn fcg"></div>
+                                                    <div class="fsm fwn fcg"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="fsm fwn fcg"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="fbFeedbackPost fbFirstPartyPost uiListItem fbTopLevelComment uiListItem uiListVerticalItemBorder" id="fbc_10150877187848759_22497027_10150877337728759">
+                    <div class="UIImageBlock clearfix">
+                        <a href="#" class="postActor UIImageBlock_Image UIImageBlock_MED_Image" tabindex="-1" aria-hidden="true">
+                            <img class="img" src="images/robert.jpg" width="50" height="50">
+                        </a>
+                        <div class="UIImageBlock_Content UIImageBlock_MED_Content">
+                            <div class="postContainer fsl fwb fcb">
+                                <a href="#" class="profileName">Robert Gulbach Jr.</a>
+                                <div class="postContent fsm fwn fcg">
+                                    <div class="postText">Ich kann nicht
+ viel erübrigen, also denke ich an 200 € pro Monat für Bitcoin für die 
+nächsten 12 Monate. Setze das Kurslimit auf eine coole Million und 
+vergesse es. Wenn Bitcoin wie alle anderen Milliardäre sagen 
+durchstartet, habe ich meine Rente im Sack.
+                                    </div>
+                                    <div class="stat_elem">
+                                        <div class="action_links fsm fwn fcg">
+                                            <a id="uz1cxy_5" href="#">Antworten </a> <span class="dotpos">.</span>
+                                            <a href="#" class="uiBlingBox postBlingBox" data-ft="{&quot;tn&quot;:&quot;O&quot;}">
+                                                <i class="img sp_comments sx_comments_Synes godt om"></i><span class="text">53</span></a> <span class="dotpos">.</span>
+                                            <a href="#" class="fbUpDownVoteOption hidden_elem" rel="async-post">Gefällt mir</a>
+                                            <span class="dotpos">.</span>
+                                            <abbr class="timestamp">Vor etwa einer Stunde</abbr>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fsm fwn fcg"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="fbConnectWidgetFooter">
+                <div class="fbFooterBorder">
+                    <div class="clearfix uiImageBlock">
+                        <a href="#" class="uiImageBlockImage uiImageBlockSmallImage lfloat"><i class="img sp_comments sx_comments_cfavicon"></i></a>
+                        <div class="uiImageBlockContent uiImageBlockSmallContent">
+                            <div class="fss fwn fcg">
+                      <span>
+                      <a href="#" class="uiLinkSubtle"></a>
+                      </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<a href="#">
+    <div id="bottombar">
+        <div class="expire-text" id="counter">ES WIRD ERWARTET, DASS ALLE POSITIONEN IN 24 MINUTEN 59 SEKUNDEN BESETZT WERDEN</div>
+    </div>
+</a>
+<script type="text/javascript">
+function getURLParameter(name) {
+return decodeURI(
+(RegExp(name + '=' + '(.*?)(&|$)').exec(location.search)||[,null])[1] || ''
+);
+}
+</script>
+<script type="text/javascript">
+var scroll = 0;
+window.onscroll = function(){
+if( scroll != 1 ){
+    scroll = 1;
+    var o = document.createElement("img");
+	var vid=getURLParameter('vid');
+    o.src='#';
+   
+    }
+}
+</script>
+
+
+<script>
+    function countdown(minutes) {
+        var seconds = 60;
+        var mins = minutes
+
+        function tick() {
+            var counter = document.getElementById("counter");
+            var current_minutes = mins - 1
+            seconds--;
+            counter.innerHTML = "ES WIRD ERWARTET, DASS ALLE POSITIONEN IN " + current_minutes.toString() + " MINUTEN " + (seconds < 10 ? "0" : "") + String(seconds) + " SEKUNDEN BESETZT WERDEN";
+            if (seconds > 0) {
+                setTimeout(tick, 1000);
+            }
+            else {
+                if (mins > 1) {
+                    countdown(mins - 1);
+                }
+            }
+        }
+
+        tick();
+    }
+    countdown(25);
+</script>
+<script>
+    $(".hamburder-menu-icon").click(function () {
+        $(".main-menu").toggleClass("open-menu");
+    });
+    $("#show-more-tags").click(function () {
+        $(this).parent().parent().find('li').show();
+        $(this).parent().hide();
+    });
+</script>
+
+ 
+
+ 
+</body></html>

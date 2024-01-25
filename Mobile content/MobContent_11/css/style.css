@@ -1,0 +1,835 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+	display: block; }
+
+ol, ul {
+	list-style: none; }
+
+em, h1, h2, h3, h4, h5, h6 {
+	font-style: inherit;
+	font-weight: inherit;
+}
+
+/** Float Clearing **/
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+
+.footer strong { font-weight: bold;}
+	.operator-group {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #666;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  width:220px;
+  margin:10px auto;
+}
+.operator-group:before, .operator-group:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 9px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 4px dashed;
+  border-color: #888 transparent;
+  pointer-events: none;
+}
+.operator-group:before {
+  border-bottom-style: solid;
+  border-top: none;
+}
+.operator-group:after {
+  margin-top: 7px;
+  border-top-style: solid;
+  border-bottom: none;
+}
+
+.operator-selection {
+  position: relative;
+  width: 130%;
+  margin: 0;
+  height:30px;
+  padding: 5px 10px;
+  font-size: 15px;
+  color: #333;
+  background: #f2f2f2;
+  background: rgba(0, 0, 0, 0) !important;
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.operator-selection:focus {
+  z-index: 3;
+  width: 100%;
+  color: #394349;
+  outline: 2px solid #ccc;
+  outline-offset: -2px;
+}
+
+.operator-selection > option {
+  margin: 3px;
+  padding: 6px 8px;
+  text-shadow: none;
+  background: #f2f2f2;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+   appearance: none;
+}
+
+/*
+*/
+
+/* ----------------- IE 8 customized css for height:auto --------------------*/
+
+@media \0screen {
+  .imgIE8 { 
+  	width: auto; /* for ie 8 */
+  }
+}
+
+/* ----------------- IMG 100% ------------------*/
+
+.img100pct{width:100%;}
+
+/* ----------------- OC2SMS Button remove underline ------------------*/
+
+a{
+	text-decoration:none;
+	}
+
+
+.operator-group:before, .operator-group:after {
+	  right: auto;
+	  left:10px;	  
+	}
+
+
+
+
+
+
+
+
+
+	
+
+ 
+	
+		#confirmation-legal-wrapper,#confirmation-incentivized-wrapper, .confirmation-op_confirm-wrapper{
+	position:fixed !important;
+	z-index:1000;
+	width:100%;
+	height: 100%;
+	text-align:center;
+	background:rgba(0,0,0,0.6);
+	top: 0;
+	}
+	
+.bupper-popup-block{
+	display:table;
+	width:50%;
+	max-width: 460px;
+	margin:18% auto;
+	left: 0;
+	right: 0;
+	min-height:100px;
+	background-color:#eee;
+	border-radius:10px;
+	border:10px rgba(255,255,255,1) solid;
+	padding:20px;
+	position:absolute;
+	color:rgba(0,0,0,1);
+	}
+
+.accept-confirmation,.decline-confirmation{
+	border-radius:5px;
+	border:none;
+	background-color:rgba(0,153,204,1) ;
+	color:rgba(255,255,255,1);
+	padding:5px; margin:3px;
+	}
+
+.accept-confirmation:hover,.decline-confirmation:hover{
+	border-radius:5px;
+	border:none;
+	background-color:rgba(0,128,192,1);
+	color:rgba(255,255,255,1);
+	padding:5px;
+	}
+	
+.msisdn-input, .msisdn-input:focus { 
+	text-align:center;
+}
+
+.transbtn{color:inherit; text-decoration:none;}
+	
+@media screen and (max-width: 780px){
+.bupper-popup-block{
+	margin:33% auto;
+	min-height:100px;left:20%;right:20%;position:absolute;top:25%;
+	background-color:#eee;
+	border-radius:10px;
+	/*padding:20px;*/
+	}
+}
+
+@media screen and (max-width: 480px){
+.bupper-popup-block{
+	width:70%; margin:40% auto;
+	min-height:100px;left:5%;right:5%;position:absolute;top:10%;
+	background-color:#eee;
+	border-radius:10px;
+	/*padding:20px;*/
+	}
+}
+
+
+.msisdn-display-wrap-0{display:none;}
+.msisdn-group{position:relative; direction:ltr !important;}
+
+.msisdn-input-wrap:before {
+	position: absolute;	padding:0 10px 0 25px;	border-right: 1px solid #bbb;
+	font-size:inherit;	color:#000;  transform: translateY(-50%); top: 50%;
+	-webkit-transform: translateY(-50%);
+	 
+    content: "974"; z-index:1;
+	font-size:22px !important;
+	font-family: 'Roboto', sans-serif !important;
+	font-weight:normal !important;
+}
+
+
+.msisdn-input,.msisdn-input:focus{
+	text-align:left !important;
+	font-size:22px !important;
+	font-family: 'Roboto', sans-serif !important;
+	text-indent:70px;
+	font-weight:normal !important;
+	}
+
+
+.bupper-popup-block{background-color:#f1faf9; max-width: 480px; width:80%; border: 5px solid #fff; padding:15px;}
+.bupper-popup-block div{text-align:center;}
+.accept-confirmation,.decline-confirmation{	min-width: 150px; cursor:pointer; }
+.subscribe-submit-button,.accept-confirmation,.accept-confirmation:hover{
+	background: #91cf03; /* Old browsers */
+	background: -moz-linear-gradient(left, #91cf03 0%, #24b91c 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #91cf03 0%,#24b91c 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #91cf03 0%,#24b91c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91cf03', endColorstr='#24b91c',GradientType=1 ); /* IE6-9 */
+	animation: button 0.8s linear infinite; -webkit-animation: button 0.8s linear infinite;
+	font-size: 24px;padding:10px;width:80%;max-width:480px;border:none; color:#fff;margin: 10px auto;cursor:pointer;
+}
+.accept-confirmation,.accept-confirmation:hover{font-size: 39px; font-weight: bold;}
+.decline-confirmation,.decline-confirmation:hover{	background: none; text-decoration: underline; border: none;	color: grey; font-size: .7em;}
+.hook-confirmationBottomLeft,.hook-confirmationBottomRight{width:98%; display:block;}
+#confirmation-op_confirm-wrapper .hook-confirmationBodyStart{width:100%; float:left;}
+#confirmation-op_confirm-wrapper .hook-confirmationBottomLeft{float:left;}
+#confirmation-op_confirm-wrapper .hook-confirmationBottomRight{float:left; transform:translateY(50%); top:-50%;}
+
+@keyframes button{	
+  0% { transform:scale(1);}  50% { transform:scale(1.1);}  100% { transform:scale(1);}
+}
+
+@-webkit-keyframes button{	
+  0% { -webkit-transform:scale(1);}  50% { -webkit-transform:scale(1.1);}  100% { -webkit-transform:scale(1);}
+}
+
+
+@media screen and (max-width: 480px){
+.bupper-popup-block{margin:45% auto 30%;}
+}
+
+
+
+
+
+
+
+ <!-- or .bupper-popup-block{
+	max-width:280px; display:table; width:100%;
+	box-sizing:border-box;
+	margin:0 auto;
+	min-height:100px;
+	background-color:#eee;
+	border-radius:5px;
+	border:10px rgba(255,255,255,1) solid;
+	/*padding:20px;*/
+	color:rgba(0,0,0,1);
+	}
+
+.accept-confirmation,.decline-confirmation{
+	border-radius:5px;
+	border:none;
+	background-color:rgba(0,153,204,1) ;
+	color:rgba(255,255,255,1);
+	padding:5px;
+	}
+
+.accept-confirmation:hover,.decline-confirmation:hover{
+	border-radius:5px;
+	border:none;
+	background-color:rgba(0,128,192,1);
+	color:rgba(255,255,255,1);
+	padding:5px;
+	}
+
+ for feature phone //-->
+	/* ---------------------------- top hooks and bottom hooks layout styling ------------------------------ */
+.footer,
+.toplegal,
+.hook-topLeft,
+.hook-topCenter,
+.hook-topRight,
+.hook-bottomLeft,
+.hook-bottomCenter,
+.hook-bottomRight,
+.hook-beforeSubmit,
+.hook-afterSubmit,
+.hook-beforeInput,
+.hook-afterInput,
+.component-msg{
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	}
+	
+.footer a{
+	color:inherit;
+	}
+
+.footer, .toplegal {text-align: justify; display:table; width:100%;} 
+
+.toplegal p {margin: 0;}
+
+.popup-bottom, .popup-top{display:table-row;}
+
+.hook-confirmationBodyStart, hook-confirmationBodyEnd{padding:5px; text-align:center;}
+.hook-confirmationBodyStart{margin-top:10px;}
+.hook-confirmationBodyEnd{margin-bottom:10px;}
+
+.hook-topLeft, .hook-topCenter, .hook-topRight{margin:0; top:0;}
+.hook-confirmationTopLeft, .hook-confirmationTopCenter, .hook-confirmationTopRight{margin:0;}
+
+.hook-topLeft, .hook-bottomLeft, .hook-confirmationTopLeft, .hook-confirmationBottomLeft{text-align:left;}
+.hook-topCenter, .hook-bottomCenter{text-align:justify;}
+.hook-topRight, .hook-bottomRight, .hook-confirmationTopRight, .hook-confirmationBottomRight{text-align:right;}
+.hook-confirmationTopCenter, .hook-confirmationBottomCenter{text-align:center;}
+
+.hook-bottomLeft, .hook-bottomCenter, .hook-bottomRight, .hook-topLeft, .hook-topCenter, .hook-topRight {display:table-cell; padding:5px; vertical-align: top;}
+.hook-confirmationTopLeft, .hook-confirmationTopCenter, .hook-confirmationTopRight, .hook-confirmationBottomLeft, .hook-confirmationBottomCenter, .hook-confirmationBottomRight
+{display:table-cell; padding:5px;}
+
+
+/* ---------------------------- end top hooks and bottom hooks layout styling ------------------------------ */	html,
+body {
+	color: #fff;
+	background-image: linear-gradient(#0367b4, #000509);
+
+	font-size: 12px;
+	font-family: tahoma;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+body::before {
+	content: '';
+	height: 100vh;
+	width: 100vw;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url("../images/circuit.png");
+	background-size: contain;
+	background-repeat: repeat-x;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.wrap {
+	max-width: 400px;
+	margin: auto;
+	padding: 0 10px;
+	clear: both;
+	margin-top: 20px;
+}
+
+.box {
+	background: white;
+	border: 1px solid #e0dfdf;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	position: relative;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+	max-width: 350px;
+	margin: auto;
+	padding: 10px;
+}
+
+.pin.box::after {
+	content: '';
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	border-radius: 8px;
+	top: -13px;
+	right: 0;
+	left: 0;
+	z-index: 9;
+	margin: auto;
+	background-color: white;
+	transform: rotate(45deg);
+}
+
+.creative {
+	height: 130px;
+	width: 130px;
+	background-image: url("../images/secure-phone.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: auto;
+	background-position: center;
+	margin-bottom: -15px;
+}
+
+
+
+.creative-pin {
+	height: 250px;
+	width: 280px;
+	background-image: url("../images/phone-sms.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: auto;
+	background-position: center;
+	margin-bottom: -65px;
+}
+
+.hook-topRight {
+	position: absolute;
+}
+
+#component-msg-EXIT {
+	opacity: 0.5;
+}
+
+#component-msg-MSISDNLABEL {
+	color: #000000;
+	margin-bottom: 12px;
+	display: block;
+}
+
+.main-title-box {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#mainTitle,
+.mainTitle,
+#pinTitle {
+	text-align: center;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 1.3em;
+}
+
+#moTitle {
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+}
+
+.cta-title {
+	font-size: 14px;
+	padding: 0 20px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.wrapper {
+	margin: 0 auto;
+	position: relative;
+	max-width: 500px;
+}
+
+/* .disclaimer-box{
+	padding-top: 20px;
+} */
+
+.top-txt {
+	font-size: 15px;
+	max-width: 320px;
+	margin: 10px auto;
+	text-align: center;
+	font-weight: 600;
+}
+
+.instructions {
+	margin: 20px auto;
+	max-width: 300px;
+	text-align: center;
+}
+
+.or {
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color:#000;
+}
+
+/** MSISDN AND PIN INPUTS START **/
+.msisdn-input,
+.pin-input {
+	border: 2px solid #7cbc0a;
+	background-color: #f0fae1;
+	border-radius: 4px;
+	font-size: 3.5ch;
+	padding: 8px;
+
+	margin-bottom: 4px;
+	border-radius: 8px;
+}
+
+.msisdn-input {
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.pin-input {
+	width: 200px;
+	font-weight: bold;
+	padding-left: 3ch;
+	margin: 0 auto;
+	height: 50px;
+}
+
+.msisdn-input:focus,
+.pin-input:focus {
+	border: 2px solid #B3C833;
+}
+
+/** input icons **/
+.pin-input {
+	background:#f7f7f7 url("../images/icon-password-gray.png") 12px center no-repeat;
+}
+
+.pin-input:focus {
+	background:#f7f7f7 url("../images/icon-password-black.png") 12px center no-repeat;
+}
+
+/* START INPUT - country flag country code */
+.msisdn-input {
+
+	max-width: 300px;
+	width: 100%;
+	height: 56px;
+	text-align: left !important;
+	direction: ltr;
+	box-sizing: border-box;
+	position: relative;
+	padding-left: 50px;
+}
+
+.msisdn-input,
+.msisdn-input:focus {
+	text-align: left;
+}
+
+.msisdn-input-wrap {
+	position: relative;
+	display: block;
+	max-width: 300px;
+	margin: auto;
+}
+
+.msisdn-input-wrap::after {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 15px;
+	bottom: 16px;
+	background-image: url("../images/phone-black.svg");
+	background-repeat: no-repeat;
+	background-size: 30px;
+}
+
+.msisdn-input-wrap:before {
+	left: 21px;
+}
+
+
+
+
+
+
+/** MSISDN AND PIN INPUTS END **/
+
+/** CTA BTN STYLES START **/
+.msisdn-submit-button,
+.msisdn-submit-disable,
+.pin-submit-button,
+.pin-submit-disable,
+.btn {
+	background-color: #cccccc;
+	background-image: none;
+	cursor: not-allowed;
+	color: #a5a5a5;
+	box-shadow: 0 1px 1.5px rgba(0, 0, 0, .15);
+	box-shadow: 0 1px 1.5px rgba(0, 0, 0, .25);
+	color: #fff;
+	font-size: 1.8em;
+	border: none;
+	border-radius: 8px;
+	width: 100%;
+	max-width: 300px;
+	height: 60px;
+	text-decoration: none;
+	text-align: center;
+	margin: auto;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.pin-submit-button,
+.msisdn-submit-button,
+.btn,
+.operator,
+.oc2sms-button {
+
+	background-image: linear-gradient(#A5C057, #7F9E38);
+
+	border-color: rgba(0, 89, 74, .62745);
+	box-shadow: 0 1px 1.5px rgba(0, 0, 0, .15);
+	box-shadow: 0 1px 1.5px rgba(0, 0, 0, .25);
+	color: #fff;
+	font-size: 1.8em;
+	border: none;
+	border-radius: 8px;
+	width: 100%;
+	max-width: 300px;
+	height: 60px;
+	text-decoration: none;
+	text-align: center;
+	margin: auto;
+	position: relative;
+
+	align-items: center;
+	justify-content: center;
+	font-weight: 400;
+	margin-top: 10px;
+}
+
+.oc2sms-button {
+	margin-bottom: 4px;
+}
+
+.msisdn-group,
+.msisdn-submit-button,
+#pinwrap {
+	position: relative;
+}
+
+/** CTA BTN STYLES ENDS **/
+
+.errMsg {
+	color: red;
+	font-size: 12px;
+	/* padding: 5px 0 3px 0; */
+	display: block;
+}
+
+#component-msg-DISCLAIMER {
+	padding: 20px;
+}
+
+.valid:before {
+	display: none;
+}
+
+.keys {
+	font-size: 16px;
+}
+
+.keyword,
+.shortcode {
+	font-size: 18px;
+	color: #000000;
+	font-weight: 700;
+}
+
+.spacing {
+	margin-bottom: 20px;
+}
+
+.component-msg a {
+	position: relative;
+	z-index: 10;
+	color: #0070ff;
+	margin: 0 auto 40px;
+	display: block;
+}
+
+#component-msg-MSISDN_LABEL {
+	margin: 20px auto 10px auto;
+	line-height: 1.9em;
+
+}
+
+.hook-beforeInput {
+	margin-top: 20px;
+}
+
+#component-msg-PINLABEL {
+	max-width: 300px;
+	margin: auto;
+}
+
+.pinooreedooLabel {
+	margin-bottom: 30px;
+	font-size: 15px;
+	text-align: center;
+	display: block;
+}
+
+#sendText,
+#toText{
+	color: #9cb850;
+    font-weight: bold;
+}
+
+#moTitle,
+.or{
+	color:#000 !important;
+}
+
+.ooreedooLabel{
+	font-size: 15px;
+    margin: 20px 0;
+    display: block !important;
+    color: #fff;
+    position: relative;
+}
+
+#component-msg-LABEL2 span {
+	font-size: 18px;
+	margin-bottom: 10px;
+	display: block;
+	font-weight: bold;
+}
+
+button.operator {
+	display: block;
+	margin: 10px auto;
+	width: auto;
+}
+
+#op-logo .operator-logo img {
+	width: auto;
+}
+
+#op-logo .operator-logo {
+	
+	width: 100%;
+
+	display: block;
+	margin: 10px auto;
+	
+	
+}
+
+#resend-pin-button {
+	display: none;
+}
+
+button#KW_VIVA.operator.operator-logo img {
+	width: 70px;
+}
+
+.component-label {
+	display: none;
+}	/* hide MO details for indonasia only because it is too long */ 
+
+
+
+
+
+
+
+.ooreedooLabel{
+	font-size: 15px;
+	margin: 20px 0;
+    display: block;
+}
+
+.keys,
+.or {
+	display: block;
+}
+
+#component-msg-OOREDOOPRICE{
+	display: block;
+}
+
+
+

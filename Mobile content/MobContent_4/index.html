@@ -1,0 +1,1635 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<base href="">
+	<base href="">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+ 
+	  
+	<style>
+	.operator-group {
+		display: block;
+		position: relative;
+		overflow: hidden;
+		background: #fff;
+		border: 1px solid #666;
+		border-radius: 3px;
+		-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+		width: 220px;
+		margin: 10px auto;
+	}
+	.operator-group:before,
+	.operator-group:after {
+		content: '';
+		position: absolute;
+		z-index: 2;
+		top: 9px;
+		right: 10px;
+		width: 0;
+		height: 0;
+		border: 4px dashed;
+		border-color: #888 transparent;
+		pointer-events: none;
+	}
+	.operator-group:before {
+		border-bottom-style: solid;
+		border-top: none;
+	}
+	.operator-group:after {
+		margin-top: 7px;
+		border-top-style: solid;
+		border-bottom: none;
+	}
+	.operator-selection {
+		position: relative;
+		width: 130%;
+		margin: 0;
+		height: 30px;
+		padding: 5px 10px;
+		font-size: 15px;
+		color: #333;
+		background: #f2f2f2;
+		background: rgba(0, 0, 0, 0) !important;
+		border: 0;
+		border-radius: 0;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+	.operator-selection:focus {
+		z-index: 3;
+		width: 100%;
+		color: #394349;
+		outline: 2px solid #ccc;
+		outline-offset: -2px;
+	}
+	.operator-selection > option {
+		margin: 3px;
+		padding: 6px 8px;
+		text-shadow: none;
+		background: #f2f2f2;
+		border-radius: 3px;
+		-webkit-border-radius: 3px;
+		cursor: pointer;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		-o-appearance: none;
+		appearance: none;
+	}
+	/*
+*/
+	/* ----------------- IE 8 customized css for height:auto --------------------*/
+	
+	@media \0screen {
+		.imgIE8 {
+			width: auto;
+			/* for ie 8 */
+		}
+	}
+	/* ----------------- IMG 100% ------------------*/
+	
+	.img100pct {
+		width: 100%;
+	}
+	/* ----------------- OC2SMS Button remove underline ------------------*/
+	
+	a {
+		text-decoration: none;
+	}
+	.operator-group:before,
+	.operator-group:after {
+		right: auto;
+		left: 10px;
+	}
+	/*#KW_OOREDOO{
+		background: url("/resource/shared/marketing_assets/operators/KW/ooredoo.png") #fff center center no-repeat;
+		width:80%;
+		min-width: 120px;
+		max-width: 125px;
+		height:85px;
+		border:none;
+		margin:10px 3px;
+		outline: none;
+		cursor: pointer;color:transparent;
+		color:rgba(255,255,255,0);
+		text-shadow: none;
+		border-radius: 7px;
+		display: inline-block;
+		box-shadow: 0px 2px 2px rgba(0,0,0,0.75);
+		animation:none;
+		-webkit-animation:none;
+	}
+	
+	#KW_VIVA{
+		background: url("/resource/shared/marketing_assets/operators/KW/viva.jpg") #fff center center no-repeat;
+		width:80%;
+		min-width: 120px;
+		max-width: 125px;
+		height:85px;
+		border:none;
+		margin:10px 3px;
+		outline: none;
+		cursor: pointer;color:transparent;
+		color:rgba(255,255,255,0);
+		text-shadow: none;
+		border-radius: 7px;
+		display: inline-block;
+		box-shadow: 0px 2px 2px rgba(0,0,0,0.75);
+		animation:none;
+		-webkit-animation:none;
+	}
+	
+	
+	
+	@media screen and (max-width: 320px){
+	#KW_OOREDOO,#KW_VIVA{min-width: 90px;}
+		
+	}*/
+	
+	.operator-logo-group {
+		max-width: 300px;
+		margin: 5px auto;
+	}
+	.korek {
+		background: url("images/korek.png") #fff center center no-repeat !important;
+		width: 150px !important;
+		min-width: 150px !important;
+		height: 85px !important;
+		border: 1px #ececec solid !important;
+		margin: 5px 3px !important;
+		outline: none !important;
+		cursor: pointer;
+		color: transparent !important;
+		color: rgba(255, 255, 255, 0)!important;
+		text-shadow: none !important;
+		border-radius: 7px!important;
+		-webkit-border-radius: 7px!important;
+		display: inline-block!important;
+		box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5)!important;
+		-webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5)!important;
+		animation: none !important;
+		-webkit-animation: none !important;
+	}
+	.asiacell {
+		background: url("images/asiacell-en.jpg") #fff center center no-repeat !important;
+		width: 150px !important;
+		min-width: 150px !important;
+		height: 85px !important;
+		border: 1px #ececec solid !important;
+		margin: 5px 3px !important;
+		outline: none !important;
+		cursor: pointer;
+		color: transparent!important;
+		color: rgba(255, 255, 255, 0)!important;
+		text-shadow: none !important;
+		border-radius: 7px !important;
+		-webkit-border-radius: 7px!important;
+		display: inline-block !important;
+		box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5)!important;
+		-webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5)!important;
+		animation: none !important;
+		-webkit-animation: none !important;
+	}
+	#IQ_ZAIN,
+	.zain {
+		background: url("images/zain.png") #fff center center no-repeat !important;
+		width: 150px !important;
+		min-width: 150px !important;
+		height: 85px !important;
+		border: 1px #ececec solid !important;
+		margin: 5px 3px !important;
+		outline: none !important cursor: pointer;
+		color: transparent!important;
+		color: rgba(255, 255, 255, 0)!important;
+		text-shadow: none !important;
+		border-radius: 7px !important;
+		-webkit-border-radius: 7px!important;
+		display: inline-block;
+		box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5)!important;
+		-webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5)!important;
+		animation: none !important;
+		-webkit-animation: none !important;
+	}
+	.button-group {
+		text-align: center;
+	}
+	.oc2sms-button {
+		display: inline-block !important;
+	}
+	</style>
+	<style>
+	#confirmation-legal-wrapper,
+	#confirmation-incentivized-wrapper,
+	.confirmation-op_confirm-wrapper {
+		position: fixed !important;
+		z-index: 1000;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		background: rgba(0, 0, 0, 0.6);
+		top: 0;
+	}
+	.bupper-popup-block {
+		display: table;
+		width: 50%;
+		max-width: 460px;
+		margin: 18% auto;
+		left: 0;
+		right: 0;
+		min-height: 100px;
+		background-color: #eee;
+		border-radius: 10px;
+		border: 10px rgba(255, 255, 255, 1) solid;
+		padding: 20px;
+		position: absolute;
+		color: rgba(0, 0, 0, 1);
+	}
+	.accept-confirmation,
+	.decline-confirmation {
+		border-radius: 5px;
+		border: none;
+		background-color: rgba(0, 153, 204, 1);
+		color: rgba(255, 255, 255, 1);
+		padding: 5px;
+		margin: 3px;
+	}
+	.accept-confirmation:hover,
+	.decline-confirmation:hover {
+		border-radius: 5px;
+		border: none;
+		background-color: rgba(0, 128, 192, 1);
+		color: rgba(255, 255, 255, 1);
+		padding: 5px;
+	}
+	.msisdn-input,
+	.msisdn-input:focus {
+		text-align: center;
+	}
+	.transbtn {
+		color: inherit;
+		text-decoration: none;
+	}
+	@media screen and (max-width: 780px) {
+		.bupper-popup-block {
+			margin: 33% auto;
+			min-height: 100px;
+			left: 20%;
+			right: 20%;
+			position: absolute;
+			top: 25%;
+			background-color: #eee;
+			border-radius: 10px;
+			/*padding:20px;*/
+		}
+	}
+	@media screen and (max-width: 480px) {
+		.bupper-popup-block {
+			width: 70%;
+			margin: 40% auto;
+			min-height: 100px;
+			left: 5%;
+			right: 5%;
+			position: absolute;
+			top: 10%;
+			background-color: #eee;
+			border-radius: 10px;
+			/*padding:20px;*/
+		}
+	}
+	.msisdn-display-wrap-0 {
+		display: none;
+	}
+	.msisdn-group {
+		position: relative;
+		direction: ltr !important;
+	}
+	.msisdn-input-wrap:before {
+		position: absolute;
+		padding: 0 10px 0 25px;
+		border-right: 1px solid #bbb;
+		font-size: inherit;
+		color: #000;
+		transform: translateY(-50%);
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		/*background: url("/resource/shared/flag/flag-qatar.png") 14px center no-repeat; */
+		
+		content: "964";
+		z-index: 1;
+		font-size: 22px !important;
+		font-family: 'Roboto', sans-serif !important;
+		font-weight: normal !important;
+	}
+	.msisdn-input,
+	.msisdn-input:focus {
+		text-align: left !important;
+		font-size: 22px !important;
+		font-family: 'Roboto', sans-serif !important;
+		text-indent: 70px;
+		font-weight: normal !important;
+	}
+	.bupper-popup-block {
+		background-color: #f1faf9;
+		max-width: 480px;
+		width: 80%;
+		border: 5px solid #fff;
+		padding: 15px;
+	}
+	.bupper-popup-block div {
+		text-align: center;
+	}
+	.accept-confirmation,
+	.decline-confirmation {
+		min-width: 150px;
+		cursor: pointer;
+	}
+	.subscribe-submit-button,
+	.accept-confirmation,
+	.accept-confirmation:hover {
+		background: #91cf03;
+		/* Old browsers */
+		
+		background: -moz-linear-gradient(left, #91cf03 0%, #24b91c 100%);
+		/* FF3.6-15 */
+		
+		background: -webkit-linear-gradient(left, #91cf03 0%, #24b91c 100%);
+		/* Chrome10-25,Safari5.1-6 */
+		
+		background: linear-gradient(to right, #91cf03 0%, #24b91c 100%);
+		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		
+		filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#91cf03', endColorstr='#24b91c', GradientType=1);
+		/* IE6-9 */
+		
+		animation: button 0.8s linear infinite;
+		-webkit-animation: button 0.8s linear infinite;
+		font-size: 24px;
+		padding: 10px;
+		width: 80%;
+		max-width: 480px;
+		border: none;
+		color: #fff;
+		margin: 10px auto;
+		cursor: pointer;
+	}
+	.accept-confirmation,
+	.accept-confirmation:hover {
+		font-size: 39px;
+		font-weight: bold;
+	}
+	.decline-confirmation,
+	.decline-confirmation:hover {
+		background: none;
+		text-decoration: underline;
+		border: none;
+		color: grey;
+		font-size: .7em;
+	}
+	.hook-confirmationBottomLeft,
+	.hook-confirmationBottomRight {
+		width: 98%;
+		display: block;
+	}
+	#confirmation-op_confirm-wrapper .hook-confirmationBodyStart {
+		width: 100%;
+		float: left;
+	}
+	#confirmation-op_confirm-wrapper .hook-confirmationBottomLeft {
+		float: left;
+	}
+	#confirmation-op_confirm-wrapper .hook-confirmationBottomRight {
+		float: left;
+		transform: translateY(50%);
+		top: -50%;
+	}
+	@keyframes button {
+		0% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(1.1);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+	@-webkit-keyframes button {
+		0% {
+			-webkit-transform: scale(1);
+		}
+		50% {
+			-webkit-transform: scale(1.1);
+		}
+		100% {
+			-webkit-transform: scale(1);
+		}
+	}
+	@media screen and (max-width: 480px) {
+		.bupper-popup-block {
+			margin: 45% auto 30%;
+		}
+	}
+	</style>
+	 
+	<style>
+	/* ---------------------------- top hooks and bottom hooks layout styling ------------------------------ */
+	
+	.footer,
+	.toplegal,
+	.hook-topLeft,
+	.hook-topCenter,
+	.hook-topRight,
+	.hook-bottomLeft,
+	.hook-bottomCenter,
+	.hook-bottomRight,
+	.hook-beforeSubmit,
+	.hook-afterSubmit,
+	.hook-beforeInput,
+	.hook-afterInput,
+	.component-msg {
+		font-size: 11px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: normal;
+	}
+	.footer a {
+		color: inherit;
+	}
+	.footer,
+	.toplegal {
+		text-align: justify;
+		display: table;
+		width: 100%;
+	}
+	.toplegal p {
+		margin: 0;
+	}
+	.popup-bottom,
+	.popup-top {
+		display: table-row;
+	}
+	.hook-confirmationBodyStart,
+	hook-confirmationBodyEnd {
+		padding: 5px;
+		text-align: center;
+	}
+	.hook-confirmationBodyStart {
+		margin-top: 10px;
+	}
+	.hook-confirmationBodyEnd {
+		margin-bottom: 10px;
+	}
+	.hook-topLeft,
+	.hook-topCenter,
+	.hook-topRight {
+		margin: 0;
+		top: 0;
+	}
+	.hook-confirmationTopLeft,
+	.hook-confirmationTopCenter,
+	.hook-confirmationTopRight {
+		margin: 0;
+	}
+	.hook-topLeft,
+	.hook-bottomLeft,
+	.hook-confirmationTopLeft,
+	.hook-confirmationBottomLeft {
+		text-align: left;
+	}
+	.hook-topCenter,
+	.hook-bottomCenter {
+		text-align: justify;
+	}
+	.hook-topRight,
+	.hook-bottomRight,
+	.hook-confirmationTopRight,
+	.hook-confirmationBottomRight {
+		text-align: right;
+	}
+	.hook-confirmationTopCenter,
+	.hook-confirmationBottomCenter {
+		text-align: center;
+	}
+	.hook-bottomLeft,
+	.hook-bottomCenter,
+	.hook-bottomRight,
+	.hook-topLeft,
+	.hook-topCenter,
+	.hook-topRight {
+		display: table-cell;
+		padding: 5px;
+		vertical-align: top;
+	}
+	.hook-confirmationTopLeft,
+	.hook-confirmationTopCenter,
+	.hook-confirmationTopRight,
+	.hook-confirmationBottomLeft,
+	.hook-confirmationBottomCenter,
+	.hook-confirmationBottomRight {
+		display: table-cell;
+		padding: 5px;
+	}
+	/* ---------------------------- end top hooks and bottom hooks layout styling ------------------------------ */
+	</style>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	.clearfix:before,
+	.clearfix:after {
+		content: "";
+		display: table;
+	}
+	.clearfix:after {
+		clear: both;
+	}
+	.clearfix {
+		zoom: 1;
+		/* ie 6/7 */
+	}
+	/* END OF RESET */
+	
+	body {
+		font-family: 'Saira Condensed', sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		width: 100%;
+		text-align: center;
+		background-color: #030306;
+		color: #fff;
+		direction: rtl;
+	}
+	.container {
+		width: 100%;
+		margin: 0 auto;
+		min-width: 340px;
+		height: 97vh;
+		overflow: hidden;
+		position: relative;
+		z-index: 0;
+		text-shadow: 0 0 2px #000;
+	}
+	.bgwrap {
+		background: url("images/bg.jpg") no-repeat bottom center;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		height: 150vh;
+		width: 80%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		position: absolute;
+		z-index: 1;
+	}
+	.bgwrap2 {
+		transform: translateY(-33vh);
+		-webkit-transform: translateY(-33vh);
+		transition: all 3.8s ease-in-out;
+		-webkit-transition: all 3.8s ease-in-out;
+		width: 99%;
+	}
+	.herowrap {
+		position: relative;
+		z-index: 2;
+		width: 90%;
+		margin: 3vh auto 0;
+		max-width: 300px;
+		min-height: 270px;
+	}
+	.herob {
+		display: none;
+		opacity: 0;
+	}
+	.hero {
+		width: 100%;
+		max-width: 100px;
+		padding-top: 12%;
+	}
+	.shield {
+		width: 100%;
+		position: absolute;
+		z-index: 4;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+	}
+	.brandwrap {
+		text-align: center;
+		margin: 0 auto;
+		position: relative;
+		z-index: 2;
+		font-size: .7rem;
+		text-shadow: 0 0 1px #000, 1px 0 1px #000, 0 1px 1px #000, 1px 1px 1px #000, 1px 2px 2px #000;
+	}
+	.brand {
+		font-size: 1.1rem;
+		color: #f7ff19;
+	}
+	.brand img {
+		vertical-align: middle;
+		padding-right: 5px;
+		max-width: 24px;
+	}
+	.bigbub {
+		animation: bubble .5s linear;
+		-webkit-animation: bubble .5s linear;
+		transition: all .2s ease;
+		-webkit-transition: all .2s ease;
+	}
+	.float {
+		animation: floating 1.5s alternate infinite;
+		-webkit-animation: floating 1.5s alternate infinite;
+		transition: all .8s ease-in-out;
+		-webkit-transition: all .8s ease-in-out;
+	}
+	.expire {
+		position: relative;
+		z-index: 2;
+		font-weight: 600;
+		font-size: 1.2rem;
+		text-shadow: 0 0 1px #000, 1px 0 1px #000, 0 1px 1px #000, 1px 1px 1px #000, 1px 2px 2px #000;
+	}
+	.toplegal {
+		position: absolute;
+		top: 0;
+		z-index: 2;
+	}
+	.main {
+		padding: 0 0 3%;
+		position: relative;
+		z-index: 2;
+	}
+	.ctatxt {
+		font-weight: 500;
+		color: #ffa200;
+		line-height: 1.4rem;
+		padding-bottom: 5px;
+		text-shadow: 0 0 1px #000, 1px 0 1px #000, 0 1px 1px #000, 1px 1px 1px #000, 1px 2px 2px #000;
+	}
+	.ctatxt span {
+		display: block;
+		font-weight: 800;
+		font-size: 1.4rem;
+	}
+	input:focus {
+		outline: none;
+	}
+	.operator-group {
+		width: 80%;
+		max-width: 300px;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+	}
+	.msisdn-group,
+	.pinbox {
+		direction: ltr;
+	}
+	.msisdn-group:before,
+	.pinbox:before {
+		content: "\25ba";
+		font-size: 1.8rem;
+		color: #F00;
+		z-index: 1;
+		position: absolute;
+		display: inline-block;
+		margin-left: -35px;
+		margin-top: 5px;
+		animation: arrow 1.1s ease-in-out infinite;
+		-webkit-animation: arrow 1.1s ease-in-out infinite;
+	}
+	.msisdn,
+	.pinwrap {
+		width: 100%;
+		max-width: 300px;
+		z-index: 0;
+	}
+	.pinwrap {
+		display: block;
+	}
+	.msisdn-input,
+	.pin-input {
+		font-size: 1.7rem;
+		text-align: center;
+		margin: 5px auto;
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 300px;
+		border: 4px solid rgba(100%, 0%, 0%, 0);
+		padding: 3px 0;
+		animation: border .5s alternate infinite;
+		-webkit-animation: border .5s alternate infinite;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		font-family: 'Saira Condensed', sans-serif;
+	}
+	.pin-input {
+		width: 100%;
+		direction: ltr;
+	}
+	.msisdn-submit-disable,
+	.pin-submit-disable,
+	.msisdn-submit-button,
+	.pin-submit-button,
+	.oc2sms-button,
+	.btn,
+	.operator-submit-button,
+	.operator-logo,
+	#identify-submit-button,
+	.subscribe-submit-button {
+		-moz-box-shadow: inset 0px 1px 0px 0px rgba(0, 96, 27, .3), 0 2px 6px rgba(51, 51, 51, .4), -2px 2px 4px #2a2a2a, 2px 2px 4px #2a2a2a;
+		-webkit-box-shadow: inset 0px 1px 0px 0px rgba(0, 96, 27, .3), 0 2px 6px rgba(51, 51, 51, .4), -2px 2px 4px #2a2a2a, 2px 2px 4px #2a2a2a;
+		box-shadow: inset 0px 1px 0px 0px rgba(0, 96, 27, .3), 0 2px 6px rgba(51, 51, 51, .4), -2px 2px 4px #2a2a2a, 2px 2px 4px #2a2a2a;
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0be100), color-stop(1, #006c1e));
+		background: -moz-linear-gradient(top, #0be100 5%, #006c1e 100%);
+		background: -webkit-linear-gradient(top, #0be100 5%, #006c1e 100%);
+		background: -o-linear-gradient(top, #0be100 5%, #006c1e 100%);
+		background: -ms-linear-gradient(top, #0be100 5%, #006c1e 100%);
+		background: linear-gradient(to bottom, #0be100 5%, #006c1e 100%);
+		filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#0be100', endColorstr='#006c1e', GradientType=0);
+		background-color: #0be100;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+		border: 3px solid #0be100;
+		display: inline-block;
+		cursor: pointer;
+		color: #ffffff;
+		font-size: 1.3rem;
+		font-weight: bold;
+		text-decoration: none;
+		text-shadow: 0px 1px 0px #1570cd;
+		padding: 6px 24px;
+		width: 80%;
+		max-width: 300px;
+		box-sizing: border-box;
+	}
+	.msisdn-submit-button:hover,
+	.pin-submit-button:hover,
+	.oc2sms-button:hover,
+	.btn:hover,
+	.operator-submit-button:hover,
+	.operator-logo:hover,
+	#identify-submit-button:hover,
+	.subscribe-submit-button:hover {
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #006c1e), color-stop(1, #0be100));
+		background: -moz-linear-gradient(top, #006c1e 5%, #0be100 100%);
+		background: -webkit-linear-gradient(top, #006c1e 5%, #0be100 100%);
+		background: -o-linear-gradient(top, #006c1e 5%, #0be100 100%);
+		background: -ms-linear-gradient(top, #006c1e 5%, #0be100 100%);
+		background: linear-gradient(to bottom, #006c1e 5%, #0be100 100%);
+		filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#006c1e', endColorstr='#0be100', GradientType=0);
+		background-color: #006c1e;
+	}
+	.msisdn-submit-button:active,
+	.pin-submit-button:active,
+	.oc2sms-button:active,
+	.btn:active {
+		position: relative;
+		top: 1px;
+	}
+	.msisdn-submit-disable,
+	.pin-submit-disable {
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #765a5a), color-stop(1, #514748), color-stop(1, #393232));
+		background: -moz-linear-gradient(top, #765a5a 5%, #514748 5%, #393232 100%);
+		background: -webkit-linear-gradient(top, #765a5a 5%, #514748 5%, #393232 100%);
+		background: -o-linear-gradient(top, #765a5a 5%, #514748 5%, #393232 100%);
+		background: -ms-linear-gradient(top, #765a5a 5%, #514748 5%, #393232 100%);
+		background: linear-gradient(to bottom, #765a5a 5%, #514748 5%, #393232 100%);
+		filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#765a5a', endColorstr='#393232', GradientType=0);
+		background-color: #600;
+		text-shadow: 0px 1px 0px #333;
+		border: 1px solid #333;
+		-moz-box-shadow: inset 0px 1px 0px 0px #555, 0 5px 3px #111, -2px 2px 5px #111, 2px 2px 5px #111;
+		-webkit-box-shadow: inset 0px 1px 0px 0px #555, 0 5px 3px #111, -2px 2px 5px #111, 2px 2px 5px #111;
+		box-shadow: inset 0px 1px 0px 0px #555, 0 5px 3px #111, -2px 2px 5px #111, 2px 2px 5px #111;
+	}
+	.msisdn-submit-button,
+	.pin-submit-button,
+	.btn {
+		animation: button 0.8s linear infinite;
+		-webkit-animation: button 0.8s linear infinite;
+	}
+	.btn {
+		width: 50%;
+		max-width: 180px;
+	}
+	.button-group {
+		width: 80%;
+		max-width: 450px;
+		margin: 0 auto;
+	}
+	.oc2sms-button {
+		margin: 6px auto;
+		display: block;
+		min-width: 220px;
+		max-width: 90%;
+	}
+	.operator-logo {
+		display: block;
+		margin: 5px auto;
+		min-width: 220px;
+	}
+	.msisdn-input:hover,
+	.pin-input:hover {
+		animation: none;
+		-webkit-animation: none;
+	}
+	.valid:before {
+		display: none;
+	}
+	.valid:after {
+		content: "\2714";
+		position: absolute;
+		color: #0C0;
+		margin-left: -30px;
+		margin-top: 14px;
+		font-size: 1.3rem;
+		font-weight: bold;
+		text-shadow: none;
+	}
+	.valid .msisdn-input,
+	.valid .pin-input,
+	.valid:after {
+		animation: none;
+		-webkit-animation: none;
+	}
+	/*
+.msisdn, .pinwrap{position:relative;}
+.msisdn-input-wrap:before {
+	position: absolute;	margin-top:6px; height:44px; line-height: 46px; padding:0 10px 0 36px;	border-right: 1px solid #bbb;
+	font-family: 'Open Sans', sans-serif; font-size: 1.4em;	font-weight: 500; color:#2D7B95;	
+	background: url("/resource/shared/flag/flag-qatar.png") 14px 14px no-repeat;
+	content: "974"; z-index:1;
+}
+.msisdn-input, .msisdn-input:focus { background:none; text-align:left;	text-indent: 94px;}
+.msisdn-submit-disable, .pin-submit-disable, .msisdn-submit-button, .pin-submit-button, .oc2sms-button, .btn, .operator-submit-button, .operator-logo, #identify-submit-button, .subscribe-submit-button{width:80%; max-width:300px;}
+.msisdn-input, .pin-input{box-sizing:border-box; width:80%; max-width:300px;}
+*/
+	
+	.or {
+		display: block;
+		font-size: .8rem;
+		margin: 5px auto;
+	}
+	.keyshort {
+		display: inline-block;
+		padding: 0 8px;
+		font-size: 2.6rem;
+		line-height: 2.8rem;
+		font-weight: bold;
+		color: #ffa200;
+		animation: blink 1.6s alternate infinite;
+		-webkit-animation: blink 1.6s alternate infinite;
+		text-shadow: 0 0 1px #000, 1px 0 1px #000, 0 1px 1px #000, 1px 1px 1px #000, 1px 2px 2px #000;
+	}
+	.none {
+		display: none;
+	}
+	.bupper-popup-block {
+		position: relative;
+		z-index: 2;
+		margin: 2% auto;
+	}
+	/* 3g/wifi opt in flow for ME */
+	
+	.confirmation-op_confirm-wrapper .bupper-popup-block {
+		position: relative;
+	}
+	.confirmation-op_confirm-wrapper .hook-confirmationBottomLeft {
+		float: left;
+	}
+	/* end */
+	
+	@media screen and (max-width: 1200px) {
+		.bgwrap {
+			width: 100%;
+		}
+		.herotxt {
+			font-size: 1.7rem;
+		}
+		.ctatxt {
+			font-size: 1rem;
+		}
+	}
+	@keyframes arrow {
+		60% {
+			transform: translateX(-10px);
+		}
+		100% {
+			transform: translateX(0);
+		}
+	}
+	@-webkit-keyframes arrow {
+		60% {
+			transform: translateX(-10px);
+		}
+		100% {
+			transform: translateX(0);
+		}
+	}
+	@keyframes blink {
+		25% {
+			color: #ffa200;
+		}
+		65% {
+			color: #000;
+		}
+		100% {
+			color: #ffa200;
+		}
+	}
+	@-webkit-keyframes blink {
+		25% {
+			color: #ffa200;
+		}
+		65% {
+			color: #000;
+		}
+		100% {
+			color: #ffa200;
+		}
+	}
+	@keyframes border {
+		0% {
+			border: 4px solid rgba(100%, 0%, 0%, 0);
+			box-shadow: 0 0 3px 1px rgba(0%, 0%, 0%, 1);
+		}
+		100% {
+			border: 4px solid rgba(100%, 0%, 0%, 1);
+			box-shadow: 0 0 3px 1px rgba(0%, 0%, 0%, 1);
+		}
+	}
+	@-webkit-keyframes border {
+		0% {
+			border: 4px solid rgba(100%, 0%, 0%, 0);
+			box-shadow: 0 0 3px 1px rgba(0%, 0%, 0%, 1);
+		}
+		100% {
+			border: 4px solid rgba(100%, 0%, 0%, 1);
+			box-shadow: 0 0 3px 1px rgba(0%, 0%, 0%, 1);
+		}
+	}
+	@keyframes button {
+		0% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(1.1);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+	@-webkit-keyframes button {
+		0% {
+			-webkit-transform: scale(1);
+		}
+		50% {
+			-webkit-transform: scale(1.1);
+		}
+		100% {
+			-webkit-transform: scale(1);
+		}
+	}
+	@keyframes bubble {
+		0% {
+			width: 5%;
+			transform: rotate(-190deg);
+		}
+		85% {
+			width: 110%;
+			left: -5%;
+			right: -5%;
+		}
+		100% {
+			width: 100%;
+		}
+	}
+	@-webkit-keyframes bubble {
+		0% {
+			width: 5%;
+			-webkit-transform: rotate(-190deg);
+		}
+		85% {
+			width: 110%;
+			left: -5%;
+			right: -5%;
+		}
+		100% {
+			width: 100%;
+		}
+	}
+	@keyframes floating {
+		0% {
+			transform: translate(0, 0);
+		}
+		60% {
+			transform: translate(0, -3px);
+		}
+		100% {
+			transform: translate(0, 0);
+		}
+	}
+	@-webkit-keyframes floating {
+		0% {
+			transform: translate(0, 0);
+		}
+		60% {
+			transform: translate(0, -3px);
+		}
+		100% {
+			transform: translate(0, 0);
+		}
+	}
+	.jozainmessage {
+		display: none;
+	}
+	.operator-group:before,
+	.operator-group:after {
+		right: auto;
+		left: 10px;
+	}
+	.msisdn-input-wrap:before {
+		font-size: 1.8rem;
+		text-shadow: none;
+	}
+	.zain {
+		width: 150px !important;
+		height: 85px !important;
+		border: none !important;
+	}
+	.msisdn-input,
+	.msisdn-input:focus {
+		text-indent: 85px;
+	}
+	.pinwrap {
+		margin: auto;
+	}
+	.pinbox:before {
+		content: '';
+	}
+	</style>
+	<link href="css/css.css" rel="stylesheet">
+	<title>Appero Antivirus</title>
+	<link rel="shortcut icon" href="images/logo.gif">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#031868">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#031868">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#031868">
+	 
+</head>
+
+<body>
+ 
+	
+ 
+	<div class="js">
+		<form id="mainForm" action="#" name="msisdn-form">
+			<input type="hidden" name="country" value="iq">
+			<input type="hidden" name="handle" value="appero-antivirus-1">
+			<input type="hidden" name="offer" value="45">
+			<input type="hidden" name="device" value="smart">
+			<input type="hidden" name="subid" value="73271">
+			<input type="hidden" name="transaction_id" value="8a77849b40a44ecfb3ab9655085c4e2514898">
+			<input type="hidden" name="s1" value="">
+			<input type="hidden" name="utm_cdn" value="2d67e7580c59c3335af6d85fe9044d4e3316981095061">
+			<input type="hidden" name="_extracted" value="530963d1ec3b4571b6bc2f837c498ebb">
+			<input type="hidden" id="gaclientid" name="gaclientid" value="">
+			<div class="container">
+				<div class="toplegal"> </div>
+				<div class="bgwrap bgwrap2"></div>
+				<script>
+				$(document).ready(function() {
+					$(".main, .brandwrap, .shield, .herob").hide();
+					$(".expire, .herob").css('opacity', '0');
+					setTimeout(function() {
+						$(".bgwrap").addClass("bgwrap2");
+					}, 800);
+					setTimeout(function() {
+						$(".main, .brandwrap").fadeIn(800);
+					}, 1300);
+					setTimeout(function() {
+						$(".shield").fadeIn(700).addClass("bigbub");
+					}, 1800);
+					setTimeout(function() {
+						$(".hero").hide();
+						$(".herob").show();
+						$(".expire, .herob").css('opacity', '1');
+						$(".herowrap img").addClass("float");
+					}, 2300);
+				});
+				</script>
+				<div class="herowrap"> <img src="images/phoneA-ar.gif" alt="Phone" class="hero float" style="display: none;"> <img src="images/phoneB.gif" alt="Phone" style="display: inline; opacity: 1;" class="herob hero float">
+					<script>
+					$(".herob").hide();
+					</script> <img src="images/bubble.png" alt="shield" class="shield bigbub float" style="display: block;"> </div>
+				<div class="expire" style="opacity: 1;">
+					<div class="timer"> ستنتهي مدة الحماية بعد <span id="time">00:46</span> </div>
+					<div class="jozainmessage"> أحصل على حماية متكاملة من الفيروسات </div>
+				</div>
+				<script type="text/javascript">
+				function checkifempty() {
+					if($('#msisdn-submit-button').hasClass('msisdn-submit-disable')) {
+						$(".msisdn-group").removeClass('valid');
+					} else {
+						$(".msisdn-group").addClass('valid');
+					}
+				}
+				jQuery(document).ready(function() {
+					setInterval("checkifempty()", 100);
+				});
+				</script>
+				<section class="main" style="display: block;">
+					<script type="text/javascript">
+					var maxNum = [11];
+					var minNum = [10];
+					var pinMin = 4;
+					var js_validate = true;
+					var acceptedNumericInputs = [
+						// latin
+						'0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+						// arabic
+						'٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩',
+						// some more arabic
+						'۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹',
+					];
+					$(document).ready(function() {
+						$('#mainForm').submit(checkValidity);
+						// restrict phone input
+						$('.numeric-field').keypress(function(key) {
+							if(key.charCode == 13) { // enter key
+								return true;
+							}
+							return acceptedNumericInputs.indexOf(key.key) > -1;
+						});
+						// restrict alphanumeric pin input
+						$('.alphanumeric-field').keypress(function(key) {
+							if(key.charCode == 13) { // enter key
+								return true;
+							}
+							var pattern = new RegExp("[a-zA-Z0-9]");
+							return pattern.test(key.key);
+						});
+						$('.numeric-field,.alphanumeric-field').each(function() {
+							var element = this;
+							var jqElement = $(element);
+							focusInput(jqElement);
+							checkInputCompleted(jqElement);
+							var previousValue = element.value;
+							setInterval(function() {
+								if(element.value != previousValue) {
+									previousValue = element.value;
+									checkInputCompleted(jqElement);
+								}
+							}, 50);
+						});
+					});
+
+					function focusInput(input) {
+						var id = input.attr('id');
+						var index = Number(id.substr(id.indexOf('_') + 1));
+						var type = id.search('msisdn') != -1 ? 'msisdn' : 'pin';
+						input.focus(function() {
+							setTimeout((function(el) {
+								var strLength = el.value.length;
+								return function() {
+									if(el.setSelectionRange !== undefined) {
+										el.setSelectionRange(strLength, strLength);
+									} else {
+										$(el).val(el.value);
+									}
+								}
+							}(this)), 5);
+						});
+						if(type == 'msisdn') {
+							if(index == 0) {
+								$('#' + type + '_' + index).focus();
+							}
+						} else {
+							input.focus();
+						}
+					}
+
+					function checkInputCompleted(input) {
+						var id = input.attr('id');
+						var index = Number(id.substr(id.indexOf('_') + 1));
+						var type = id.search('msisdn') != -1 ? 'msisdn' : 'pin';
+						var min = 0;
+						if(type == 'msisdn') {
+							min = minNum[index];
+						} else {
+							min = pinMin;
+						}
+						if(input.val().length >= min) {
+							input.attr('finish', 'true');
+						} else {
+							input.removeAttr("finish");
+						}
+						checkAllInputCompleted(type);
+					}
+
+					function checkAllInputCompleted(type) {
+						if(type == 'msisdn') {
+							for(var i = 0; i < minNum.length; i++) {
+								if($('#' + type + '_' + i).attr('finish') != 'true') {
+									disableSubmit(type);
+									return;
+								}
+							}
+						} else {
+							if($('#' + type).attr('finish') != 'true') {
+								disableSubmit(type);
+								return;
+							}
+						}
+						enableSubmit(type);
+					}
+
+					function disableSubmit(buttonType) {
+						$('#' + buttonType + '-submit-button').attr("disabled", "disabled").removeClass(buttonType + '-submit-button').addClass(buttonType + '-submit-disable');
+					}
+
+					function enableSubmit(buttonType) {
+						$('#' + buttonType + '-submit-button').removeAttr("disabled", "disabled").addClass(buttonType + '-submit-button').removeClass(buttonType + '-submit-disable');
+					}
+
+					function checkMsisdnValid(e) {
+						var operatorsPrefixes = {
+							'IQ_ASIACELL': ['77', '077'],
+							'IQ_KOREK': ['73', '75', '073', '075'],
+							'IQ_ZAIN': ['79', '78', '079', '078']
+						}
+						var prefixes = ['79', '78', '079', '078', '73', '75', '073', '075', '77', '077', '7', '9', '8', '3', '5', '012', '12', '010', '10', '011', '11', '699', '693', '690', '694', '695', '697', '698', '696'];
+						var portable = false;
+						var errType = 0; //0 = no error, 1 = not a number, 2 = prefix not mismatch, 3 = operator mismatch, 4 = too less number, 5 = too many number,
+						var errMsg = {
+							"OPERATOR_MISMATCH": "OPERATOR_MISMATCH",
+							"NOT_VALID_MSISDN": "<div style=\"text-align: right;\"><strong><span style=\"color:#FF0000;\"><span style=\"font-size:14px;\">\u0627\u0644\u0631\u0642\u0645 \u0627\u0644\u0630\u064a \u0627\u062f\u062e\u0644\u062a\u0647 \u063a\u064a\u0631 \u0635\u062d\u064a\u062d<\/span><\/span><\/strong><\/div>\n",
+							"OPERATOR_NOT_SELECTED": "OPERATOR_NOT_SELECTED"
+						};
+						if($("#operator").val() == "-none-") {
+							errType = 6;
+						}
+						emptyErrorMsg()
+						$("input.msisdn").each(function() {
+							var msisdn = getLatinDigits($(this).val());
+							// Force update msisdn to digits due to few functions
+							// takes value directly from #msisdn_0
+							$(this).val(msisdn);
+							var index = Number($(this).attr('id').substr(7));
+							var reg = /^\d+$/;
+							var result = reg.test(msisdn);
+							if(!result && errType == 0) {
+								errType = 1;
+							} else if(msisdn.length < minNum[index] && errType == 0) {
+								errType = 4;
+							} else if(msisdn.length > maxNum[index] && errType == 0) {
+								errType = 5;
+							} else if($(this).attr('id') == "msisdn_0") {
+								var prefixesMatched = false;
+								if(portable) {
+									if(prefixes.length == 0) {
+										prefixesMatched = true;
+									} else {
+										for(var i = 0; i < prefixes.length; i++) {
+											if(prefixes[i] != "" && prefixes[i] != null) {
+												if(msisdn.substr(0, prefixes[i].length) == prefixes[i]) {
+													prefixesMatched = true;
+													break;
+												}
+											}
+										}
+									}
+									if(!prefixesMatched && errType == 0) {
+										errType = 2;
+									}
+								} else {
+									if($("#operator").val() == undefined || $("#operator").val() == null) {
+										prefixesMatched = true;
+									} else {
+										for(var fqn in operatorsPrefixes) {
+											if($("#operator").val() == fqn) {
+												for(var i = 0; i < operatorsPrefixes[fqn].length; i++) {
+													if(msisdn.substr(0, operatorsPrefixes[fqn][i].length) == operatorsPrefixes[fqn][i]) {
+														prefixesMatched = true;
+														break;
+													}
+												}
+											}
+										}
+									}
+									if(!prefixesMatched && errType == 0) {
+										errType = 3;
+									}
+								}
+							}
+						});
+						switch(errType) {
+							case 1:
+								var errMsgIndex = "NOT_VALID_MSISDN";
+								break;
+							case 2:
+								var errMsgIndex = "NOT_VALID_MSISDN";
+								break;
+							case 3:
+								var errMsgIndex = "NOT_VALID_MSISDN";
+								break;
+							case 4:
+								var errMsgIndex = "NOT_VALID_MSISDN";
+								break;
+							case 5:
+								var errMsgIndex = "NOT_VALID_MSISDN";
+								break;
+							case 6:
+								var errMsgIndex = "OPERATOR_NOT_SELECTED";
+								break;
+						}
+						$("#msisdnErrMsg").append(errMsg[errMsgIndex]);
+						if(errType > 0) {
+							e.preventDefault();
+							e.stopImmediatePropagation();
+							return false;
+						}
+						disableSubmit('msisdn');
+						return true;
+					}
+
+					function checkPinValid(e) {
+						var errTypePin = 0; //0 = no error, 1 = not a pin, 2 = too less number, 3 = too many number,
+						var errMsgPin = {
+							"MISMATCH_PIN": "MISMATCH_PIN",
+							"NOT_VALID_PIN": "<div style=\"text-align: right;\"><strong><span style=\"font-size:14px;\"><span style=\"color:#FF0000;\"><span style=\"line-height: 20px; text-indent: 9px;\">\u0631\u0642\u0645 \u0627\u0644\u062a\u0639\u0631\u064a\u0641 \u0627\u0644\u0634\u062e\u0635\u064a \u062e\u0627\u0637\u0626<\/span><\/span><\/span><\/strong><\/div>\n"
+						};
+						var shouldAllowAlphanumericPin = 0;
+						var maxNum = 5;
+						var minNum = 4;
+						emptyErrorMsg();
+						$("#pin").each(function() {
+							var pin = $(this).val();
+							var index = Number($(this).attr('id').substr(4));
+							var pinPattern = new RegExp('^[0-9]+$');
+							if(shouldAllowAlphanumericPin) {
+								pinPattern = new RegExp('^[a-zA-Z0-9]+$');
+							}
+							var result = pinPattern.test(pin);
+							if(!result && errTypePin == 0) {
+								errTypePin = 1;
+							} else if(pin.length < minNum && errTypePin == 0) {
+								errTypePin = 2;
+							} else if(pin.length > maxNum && errTypePin == 0) {
+								errTypePin = 3;
+							}
+						});
+						switch(errTypePin) {
+							case 1:
+							case 2:
+							case 3:
+								var errMsgIndexPin = "NOT_VALID_PIN";
+								break;
+						}
+						$("#pinErrMsg").append(errMsgPin[errMsgIndexPin]);
+						if(errTypePin > 0) {
+							e.preventDefault();
+							return false;
+						}
+						disableSubmit('pin');
+					}
+
+					function checkValidity(e) {
+						if($("#pin").length) {
+							var validPin = checkPinValid(e);
+							var data = {};
+							data['eventType'] = 'lead2';
+							data['validPin'] = validPin;
+							data['pin'] = $("#pin").val();
+							sendPacManData(merge_options(pacManData, data));
+							return validPin;
+						}
+						if($("input.msisdn").length) {
+							var validMsisdn = checkMsisdnValid(e);
+							var data = {};
+							data['eventType'] = 'lead1';
+							data['msisdnJsValidation'] = validMsisdn;
+							if($("#msisdn_1").length) {
+								data['msisdn'] = $("#msisdn_0").val() + $("#msisdn_1").val();
+							} else {
+								data['msisdn'] = $("#msisdn_0").val();
+							}
+							sendPacManData(merge_options(pacManData, data));
+							return validMsisdn;
+						}
+						return true;
+					}
+
+					function emptyErrorMsg() {
+						$(".errMsg").empty();
+					}
+
+					function getLatinDigits(msisdn) {
+						return msisdn.replace(/([٠١٢٣٤٥٦٧٨٩])|([۰۱۲۳۴۵۶۷۸۹])/g, function(m, $1, $2) {
+							return m.charCodeAt(0) - ($1 ? 1632 : 1776);
+						});
+					}
+					</script>
+					<h3 class="ctatxt">للاشتراك يرجى إدخال رقم الهاتف ادناه:</h3>
+					<script type="text/javascript">
+					function updateOperatorSelection(current, previous, isPrefix) {
+						var value = null;
+						var preValue = null;
+						if(isPrefix) {
+							var prefixsMap = {};
+							prefixsMap['IQ_ASIACELL'] = ["77", "077"];
+							prefixsMap['IQ_KOREK'] = ["73", "75", "073", "075"];
+							prefixsMap['IQ_ZAIN'] = ["79", "78", "079", "078"];
+							for(var operator in prefixsMap) {
+								var prefixs = prefixsMap[operator];
+								if(value == null) {
+									if(prefixs.indexOf(current) > -1) {
+										value = operator;
+									}
+								}
+								if(preValue == null) {
+									if(prefixs.indexOf(previous) > -1) {
+										preValue = operator;
+									}
+								}
+								if(value != null && preValue != null) {
+									break;
+								}
+							}
+						} else {
+							value = current;
+							preValue = previous;
+						}
+						var prevSelector = "span[criteria*='" + preValue + "']";
+						var selector = "span[criteria*='" + value + "']";
+						$(prevSelector).hide();
+						$(selector).show();
+						if(value == '-none-') {
+							$("span[data-criteria]").each(function(index) {
+								$(this).show();
+							})
+						} else {
+							$("span[data-criteria]").each(function(index) {
+								$(this).hide();
+							});
+							var v = '{"operator":["' + value + '"]}';
+							$("span[data-criteria='" + v + "']").show();
+						}
+						var operatorsWithConfirmation = [];
+						if(operatorsWithConfirmation.hasOwnProperty(value)) {
+							$('#op_confirm-checkbox').prop('checked', false);
+							if(operatorsWithConfirmation[value] == 'displayWithYesButtonOnly') {
+								$('#accept-op_confirm-checkbox').show();
+								$('#decline-op_confirm-checkbox').hide();
+							} else if(operatorsWithConfirmation[value] == 'displayWithNoButtonOnly') {
+								$('#accept-op_confirm-checkbox').hide();
+								$('#decline-op_confirm-checkbox').show();
+							} else {
+								$('#accept-op_confirm-checkbox').show();
+								$('#decline-op_confirm-checkbox').show();
+							}
+						} else {
+							$('#op_confirm-checkbox').prop('checked', true);
+						}
+						// External page handling.
+						$('a.component-link').attr('href', function(_idx, oldHref) {
+							if(value == '-none-') {
+								return oldHref.replace(/operator=[^&]*/, 'operator=');
+							} else {
+								return oldHref.replace(/operator=[^&]*/, 'operator=' + value);
+							}
+						});
+					}
+					</script>
+					<div class="hook-block hook-beforeInput"><span class="msisdnErrMsg errMsg" id="msisdnErrMsg"></span> <span class="msisdnErrMsg errMsg"></span> <span class="operatorErrMsg errMsg" id="operatorErrMsg"></span> <span style="display: none;" id="error_msg_msisdn_not_submitted"> MSISDN_NOT_SUBMITTED </span> </div>
+					<div class="msisdn-group">
+						<input type="hidden" name="msisdnSubmitted" value="Y"> <span class="msisdn msisdn-display-wrap msisdn-display-wrap-0"><span class="msisdn msisdn-display msisdn-display-0">964</span></span> <span class="msisdn msisdn-input-wrap msisdn-input-wrap-0"><input class="numeric-field msisdn msisdn-input msisdn-input-0" type="tel" maxlength="11" id="msisdn_0" name="msisdn[0]" value="" size="11" tabindex="1" autofocus=""></span> </div>
+					<div class="hook-block hook-beforeSubmit">
+						<input type="hidden" name="legalCheckbox" value="Y">
+						<input type="hidden" name="incentivizedCheckbox" value="Y"> </div>
+					<button type="submit" id="msisdn-submit-button" class="submit-button msisdn-submit-disable" value="proceed" disabled="disabled">اشترك الان! </button>
+					<div class="hook-block hook-afterSubmit">
+						<div class="component-msg" id="component-msg-3DAYSFREETRIAL"></div>
+						<div class="component-msg" id="component-msg-3DAYSFREETRIAL11">
+							<div>&nbsp;</div>
+							<div><span style="color:#FFFFFF;">استمتع بثلاث أيام مجانية&nbsp;&nbsp;لمستخدمي اسياسيل</span>
+							</div>
+						</div>
+						<div class="component-msg" id="component-msg-PRICE"></div>
+					</div>
+				</section>
+				<aside class="brandwrap" style="display: block;"> برعاية:
+					<div class="brand">مضاد الفيروسات <img src="images/logo.gif" alt="Appero"> Appero </div>
+				</aside>
+			</div>
+			<div class="footer">
+				<div class="hook-block hook-bottomCenter">
+					<div class="component-msg" id="component-msg-DISCLAIMER">
+						<div style="font-size: 14px; text-align: center;">&nbsp;</div>
+						<div style="font-size: 14px; text-align: center;">أهلا بك في خدمة المحتويات المتنوعة. عند اشتراكك بالخدمة، يستفيد مشتركي <span dir="LTR">Asiacell </span>من ثلاث أيام مجانية ومن ثم يتم إستقطاع 360 دينار عراقي 5 مرات في الاسبوع. سيتم تجديد اشتراكك تلقائيا. يمكنك إيقاف الخدمة بإرسال 0 إلى 2391 <span dir="LTR">.&nbsp;مستخدمي&nbsp;كورك سوف يستلم 7 محتويات أسبوعيا بسعر 240 دينار عراقي لكل محتوى و في حالة الغاء الخدمة ارسل 0 الى 2345.&nbsp;مستخدمي زين ، سوف يستلم 7 محتويات إسبوعيا بسعر 240&nbsp; دينارعراقي لكل محتوي وللإلغاء الأشتراك ، أرسل 0 الى 3091.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="op_confirm-checkbox op_confirm-checkbox-wrap">
+				<input type="hidden" name="op_confirmCheckbox" value="N">
+				<input type="checkbox" id="op_confirm-checkbox" class="op_confirm-checkbox" name="op_confirmCheckbox" value="Y" style="display: none;">
+				<div id="confirmation-op_confirm-wrapper" class="confirmation-op_confirm-wrapper bupper-popup-div" style="display: none; position: absolute; left: 0; top: 0;">
+					<div class="bupper-popup-block">
+						<div class="hook-block hook-confirmationBodyStart">
+							<div class="confirmation-text" id="confirmation-text-op_confirm">OP_CONFIRM_PAGE_TEXT</div>
+						</div>
+						<div class="hook-block hook-confirmationBodyEnd"></div>
+					</div>
+				</div>
+				<script type="text/javascript">
+				jQuery(document).ready(function() {
+					var mcb_pop_up = "";
+					$('#confirmation-op_confirm-wrapper .accept-confirmation').on('click', function(event) {
+						event.preventDefault();
+						event.stopImmediatePropagation();
+						$('#op_confirm-checkbox').prop('checked', true);
+						$('#confirmation-op_confirm-wrapper').hide();
+						$('form').submit();
+					});
+					$('#confirmation-op_confirm-wrapper .decline-confirmation').on('click', function(event) {
+						event.preventDefault();
+						event.stopPropagation();
+						if(typeof(js_validate) !== 'undefined') {
+							enableSubmit('msisdn');
+						}
+						$('#confirmation-op_confirm-wrapper').hide();
+						$('#op_confirm-checkbox').prop('checked', false);
+					});
+					var validate_confirmation_op_confirm_checkbox = function(event) {
+						if(!$('select#operator').length && mcb_pop_up != "1") {
+							//this code added temporary
+							var accept = $('#accept-op_confirm-checkbox').val();
+							if(!accept) {
+								return true;
+							}
+						}
+						var checkbox = $('#op_confirm-checkbox');
+						if(!checkbox.prop('checked')) {
+							$('#confirmation-op_confirm-wrapper').show();
+							event.preventDefault();
+							event.stopImmediatePropagation();
+							return false;
+						}
+						return true;
+					};
+					$('form').on('submit', validate_confirmation_op_confirm_checkbox);
+				});
+				</script>
+			</div>
+		</form><img width="1px" height="1px" src="images/mstore">
+		<script>
+		var _initialJqueryTime = new Date();
+		</script>
+		<script src="js/jquery.min.js"></script>
+		<script>
+		var _finalJqueryTime = new Date();
+		var _jqueryTiming = (_finalJqueryTime.getTime() - _initialJqueryTime.getTime());
+		</script>
+		<script>
+		function startTimer(duration, display) {
+			var timer = duration,
+				minutes, seconds;
+			setInterval(function() {
+				minutes = parseInt(timer / 60, 10)
+				seconds = parseInt(timer % 60, 10);
+				minutes = minutes < 10 ? "0" + minutes : minutes;
+				seconds = seconds < 10 ? "0" + seconds : seconds;
+				display.textContent = minutes + ":" + seconds;
+				if(--timer < 0) {
+					timer = duration;
+				}
+			}, 1000);
+		}
+		window.onload = function() {
+			var fiveMinutes = 60,
+				display = document.querySelector('#time');
+			startTimer(fiveMinutes, display);
+		};
+		</script>
+		 
+	</div>
+
+
+
+</body>
+
+</html>

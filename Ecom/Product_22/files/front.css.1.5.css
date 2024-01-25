@@ -1,0 +1,19 @@
+.parent-repeater {
+  /* This creates the masonry layout */
+  display: flex;
+  margin-top: 35px;
+}
+
+@media screen and (min-width: 677px) {
+  .parent-repeater {
+    margin: 35px 12px 25px 12px;
+  }
+}
+
+/* Add this media query */
+@media screen and (max-width: 676px) {
+  .parent-repeater {
+    flex-direction: column;
+    margin: 35px 12px 0px 12px;
+  }
+}

@@ -1,0 +1,27 @@
+.coupon {
+  max-width: 800px !important;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px;
+  margin-bottom: 20px;
+  padding: 20px;
+  padding-bottom: 0px;
+  border-style: dashed;
+  font-size: 19px;
+  font-weight: 400;
+  word-break: break-word;
+}
+
+.flex {
+  display: flex;
+}
+
+@media screen and (max-width: 640px) {
+  .coupon p{
+    font-size: 16.6px;
+    line-height: 25px;
+    font-weight: 400;
+    word-break: break-word;
+  }
+
+  }

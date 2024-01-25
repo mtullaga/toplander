@@ -1,0 +1,522 @@
+<html>
+
+<head>
+	<base href="">
+	<script type="text/javascript">
+	window.addEventListener('keydown', function(e) {
+		if(e.keyIdentifier == 'U+000A' || e.keyIdentifier == 'Enter' || e.keyCode == 13) {
+			if(e.target.nodeName == 'INPUT' && e.target.type == 'tel') {
+				e.preventDefault();
+				return false;
+			}
+		}
+	}, true);
+	if(!String.prototype.startsWith) {
+		String.prototype.startsWith = function(searchString, position) {
+			position = position || 0;
+			return this.indexOf(searchString, position) === position;
+		};
+	}
+	</script>
+	<style>
+	*,
+	::after,
+	::before {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-text-size-adjust: 100%;
+	}
+	html,
+	body {
+		padding: 0;
+		margin: 0;
+		font-size: 13px;
+	}
+	body {
+		font-family: "Roboto", sans-serif;
+		color: #000;
+	}
+	.clear {
+		clear: both;
+	}
+	.main_wrap {
+		padding: 0px 15px;
+	}
+	.header {
+		padding: 8px 15px;
+		width: 100%;
+		max-width: 780px;
+		z-index: 10;
+		margin: 0 auto;
+	}
+	.header_left {
+		float: left;
+	}
+	.header_right {
+		float: right;
+		width: auto;
+	}
+	.nav {
+		display: inline-block;
+		list-style: none;
+		padding-left: 0px;
+		margin: 0px;
+	}
+	.nav li:first-child {
+		display: inline-block;
+	}
+	.nav li {
+		display: none;
+		vertical-align: middle;
+		padding-left: 1rem;
+		font-size: 0.9rem;
+		font-weight: 40;
+		color: #858383;
+	}
+	.langSelect {
+		text-align: right;
+		position: relative;
+	}
+	.langSelect img {
+		width: 28px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 13px;
+		cursor: pointer;
+	}
+	.lang_button.text {
+		display: inline-block;
+		vertical-align: middle;
+		text-decoration: none;
+		font-size: 0.9rem;
+		text-transform: uppercase;
+		padding: 0.5rem;
+		margin-left: 5px;
+		font-weight: 600;
+		color: #fff;
+		background: #4cb9e7;
+	}
+	.header__wrap {
+		width: 100%;
+		max-width: 780px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.zip {
+		display: inline-flex;
+	}
+	.header_text1 {
+		text-align: left;
+		padding: 5px;
+		margin-left: 10px;
+	}
+	.header__wrap .download_file {
+		font-size: 2rem;
+		font-weight: 500;
+		color: #2eade3;
+	}
+	.title {
+		margin: 15px 0px;
+		font-size: 1.8rem;
+		font-weight: 400;
+	}
+	.display_1,
+	.display_2 {
+		font-size: 1.4rem;
+		font-weight: 600;
+	}
+	.display_aoc,
+	.keyword {
+		font-size: 1.8rem;
+		font-weight: 600;
+	}
+	.keyword {
+		color: #2eade3;
+	}
+	.logo {
+		max-width: 92px;
+		width: 100%;
+	}
+	span.mb {
+		color: #999999;
+		font-size: 1.8rem;
+	}
+	span.text1 {
+		font-size: 1.2rem;
+		font-weight: 500;
+	}
+	.middle__wrap {
+		text-align: center;
+		max-width: 480px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	span.text2 {
+		font-size: 18px;
+		font-weight: 600;
+	}
+	.formElm {
+		max-width: 320px;
+		position: relative;
+		width: 100%;
+		margin: 15px auto;
+	}
+	select,
+	.msisdn {
+		padding: 15px 10px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		outline: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		width: 100%;
+		font-size: 1.2rem;
+		border-radius: 5px;
+		border: 0px;
+		box-shadow: 0px 0px 2px 2px #cccccc;
+	}
+	.arrow__upper {
+		position: absolute;
+		right: 24px;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		pointer-events: none;
+	}
+	.arrow__upper:before,
+	.arrow__upper:after {
+		content: "";
+		position: absolute;
+		display: block;
+		right: -9px;
+		width: 12px;
+		height: 4px;
+		background: #babebf;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 2px;
+	}
+	.arrow__upper:before,
+	.arrow__upper:after {
+		top: 0px;
+		-moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+	.arrow__upper:after {
+		right: inherit;
+		left: -9px;
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	.button {
+		display: block;
+		text-decoration: none;
+		padding: 10px;
+		font-family: "Roboto", sans-serif;
+		width: 100%;
+		font-size: 2rem;
+		font-weight: 500;
+		color: white;
+		background-image: linear-gradient(#65c3ea, #44b6e6);
+		border-radius: 50px;
+		border: 0px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+	}
+	.rate {
+		font-size: 12px !important;
+		margin: 15px 0;
+		font-weight: 400;
+	}
+	a.display_1,
+	a.display_2 {
+		display: inline-block;
+		text-decoration: none;
+		cursor: pointer;
+		background: transparent;
+		border: 0;
+		font-size: 12px;
+		color: #47b7e6;
+		width: auto;
+	}
+	.pin,
+	[id^="pin"] {
+		text-align: center;
+		letter-spacing: 15px;
+	}
+	.middle_text2 {
+		max-width: 260px;
+		margin: 10px auto 0;
+		width: 100%;
+	}
+	.footer_wrap {
+		max-width: 780px;
+		width: 100%;
+		margin: 50px auto 0;
+		text-align: justify;
+	}
+	.ae_tnc {
+		margin: 8px 0px;
+		font-size: 12px;
+	}
+	.tnc_1 {
+		font-size: 0.9rem;
+	}
+	.tnc_2 {
+		display: block;
+		margin: 8px 0px;
+		text-align: center;
+		font-size: 0.9rem;
+		color: #000;
+		text-decoration: none;
+	}
+	html.ar_layout {
+		font-size: 14px;
+	}
+	.ar_layout .button,
+	.ar_layout select,
+	.ar_layout .footer,
+	.ar_layout .display_1,
+	.ar_layout .display_2,
+	.ar_layout .display_aoc,
+	.ar_layout .keyword,
+	.ar_layout .ae_tnc,
+	.ar_layout .tnc_1,
+	.ar_layout .title {
+		direction: rtl;
+	}
+	.ar_layout .arrow__upper {
+		left: 24px;
+		right: auto;
+	}
+	@media only screen and (max-width: 590px) {
+		.display_1,
+		.display_2 {
+			font-size: 1.2rem;
+		}
+		.logo {
+			max-width: 72px;
+		}
+		.header__wrap .download_file {
+			font-size: 1.6rem;
+		}
+		span.mb {
+			font-size: 1.4rem;
+		}
+		.title {
+			font-size: 1.4rem;
+		}
+	}
+	@media only screen and (min-width: 1300px) {}
+	</style>
+	<script>
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<title>Download Share v.2 Lock</title>
+	<style>
+	.disabled_btn {
+		background: #C0C0C0 !important;
+	}
+	</style>
+	<script>
+	function sub_frm_300() {
+		var msisdn = document.getElementsByClassName("msisdn");
+		var msisdn = msisdn[0].value;
+		var msisdn_check = document.getElementsByClassName("msisdn");
+		msisdn_check = msisdn_check[0]
+		if(msisdn_check.value.startsWith("974") != true) {
+			alert("Wrong mobile number! Please try again using the correct mobile number.");
+			msisdn_check.value = "974";
+			msisdn_check.focus();
+			return false;
+		}
+		var regex = /^\d{8,}$/;
+		if(regex.test(msisdn_check.value) == false) {
+			alert("Wrong mobile number! Please try again using the correct mobile number.");
+			msisdn_check.value = "974";
+			msisdn_check.focus()
+			return false;
+		}
+		document.form_landing_300.msisdn.value = msisdn.replace("+", "");
+		var ref_id = '38992071_11';
+		var postData = {
+			'lpb_hlr': 'true',
+			'msisdn': document.form_landing_300.msisdn.value
+		};
+		var kw = {
+			"vodafone": {
+				shortcode: "97814",
+				keyword: "ED"
+			},
+			"ooredoo": {
+				shortcode: "92875",
+				keyword: "SF"
+			},
+		};
+		postData.telco_ary = JSON.stringify(kw);
+		$("#button").addClass("disabled_btn").prop("disabled", true);
+		 
+	}
+
+	function exit_300() {
+		window.location.href = "#";
+	}
+	</script>
+	<script src="js/jquery.min.js"></script>
+	<style>
+	.disabled_btn {
+		background: #C0C0C0 !important;
+	}
+	</style>
+	<script>
+	function sub_frm_101() {
+		var msisdn = document.getElementsByClassName("msisdn");
+		var msisdn = msisdn[0].value;
+		var msisdn_check = document.getElementsByClassName("msisdn");
+		msisdn_check = msisdn_check[0]
+		if(msisdn_check.value.startsWith("974") != true) {
+			alert("Wrong mobile number! Please try again using the correct mobile number.");
+			msisdn_check.value = "974";
+			msisdn_check.focus();
+			return false;
+		}
+		var regex = /^\d{8,}$/;
+		if(regex.test(msisdn_check.value) == false) {
+			alert("Wrong mobile number! Please try again using the correct mobile number.");
+			msisdn_check.value = "974";
+			msisdn_check.focus()
+			return false;
+		}
+		document.form_landing_101.msisdn.value = msisdn.replace("+", "");
+		var ref_id = '38992071_11';
+		document.form_landing_101.ref_id.value = ref_id;
+		$('#eg_tpay_btn').addClass('disbaled_btn');
+		$('#eg_tpay_btn').prop('disbaled', true);
+		[op, kw, sc] = document.form_landing_101.telco.value.split(',');
+		var postData = {
+			'keyword': kw,
+			'shortcode': sc,
+			'msisdn': document.form_landing_101.msisdn.value,
+			'operator': op,
+			'transaction_id': '2150314906',
+			'country': 'qatar',
+			'lang': 'en',
+			'session_token': 'DhVqvs3cw0GUZPnIR3NpVg',
+			'tpay_pin_request': 'true',
+		};
+		 
+	}
+
+	function exit_101() {
+		window.location.href = "#";
+	}
+	</script>
+	<script>
+	function lang_change(lang) {
+		location.href = "?lang=" + lang + "&aff_sub=9cda39bccbdf4a21ae6798223083e6fe16a4b&aff_sub2=33986&aff_sub3=&aff_sub4=&aff_sub5=&f=1&carrier=&transaction_id=2150314906&country=Qatar&ip=37.210.33.80&city=Ar Rayyan&hash=c4bbd35d6f8faebe36fb209890698f8a&tref_id=38992071_11&o_id=2840&a_id=119&forwarded=2&Status=Error&OperatorCode=&SessionId=&OrderId=2150314906&Details=Failed To Get MSISDN&SubId=&Signature=sZzyyUDNfMOKY5OUAry7:73b83fba0751e1ae431138de3752a875ed97a912186601c12e3028114ed028c5&SessionToken=DhVqvs3cw0GUZPnIR3NpVg&";
+	}
+	</script>
+	<link rel="download content icon" href="https://cdn.grabmobitraffic.com/2675/T8I7tWf.jpg">
+	 
+	<script>
+	const layout = "";
+	$(function() {
+		layout == "ar_layout" ? document.getElementsByTagName("html")[0].classList.add("ar_layout") : "";
+		const aeTnc = document.getElementById("ae_tnc").innerHTML;
+		aeTnc == "" ? (document.getElementById("ae_tnc").style.display = "none") : (document.getElementById("ae_tnc").style.display = "block");
+	});
+	</script>
+</head>
+
+<body>
+	<div class="main_wrap">
+		<div class="header">
+			<div class="header_right">
+				<ul class="nav">
+					<li>
+						<div class="langSelect">
+							<a href="#" class="lang_button  text" style="display:none">
+								<div>العربية</div>
+							</a>
+							<a href="#" class="lang_button  text" style="">
+								<div>العربية</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="header__wrap">
+			<p id="ae_tnc" class="ae_tnc" style="display: none;"></p>
+			<div class="zip">
+				<div> <img class="logo" src="images/SxBOsrv.png" alt=""> </div>
+				<div class="header_text1"> <span class="download_file">File_downloaded.zip</span>
+					<br> <span class="mb">35.8 mb</span> </div>
+			</div>
+			<h1 class="title">
+         Your content is ready to download        </h1> </div>
+		<div class="middle__wrap">
+			<div class="display_1 rate" style="font-size:15px;color:lightgrey;"><span style="font-size:14px;">Charges -Ooredoo: QAR 10 / Week (Auto-Renewal)</span>
+			</div>
+			<div class="display_1">Enter your mobile number to Download your files</div>
+			<div class="formElm  formElm--msisdn">
+				<input type="tel" id="msisdn_300" class="msisdn" value="974" maxlength="11"> </div>
+			<div class="formElm formElm--btn">
+				<input id="eg_tpay_btn" type="button" class="button" value="Subscribe now!" onclick="sub_frm_300()"> </div> <a class="display_1" style="cursor:pointer;font-size:12px;" href="#">Exit</a>
+			<div class="display_1 rate"></div>
+		</div>
+		<div class="footer_wrap">
+			<div class="tnc_1" style="font-size:12px">This is a subscription service which you would receive an access to our portal. For Ooredoo &amp; Vodafone, you will be charged QAR 10/week. You can unsubscribe from this service at any time, for Ooredoo by sending UNSUB SF to 92875 for Vodafone by sending UNSUB ED to 97814. To make use of this service, you must be more than 18 years old or have received permission from your parents or the person who is authorized to pay your bill.</div>
+		</div>
+	</div>
+	<form action="#" method="post" name="form_landing_300">
+		<input type="hidden" name="aoc" value="true">
+		<input type="hidden" name="ref_id" value="">
+		<input type="hidden" name="msisdn" value="">
+		<input type="hidden" name="flow_id" value="2">
+		<input type="hidden" name="lpb_flow" value="300">
+		<input type="hidden" name="gid" value="67">
+		<input type="hidden" name="redirect" value="pin">
+		<input type="hidden" name="telco" value="vodafone,ED,97814">
+		<input type="hidden" name="resend_type" value="">
+		<input type="hidden" name="pin_id" value="">
+		<input type="hidden" name="redirect_url" value=""> </form>
+	<form action="#" method="post" name="form_landing_101">
+		<input type="hidden" name="aoc" value="true">
+		<input type="hidden" name="ref_id" value="">
+		<input type="hidden" name="msisdn" value="">
+		<input type="hidden" name="flow_id" value="2">
+		<input type="hidden" name="lpb_flow" value="101">
+		<input type="hidden" name="gid" value="67">
+		<input type="hidden" name="redirect" value="pin">
+		<input type="hidden" name="telco" value="vodafone,ED,97814">
+		<input type="hidden" name="resend_type" value="">
+		<input type="hidden" name="pin_id" value="">
+		<input type="hidden" name="redirect_url" value="">
+		<input type="hidden" name="session_token" value="">
+		<input type="hidden" name="prx_rb" value=""> </form>
+	<form action="#" method="post" name="form_landing_299" style="margin:0;">
+		<input type="hidden" name="aoc" value="true">
+		<input type="hidden" name="ref_id" value="0">
+		<input type="hidden" name="gid" value="27">
+		<input type="hidden" name="flow_id" value="2">
+		<input type="hidden" name="lpb_flow" value="299">
+		<input type="hidden" name="redirect" value="pin">
+		<input type="hidden" name="msisdn" value="">
+		<input type="hidden" name="telco" value="ooredoo,SF,92875">
+		<input type="hidden" name="pin_id" value=""> </form>
+	<form id="frm_landing" name="frm_landing" method="get" action="#">
+		<input type="hidden" id="ref_id_temp" name="ref_id_temp" value=""> </form>
+</body>
+
+</html>

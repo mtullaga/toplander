@@ -1,0 +1,336 @@
+body {
+    font-family: "Raleway", sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: Tahoma, Verdana, Arial;
+    font-size: 16px;
+    line-height: 23px;
+    width: 100%;
+}
+a {
+    color: rgb(10, 120, 194);
+    outline: medium none;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+p {
+    margin: 0px 0px 11px;
+}
+strong,
+b {
+    font-weight: bolder;
+}
+img {
+    border: medium none;
+}
+h1 {
+    margin: 10px 0px;
+    font-size: 26px;
+}
+h2 {
+    margin: 20px 0px;
+    font-size: 26px;
+}
+h3 {
+    margin: 2px 0px 10px;
+    font-size: 24px;
+    font-weight: normal;
+}
+@media screen and (max-width: 991px) {
+    .row:first-child .col-md-4:first-child img.img-responsive {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 768px) {} @font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Raleway"),
+    local("Raleway-Regular"),
+    url("../images/yQiAaD56cjx1AooMTSghGfY6323mHUZFJMgTvxaG2iE.woff2") format("woff2");
+    unicode-range: U+100-24F,
+    U+1E00-1EFF,
+    U+20A0-20AB,
+    U+20AD-20CF,
+    U+2C60-2C7F,
+    U+A720-A7FF;
+}
+@font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Raleway"),
+    local("Raleway-Regular"),
+    url("../images/0dTEPzkLWceF7z0koJaX1A.woff2") format("woff2");
+    unicode-range: U+0-FF,
+    U+131,
+    U+152-153,
+    U+2C6,
+    U+2DA,
+    U+2DC,
+    U+2000-206F,
+    U+2074,
+    U+20AC,
+    U+2212,
+    U+2215;
+}
+#logo {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-bottom: 3px double rgb(0, 147, 221);
+}
+#logo img {
+    width: 65%;
+}
+.revival-box {
+    margin-top: 20px;
+}
+.revival-box img {
+    max-height: 220px;
+}
+.vk-comment-like {
+    display: none;
+}
+.blog-post-tags {
+    margin: 10px 0px;
+}
+#actionbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    padding: 5px 0px;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+}
+.sidebar-bloggers {
+    background: white none repeat scroll 0% 0%;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.sidebar-bloggers img {
+    margin: 5px;
+}
+.vk-container {
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+    font-size: 11px;
+    line-height: 17px;
+    color: black;
+    text-decoration: none;
+}
+.vk-container a {
+    text-decoration: none;
+}
+.vk-container a:hover {
+    text-decoration: none;
+}
+.vk-header {
+    padding: 4px 4px 4px 6px;
+    margin-bottom: 10px;
+}
+.vk-logo {
+    width: 16px;
+    height: 16px;
+    float: right;
+    margin-top: -1px;
+}
+.vk-header-text {
+    padding: 2px 3px 1px;
+    line-height: 100%;
+    color: rgb(69, 104, 142);
+    font-weight: bold;
+}
+.vk-avatar img {
+    float: left;
+    margin-right: 10px;
+}
+.vk-comment,
+.vk-comment-load {
+    margin-bottom: 15px;
+    position: relative;
+    border-bottom: 1px solid rgb(218, 225, 232);
+    padding-bottom: 15px;
+}
+.vk-comment:last-child {
+    border-bottom: 0px none;
+}
+.vk-comment-name {
+    color: rgb(43, 88, 122);
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+}
+.vk-comment-name:hover {
+    text-decoration: none;
+}
+.vk-comment-text {
+    margin-left: 60px;
+}
+.vk-comment-date {
+    margin-left: 60px;
+    color: rgb(153, 153, 153);
+}
+.vk-comment-like {
+    position: absolute;
+    right: -5px;
+    bottom: 10px;
+    width: 30px;
+    height: 16px;
+    display: inline-block;
+    text-decoration: none;
+}
+.vk-comment-like:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    text-decoration: none;
+}
+.vk-comment-like-count {
+    padding-left: 14px;
+    font-weight: bold;
+    color: rgb(114, 149, 178);
+    font-size: 10px;
+    text-decoration: none;
+}
+.vk-comment-answer {
+    color: rgb(43, 88, 122);
+    text-decoration: none;
+}
+.vk-comment-answer:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    text-decoration: none;
+}
+/********************************/
+/********************************/
+/********************************/
+#logo img {
+    width: 30%;
+}
+.button {
+    margin: 10px auto;
+    padding: 8px 10px;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 13px;
+    background: red;
+    text-decoration: none;
+}
+.button:hover {
+    background: green;
+    text-decoration: none;
+    color: #fff;
+}
+#actionbar {
+    height: 70px;
+    line-height: 64px;
+    padding: 2px 0;
+    border-bottom: 1px solid #ccc;
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    vertical-align: middle;
+    font-size: 16px !important;
+    -webkit-transition: bottom 4s;
+    transition: bottom 4s;
+    top: 100%;
+}
+#actionbar .innerbar {
+    width: 100%;
+    max-width: 1100px;
+    display: block;
+    margin: 0 auto;
+}
+#actionbar .img-bar {
+    margin-top: 0px;
+    max-width: 40px;
+    margin-right: 10px;
+    width: 100%;
+}
+.action-button {
+    margin: 14px auto;
+    padding: 8px 10px;
+    color: #fff;
+    font-size: 16px;
+    background: red;
+    text-decoration: none;
+    vertical-align: middle;
+    display: inline-block;
+    max-height: 40px;
+    line-height: 24px;
+}
+.action-button:hover {
+    background: green;
+    text-decoration: none;
+    color: #fff;
+}
+.text-bar {
+    margin-right: 10px;
+}
+.center {
+    text-align: center;
+}
+.wrapper {
+    margin-bottom: 80px;
+}
+.headline {
+    font-size: 36px;
+    text-align: center;
+    line-height: normal;
+    font-weight: bold;
+    font-family: Raleway,Verdana,Arial !important;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.subheadline {
+    font-weight: bold;
+    font-style: italic;
+}
+.buttonYellow {
+    cursor: pointer;
+    border: 3px dashed red;
+    padding: 15px;
+    background: yellow;
+    color: blue;
+    font-size: 27px;
+}
+.buttonYellow:hover {
+    background-color: green;
+}
+@media screen and (max-width: 1000px) {
+    .row {
+         margin-right: 0;
+         margin-left: 0;
+    }
+}
+@media screen and (max-width: 650px) {
+    #logo img {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .text-bar {
+        display: none;
+    }
+    #logo img {
+        width: 50%;
+    }
+    .blog-post-tags {
+        display: none;
+    }
+    .headline {
+        font-size: 20px;
+    }
+    .subheadline {
+        font-size: 16px;
+    }
+}

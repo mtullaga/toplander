@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US" class="mdl-js">
+
+<head>
+	<base href="">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Tu iPhone está en riesgo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png"> </head>
+
+<body onclick="go_click()">
+	<div class="wrapper">
+		<div class="menu"> <img class="fleft" src="images/logo-icon.png"> <img class="fright" src="images/menu-icon.png"> <img class="fright" src="images/search-icon.png"> </div>
+		<div class="content"> <img class="storeIcon" src="images/store-icon.png">
+			<h1>¡ADVERTENCIA!</h1>
+			<h2>¡Tu iPhone de Apple está gravemente dañado por 8 virus!</h2>
+			<p>Hemos detectado que tu navegador ha sido DAÑADO al (47.8%) por VIRUS TROYANOS cuando visitaste sitios web maliciosos recientemente.</p>
+			<p>Se requiere tomar una acción inmediata para evitar que se propaguen e infecten datos confidenciales como tu cuenta de <span class="redP">Facebook, fotos y mensajes de WhatsApp así como apps privadas.</span>
+			</p>
+			<h3>Sigue estas instrucciones para resolver el problema en solo unos segundos (paso a paso)</h3>
+			<div class="steps">
+				<p><b>Paso 1:</b> Pincha en ELIMINAR VIRUS para instalar nuestra app VPN desde el App Store.</p>
+				<p><b>Paso 2                    :</b> Abre la app para activar la última actualización y eliminar cualquier versión anterior (infectada). </p>
+			</div>
+			<div class="button-wrap">
+				<div> <a href="#">Eliminar virus</a> </div>
+			</div>
+		</div>
+	</div>
+	<script>
+	let clickURL = window.location.href; 
+	if(top !== window) {
+		top.location.href = window.location.href;
+	}
+
+	function go_click() {
+		window.onbeforeunload = null;
+		top.location.href = clickURL;
+	}
+	setTimeout(function() {
+		alert("Tu iPhone está en riesgo\n\r\n\r¡Se requiere acción inmediata!");
+	});
+	</script>
+</body>
+
+</html>

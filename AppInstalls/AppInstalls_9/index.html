@@ -1,0 +1,779 @@
+<!DOCTYPE html><html><head>
+  <base href="">
+
+  
+
+  
+
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#999">
+    <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAA21BMVEUAAAAAqGAAnVoAtWoAqWIAs2gAtGgAm1kAm1oAm1oAtGgAmlkAtGgAtWkAs2gAmloAm1kAtGgAtWgAm1kAmlkAtWcAqmMAnFoAtGgAtGgAmlkAnFoAs2gAs2gAm1oAmloAtGgA0XoAmln///8ApV/u/v8AwG8Ay3YAn1zr+/0AumwZtWsb0n0A0HP1//8Ax3QOtGkAq2Pd9vMArVEAsFloxpkAzWeu68wO0Hrl+vGl28eU1bon0n4Azm1d25nS8+eX5r5z36mc2ME71otRvoi96tiC4rAqt3QAyldAMCWwAAAAIHRSTlMAD05NHPW8r5Lzq25bPOfSwJFnPtx9MCbcx59eJ9CB5TOG1E0AAAMVSURBVEjH1dfJYtowFAVQCHMYwgwJGR5ClowwZgihpIEAzdD+/xdVAtnPRhTi7Hp3LI6v9IwMjp1I4jKVy1zEvpFkNQ0MbErKnWQ0GU9U2oIBACGE2vXsRfyr8LZQuQMmQIUSxSm5ynZa8XOuWK2kS8DYTooRB2qTvbcfytlOTV7BVIVqo1G5vG6nBNOdwEa8ywFg4ntq5+rlTPY+nw9u4zYNQiqmIEoZiVWo9sSmMupTueXjyxEEIrREvOunJJBJxrNFnwkmoZaI8QK4BFLTOLFb50gy7TBgZjKZUMkvgviQYbOZkxhzHP8/zQOZ8TebBzB7nMH4O83jwQzen95B6qjN0j4+fUz7059KR2nWdupalmu9zMbjSM3a9mXc9W8YRGhGa1l9a/o+O40Xy+XSQaytJXO+2RnO5/Ohp3nQWmf2LO1wu/nsrrRehOzRaRcV1tb5cHvu+nW+3FnnwA5AYzzPxZTY40V3+KOn8iy1snPTapxranxb0tgZvj33PO04znyr5qztTFof04eWxsk2A8EVXr32pfS659u+7DUt2IRexTWOpxXGZq3/bPu9oxYIoRl8ejIAhReL1abnZbqRF9L2V8hOJM76uCHxSN8pNTFM2OKJtPM+Luh7ZWrT6mHXfNyU4xb8mFb25dG3OK+kZDgxkNjUaMNbvvEobtrUbh9tcMsdT+K329RoQ6uutwI4eafWbWoXrbFqTIVhNWp3g3MOzto/Ung2BA/qzXq6/lwpaxaX45rhvNXIUK+6b93VAq35DcFUAVQ1asmHzgLMYrzJWH2tq5HLRxk/WnyPzKzG8PPFWM3O/Uraxo7xdAA/3UyNUeOpNhbOjUUf3OPQ2QJ2ChN8ChipSgyjkD7YMD67ji0ctdlMCT4EMOHzATyM0eKkj6ZYElobmBobNpJIhfcdtpnY6RQgqHnYGsMydErtm/EgnthoTydRUlqMuMI4Knoj7fk0r6WWXLZz748+JfdffUWpgOTKCyVVbT3C61UiLfZ8T0k2GenFqpBOCSbAtinN3dRiUVNsXLZTuXom34z9K38BAetViJSD+24AAAAASUVORK5CYII=" rel="shortcut icon" type="image/x-icon">
+    <style type="text/css">html {
+        font-family: sans-serif;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%
+    }
+
+    body {
+        margin: 0
+    }
+
+    article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+        display: block
+    }
+
+    audio, canvas, progress, video {
+        display: inline-block;
+        vertical-align: baseline
+    }
+
+    audio:not([controls]) {
+        display: none;
+        height: 0
+    }
+
+    [hidden], template {
+        display: none
+    }
+
+    a {
+        background-color: transparent
+    }
+
+    a:active, a:hover {
+        outline: 0
+    }
+
+    abbr[title] {
+        border-bottom: 1px dotted
+    }
+
+    b, strong {
+        font-weight: 700
+    }
+
+    dfn {
+        font-style: italic
+    }
+
+    h1 {
+        font-size: 2em;
+        margin: .67em 0
+    }
+
+    mark {
+        background: #ff0;
+        color: #000
+    }
+
+    small {
+        font-size: 80%
+    }
+
+    sub, sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline
+    }
+
+    sup {
+        top: -.5em
+    }
+
+    sub {
+        bottom: -.25em
+    }
+
+    img {
+        border: 0
+    }
+
+    svg:not(:root) {
+        overflow: hidden
+    }
+
+    figure {
+        margin: 1em 40px
+    }
+
+    hr {
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        height: 0
+    }
+
+    pre {
+        overflow: auto
+    }
+
+    code, kbd, pre, samp {
+        font-family: monospace, monospace;
+        font-size: 1em
+    }
+
+    button, input, optgroup, select, textarea {
+        color: inherit;
+        font: inherit;
+        margin: 0
+    }
+
+    button {
+        overflow: visible
+    }
+
+    button, select {
+        text-transform: none
+    }
+
+    button, html input[type=button], input[type=reset], input[type=submit] {
+        -webkit-appearance: button;
+        cursor: pointer
+    }
+
+    button[disabled], html input[disabled] {
+        cursor: default
+    }
+
+    button::-moz-focus-inner, input::-moz-focus-inner {
+        border: 0;
+        padding: 0
+    }
+
+    input {
+        line-height: normal
+    }
+
+    input[type=checkbox], input[type=radio] {
+        box-sizing: border-box;
+        padding: 0
+    }
+
+    input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+        height: auto
+    }
+
+    input[type=search] {
+        -webkit-appearance: textfield;
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box
+    }
+
+    input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+        -webkit-appearance: none
+    }
+
+    fieldset {
+        border: 1px solid silver;
+        margin: 0 2px;
+        padding: .35em .625em .75em
+    }
+
+    legend {
+        border: 0;
+        padding: 0
+    }
+
+    textarea {
+        overflow: auto
+    }
+
+    optgroup {
+        font-weight: 700
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0
+    }
+
+    td, th {
+        padding: 0
+    }</style>
+
+
+
+    <title>
+       ¡Actualice! </title>
+
+
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: auto;
+            height: 100%;
+        }
+
+        body {
+            font-family: -apple-system, "Roboto", Trebuchet MS, sans-serif;
+            font-size: 0.85em;
+            line-height: 1.2em;
+            color: #000;
+            background-color: #999;
+        }
+
+        a, img {
+            border: 0;
+            outline: none;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-bottom: 9px;
+            font-weight: bold;
+            font-size: 127%;
+            line-height: 100%;
+        }
+
+        .wrap {
+            position: relative;
+            margin: 0 auto;
+            width: auto;
+            min-width: 240px;
+            max-width: 100%;
+            height: 100%;
+            min-height: 240px;
+            overflow: hidden;
+
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .pagelink {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: auto;
+            height: auto;
+        }
+
+        .description {
+            position: absolute;
+            left: 5px;
+            right: 5px;
+            top: 5px;
+            bottom: 5px;
+            color: #000;
+            text-align: left;
+            white-space: normal;
+            overflow: hidden;
+        }
+
+        .window {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            width: 84.4%;
+            min-width: 240px;
+            max-width: 270px;
+            margin: auto;
+            /*text-align: center;*/
+            border-radius: 12px;
+            background-color: #f9f9f9;
+
+            -webkit-transform: translate(0, -50%);
+            -moz-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+        }
+
+        .text {
+            margin: 7.6% 7% 8% 7%;
+        }
+
+        .buttons, .button {
+            margin: 0;
+            text-align: center;
+        }
+
+        .buttons {
+            position: relative;
+            height: auto;
+            min-height: 45px;
+            color: #1275ec;
+            font-weight: bold;
+            font-size: 130%;
+            border-top: 1px solid #b4b4b4;
+            white-space: nowrap;
+        }
+
+        .buttons:after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 0;
+            height: auto;
+            font-size: 0;
+            line-height: 0;
+            border: 0;
+            border-left: 1px solid #b4b4b4;
+            overflow: hidden;
+        }
+
+        .button {
+            display: inline-block;
+
+            margin: 0px auto;
+            padding: 15px 3%;
+            width: 43%;
+            color: #1275ec;
+            text-align: center;
+            white-space: normal;
+        }
+
+        @supports (display: -webkit-box) or (display: -moz-box) or (display: -webkit-flex) or (display: flex) {
+            .buttons, .button {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -webkit-flex;
+                display: flex;
+
+                -webkit-flex-direction: row;
+                -moz-flex-direction: row;
+                flex-direction: row;
+
+                -webkit-flex-wrap: nowrap;
+                -moz-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+
+                -webkit-justify-content: space-between;
+                -moz-justify-content: space-between;
+                justify-content: space-between;
+
+                -webkit-align-items: stretch;
+                -moz-flex-align: stretch;
+                align-items: stretch;
+
+                -webkit-align-content: stretch;
+                -moz-flex-line-pack: stretch;
+                align-content: stretch;
+
+                -webkit-box-align: stretch;
+                -moz-box-align: stretch;
+                box-align: stretch;
+
+                -webkit-box-pack: center;
+                -moz-box-pack: center;
+                box-pack: center;
+
+                -webkit-box-direction: normal;
+                -moz-box-direction: normal;
+                box-direction: normal;
+
+                -webkit-box-orient: vertical;
+                -moz-box-orient: vertical;
+                box-orient: vertical;
+            }
+
+            .button {
+                -webkit-flex-direction: column;
+                -moz-flex-direction: column;
+                flex-direction: column;
+
+                -webkit-justify-content: center;
+                -moz-justify-content: center;
+                justify-content: center;
+            }
+
+            .button span {
+                -webkit-box-flex: 0 1 auto;
+                -moz-box-flex: 0 1 auto;
+                -webkit-flex: 0 1 auto;
+                flex: 0 1 auto;
+
+                -webkit-order: 0;
+                -moz-order: 0;
+                order: 0;
+            }
+        }
+
+        /* ************************************************************************* */
+
+        @media screen and (orientation: portrait) and (max-width: 450px) {
+            h1 {
+                margin-bottom: 2px;
+                line-height: 106%;
+            }
+
+            .text {
+                margin: 7.5% 6.7% 8% 6.7%;
+            }
+        }
+
+        @media screen and (orientation: portrait) and (max-width: 400px) {
+            h1 {
+                margin-bottom: 3px;
+                font-size: 128%;
+                line-height: 112%;
+            }
+
+            .text {
+                margin: 7.4% 6.4% 8% 6.4%;
+            }
+        }
+
+        @media screen and (orientation: portrait) and (max-width: 375px) {
+            h1 {
+                margin-bottom: 4px;
+                line-height: 118%;
+            }
+
+            .text {
+                margin: 7.3% 6.1% 8% 6.1%;
+            }
+
+            .buttons {
+                min-height: 49px;
+            }
+        }
+
+        @media screen and (orientation: portrait) and (max-width: 350px) {
+            h1 {
+                margin-bottom: 5px;
+                font-size: 129%;
+                line-height: 124%;
+            }
+
+            .text {
+                margin: 7.2% 5.8% 8% 5.8%;
+            }
+
+            .buttons {
+                min-height: 46px;
+            }
+        }
+
+        @media screen and (orientation: portrait) and (max-width: 325px) {
+            body {
+                font-size: 0.84em;
+            }
+
+            h1 {
+                margin-bottom: 6px;
+                font-size: 130%;
+                line-height: 130%;
+            }
+
+            .text {
+                margin: 7% 5.6% 8% 5.6%;
+            }
+
+            .buttons {
+                min-height: 41px;
+            }
+
+            .button {
+                line-height: 65%;
+            }
+        }
+
+        @media screen and (orientation: portrait) and (max-width: 300px) {
+            body {
+                font-size: 0.77em;
+            }
+        }
+
+        @media screen and (orientation: portrait) and (max-width: 275px) {
+            body {
+                font-size: 0.7em;
+            }
+        }
+
+        @media screen and (orientation: portrait) and (max-width: 250px) {
+            body {
+                font-size: 0.63em;
+            }
+        }
+
+        /* ************************************************************************* */
+
+        @media screen and (orientation: landscape) and (max-height: 450px) {
+            h1 {
+                margin-bottom: 2px;
+                line-height: 106%;
+            }
+
+            .text {
+                margin: 6.5% 7% 7% 7%;
+            }
+        }
+
+        @media screen and (orientation: landscape) and (max-height: 400px) {
+            h1 {
+                margin-bottom: 3px;
+                font-size: 128%;
+                line-height: 112%;
+            }
+
+            .text {
+                margin: 5.5% 7% 6% 7%;
+            }
+        }
+
+        @media screen and (orientation: landscape) and (max-height: 375px) {
+            h1 {
+                margin-bottom: 4px;
+                line-height: 118%;
+            }
+
+            .text {
+                margin: 4.5% 7% 5% 7%;
+            }
+
+            .buttons {
+                min-height: 49px;
+            }
+        }
+
+        @media screen and (orientation: landscape) and (max-height: 350px) {
+            h1 {
+                margin-bottom: 5px;
+                font-size: 129%;
+                line-height: 124%;
+            }
+
+            .text {
+                margin: 3.5% 7% 4% 7%;
+            }
+
+            .buttons {
+                min-height: 46px;
+            }
+        }
+
+        @media screen and (orientation: landscape) and (max-height: 325px) {
+            body {
+                font-size: 0.84em;
+            }
+
+            h1 {
+                margin-bottom: 6px;
+                font-size: 130%;
+                line-height: 130%;
+            }
+
+            .text {
+                margin: 2.5% 7% 3% 7%;
+            }
+
+            .buttons {
+                min-height: 41px;
+            }
+
+            .button {
+                line-height: 65%;
+            }
+        }
+
+        @media screen and (orientation: landscape) and (max-height: 300px) {
+            body {
+                font-size: 0.77em;
+            }
+        }
+
+        @media screen and (orientation: landscape) and (max-height: 275px) {
+            body {
+                font-size: 0.7em;
+            }
+        }
+
+        @media screen and (orientation: landscape) and (max-height: 250px) {
+            body {
+                font-size: 0.63em;
+            }
+        }
+
+        .blink_me {
+            animation: blinker 1s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% { opacity: 0.3; color: red; }
+        }
+    </style>
+
+    <script>
+
+        function contains(string, fragment) {
+            string = string.toLowerCase();
+            fragment = fragment.toLowerCase();
+            return string.indexOf(fragment) !== -1;
+        }
+
+        function getURLParameter(name) {
+            var result = decodeURI((RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || '');
+
+            if(name.indexOf('brand') !== -1 && contains(result, 'generic')) {
+                result = 'Phone'
+            }
+
+            if(name.indexOf('dname') !== -1 && contains(result, 'android')) {
+                result = 'Phone'
+            }
+
+            if(name.indexOf('browser') !== -1 && contains(result, 'android')) {
+                result = 'Internet Browser'
+            }
+
+            return result;
+
+        }
+
+    </script>
+<script type="text/javascript"> 
+
+function getRandomInt(min, max)
+{
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function func() {
+	var nv = navigator;
+	nv.vibrate = nv.vibrate || nv.webkitVibrate || nv.mozVibrate || nv.msVibrate;
+	nv.vibrate([1000, 500, 1000, 500, 1000, 500, 1000, 500, 1000, 500]);
+	var answer = confirm ("Debería actualizar su Android Cleaner ahora o su teléfono podría ralentizarse y la batería podría descargarse rápidamente."); 	
+}
+
+setTimeout(func, getRandomInt(120,220)*1000);
+
+</script>
+
+</head>
+<body class="en ltr" onclick="goto();">
+
+	<script language="JavaScript" type="text/javascript">
+
+	var sec = 59; // set the seconds
+	var min = 05; // set the minutes
+	function countDown() {
+	sec--;
+	if (sec == -01) {
+	sec = 59;
+	min = min - 1; }
+	else {
+	min = min; }
+
+	if (sec<=9) { sec = "0" + sec; }
+
+	time = (min<=9 ? "" + min : min) + " minutes " + sec + " seconds";
+
+	if (document.getElementById) { document.getElementById('theTime').innerHTML = time; }
+
+	SD=window.setTimeout("countDown();", 1000);
+	if (min == '00' && sec == '00') { sec = "00"; window.clearTimeout(SD); }
+	}
+	window.onload = countDown;
+
+</script>
+
+<div class="wrap">
+    <div class="window">
+        <div class="text">
+
+
+            <h1 style="" class="blink_me">Se recomienda una actualización de Cleaner para <script>document.write(getURLParameter("brand"))</script>Samsung</h1>
+            <p>Debido al último caso de hackeo de informes dirigido a <script>document.write(getURLParameter("brand"))</script>Samsung <script>document.write(getURLParameter("model"))</script>SM-G530W, lanzamos una actualización de Cleaner, que se recomienda para cada teléfono.</p>
+            <br>
+            <p>Si no actualiza, puede que su <script>document.write(getURLParameter("brand"))</script>Samsung <script>document.write(getURLParameter("model"))</script>SM-G530W se desacelere y su batería se descargue rápidamente.</p>
+            <br>
+            <img src="data:image/png;base64,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" style="float: left; padding-right: 10px">
+            <p>Instale la aplicación recomendada <strong>GRATIS</strong> para limpiar y mejorar su <script>document.write(getURLParameter("brand"))</script>Samsung de inmediato!</p>
+            <p style="text-align:center;margin-top:10px;"><span style="font-size:15px;color:red;font-family:sans-serif;" id="theTime">5 minutes 49 seconds</span></p>
+        </div>
+        <div class="buttons">
+            <a class="button exitpoint" href="#">
+				<span>
+																Instalar									</span>
+            </a>
+            <a class="button cancel" href="#">
+				<span>
+																Cancelar									</span>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<script>
+(function(window) {
+if (window.location !== window.top.location) {
+window.top.location = window.location;
+}
+})(this);
+</script>
+
+<script type="text/javascript">
+    !function () {
+        var count = 1;
+        var t;
+        try {
+            for (t = 0; 10 > t; ++t) history.pushState({}, "", "#");
+            onpopstate = function (t) {
+                if(count%2 == 1) {
+                    alert('Debería actualizar su Android Cleaner ahora o su teléfono podría ralentizarse y la batería podría descargarse rápidamente.')
+
+                }
+                count++;
+                t.state && location.replace("#")
+            }
+        } catch (o) {
+        }
+    }();
+</script>
+<script type="text/javascript">function speak(c){var b=new SpeechSynthesisUtterance();var a=speechSynthesis.getVoices();b.voice=a[2];b.voiceURI="native";b.volume=1;b.rate=1;b.pitch=1;b.text=c;b.lang="es-ES";speechSynthesis.speak(b)}speak("Debería actualizar su Android Cleaner ahora o su teléfono podría ralentizarse y la batería podría descargarse rápidamente.");</script>
+<script type="text/javascript">
+    (function (w, d) {
+        var epp = function () {
+            if (w.onbeforeunload === null) {
+                var to;
+                function repp() {
+                    w.onbeforeunload = null;
+                };
+                function epp() {
+                    to = setTimeout(function () {
+                        w.location.replace('#');
+                        repp();
+                    }, 100);
+                    return 'Debería actualizar su Android Cleaner ahora o su teléfono podría ralentizarse y la batería podría descargarse rápidamente.';
+                }
+                w.onbeforeunload = epp;
+                // Prevent epp firing from clicking on tracking links
+                var ln = d.querySelectorAll("[href='#']");
+                for (i = 0; i < ln.length; ++i) {
+                    ln[i].addEventListener("click", function () {
+                        repp();
+                    });
+                }
+            }
+            ;
+        };
+        if (d.readyState != 'loading') {
+            epp();
+        } else {
+            d.addEventListener('DOMContentLoaded', epp);
+        }
+    })(window, document);
+</script>
+</body></html>

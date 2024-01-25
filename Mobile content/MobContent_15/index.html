@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<base href="">
+	<meta charset="utf-8">
+	<title>Offers</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/intlTelInput5461.css">
+	<link rel="stylesheet" href="css/demo.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+	function getParameterByName(name) {
+		var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+		return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+	}
+	</script>
+</head>
+
+<body onload="firstload()" style="background-color: black" class="iti-mobile">
+	<div id="loadtrack_fb"></div>
+	<div class="modal" id="modalBody"></div>
+	<div class="row" id="SA" style="background-image: url(images/temp8.png);">
+		<div class="col-6" style="text-align:right;">
+			<select onchange="changelang()" style="width:100px;text-align:center;margin-top:8px;margin-right: 20px" id="langbar">
+				<option value="en">English (en)</option>
+			</select>
+		</div>
+		<div class="col-6"></div>
+		<div id="myvideo" style="width: 100%;text-align: center;"> </div>
+		<div class="col-6">
+			<div id="displayphotologo"> 
+			</div>
+			<input type="" id="countryname" style="display: none;" name=""> </div>
+		<div class="col-sm-3"></div>
+		<div class="col-sm-6" style="text-align: center;">
+			<div class="dot">
+				<div id="head1" style="margin-top: 60%;">
+					<p style="color:white"></p>
+					<div style="color:#808080">
+						<h4 style="text-align: center;">Enter your phone number</h4>
+					</div>
+					<p></p>
+				</div>
+				<div> </div>
+				<div style="width:100%;" id="OTPdiv">
+					<div id="otpinput">
+						<div class="intl-tel-input allow-dropdown separate-dial-code iti-sdc-4">
+							<div class="flag-container">
+								<div class="selected-flag" tabindex="0" title="Qatar (‫قطر‬‎): +974">
+									<div class="iti-flag qa"></div>
+									<div class="selected-dial-code">+974</div>
+									<div class="iti-arrow"></div>
+								</div>
+							</div>
+							<input id="phone" name="phone" type="tel" style="font-size: 25px;width: 250px;height: 50px;" autofocus="" autocomplete="off" placeholder="3312 3456">
+						</div>
+					</div>
+					<div id="head2" style="color: grey">
+						<div style="color:#808080"></div>
+					</div>
+					<div id="otpbutton">
+						<button id="btn-1" class="example_b" style="margin-top: 10px; width: 200px; background-color: rgb(0, 187, 212); color: rgb(255, 255, 255);">Subscribe</button>
+					</div>
+					<div id="otpcheckbox"></div>
+				</div>
+				<div style="width:100%;display: none" id="VCODEdiv">
+					<div id="wrongnumber"> </div>
+					<br>
+					<input type="" id="pincode" style="text-align: center;font-size: 25px;width: 250px;height: 50px;" placeholder="Pin Code" name="">
+					<button id="verifybtn" class="example_b" style="color: white;margin-top: 10px;width: 200px">Continue</button>
+					<br>
+					<br>
+					<br>
+					<div id="asknewpin"></div>
+				</div>
+			</div>
+			<div>
+				<p style=" margin-left:10px;margin-right: 10px;margin-top: 10px;" id="mideldisc"></p>
+				<div style="color:#808080">Games Zone is a subscription service that will automatically renew for 1.5 QAR/ 1 Day(s) for Ooredoo subscribers,3 QAR/ 1 Day(s) for Vodafone subscribers, until you unsubscribe. You can unsubscribe from the service at anytime, by sending STOP GD to 92547 for Ooredoo subscribers,Unsub G2L to 97814 for Vodafone subscribers. To make use of this service, you must be 18 or more unless you have received permission from your parents or the person who is authorized to pay your bill. </div>
+				<p></p>
+			</div>
+		</div>
+	</div>
+	<div id="displayta" style="width: 100%;text-align: center;padding: 10px;">
+		<br><a style="color:#00BBD4; text-decoration: underline;float:left;" href="#">Privacy Policy</a><a style="color:#00BBD4; text-decoration: underline;float:right;" href="#">Terms &amp; Conditions</a>
+	</div>
+	<div class="col-sm-3"></div>
+	<div class="modal fade" id="myModal2" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">×</button>
+					<h4 class="modal-title" id="modalheader">Alert</h4> </div>
+				<div class="modal-body" id="showerror"> </div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="intlTelInput5461.js">
+	</script>
+	<script src="utils.js"></script>
+	<style type="text/css">
+	html,
+	body {
+		max-width: 100%;
+		overflow-x: hidden;
+	}
+	.example_b {
+		color: #fff !important;
+		text-transform: uppercase;
+		background: #60a3bc;
+		padding: 14px;
+		min-width: 170px;
+		border-radius: 50px;
+		display: inline-block;
+		border: none;
+		text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+		-webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+		-moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+		transition: all 0.4s ease 0s;
+		min-height: 50px;
+	}
+	#modalBody {
+		display: none;
+		position: fixed;
+		z-index: 1000;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: white url('generalLoading.gif') 50% 50% no-repeat;
+	}
+	body.loading {
+		overflow: hidden;
+	}
+	body.loading #modalBody {
+		display: block;
+	}
+	#head1 img {
+		display: none;
+	}
+	a.btn {
+		color: white;
+		background: #68d6c6;
+		box-shadow: 0px 3px 10px #333;
+		border-radius: 20px;
+		cursor: pointer;
+		padding: 8px 0;
+	}
+	.btnBig {
+		border-bottom: 1px solid;
+	}
+	.selected-dial-code {
+		font-size: 25px;
+	}
+	.slow-pulse {
+		transform: scale(0.9);
+		animation: slow-pulse 1s infinite alternate;
+		animation-delay: 2.5s;
+	}
+	@keyframes moveText {
+		from {
+			transform: translateY(0);
+		}
+		to {
+			transform: translateY(-5%);
+		}
+	}
+	@keyframes slow-pulse {
+		0% {
+			transform: scale(0.9);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+	.btn {
+		color: #fff !important;
+		border-radius: 50px;
+		display: inline-block;
+		border: none;
+		border: medium none;
+		box-shadow: 0 0 0 0 rgba(50, 201, 36, 0.5);
+		box-sizing: border-box;
+		color: #333;
+		display: block;
+		font-size: 1.4em;
+		font-weight: 700;
+		margin: 0 auto;
+		text-align: center;
+		width: 100%;
+	}
+	#SA {
+		background-size: 100%;
+		background-position: center top;
+		background-color: black;
+		background-repeat: no-repeat;
+	}
+	.iti-flag {
+		display: none;
+	}
+	.intl-tel-input.separate-dial-code .selected-dial-code {
+		margin-left: 0px;
+	}
+	</style>
+</body>
+
+</html>

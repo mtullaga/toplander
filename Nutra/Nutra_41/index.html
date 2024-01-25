@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<base href="">
+	<meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="Content-Language" content="en">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="theme-color" content="#4188c9">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta property="og:type" content="article">
+	<!-- <meta property="og:image" content="https://buddyshop.me/assets/images/og-bg-1.jpg" /> -->
+	<meta property="og:image" content="https://buddyshop.me/assets/images/og-buddyshop-logo-final.png">
+	<!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"/> -->
+	<!-- <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" /> -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<!-- Load required Bootstrap and BootstrapVue CSS -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap-vue.min.css">
+	<link rel="stylesheet" href="css/flipclock.css">
+	<style>
+	.lds-ripple {
+		display: inline-block;
+		position: relative;
+		width: 80px;
+		height: 80px;
+	}
+	.lds-ripple div {
+		position: absolute;
+		border: 4px solid #cef;
+		opacity: 1;
+		border-radius: 50%;
+		animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+	}
+	.lds-ripple div:nth-child(2) {
+		animation-delay: -0.5s;
+	}
+	@keyframes lds-ripple {
+		0% {
+			top: 36px;
+			left: 36px;
+			width: 0;
+			height: 0;
+			opacity: 1;
+		}
+		100% {
+			top: 0px;
+			left: 0px;
+			width: 72px;
+			height: 72px;
+			opacity: 0;
+		}
+	}
+	.txt_remain {
+		padding: 2px 7px;
+		background: #000000;
+		color: #fff;
+		border-radius: 5px;
+		margin: 0px 5px;
+		/*line-height:60pt; */
+	}
+	</style>
+	<style>
+	/* Placeholder */
+	
+	.form-control::-webkit-input-placeholder {
+		color: #adb5bd;
+		opacity: 1;
+	}
+	.form-control::-moz-placeholder {
+		color: #adb5bd;
+		opacity: 1;
+	}
+	.form-control:-ms-input-placeholder {
+		color: #adb5bd;
+		opacity: 1;
+	}
+	.form-control::-ms-input-placeholder {
+		color: #adb5bd;
+		opacity: 1;
+	}
+	.form-control::placeholder {
+		color: #adb5bd;
+		opacity: 1;
+	}
+	/* Start Page */
+	
+	body {
+		background-color: #f5f7fb;
+	}
+	.page {
+		margin: auto;
+		max-width: 800px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		background-color: #FFFFFF;
+	}
+	.buttonBox {
+		margin: auto;
+		max-width: 400px;
+		padding-bottom: 5px;
+	}
+	.buttonBox .btnContact {
+		margin-top: 5px;
+	}
+	.sendphoneBox {
+		text-align: center;
+	}
+	.sendphoneBox .title {
+		font-size: 32px;
+		color: #cd201f;
+		margin-bottom: 20px;
+	}
+	.sendorderBox {
+		text-align: left;
+	}
+	.sendorderBox .title {
+		font-size: 32px;
+		color: #cd201f;
+		margin-bottom: 20px;
+	}
+	.sendorderBox .choiceBox {
+		margin-bottom: 20px;
+	}
+	.sendorderBox .choiceBox label {
+		color: #495057;
+		font-size: 15px;
+	}
+	.sendorderBox .paymentBox {
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+	.sendorderBox .paymentBox span {
+		color: #495057;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.sendorderBox .cartBox label {
+		color: #495057;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.custom-file-upload {
+		border: 1px solid #ccc;
+		display: inline-block;
+		padding: 6px 12px;
+		cursor: pointer;
+		font-size: x-large;
+	}
+	.isDisabled {
+		color: currentColor;
+		pointer-events: none;
+		cursor: default;
+		/*        opacity: 0.5;*/
+		
+		text-decoration: none;
+	}
+	.middle {
+		display: inline-block;
+	}
+	.flip-clock-wrapper {
+		max-width: 650px;
+		margin: 3em auto 2em;
+		display: flex;
+		justify-content: center;
+	}
+	</style>
+	<title>ผู้เชี่ยวชาญแนะนำทางออกสำหรับคนน้ำตาลสูง - Powered by BUDDYSHOP.ME</title>
+</head>
+
+<body class="">
+	<div id="app" class="page">
+		<div>
+			<div>
+				<a target="_blank" class="isDisabled" href="#"><img src="images/BglR.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<div>
+				<div>
+					<p style="margin-left:0px;">&nbsp;</p>
+					<p style="margin-left:0px;">&nbsp; &nbsp; &nbsp; สวัสดีครับ ผม แม็ค <strong>เป็นที่ปรึกษาเกี่ยวกับการลดค่าน้ำตาล ของ สมุนไพรชีวาออร์แกนิคนะครับ</strong>
+					</p>
+					<p style="margin-left:0px;">การที่เรามาเจอหน้ากันแบบนี้แสดงว่า คุณพี่กำลังมีปัญหา เบาหวาน ความดัน ไขมัน น้ำตาลสูงอยู่ใช่ไหมล่ะครับ</p>
+					<p style="margin-left:0px;">ถ้าใช่ก็แสดงว่าคุณพี่มาถูกทางแล้วครับ</p>
+					<p style="margin-left:0px;">&nbsp;</p>
+				</div>
+			</div>
+			<!---->
+		</div>
+		<div>
+			<div>
+				<a target="_blank" class="isDisabled" href="#"><img src="images/fkPc.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<div>
+				<div>
+					<p style="margin-left:0px;">&nbsp;</p>
+					<p style="margin-left:0px;">&nbsp; &nbsp; &nbsp;มันไม่ดีเลยใช่ไหมล่ะครับ กับอาการ <strong>“ค่าน้ำตาลสูง” </strong>ปวดหัว เพลียง่าย มือชาเท้าชา ถ้าอาการเริ่มหนักเข้าสายตาก็จะพร่ามัว จนทำให้การใช้ชีวิตประจำวันไม่มีความสุขเลย แม็คเข้าใจดีนะครับ</p>
+					<p style="margin-left:0px;">&nbsp; &nbsp; &nbsp; แล้วแม็ครู้นะครับ ว่าทุกคนทานยาหมอเยอะมาก (ยาเคมี) วันนึงเป็นกำมือติดต่อกันมานานหลายเดือน บางคนก็หลายปี แม็คว่าน่ากลัวมากนะครับ เพราะนอกจากอาการจะไม่ดีขึ้นแล้วเนี่ย ยังมีเรื่องโรคแทรกซ้อนตามมาอีก พวกยาเคมีเนี่ยกินเยอะๆ <strong>ตับพังแน่นอน ยังไม่รวมไขมัน และความดันที่จะสูงตามมาด้วย </strong>ครอบครัวลูกหลานก็จะพากันเป็นห่วง แล้วเครียดยิ่งกว่าเดิม</p>
+					<p style="margin-left:0px;">&nbsp;</p>
+				</div>
+			</div>
+			<!---->
+		</div>
+		<div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<div>
+				<div>
+					<p style="margin-left:0px;">&nbsp; &nbsp; &nbsp;&nbsp;</p>
+					<p style="margin-left:0px;">&nbsp; &nbsp; &nbsp; &nbsp;วันนี้แม็คจึงอยากมาแนะนำทางออกที่ดีกว่าด้วย “สมุนไพรชีวา” วิธีการรักษาที่ปลอดภัย ยั่งยืน และไร้สารตกค้างในร่างกายด้วยสมุนไพรจากธรรมชาติที่เห็นผลชัดเจน จากประสบการณ์ตรงของลูกค้ากว่า 100,000 คน ในตลอด 5 ปีที่ผ่านมา</p>
+					<p style="margin-left:0px;">&nbsp; &nbsp; &nbsp; &nbsp;ชีวาเป็นอาหารเสริมจากสมุนไพรพื้นบ้านที่มีคุณสมบัติในการลดน้ำตาลในเลือดอย่างผักเชียงดา โดยใช้วิธีการปลูกแบบเกษตร์อินทรีย์ ทำให้ปลอดภัย ไร้สารเคมี และยังมีทีมวิจัยที่พัฒนาสายพันธ์ุพิเศษเพื่อนำมาทำเป็นยาโดยเฉพาะ มั่นใจในคุณภาพด้วยการรับรองมาตรฐานระดับโลกอย่าง USDA และ Euro Organic</p>
+					<p style="margin-left:0px;">&nbsp;</p>
+				</div>
+			</div>
+			<!---->
+		</div>
+		<div>
+			<div>
+				<a target="_blank" class="isDisabled" href="#"><img src="images/QWws.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<div>
+				<div>
+					<p><span style="background-color:rgb(255,255,255);color:rgb(23,43,77);">&nbsp; &nbsp; &nbsp;</span>
+					</p>
+					<p><span style="background-color:rgb(255,255,255);color:rgb(23,43,77);">&nbsp; &nbsp; &nbsp; โดยความลับอีกอย่างนึงของชีวาที่ทำให้มีลูกค้าเยอะมากขนาดนี้ก็เพราะว่า <strong>ชีวาเนี่ยเขาเลือกใช้แค่ 3 คู่ใบแรกจากยอดของต้นผักเชียงดามาใช้ทำยา </strong>เพราะ 3 คู่ ใบแรกนั้นจะมีคุณค่าทางยาสูงที่สุด <strong>จนทำให้สมุนไพรชีวามีคุณค่าทางยาสูงเกิน 25% โดยตามงานวิจัยรับรองว่าเป็นปริมาณที่จะทำให้เห็นผลลัพธ์ทางการรักษามากที่สุด</strong></span>
+					</p>
+					<p>&nbsp;</p>
+				</div>
+			</div>
+			<!---->
+		</div>
+		<div>
+			<div>
+				<a href="#" target="_blank" class=""><img src="images/7Hvg.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<div>
+				<a target="_blank" class="isDisabled" href="#"><img src="images/iVZy.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<div>
+				<div>
+					<p>&nbsp;</p>
+					<p><strong>สรุป ทานชีวาแล้วจะได้อะไร ?</strong>
+					</p>
+					<ul>
+						<li>ลดระดับน้ำตาลในเลือดได้อย่างเห็นผลทานต่อเนื่อง สามารถควบคุมระดับน้ำตาลได้ ไม่เหวี่ยงขึ้นๆลงๆ</li>
+						<li>ลดค่าน้ำตาลสะสม HBA1C
+							<br>&nbsp;</li>
+						<li>ส่งผลให้อาการแทรกซ้อนต่างๆ หายไป ไม่ว่าจะเป็นมือเท้าชาดีขึ้น สายตามองชัดเจน แข็งแรงกระปรี้กระเปร่าสดชื่น
+							<br>&nbsp;</li>
+						<li>ลดโอกาสเสี่ยงที่จะเป็นความดัน ไขมันสูงตามมา
+							<br>&nbsp;</li>
+						<li>สามารถทานต่อเนื่องได้เลยในระยะยาว โดยที่ไม่มีสารเคมีตกค้างในร่างกายแต่ยิ่งทำให้สุขภาพดีขึ้น</li>
+					</ul>
+					<p>เพราะคุ้มค่าที่จะลองแมคจึงอยากแนะนำครับ ลำพังต่อสู้กับโรคภัยก็ลำบากมากพอแล้ว ยังต้องมาเสียเงินเสียเวลาลองผิดลองถูกกับยาต่างๆ อีก เลิกเอาสุขภาพไปเสี่ยงแล้วให้ชีวาดูแลนะครับ ของเขาดีจริงๆ</p>
+					<p>&nbsp;</p>
+				</div>
+			</div>
+			<!---->
+		</div>
+		<div>
+			<div>
+				<a target="_blank" class="isDisabled" href="#"><img src="images/HnUP.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<div>
+				<a target="_blank" class="isDisabled" href="#"><img src="images/3ld3.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<div>
+				<a target="_blank" class="isDisabled" href="#"><img src="images/GDZo.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<div>
+				<a target="_blank" class="isDisabled" href="#"><img src="images/QYFK.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<div>
+				<a target="_blank" class="isDisabled" href="#"><img src="images/IDw8.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+  
+		<div>
+			<div>
+				<a target="_blank" class="isDisabled" href="#"><img src="images/B9Ta.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<div>
+				<a target="_blank" class="isDisabled" href="#"><img src="images/aNyw.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<div>
+				<a target="_blank" class="isDisabled" href="#"><img src="images/pzuo.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<div>
+				<a target="_blank" class="isDisabled" href="#"><img src="images/Zrby.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<div>
+				<a target="_blank" class="isDisabled" href="#"><img src="images/4yXA.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<div>
+				<a target="_blank" class="isDisabled" href="#"><img src="images/OZSn.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<div>
+				<a target="_blank" class="isDisabled" href="#"><img src="images/XDd2.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<div>
+				<a target="_blank" class="isDisabled" href="#"><img src="images/Y9hL.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<div>
+				<a target="_blank" class="isDisabled" href="#"><img src="images/nNzu.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<div>
+				<div class="card-body sendorderBox">
+					<!---->
+					<div style="text-align: center; font-size: 60px; color: rgb(204, 0, 0); font-weight: bold;">โปรโมชั่น จะหมดภายใน</div>
+					<div style="max-width: 800px; margin: auto; font-size: 18pt; font-weight: bold; text-align: center;">
+						<table align="center">
+							<tbody>
+								<tr style="text-align: center; font-size: 60px; color: rgb(204, 0, 0);">
+									<!---->
+									<!---->
+									<td width="120">12</td>
+									<td width="30">:</td>
+									<td width="120">13</td>
+									<td width="30">:</td>
+									<td width="120">55</td>
+								</tr>
+								<tr style="text-align: center; font-size: 20px; color: rgb(187, 187, 187);">
+									<!---->
+									<!---->
+									<td>ชั่วโมง</td>
+									<td></td>
+									<td>นาที</td>
+									<td></td>
+									<td>วินาที</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!---->
+				</div>
+			</div>
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<div>
+				<a target="_blank" class="isDisabled" href="#"><img src="images/BBP4.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<div>
+				<a target="_blank" class="isDisabled" href="#"><img src="images/SRL9.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<div>
+				<a target="_blank" class="isDisabled" href="#"><img src="images/quYJ.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<div>
+				<a target="_blank" class="isDisabled" href="#"><img src="images/c0Tu.jpg" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<div>
+				<div class="card-body sendorderBox">
+					<div class="title">เลือกสินค้าที่ต้องการ (จัดส่งฟรี เก็บเงินปลายทาง ฟรี)</div>
+					<div class="choiceBox">
+						<div class="form-group">
+							<div class="form-check">
+								<input type="radio" name="widget_104114_choice" id="widget_104114_radio_0" class="form-check-input" value="0">
+								<label for="widget_104114_radio_0" class="form-check-label"> ชีวาแคปซูล ซื้อ 3 แถม 1 ราคาปกติ 2,260 บาท พิเศษเพียง 1,470 บาท (tbl-cw2) </label>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="form-check">
+								<input type="radio" name="widget_104114_choice" id="widget_104114_radio_1" class="form-check-input" value="1">
+								<label for="widget_104114_radio_1" class="form-check-label"> ซื้อชีวา ชุด 3 แถม 1 รับสิทธิ์แลกซื้อเครื่องตรวจน้ำตาลในราคาเพียง 990 บาท รวมทั้งหมดจ่ายเพียง 2,460 บาทเท่านั้น (tbl-cw2) </label>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="form-check">
+								<input type="radio" name="widget_104114_choice" id="widget_104114_radio_2" class="form-check-input" value="2">
+								<label for="widget_104114_radio_2" class="form-check-label"> ชีวา ขนาด 40 แคปซูล พิเศษเพียง 540 บาท (tbl-cw2) </label>
+							</div>
+						</div>
+					</div>
+					<div class="cartBox">
+						<div class="form-group">
+							<label for="widget_104114_name">ชื่อ-นามสกุล ผู้รับสินค้า</label>
+							<input type="email" id="widget_104114_name" placeholder="ชื่อ-นามสกุล" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="widget_104114_phone">เบอร์มือถือที่ติดต่อได้สะดวก</label>
+							<input type="number" id="widget_104114_phone" placeholder="เบอร์มือถือ 0xxxxxxxxx" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="widget_104114_address">ที่อยู่จัดส่งสินค้า</label>
+							<textarea id="widget_104114_address" rows="5" placeholer="กรุณาใส่ข้อมูลให้ครบถ้วนนะคะ" class="form-control"></textarea>
+						</div>
+					</div>
+					<!---->
+					<div>
+						<button type="button" class="btn btn-block btn-success">ยืนยันคำสั่งซื้อ</button>
+					</div>
+				</div>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<!---->
+			<!---->
+			<div>
+				<div class="buttonBox">
+					<a href="#" target="_blank"><img src="images/new-btn-line.png" class="btnContact img-fluid w-100">
+					</a>
+					<a href="#" target="_blank">
+						<!---->
+					</a>
+					<a href="#" target="_blank">
+						<!---->
+					</a>
+				</div>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+		<div>
+			<div>
+				<a href="#" target="_blank" class=""><img src="images/OyYL.gif" class="img-fluid w-100">
+				</a>
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+			<!---->
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+* {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+    font-family: arial, sans-serif !important;
+    box-sizing: border-box;
+}
+html {
+    overflow-x: hidden
+}
+#close-campaign {
+    overflow: hidden;
+    font-size: 24px;
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    margin: 0.5rem auto;
+    opacity: 0.7;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    text-align: center;
+    cursor: pointer;
+    z-index: 999;
+}
+#close-campaign h1 {
+    font-size: 24px;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    margin: 0px;
+    padding: 0px;
+    line-height: 26px;
+}
+body {
+    max-width: 480px;
+}
+a {
+    color: inherit;
+}
+input[type="submit"],.input_submit {
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    font-weight: 700;
+    margin-top: 0px;
+    width: 65%;
+    overflow-y: hidden;
+    padding: 10px;
+    font-size: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+#errorMsg {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+input[type=submit]:disabled,.input_submit:disabled {
+    background: #888
+}
+#onayLabel {
+    font-size: 20px;
+    line-height: 31px;
+    vertical-align: bottom;
+}
+input.checkbox {
+    display: none
+}
+input.checkbox + label > span.checkbox-span {
+    background-color: #fff;
+    display: inline-block;
+    color: transparent;
+    border: 3px solid #000;
+    width: 25px;
+    line-height: 25px;
+    font-size: 25px;
+    text-align: center;
+    box-sizing: initial;
+    vertical-align: bottom;
+    margin-right: 5px;
+    overflow: hidden;
+    pointer-events: none;
+    cursor: default;
+}
+#operator-selector,
+.inputText {
+    width: 75%;
+    border: 3px solid #000
+}
+input.checkbox:checked + label > span.checkbox-span {
+    color: #000
+}
+p.footer {
+    font-size: 14px;
+}
+p.fsz21 {
+    font-size: 12pt;
+}
+p.unlimited {
+    font-size: 18px;
+    font-weight: 700;
+}
+.inputText {
+    font-size: 18px;
+    padding: 8px 10px 8px 10px;
+    width: 75%;
+    color: red;
+}
+#operator-selector {
+    font-size: 18px;
+    padding: 8px 10px 8px 10px;
+    width: 75%;
+    background: white;
+    -webkit-appearance: none;
+    background: #fff url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 95% 50%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: white;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJCAYAAAA/33wPAAAAvklEQVQoFY2QMQqEMBBFv7ERa/EMXkGw11K8QbDXzuN4BHv7QO6ifUgj7v4UAdlVM8Uwf+b9YZJISnlqrfEUZVlinucnBGKaJgghbiHOyLyFKIoCbdvecpyReYvo/Ma2bajrGtbaC58kCdZ1RZ7nl/4/4d5EsO/7nzl7IUtodBexMMagaRrs+06JLMvcNWmaOv2W/C/TMAyD58dxROgSmvxFFMdxoOs6lliWBXEcuzokXRbRoJRyvqqqQvye+QDMDz1D6yuj9wAAAABJRU5ErkJggg==);
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 1.5em;
+    margin-bottom: 10px;
+}
+a.operator-logo-a {
+    text-decoration: none;
+    padding: 0px 5px;
+}
+a.operator-logo-a img {
+    height: 50px;
+}
+#mainDiv {
+    min-height: initial;
+    height: auto;
+    padding-bottom: 20px;
+}
+.footer {
+    margin-top: 0px;
+}
+.footer {
+    margin-bottom: 15px;
+}
+#mainDiv,
+.video {
+    display: block;
+}
+.video {
+    max-width: 100%;
+}
+#agree-button {
+    overflow-y: hidden;
+}
+#resultPages,
+.form,
+.infoPages,
+.unlimited,
+header,
+p {
+    text-align: center
+}
+.spot {
+    padding: 5px 10px
+}
+.service-logo img {
+    max-width: 40%;
+}
+* {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+}
+@media only screen and (max-device-height: 320px) and (orientation: landscape) {
+    .video {
+        max-width: 30%;
+    }
+}
+@media only screen and (max-device-height: 375px) and (orientation: landscape) {
+    .video {
+        max-width: 30%;
+    }
+}
+@media only screen and (max-device-height: 480px) and (orientation: portrait) {
+    .video {
+        max-width: 65%;
+    }
+}
+@media only screen and (max-device-height: 667px) and (orientation: portrait) {
+    .video {
+        max-width: 85%;
+    }
+}
+header {
+    text-align: center;
+}
+header img {
+    max-width: 100%;
+}
+#container {
+    margin-bottom: 50px;
+}
+#loading {
+    padding: 20px;
+    text-align: center;
+}
+#loading img {
+    max-width: 64px;
+}
+.spinner {
+    margin: 20px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+    overflow: hidden;
+}
+.spinner > div {
+    background-color: #333;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+@-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% {
+        -webkit-transform: scaleY(0.4)
+    }
+    20% {
+        -webkit-transform: scaleY(1.0)
+    }
+}
+@keyframes sk-stretchdelay {
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }
+    20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+    }
+}
+#resultDiv {
+    display: none
+}
+#errorMsg {
+    color: #e73d4a;
+    background: url("error.png") #fbe1e3 no-repeat 10px center;
+    border-color: #fbe1e3;
+    padding-left: 30px;
+    width: 74%;
+    margin-bottom: 10px;
+}
+#errorMsg span {
+    display: block;
+    padding: 15px;
+    text-align: left;
+}

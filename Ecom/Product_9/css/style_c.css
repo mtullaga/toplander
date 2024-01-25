@@ -1,0 +1,19 @@
+body.index .content .section1 .button:lang(ro){
+    font-size: 21px;
+}
+@media (max-width: 350px){
+    body.index .content .headline .title p:lang(fr){
+        font-size: 13px;
+    }
+    body.index .content .headline .title p:lang(ro){
+        font-size: 13px;
+    }
+    body.index .content .section1 .button:lang(ro){
+        font-size: 20px;
+    }
+}
+@media (max-width: 340px){
+    body.index .content .section1 .button:lang(ro){
+        font-size: 18px;
+    }
+}

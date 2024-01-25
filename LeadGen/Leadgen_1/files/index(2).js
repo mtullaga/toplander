@@ -1,0 +1,1 @@
+(()=>{"use strict";var t,n;t=jQuery,".".concat("attrakt--map"),n=function(n){n.find("a").each((function(){t(this).on("click",(function(t){t.preventDefault()}))}))},window.acf&&window.acf.addAction("render_block_preview/type=".concat("attrakt--map"),(function(t){n(t)}))})();

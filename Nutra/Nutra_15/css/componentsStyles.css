@@ -1,0 +1,1865 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Lato-Regular.ttf);
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url(Lato-Bold.ttf);
+}
+.x-header_moto-medical-sp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #b8b8b8;
+  font-family: Arial, sans-serif;
+}
+@media (min-width: 769px) {
+  .x-header_moto-medical-sp {
+    margin-bottom: 40px;
+  }
+}
+.x-header_moto-medical-sp .header_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.x-header_moto-medical-sp .header_top .left {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (min-width: 769px) {
+  .x-header_moto-medical-sp .header_top .left {
+    background-position: 300px top;
+  }
+}
+.x-header_moto-medical-sp .header_top .left .logo {
+  background-color: #b8b8b8;
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+@media (min-width: 769px) {
+  .x-header_moto-medical-sp .header_top .left .logo {
+    background: transparent;
+  }
+}
+.x-header_moto-medical-sp .header_top .left .logo img {
+  max-width: 100%;
+  margin-right: 15px;
+}
+.x-header_moto-medical-sp .header_top .left .logo a {
+  text-decoration: none;
+}
+.x-header_moto-medical-sp .header_top .left .logo p {
+  color: black;
+  font-family: 'Lato';
+  line-height: 32px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.x-header_moto-medical-sp .header_top .right {
+  display: none;
+  flex-direction: column;
+}
+@media (min-width: 769px) {
+  .x-header_moto-medical-sp .header_top .right {
+    display: flex;
+  }
+}
+.x-header_moto-medical-sp .header_top .right .socialcontainer {
+  display: none;
+}
+.x-header_moto-medical-sp .header_top .right .datetime {
+  display: none;
+}
+.x-header_moto-medical-sp .header_top .right .search_box {
+  margin-top: 55px;
+  margin-bottom: 25px;
+  text-align: right;
+}
+.x-header_moto-medical-sp .header_top .right .search_box input {
+  padding: 5px 25px 5px 5px;
+  margin: 0px;
+  width: 240px;
+  box-shadow: inset 1px 3px 5px #d3d3d3;
+  background: #fff url(lupa.png) right center no-repeat;
+  border: 1px solid #bebebe;
+  border-radius: 2px;
+  color: #646464;
+}
+.x-header_moto-medical-sp .header_top .right .account {
+  display: none;
+}
+.x-header_moto-medical-sp .header_bottom {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+@media (min-width: 769px) {
+  .x-header_moto-medical-sp .header_bottom {
+    display: flex;
+  }
+}
+.x-header_moto-medical-sp .header_bottom .menu_top {
+  position: relative;
+  background-color: #313131;
+  min-height: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+}
+.x-header_moto-medical-sp .header_bottom .menu_top ul {
+  list-style: none;
+  width: 100%;
+  min-height: 35px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.x-header_moto-medical-sp .header_bottom .menu_top ul li {
+  min-height: 35px;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+}
+.x-header_moto-medical-sp .header_bottom .menu_top ul li.activeMenuElem {
+  background: #d3d3d3;
+}
+.x-header_moto-medical-sp .header_bottom .menu_top ul li.activeMenuElem a {
+  color: #720400;
+}
+.x-header_moto-medical-sp .header_bottom .menu_top ul li:hover {
+  cursor: pointer;
+  background: #d3d3d3;
+}
+.x-header_moto-medical-sp .header_bottom .menu_top ul li a {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+.x-header_moto-medical-sp .header_bottom .menu_top ul li:hover a {
+  color: #720400;
+  text-shadow: none;
+}
+.x-header_moto-medical-sp .header_bottom .menu_bottom {
+  background: #d3d3d3;
+}
+.x-header_moto-medical-sp .header_bottom .menu_bottom ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+}
+.x-header_moto-medical-sp .header_bottom .menu_bottom ul li:not(:last-child):after {
+  content: "|";
+}
+.x-header_moto-medical-sp .header_bottom .menu_bottom ul li {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 0px;
+}
+.x-header_moto-medical-sp .header_bottom .menu_bottom ul li a {
+  text-align: center;
+  font-size: 18px;
+  color: #1c1c1c;
+  text-decoration: none;
+  padding: 0 20px;
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-header_moto-medical-sp.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-header_moto-medical-sp.hide-mobile {
+    display: none;
+  }
+}
+.x-h4-medical-sp {
+  font-family: Arial;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  margin: 20px 0;
+  padding: 5px 20px;
+}
+.x-h4-medical-sp.left {
+  text-align: left;
+}
+.x-h4-medical-sp.right {
+  text-align: right;
+}
+.x-h4-medical-sp.center {
+  text-align: center;
+}
+.x-h4-medical-sp.justify {
+  text-align: justify;
+}
+@media only screen and (max-width: 768px) {
+  .x-h4-medical-sp {
+    font-size: 18px;
+    margin: 20px 0;
+    padding: 5px 20px;
+  }
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-h4-medical-sp.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-h4-medical-sp.hide-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(Roboto-Bold.ttf);
+}
+.x-image-medical-sp {
+  margin: 10px 20px;
+  direction: ltr!important;
+}
+.x-image-medical-sp.bcg-lightgrey {
+  background-color: #EBEBEB;
+}
+.x-image-medical-sp .image-img {
+  max-width: 100%;
+  width: auto;
+  margin: 0;
+}
+.x-image-medical-sp div.title-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.x-image-medical-sp div.title-container p {
+  width: 100%;
+  display: block;
+  font-family: 'Georgia';
+  font-size: 16px;
+  line-height: 25px;
+  padding: 5px;
+  color: #3d3d3d;
+}
+.x-image-medical-sp div {
+  width: 100%;
+  display: flex;
+}
+.x-image-medical-sp div.text-container p {
+  background-color: #ddd;
+  width: 100%;
+  display: block;
+  font-family: 'Georgia';
+  font-size: 14px;
+  padding: 5px;
+}
+.x-image-medical-sp.right div {
+  text-align: right;
+}
+.x-image-medical-sp.right div.title-container {
+  text-align: right;
+}
+.x-image-medical-sp.right div.text-container {
+  text-align: right;
+}
+@media only screen and (max-width: 768px) {
+  .x-image-medical-sp {
+    margin: 0 15px;
+  }
+  .x-image-medical-sp div.text-container p {
+    background-color: #1e851e;
+    font-family: 'Roboto';
+    padding: 15px;
+    color: #fff;
+    text-align: inherit;
+    font-weight: 700;
+  }
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-image-medical-sp.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-image-medical-sp.hide-mobile {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */.x-h1-medical-sp {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1em;
+  text-align: left;
+  color: #000;
+  margin: 20px 0;
+  padding: 5px 20px;
+}
+.x-h1-medical-sp.left {
+  text-align: left;
+}
+.x-h1-medical-sp.right {
+  text-align: right;
+}
+.x-h1-medical-sp.center {
+  text-align: center;
+}
+.x-h1-medical-sp.justify {
+  text-align: justify;
+}
+@media only screen and (max-width: 768px) {
+  .x-h1-medical-sp {
+    margin: 20px 0;
+    padding: 5px 15px;
+  }
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-h1-medical-sp.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-h1-medical-sp.hide-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(Roboto-Bold.ttf);
+}
+.x-float_img_text-medical-sp {
+  font-family: 'Georgia';
+  color: #3d3d3d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4em;
+  margin: 20px;
+}
+.x-float_img_text-medical-sp .float_img_text-img {
+  max-width: 270px;
+  width: auto;
+  float: left;
+  margin: 0 15px 0px 15px;
+}
+.x-float_img_text-medical-sp .float_img_text-img.float_left {
+  float: left !important;
+}
+.x-float_img_text-medical-sp .float_img_text-img.float_right {
+  float: right !important;
+}
+.x-float_img_text-medical-sp .float_img_text-img img {
+  width: 100%;
+}
+.x-float_img_text-medical-sp .float_img_text-img p {
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+  background-color: #ddd;
+  padding: 2px 5px;
+}
+.x-float_img_text-medical-sp .float_img_text-list {
+  margin: 0 !important;
+}
+.x-float_img_text-medical-sp .float_img_text-list li {
+  margin: 20px 0;
+}
+.x-float_img_text-medical-sp .float_img_text-list li p {
+  display: inline;
+}
+@media only screen and (max-width: 500px) {
+  .x-float_img_text-medical-sp {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-float_img_text-medical-sp {
+    font-family: 'Roboto';
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 20px 15px;
+  }
+  .x-float_img_text-medical-sp .float_img_text-img {
+    float: none;
+  }
+  .x-float_img_text-medical-sp .float_img_text-img p {
+    background-color: #1e851e;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px;
+  }
+  .x-float_img_text-medical-sp .float_img_text-text {
+    font-size: 16px;
+    font-family: 'Roboto';
+    margin: 20px 0 0;
+  }
+  .x-float_img_text-medical-sp .float_img_text-list {
+    font-size: 16px;
+    margin-left: 20px!important;
+  }
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-float_img_text-medical-sp.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-float_img_text-medical-sp.hide-mobile {
+    display: none;
+  }
+}
+.x-h6-educationV2-sp {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  margin: 20px 0;
+  padding: 5px 20px;
+}
+.x-h6-educationV2-sp.left {
+  text-align: left;
+}
+.x-h6-educationV2-sp.right {
+  text-align: right;
+}
+.x-h6-educationV2-sp.center {
+  text-align: center;
+}
+.x-h6-educationV2-sp.justify {
+  text-align: justify;
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-h6-educationV2-sp.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-h6-educationV2-sp.hide-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(Roboto-Bold.ttf);
+}
+.x-p-medical-sp {
+  width: auto;
+  color: #3d3d3d;
+  font-family: 'Georgia';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 20px;
+}
+.x-p-medical-sp.left {
+  text-align: left;
+}
+.x-p-medical-sp.right {
+  text-align: right;
+}
+.x-p-medical-sp.center {
+  text-align: center;
+}
+.x-p-medical-sp.justify {
+  text-align: justify;
+}
+@media only screen and (max-width: 768px) {
+  .x-p-medical-sp {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 20px 0;
+    padding: 0 15px;
+  }
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-p-medical-sp.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-p-medical-sp.hide-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(OpenSans-Bold.ttf);
+}
+.x-img_list-educationV2-sp {
+  width: auto;
+  color: #3d3d3d;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 20px;
+  padding: 10px;
+  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.x-img_list-educationV2-sp .visual {
+  max-width: 210px;
+  width: 100%;
+}
+.x-img_list-educationV2-sp .first-line {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.x-img_list-educationV2-sp .first-line p {
+  margin: 10px 0 0 15px;
+}
+.x-img_list-educationV2-sp .sec-line {
+  padding-left: 20px;
+  color: #3d3d3d;
+  font-size: 16px;
+}
+.x-img_list-educationV2-sp .sec-line p {
+  border-left: 3px solid #dcdcdc;
+  padding-left: 20px;
+  margin: 15px 0 15px 10px;
+}
+.x-img_list-educationV2-sp.right {
+  text-align: right;
+}
+.x-img_list-educationV2-sp.right .first-line p {
+  margin: 10px 15px 0 0px;
+}
+.x-img_list-educationV2-sp.right .sec-line p {
+  padding-left: unset;
+  padding-right: 20px;
+  border-left: unset;
+  border-right: 3px solid #dcdcdc;
+}
+@media only screen and (max-width: 769px) {
+  .x-img_list-educationV2-sp {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-img_list-educationV2-sp.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-img_list-educationV2-sp.hide-mobile {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(Roboto-Bold.ttf);
+}
+.x-before_after_one_photo-medical-sp {
+  font-family: 'Georgia';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin: 0 20px;
+}
+.x-before_after_one_photo-medical-sp.right img {
+  transform: scaleX(-1);
+}
+.x-before_after_one_photo-medical-sp .before_after_one_photo-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.x-before_after_one_photo-medical-sp .before_after_one_photo-row .before_after_one_photo-img {
+  width: 100%;
+  height: auto;
+}
+.x-before_after_one_photo-medical-sp .before_after_one_photo-row .before_after_one_photo-title {
+  width: 50%;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: center;
+}
+.x-before_after_one_photo-medical-sp .before_after_one_photo-row .before_after_one_photo-title-before {
+  color: #820000;
+}
+.x-before_after_one_photo-medical-sp .before_after_one_photo-row .before_after_one_photo-title-after {
+  color: #5faf5c;
+}
+.x-before_after_one_photo-medical-sp .before_after_one_photo-row .before_after_one_photo-text {
+  width: 50%;
+  color: #3d3d3d;
+  font-family: 'Georgia';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .x-before_after_one_photo-medical-sp {
+    margin: 20px 15px;
+  }
+  .x-before_after_one_photo-medical-sp .before_after_one_photo-row .before_after_one_photo-title {
+    font-weight: 700;
+  }
+  .x-before_after_one_photo-medical-sp .before_after_one_photo-row .before_after_one_photo-text {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 14px;
+  }
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-before_after_one_photo-medical-sp.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-before_after_one_photo-medical-sp.hide-mobile {
+    display: none;
+  }
+}
+.x-image_with_list_description-medical-sp {
+  font-family: 'Georgia';
+  color: #3d3d3d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4em;
+  text-align: left;
+  counter-reset: image_with_list_description;
+  margin: 0 20px;
+}
+.x-image_with_list_description-medical-sp .image_with_list_description-main {
+  font-family: 'Lato';
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+.x-image_with_list_description-medical-sp .image_with_list_description-img,
+.x-image_with_list_description-medical-sp .image_with_list_description-text {
+  width: 50%;
+}
+.x-image_with_list_description-medical-sp .image_with_list_description-img img {
+  width: 100%;
+  max-width: 300px;
+}
+.x-image_with_list_description-medical-sp .image_with_list_description-text {
+  text-align: left;
+}
+.x-image_with_list_description-medical-sp .image_with_list_description_text-list {
+  margin: 0;
+}
+.x-image_with_list_description-medical-sp .image_with_list_description-list li {
+  display: inline-block;
+}
+.x-image_with_list_description-medical-sp .image_with_list_description-list li p {
+  display: inline-block;
+  font-size: 14px;
+}
+.x-image_with_list_description-medical-sp .image_with_list_description-list li:before {
+  background: #565656;
+  color: #FFF;
+  border-radius: 50%;
+  padding: 2px 5px 4px 8px;
+  margin: 0 5px 0 0;
+  font-size: 12px;
+  font-weight: bold;
+  counter-increment: image_with_list_description;
+  content: counter(image_with_list_description) ". ";
+}
+@media only screen and (max-width: 768px) {
+  .x-image_with_list_description-medical-sp {
+    margin: 20px 15px;
+  }
+  .x-image_with_list_description-medical-sp .image_with_list_description-main {
+    flex-direction: column;
+  }
+  .x-image_with_list_description-medical-sp .image_with_list_description-img,
+  .x-image_with_list_description-medical-sp .image_with_list_description-text {
+    width: 100%;
+  }
+  .x-image_with_list_description-medical-sp .image_with_list_description-img {
+    max-width: 100%;
+    margin: 0 0 10px;
+    float: none;
+  }
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-image_with_list_description-medical-sp.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-image_with_list_description-medical-sp.hide-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(Roboto-Bold.ttf);
+}
+.x-ul_list-medical-sp {
+  font-family: 'Georgia';
+  margin: 20px;
+  padding: 0 0 0 20px;
+}
+.x-ul_list-medical-sp.right {
+  text-align: right;
+}
+.x-ul_list-medical-sp li {
+  color: #3d3d3d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 10px 0;
+}
+@media only screen and (max-width: 768px) {
+  .x-ul_list-medical-sp {
+    font-family: 'Roboto';
+    margin: 25px 0;
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid #acacac;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .x-ul_list-medical-sp.right li {
+    background-position: center right;
+    padding: 10px 30px 10px 50px;
+  }
+  .x-ul_list-medical-sp li {
+    margin: 0;
+    padding: 10px 10px 10px 50px;
+    border-top: 1px solid #acacac;
+    background-image: url(ok.png);
+    background-position: 15px center;
+    background-repeat: no-repeat;
+  }
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-ul_list-medical-sp.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-ul_list-medical-sp.hide-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(Roboto-Bold.ttf);
+}
+.x-CTA-medical .cta {
+  font-family: 'Roboto';
+  color: #0000ff;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.4em;
+  text-decoration: underline;
+}
+.x-CTA-medical .cta p {
+  padding: 0 20px;
+}
+.x-CTA-medical .cta_mobile {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  background-color: #fff;
+  border-top: 2px solid #0000ff;
+  display: none;
+  z-index: 1;
+}
+.x-CTA-medical .cta_mobile p {
+  padding: 0;
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-CTA-medical.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-CTA-medical.hide-mobile {
+    display: none;
+  }
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(Roboto-Regular.ttf);
+}
+
+.x-weather-medical {
+    margin: 0 20px;
+}
+
+.x-weather-medical #awtd1383134730488 {
+    max-width: 360px;
+    font-family: 'Roboto';
+}
+
+.x-weather-medical h2 {
+    font-family: 'Roboto';
+    background-color: #d3d3d3;
+    color: #000000;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+}
+
+.x-weather-medical #awtd1383134730488 div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li a .aw-info {
+    height: auto !important;
+}
+
+.x-weather-medical #awtd1383134730488 div.aw-widget-36hour-inner {
+    max-width: inherit;
+    min-width: inherit;
+}
+
+.x-weather-medical #awtd1383134730488 div.aw-widget-36hour-inner div.aw-widget-content a.aw-current-weather {
+    padding-top: 10px !important
+}
+
+.x-weather-medical #awtd1383134730488 div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li a .aw-bg {
+    border: 0 !important
+}
+
+.x-weather-medical #awtd1383134730488 div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours span.aw-day-details {
+    display: none !important;
+}
+
+.x-weather-medical #awtd1383134730488 div.aw-widget-36hour-inner div.aw-widget-content {
+    border-bottom: 0 !important;
+}
+
+.x-weather-medical #awtd1383134730488 div.aw-widget-36hour-inner div.aw-top-content {
+    border: 2px solid #e9e9e9 !important
+}
+
+.x-weather-medical #awtd1383134730488 div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li.night a,
+.x-weather-medical #awtd1383134730488 div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li.night p {
+    color: #000 !important
+}
+
+.x-weather-medical #awtd1383134730488 div.aw-widget-36hour-inner div.bg-cl.aw-widget-content,
+.x-weather-medical .x-weather-medical #awtd1383134730488 div.aw-widget-36hour-inner div.bg-cl.aw-widget-content a.aw-current-weather div.aw-current-weather-info,
+.x-weather-medical #awtd1383134730488 div.aw-widget-36hour-inner div.bg-s.aw-widget-content,
+.x-weather-medical #awtd1383134730488 div.aw-widget-36hour-inner div.bg-s.aw-widget-content a.aw-current-weather div.aw-current-weather-info {
+    color: #000 !important;
+}
+
+.x-weather-medical #awtd1383134730488 div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li h3,
+.x-weather-medical #awtd1383134730488 div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li h3 {
+    font-size: 1.2em !important;
+}
+
+.x-weather-medical #awtd1383134730488 div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours p.aw-day-message {
+    font-size: 1.1em !important;
+}
+
+.x-weather-medical #awtd1383134730488 div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours span.aw-real-feel {
+    margin-bottom: 10px !important;
+}
+
+.x-weather-medical .x-weather-medical #awtd1383134730488 .bg-f,
+.x-weather-medical .x-weather-medical #awtd1383134730488 .tbg-f,
+.x-weather-medical #awtd1383134730488 .aw-widget-current .bg-f,
+.x-weather-medical .x-weather-medical #awtd1383134730488 .aw-widget-current .tbg-f {
+    background: none;
+}
+
+.x-weather-medical #link_get_widget {
+    display: none ! important;
+}
+
+.x-weather-medical #link_logo {
+    height: 33px;
+}
+
+.x-weather-medical #link_logo>img {
+    display: none !important;
+}
+
+.x-weather-medical div.aw-temp-unit {
+    height: 22px !important;
+}
+
+.x-weather-medical div.aw-temp-unit>ul {
+    display: none;
+}
+
+.x-weather-medical .aw-widget-36hour .tbg-su,
+.aw-widget-36hour .bg-su,
+.aw-widget-current .tbg-su,
+.aw-widget-current .bg-su {
+    background: none !important;
+}
+
+.x-weather-medical #link_arrow_right {
+    display: none;
+}
+
+.x-weather-medical .aw-widget-36hour .tbg-cl,
+.aw-widget-36hour .bg-cl,
+.aw-widget-current .tbg-cl,
+.aw-widget-current .bg-cl {
+    background: none !important;
+    color: white !important;
+}
+
+.x-weather-medical div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li.night a {
+    color: black !important;
+}
+
+.aw-widget-36hour .tbg-c,
+.aw-widget-36hour .bg-c,
+.aw-widget-current .tbg-c,
+.aw-widget-current .bg-c {
+    background: none !important;
+}
+
+.x-weather-medical div.aw-widget-36hour-inner div.aw-widget-content div.aw-header div.aw-search {
+    border: 1px solid #E9E9E9 !important;
+}
+
+.x-weather-medical div.aw-widget-36hour-inner div.aw-widget-content div.aw-header div.aw-search button.aw-submit-button {
+    background: none !important;
+}
+
+.x-weather-medical div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours span.aw-day-details,
+div.aw-header {
+    display: none !important;
+}
+
+.x-weather-medical div.aw-widget-36hour-inner div.aw-widget-content {
+    border-bottom: 1px solid #e9e9e9 !important;
+}
+
+.x-weather-medical div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li a .aw-bg {
+    border: none !important;
+}
+
+.x-weather-medical div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li a:hover .aw-bg {
+    border: 1px solid #e8e8e8 !important;
+}
+
+.x-weather-medical div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li.night a:hover .aw-bg {
+    border: 1px solid #e8e8e8 !important;
+}
+
+.x-weather-medical #link_current {
+    cursor: default;
+}
+
+.x-weather-medical div.pogoda {
+    position: relative;
+}
+
+.aw-widget-36hour .tbg-t,
+.aw-widget-36hour .bg-t,
+.aw-widget-current .tbg-t,
+.aw-widget-current .bg-t,
+.aw-widget-36hour .tbg-s,
+.aw-widget-36hour .bg-s,
+.aw-widget-current .tbg-s,
+.aw-widget-current .bg-s,
+.aw-widget-36hour .tbg-r,
+.aw-widget-36hour .bg-r,
+.aw-widget-current .tbg-r,
+.aw-widget-current .bg-r {
+    background: none !important;
+}
+
+.x-weather-medical div.aw-widget-36hour-inner div.aw-widget-content.bg-cl,
+.x-weather-medical div.aw-widget-36hour-inner div.aw-widget-content.bg-s,
+.x-weather-medical div.aw-widget-36hour-inner div.aw-widget-content.bg-cl a.aw-current-weather div.aw-current-weather-info,
+.x-weather-medical div.aw-widget-36hour-inner div.aw-widget-content.bg-s a.aw-current-weather div.aw-current-weather-info {
+    color: #000 !important;
+}
+
+.x-weather-medical #akudet {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: 9999;
+}
+
+.x-weather-medical span.aw-icon-1-l,
+.x-weather-medical span.aw-icon-1-m,
+.x-weather-medical span.aw-icon-1-s {
+    background: url(1.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-2-l,
+.x-weather-medical span.aw-icon-2-m,
+.x-weather-medical span.aw-icon-2-s {
+    background: url(2.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-3-l,
+.x-weather-medical span.aw-icon-3-m,
+.x-weather-medical span.aw-icon-3-s {
+    background: url(3.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-4-l,
+.x-weather-medical span.aw-icon-4-m,
+.x-weather-medical span.aw-icon-4-s {
+    background: url(4.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-5-l,
+.x-weather-medical span.aw-icon-5-m,
+.x-weather-medical span.aw-icon-5-s {
+    background: url(5.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-6-l,
+.x-weather-medical span.aw-icon-6-m,
+.x-weather-medical span.aw-icon-6-s {
+    background: url(6.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-7-l,
+.x-weather-medical span.aw-icon-7-m,
+.x-weather-medical span.aw-icon-7-s {
+    background: url(7.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-8-l,
+.x-weather-medical span.aw-icon-8-m,
+.x-weather-medical span.aw-icon-8-s {
+    background: url(8.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-11-l,
+.x-weather-medical span.aw-icon-11-m,
+.x-weather-medical span.aw-icon-11-s {
+    background: url(11.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-12-l,
+.x-weather-medical span.aw-icon-12-m,
+.x-weather-medical span.aw-icon-12-s {
+    background: url(12.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-13-l,
+.x-weather-medical span.aw-icon-13-m,
+.x-weather-medical span.aw-icon-13-s {
+    background: url(13.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-14-l,
+.x-weather-medical span.aw-icon-14-m,
+.x-weather-medical span.aw-icon-14-s {
+    background: url(14.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-15-l,
+.x-weather-medical span.aw-icon-15-m,
+.x-weather-medical span.aw-icon-15-s {
+    background: url(15.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-16-l,
+.x-weather-medical span.aw-icon-16-m,
+.x-weather-medical span.aw-icon-16-s {
+    background: url(16.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-17-l,
+.x-weather-medical span.aw-icon-17-m,
+.x-weather-medical span.aw-icon-17-s {
+    background: url(17.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-18-l,
+.x-weather-medical span.aw-icon-18-m,
+.x-weather-medical span.aw-icon-18-s {
+    background: url(18.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-19-l,
+.x-weather-medical span.aw-icon-19-m,
+.x-weather-medical span.aw-icon-19-s {
+    background: url(19.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-20-l,
+.x-weather-medical span.aw-icon-20-m,
+.x-weather-medical span.aw-icon-20-s {
+    background: url(20.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-21-l,
+.x-weather-medical span.aw-icon-21-m,
+.x-weather-medical span.aw-icon-21-s {
+    background: url(21.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-22-l,
+.x-weather-medical span.aw-icon-22-m,
+.x-weather-medical span.aw-icon-22-s {
+    background: url(22.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-23-l,
+.x-weather-medical span.aw-icon-23-m,
+.x-weather-medical span.aw-icon-23-s {
+    background: url(23.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-24-l,
+.x-weather-medical span.aw-icon-24-m,
+.x-weather-medical span.aw-icon-24-s {
+    background: url(24.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-25-l,
+.x-weather-medical span.aw-icon-25-m,
+.x-weather-medical span.aw-icon-25-s {
+    background: url(25.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-26-l,
+.x-weather-medical span.aw-icon-26-m,
+.x-weather-medical span.aw-icon-26-s {
+    background: url(26.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-29-l,
+.x-weather-medical span.aw-icon-29-m,
+.x-weather-medical span.aw-icon-29-s {
+    background: url(29.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-30-l,
+.x-weather-medical span.aw-icon-30-m,
+.x-weather-medical span.aw-icon-30-s {
+    background: url(30.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-31-l,
+.x-weather-medical span.aw-icon-31-m,
+.x-weather-medical span.aw-icon-31-s {
+    background: url(31.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-32-l,
+.x-weather-medical span.aw-icon-32-m,
+.x-weather-medical span.aw-icon-32-s {
+    background: url(32.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-33-l,
+.x-weather-medical span.aw-icon-33-m,
+.x-weather-medical span.aw-icon-33-s {
+    background: url(33.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-34-l,
+.x-weather-medical span.aw-icon-34-m,
+.x-weather-medical span.aw-icon-34-s {
+    background: url(34.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-35-l,
+.x-weather-medical span.aw-icon-35-m,
+.x-weather-medical span.aw-icon-35-s {
+    background: url(35.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-36-l,
+.x-weather-medical span.aw-icon-36-m,
+.x-weather-medical span.aw-icon-36-s {
+    background: url(36.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-37-l,
+.x-weather-medical span.aw-icon-37-m,
+.x-weather-medical span.aw-icon-37-s {
+    background: url(37.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-38-l,
+.x-weather-medical span.aw-icon-38-m,
+.x-weather-medical span.aw-icon-38-s {
+    background: url(38.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-39-l,
+.x-weather-medical span.aw-icon-39-m,
+.x-weather-medical span.aw-icon-39-s {
+    background: url(39.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-40-l,
+.x-weather-medical span.aw-icon-40-m,
+.x-weather-medical span.aw-icon-40-s {
+    background: url(40.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-41-l,
+.x-weather-medical span.aw-icon-41-m,
+.x-weather-medical span.aw-icon-41-s {
+    background: url(41.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-42-l,
+.x-weather-medical span.aw-icon-42-m,
+.x-weather-medical span.aw-icon-42-s {
+    background: url(42.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-43-l,
+.x-weather-medical span.aw-icon-43-m,
+.x-weather-medical span.aw-icon-43-s {
+    background: url(43.png) no-repeat;
+}
+
+.x-weather-medical span.aw-icon-44-l,
+.x-weather-medical span.aw-icon-44-m,
+.x-weather-medical span.aw-icon-44-s {
+    background: url(44.png) no-repeat;
+}
+
+..x-weather-medical lt-480 div.aw-widget-36hour-inner div.aw-widget-content a.aw-current-weather {
+    padding-top: 10px !important;
+}
+
+.x-weather-medical .lt-480 div.aw-widget-36hour-inner div.aw-top-content div.aw-emergency-header {
+    display: none;
+}
+
+.x-weather-medicaldiv.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours ul {
+    font-size: inherit;
+}
+
+.x-weather-medical .aw-six-hours,
+.aw-more-block,
+.aw-more-sep-2,
+.aw-more-sep-3,
+.aw-more-sep-4,
+.aw-arrow,
+.aw-get-this-widget,
+.aw-alert-info {
+    display: none;
+}
+
+.x-weather-medical .aw-fc-status {
+    display: none!important;
+}
+
+.x-weather-medical div.aw-widget-36hour-inner {
+    max-width: 300px;
+    width: 100%;
+    min-width: 100px;
+    margin: auto;
+}
+
+.x-weather-medical div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li.night a:hover .aw-bg {
+    border: none !important;
+}
+
+.x-weather-medical div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li a:hover .aw-bg {
+    border: none !important;
+}
+
+.x-weather-medical div.aw-widget-36hour .message {
+    top: 40px !important;
+}
+
+.x-weather-medical #awtd1383134730488 DIV.aw-widget-36hour-inner DIV.aw-widget-content DIV.aw-36-hours {
+    padding-bottom: 10px!important;
+}
+
+.x-weather-medical #awtd1383134730488 DIV.aw-widget-36hour-inner DIV.aw-widget-content DIV.aw-36-hours LI.night .aw-bg H3 {
+    color: #3e6bb6 !important;
+}
+
+.x-weather-medical #awtd1383134730488 DIV.aw-widget-36hour-inner DIV.aw-widget-content DIV.aw-36-hours LI.night .aw-bg SPAN {
+    color: #000000 !important;
+}.x-gap-beautiful {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.x-gap-beautiful div {
+  max-width: 1280px;
+  width: 100%;
+  height: 1px;
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-gap-beautiful.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-gap-beautiful.hide-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(Roboto-Bold.ttf);
+}
+.x-questionnaire-medical-sp {
+  width: auto;
+  color: #3d3d3d;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  margin: 20px;
+}
+.x-questionnaire-medical-sp .text {
+  margin-bottom: 20px;
+}
+.x-questionnaire-medical-sp .text p {
+  font-size: 18px;
+  text-align: center;
+}
+.x-questionnaire-medical-sp .buttons {
+  display: flex;
+  justify-content: center;
+}
+.x-questionnaire-medical-sp .buttons a {
+  padding: 4px 12px;
+  margin: 0 5px;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.x-questionnaire-medical-sp .buttons a.red {
+  background: red;
+}
+.x-questionnaire-medical-sp .buttons a.green {
+  background: green;
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-p-medical-sp.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-p-medical-sp.hide-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(OpenSans-Bold.ttf);
+}
+.x-testimonial-medical-sp .testimonial-title.black {
+  color: black;
+}
+.x-testimonial-medical-sp .testimonial-title.red {
+  color: red;
+}
+.x-testimonial-medical-sp .testimonial-title.dark-red {
+  color: #820000;
+}
+.x-testimonial-medical-sp.border-green {
+  border-color: #008000;
+}
+.x-testimonial-medical-sp.border-blue {
+  border-color: #1c478b;
+}
+.x-testimonial-medical-sp.border-yellow {
+  border-color: #F7F9B6;
+}
+.x-testimonial-educationV2-sp {
+  width: auto;
+  border: none;
+  background-color: #eeeeee;
+  padding: 20px;
+  margin: 0px;
+  font-family: 'Open Sans';
+}
+.x-testimonial-educationV2-sp .img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.x-testimonial-educationV2-sp .title {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 22px;
+  color: #47a9d6;
+}
+.x-testimonial-educationV2-sp .text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #3d3d3d;
+  text-align: left;
+  margin: 20px 0;
+  padding: 0;
+}
+.x-testimonial-educationV2-sp .signature {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #3d3d3d;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.x-testimonial-educationV2-sp .stars {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .x-testimonial-educationV2-sp {
+    max-width: 100%;
+    width: auto;
+    margin: 10px;
+    border-radius: 2px;
+    border: none;
+    background-color: #fff;
+  }
+  .x-testimonial-educationV2-sp .title {
+    color: #0c0c0c;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+  }
+  .x-testimonial-educationV2-sp .text {
+    color: #0c0c0c;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin: 20px 0;
+  }
+  .x-testimonial-educationV2-sp .signature {
+    font-weight: 700;
+  }
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-testimonial-educationV2-sp.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-testimonial-educationV2-sp.hide-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(Roboto-Bold.ttf);
+}
+.x-h1-medical {
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4em;
+  text-align: left;
+  color: #000;
+  margin: 20px 0;
+  padding: 5px 20px;
+}
+.x-h1-medical.left {
+  text-align: left;
+}
+.x-h1-medical.right {
+  text-align: right;
+}
+.x-h1-medical.center {
+  text-align: center;
+}
+.x-h1-medical.justify {
+  text-align: justify;
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-h1-medical.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-h1-medical.hide-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(Roboto-Bold.ttf);
+}
+.x-p-medical {
+  font-family: 'Roboto';
+  color: #1e1e1e;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.4em;
+  text-align: left;
+  margin: 20px;
+}
+.x-p-medical.left {
+  text-align: left;
+}
+.x-p-medical.right {
+  text-align: right;
+}
+.x-p-medical.center {
+  text-align: center;
+}
+.x-p-medical.justify {
+  text-align: justify;
+}
+@media only screen and (max-width: 768px) {
+  .x-p-medical {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-p-medical.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-p-medical.hide-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(Roboto-Bold.ttf);
+}
+.x-comment-medical-sp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 20px 0;
+  border-bottom: 2px solid #dedede;
+  font-family: 'Roboto';
+  margin: 0 20px;
+}
+.x-comment-medical-sp .comment-img {
+  width: 41px;
+  height: 41px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.x-comment-medical-sp .comment-box {
+  width: 100%;
+}
+.x-comment-medical-sp .comment-box .comment-signature {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 900;
+  font-style: italic;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.x-comment-medical-sp .comment-box .comment-signature .comment-date {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: right;
+}
+.x-comment-medical-sp .comment-box .comment-signature .comment-text {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .x-comment-medical-sp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 375px;
+    width: 100%;
+  }
+  .x-comment-medical-sp .comment-img {
+    display: none;
+  }
+  .x-comment-medical-sp .comment-box .comment-text {
+    font-size: 18px;
+  }
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-comment-medical-sp.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-comment-medical-sp.hide-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(Roboto-Bold.ttf);
+}
+.x-CTA-medical-sp .cta {
+  font-family: 'Roboto', sans-serif;
+  color: #0006ff;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 35px;
+  text-decoration: underline;
+  margin: 0 20px;
+}
+.x-CTA-medical-sp .cta_mobile {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  background-color: #fff;
+  border-top: 2px solid #0006ff;
+  display: none;
+  z-index: 1;
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-CTA-medical-sp.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-CTA-medical-sp.hide-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(Roboto-Bold.ttf);
+}
+.x-bibliography-medical-sp {
+  font-family: 'Roboto';
+  color: #aaa;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0;
+  padding: 20px;
+}
+.x-bibliography-medical-sp .headline {
+  font-weight: 700;
+  margin: 0;
+}
+.x-bibliography-medical-sp .list {
+  margin: 10px 0 0;
+  padding: 0 0 0 20px;
+}
+@media only screen and (max-width: 768px) {
+  .x-bibliography-medical-sp {
+    color: #dddee3;
+  }
+  .x-bibliography-medical-sp .list {
+    display: none;
+  }
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .bibliography-medical-sp.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bibliography-medical-sp.hide-mobile {
+    display: none;
+  }
+}

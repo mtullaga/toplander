@@ -1,0 +1,728 @@
+<html>
+
+<head>
+	<base href="">
+	<base href="">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+  
+	<style>
+	html,
+	body,
+	div,
+	span,
+	applet,
+	object,
+	iframe,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	blockquote,
+	pre,
+	a,
+	abbr,
+	acronym,
+	address,
+	big,
+	cite,
+	code,
+	del,
+	dfn,
+	em,
+	font,
+	ins,
+	kbd,
+	q,
+	s,
+	samp,
+	small,
+	strike,
+	strong,
+	sub,
+	sup,
+	tt,
+	var,
+	dl,
+	dt,
+	dd,
+	ol,
+	ul,
+	li,
+	fieldset,
+	form,
+	label,
+	legend,
+	table,
+	caption,
+	tbody,
+	tfoot,
+	thead,
+	tr,
+	th,
+	td {
+		border: 0;
+		font-family: inherit;
+		font-size: 100%;
+		margin: 0;
+		outline: 0;
+		padding: 0;
+		vertical-align: baseline;
+	}
+	article,
+	aside,
+	details,
+	figcaption,
+	figure,
+	footer,
+	header,
+	main,
+	nav,
+	section {
+		display: block;
+	}
+	ol,
+	ul {
+		list-style: none;
+	}
+	em,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-style: inherit;
+		font-weight: inherit;
+	}
+	/** Float Clearing **/
+	
+	.clearfix:before,
+	.clearfix:after {
+		content: "";
+		display: table;
+	}
+	.clearfix:after {
+		clear: both;
+	}
+	.clearfix {
+		zoom: 1;
+		/* ie 6/7 */
+	}
+	.footer strong {
+		font-weight: bold;
+	}
+	</style>
+	<style>
+	.operator-group {
+		display: block;
+		position: relative;
+		overflow: hidden;
+		background: #fff;
+		border: 1px solid #666;
+		border-radius: 3px;
+		-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+		width: 220px;
+		margin: 10px auto;
+	}
+	.operator-group:before,
+	.operator-group:after {
+		content: '';
+		position: absolute;
+		z-index: 2;
+		top: 9px;
+		right: 10px;
+		width: 0;
+		height: 0;
+		border: 4px dashed;
+		border-color: #888 transparent;
+		pointer-events: none;
+	}
+	.operator-group:before {
+		border-bottom-style: solid;
+		border-top: none;
+	}
+	.operator-group:after {
+		margin-top: 7px;
+		border-top-style: solid;
+		border-bottom: none;
+	}
+	.operator-selection {
+		position: relative;
+		width: 130%;
+		margin: 0;
+		height: 30px;
+		padding: 5px 10px;
+		font-size: 15px;
+		color: #333;
+		background: #f2f2f2;
+		background: rgba(0, 0, 0, 0) !important;
+		border: 0;
+		border-radius: 0;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+	.operator-selection:focus {
+		z-index: 3;
+		width: 100%;
+		color: #394349;
+		outline: 2px solid #ccc;
+		outline-offset: -2px;
+	}
+	.operator-selection > option {
+		margin: 3px;
+		padding: 6px 8px;
+		text-shadow: none;
+		background: #f2f2f2;
+		border-radius: 3px;
+		-webkit-border-radius: 3px;
+		cursor: pointer;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		-o-appearance: none;
+		appearance: none;
+	}
+	/*
+*/
+	/* ----------------- IE 8 customized css for height:auto --------------------*/
+	
+	@media \0screen {
+		.imgIE8 {
+			width: auto;
+			/* for ie 8 */
+		}
+	}
+	/* ----------------- IMG 100% ------------------*/
+	
+	.img100pct {
+		width: 100%;
+	}
+	/* ----------------- OC2SMS Button remove underline ------------------*/
+	
+	a {
+		text-decoration: none;
+	}
+	/*#KW_OOREDOO{
+		background: url("/resource/shared/marketing_assets/operators/KW/ooredoo.png") #fff center center no-repeat;
+		width:80%;
+		min-width: 120px;
+		max-width: 125px;
+		height:85px;
+		border:none;
+		margin:10px 3px;
+		outline: none;
+		cursor: pointer;color:transparent;
+		color:rgba(255,255,255,0);
+		text-shadow: none;
+		border-radius: 7px;
+		display: inline-block;
+		box-shadow: 0px 2px 2px rgba(0,0,0,0.75);
+		animation:none;
+		-webkit-animation:none;
+	}
+	
+	#KW_VIVA{
+		background: url("/resource/shared/marketing_assets/operators/KW/viva.jpg") #fff center center no-repeat;
+		width:80%;
+		min-width: 120px;
+		max-width: 125px;
+		height:85px;
+		border:none;
+		margin:10px 3px;
+		outline: none;
+		cursor: pointer;color:transparent;
+		color:rgba(255,255,255,0);
+		text-shadow: none;
+		border-radius: 7px;
+		display: inline-block;
+		box-shadow: 0px 2px 2px rgba(0,0,0,0.75);
+		animation:none;
+		-webkit-animation:none;
+	}
+	
+	
+	
+	@media screen and (max-width: 320px){
+	#KW_OOREDOO,#KW_VIVA{min-width: 90px;}
+		
+	}*/
+	</style>
+	<style>
+	#confirmation-legal-wrapper,
+	#confirmation-incentivized-wrapper,
+	.confirmation-op_confirm-wrapper {
+		position: fixed !important;
+		z-index: 1000;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		background: rgba(0, 0, 0, 0.6);
+		top: 0;
+	}
+	.bupper-popup-block {
+		display: table;
+		width: 50%;
+		max-width: 460px;
+		margin: 18% auto;
+		left: 0;
+		right: 0;
+		min-height: 100px;
+		background-color: #eee;
+		border-radius: 10px;
+		border: 10px rgba(255, 255, 255, 1) solid;
+		padding: 20px;
+		position: absolute;
+		color: rgba(0, 0, 0, 1);
+	}
+	.accept-confirmation,
+	.decline-confirmation {
+		border-radius: 5px;
+		border: none;
+		background-color: rgba(0, 153, 204, 1);
+		color: rgba(255, 255, 255, 1);
+		padding: 5px;
+		margin: 3px;
+	}
+	.accept-confirmation:hover,
+	.decline-confirmation:hover {
+		border-radius: 5px;
+		border: none;
+		background-color: rgba(0, 128, 192, 1);
+		color: rgba(255, 255, 255, 1);
+		padding: 5px;
+	}
+	.msisdn-input,
+	.msisdn-input:focus {
+		text-align: center;
+	}
+	.transbtn {
+		color: inherit;
+		text-decoration: none;
+	}
+	@media screen and (max-width: 780px) {
+		.bupper-popup-block {
+			margin: 33% auto;
+			min-height: 100px;
+			left: 20%;
+			right: 20%;
+			position: absolute;
+			top: 25%;
+			background-color: #eee;
+			border-radius: 10px;
+			/*padding:20px;*/
+		}
+	}
+	@media screen and (max-width: 480px) {
+		.bupper-popup-block {
+			width: 70%;
+			margin: 40% auto;
+			min-height: 100px;
+			left: 5%;
+			right: 5%;
+			position: absolute;
+			top: 10%;
+			background-color: #eee;
+			border-radius: 10px;
+			/*padding:20px;*/
+		}
+	}
+	</style>
+ 
+	<style>
+	/* ---------------------------- top hooks and bottom hooks layout styling ------------------------------ */
+	
+	.footer,
+	.toplegal,
+	.hook-topLeft,
+	.hook-topCenter,
+	.hook-topRight,
+	.hook-bottomLeft,
+	.hook-bottomCenter,
+	.hook-bottomRight,
+	.hook-beforeSubmit,
+	.hook-afterSubmit,
+	.hook-beforeInput,
+	.hook-afterInput,
+	.component-msg {
+		font-size: 11px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: normal;
+	}
+	.footer a {
+		color: inherit;
+	}
+	.footer,
+	.toplegal {
+		text-align: justify;
+		display: table;
+		width: 100%;
+	}
+	.toplegal p {
+		margin: 0;
+	}
+	.popup-bottom,
+	.popup-top {
+		display: table-row;
+	}
+	.hook-confirmationBodyStart,
+	hook-confirmationBodyEnd {
+		padding: 5px;
+		text-align: center;
+	}
+	.hook-confirmationBodyStart {
+		margin-top: 10px;
+	}
+	.hook-confirmationBodyEnd {
+		margin-bottom: 10px;
+	}
+	.hook-topLeft,
+	.hook-topCenter,
+	.hook-topRight {
+		margin: 0;
+		top: 0;
+	}
+	.hook-confirmationTopLeft,
+	.hook-confirmationTopCenter,
+	.hook-confirmationTopRight {
+		margin: 0;
+	}
+	.hook-topLeft,
+	.hook-bottomLeft,
+	.hook-confirmationTopLeft,
+	.hook-confirmationBottomLeft {
+		text-align: left;
+	}
+	.hook-topCenter,
+	.hook-bottomCenter {
+		text-align: justify;
+	}
+	.hook-topRight,
+	.hook-bottomRight,
+	.hook-confirmationTopRight,
+	.hook-confirmationBottomRight {
+		text-align: right;
+	}
+	.hook-confirmationTopCenter,
+	.hook-confirmationBottomCenter {
+		text-align: center;
+	}
+	.hook-bottomLeft,
+	.hook-bottomCenter,
+	.hook-bottomRight,
+	.hook-topLeft,
+	.hook-topCenter,
+	.hook-topRight {
+		display: table-cell;
+		padding: 5px;
+		vertical-align: top;
+	}
+	.hook-confirmationTopLeft,
+	.hook-confirmationTopCenter,
+	.hook-confirmationTopRight,
+	.hook-confirmationBottomLeft,
+	.hook-confirmationBottomCenter,
+	.hook-confirmationBottomRight {
+		display: table-cell;
+		padding: 5px;
+	}
+	/* ---------------------------- end top hooks and bottom hooks layout styling ------------------------------ */
+	</style>
+	<style>
+	html,
+	body {
+		color: #222;
+		background: #D5EFFC;
+		font-size: 12px;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+	.container {
+		margin: 0 auto;
+		display: block;
+		max-width: 1020px;
+		text-align: center;
+		background-position: top center;
+		color: inherit;
+		text-decoration: none;
+	}
+	.creative {
+		height: 272px;
+		display: block;
+		margin: 0px auto;
+		position: relative;
+	}
+	.title {
+		color: #3499f7;
+		font-size: 30px;
+		display: block;
+		font-weight: bold;
+		line-height: 1.2;
+		margin: 10px auto;
+		text-transform: uppercase;
+		font-family: 'Montserrat', sans-serif;
+	}
+	.hero {
+		width: 32%;
+		max-width: 120px;
+		margin: 6px auto;
+	}
+	.contentWrap {
+		/* font-size: 30px; */
+		
+		margin: 0 auto;
+		padding: 17px;
+		margin-top: -30px;
+	}
+	.tq {
+		color: #3499f7;
+		font-size: 20px;
+		display: block;
+		font-weight: bold;
+		line-height: 1.2;
+		margin: 10px auto;
+		text-transform: uppercase;
+	}
+	.text {
+		padding: 10px;
+		font-size: 12px;
+	}
+	.holder {
+		display: block;
+	}
+	hr {
+		border: none;
+		border-bottom: 1px solid #fff;
+	}
+	.terms {
+		display: block;
+		margin: 20px 0;
+	}
+	#button-goto-product-url,
+	.btn,
+	button {
+		outline: 0;
+		border: none;
+		width: 280px;
+		color: #fff;
+		display: block;
+		cursor: pointer;
+		margin: 15px auto;
+		padding: 15px 10px;
+		border: 1px solid #009688;
+		display: inline-block;
+		cursor: pointer;
+		font-family: Arial;
+		font-size: 18px;
+		font-weight: bold;
+		text-decoration: none;
+		text-shadow: 0px 1px 0px #009688;
+		-moz-box-shadow: inset 0px 1px 0px 0px #f29c93;
+		-webkit-box-shadow: inset 0px 1px 0px 0px #f29c93;
+		box-shadow: inset 0px 1px 0px 0px #8BC34A;
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #8BC34A), color-stop(1, #4CAF50));
+		background: -moz-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+		background: -webkit-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+		background: -o-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+		background: -ms-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+		background: linear-gradient(to bottom, #8BC34A 5%, #4CAF50 100%);
+		filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100', GradientType=0);
+		background-color: #4CAF50;
+		margin-top: 25px !important;
+	}
+	#button-goto-product-url:hover,
+	.btn:hover,
+	button:hover {
+		background-color:
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bfd255+0,8eb92a+50,72aa00+51,9ecb2d+100;Green+Gloss */
+		
+		background: #bfd255;
+		/* Old browsers */
+		
+		background: -moz-linear-gradient(top, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%);
+		/* FF3.6-15 */
+		
+		background: -webkit-linear-gradient(top, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%);
+		/* Chrome10-25,Safari5.1-6 */
+		
+		background: linear-gradient(to bottom, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%);
+		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		
+		filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d', GradientType=0);
+		/* IE6-9 */
+	}
+	.priceInfoText {
+		font-size: 16px;
+		color: rgba(255, 255, 255, 0.75);
+	}
+	.terms {
+		color: #fff;
+		font-size: 14px;
+	}
+	#numberEntry h3,
+	.holder h3 {
+		color: #fff !important;
+		padding: 10px;
+		background-color: #673AB7;
+	}
+	.disclaimer {
+		display: block;
+		text-align: center;
+	}
+	.disclaimer a {
+		color: #fff;
+		font-size: 14px;
+		margin: 20px 0;
+		text-decoration: underline;
+		display: inline-block;
+	}
+	.disclaimer .hook-block.hook-bottomCenter {
+		display: inline-block !important;
+	}
+	.free {
+		color: #fff;
+		width: 18ch;
+		font-size: 12px;
+		padding: 5px 10px;
+		font-weight: bold;
+		border-radius: 5px 5px 0 0;
+		display: inline-block;
+		margin: 5px auto -6px;
+		background-color: #97d;
+	}
+	#error-msg {
+		background-color: #ef3624;
+		color: #fff;
+		border-radius: 8px;
+		padding: 10px;
+		margin: 10px;
+		font-size: 12px;
+	}
+	#error-msg a {
+		color: inherit;
+	}
+	ul.legals {
+		padding: 10px;
+	}
+	ul.legals li {
+		margin: 0;
+		padding: 5px;
+		color: #7fa8ce;
+		font-size: 12px;
+		list-style: none;
+		display: block;
+		text-align: center;
+	}
+	ul.legals li a {
+		color: #7fa8ce;
+	}
+	.service_logo {
+		width: 100px;
+		height: 20px;
+		margin: 10px 0;
+		display: inline-block;
+		background-size: 100% auto;
+		background-image: url("images/logo_appspool.png");
+	}
+	.link,
+	.smallBtn {
+		box-shadow: inset 0px 1px 0px 0px #ffffff;
+		background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+		background-color: #ededed;
+		border-radius: 6px;
+		border: 1px solid #dcdcdc;
+		display: inline-block;
+		cursor: pointer;
+		color: #777777;
+		font-family: Arial;
+		font-size: 15px;
+		font-weight: bold;
+		padding: 6px 24px;
+		text-decoration: none;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		text-shadow: 0px 1px 0px #ffffff;
+	}
+	.link:hover,
+	.smallBtn:hover {
+		background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+		background-color: #dfdfdf;
+	}
+	.link:active,
+	.smallBtn:active {
+		position: relative;
+		top: 1px;
+	}
+	</style>
+	<script type="text/javascript">
+	document.createElement("header");
+	document.createElement("footer");
+	document.createElement("section");
+	document.createElement("aside");
+	document.createElement("main");
+	document.createElement("nav");
+	</script>
+	<title>Download Manager</title>
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="images/favicon.png">
+	 
+</head>
+
+<body>
+	 
+	 <form id="mainForm" action="#">
+		<input type="hidden" name="country" value="za">
+		<input type="hidden" name="handle" value="appspool-download">
+		<input type="hidden" name="offer" value="877">
+		<input type="hidden" name="device" value="smart">
+		<input type="hidden" name="tracker" value="5os4in6tef03sz1i0xugc0gs8,15202216,5,3213">
+		<input type="hidden" name="pub_id" value="3213">
+		<input type="hidden" name="operator" value="ZA_VODACOM">
+		<input type="hidden" name="network_type" value="mobile_data">
+		<input type="hidden" name="msisdn" value="6c9c5944567b3bd5f6f13154205b40642a5ef6ac63903940426d6ff61687718b5d446e23ad3371597583c1b0259febf3152dca203aa033566fc43b795514f5b8f651fcd5c0c09b374b51da482dae7d23d2e01ffb5fcad82254b46eecc4bc06a8e43631bfe303319c6b0a2966673ba4838f8b7ec3621edd74b09376de598697367b295095ee79c3ec5aa53bef0775d9b0327c7db5385eaa97f8c475e759d4031075164b465d84287871701880b30c9db621d1516d554fb28f243f6037d9b967608e90f5724c5c2b9b73a567130018e6854003c78d027c63e1b0a54748f0c6bec153444dc3b15058458c08a51652794ce905953ac1329bf9394317dc2c7760cd53">
+		<input type="hidden" name="msisdnSubmitted" value="Y">
+		<input type="hidden" name="headerMsisdn" value="6c9c5944567b3bd5f6f13154205b40642a5ef6ac63903940426d6ff61687718b5d446e23ad3371597583c1b0259febf3152dca203aa033566fc43b795514f5b8f651fcd5c0c09b374b51da482dae7d23d2e01ffb5fcad82254b46eecc4bc06a8e43631bfe303319c6b0a2966673ba4838f8b7ec3621edd74b09376de598697367b295095ee79c3ec5aa53bef0775d9b0327c7db5385eaa97f8c475e759d4031075164b465d84287871701880b30c9db621d1516d554fb28f243f6037d9b967608e90f5724c5c2b9b73a567130018e6854003c78d027c63e1b0a54748f0c6bec153444dc3b15058458c08a51652794ce905953ac1329bf9394317dc2c7760cd53">
+		<input type="hidden" name="ms" value="1">
+		<input type="hidden" name="operatorSubmitted" value="Y">
+		<input type="hidden" name="identified" value="1">
+		<input type="hidden" name="dcbptid" value="349b4602fed84128bc167a33a88bba3f:84522585">
+		<input type="hidden" name="_extracted" value="349b4602fed84128bc167a33a88bba3f">
+		<input type="hidden" id="gaclientid" name="gaclientid" value="">
+		<div class="toplegal"> </div>
+		<div class="container">
+			<div class="creative">
+				<h1 class="title">Last step to<br>
+			           download your content</h1> <img class="hero" src="images/hero.gif" alt="download game"> </div>
+			<div class="holder">
+				<div class="contentWrap">
+					<!--     <div class="title">Score the most runs &amp;  win!</div>
+ --></div>
+				<!--<span class="free">FIRST DAY FREE!</span>--><a id="pre-button" href="#" class="preflowbtn btn">DOWNLOAD NOW!</a> </div> <a href="#" class="smallBtn" id="move_btn" style="display: none;">Already Subscribed?</a>
+			<div class="disclaimer">
+				<ul class="legals">
+					<li>Subscription only R7/day. First day FREE!</li>
+					<!-- <li><div class="service_logo"></div></li> -->
+					<li>
+						<div style="text-align: center;"><a href="#" target="_blank">T&amp;Cs</a>
+						</div>
+					</li>
+				</ul>
+				<div style="display: none">
+					<div class="hook-block hook-bottomCenter">
+						<div class="component-msg" id="component-msg-DISCLAIMER"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+
+</html>

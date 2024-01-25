@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+/*---------------------------------------- UNIVERSAL STYLES ----------------------------------------*/
+
+button {
+    background-color: #0085ca;
+}
+button:active,
+button:focus,
+button:hover {
+    background-color: #004b87;
+}
+
+.textBlue {
+    color: #0085ca;
+}
+
+.textOrange {
+    color: #ff8200;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+h4 {
+    line-height: 1.5em;
+}
+
+.divBar {
+    background-color: #0085ca;
+    height: 3px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+}
+
+/*---------------------------------------- HEADER ----------------------------------------*/
+
+.headerLogo {
+    background-size: 200px 54px;
+    height: 54px;
+    width: 200px;
+}
+
+.headerRating {
+    background-image: url(../images/badge_rating_bbb.png);
+    background-size: 289px 80px;
+    height: 80px;
+    margin-top: 10px;
+    right: 20px;
+    width: 289px;
+}
+
+header.headerHome {
+    height: 65px;
+}
+
+header.headerHome .headerLogo {
+    background-size: 150px 40px;
+    height: 40px;
+    top: 10px;
+    width: 150px;
+}
+
+.contentContainer #headerPublication {
+    background-color: #0085ca;
+}
+
+/*----- Extra Small -----*/
+@media(max-width: 767px){
+
+    .headerLogo {
+        background-size: 100px 27px;
+        height: 27px;
+        width: 100px;
+    }
+
+    .headerRating {
+        background-size: 163px 45px;
+        height: 45px;
+        margin-top: 17px;
+        right: 0;
+        width: 163px;
+    }
+
+}
+
+/*---------------------------------------- BILLBOARD ----------------------------------------*/
+
+.billboard {
+    background-color: #ddd;
+    background-position: center;
+    background-size: cover;
+    padding: 0 0 20px;
+}
+
+.billboard .divBar {
+    background-color: #fff;
+    margin-left: 0;
+}
+
+.billboard h2,
+.billboard h4,
+.billboard li {
+    color: #fff;
+}
+
+.billboard li {
+    font-weight: 700;
+}
+
+/*----- Extra Small -----*/
+@media(max-width: 767px){
+
+    .billboard {
+        background-image: url(../images/bgBillboard.jpg);
+    }
+
+    .sectionBillboard {
+        padding: 20px;
+    }
+
+}
+
+/*----- Small -----*/
+@media(min-width: 768px) and (max-width: 991px) {
+
+    .sectionBillboard {
+        padding: 20px;
+    }
+
+}
+/*---------------------------------------- TESTIMONIALS ----------------------------------------*/
+
+.testimonials {
+    background-color: #0085ca;
+}
+
+.testimonials h1 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.testimonials .divBar {
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+/*---------------------------------------- FOOTER ----------------------------------------*/
+
+footer a {
+    color: #004b87;
+    font-size: 14px;
+}
+footer a:active,
+footer a:focus,
+footer a:hover {
+    color: #0085ca;
+}
+
+.contactModal h4 {
+    color: #0085ca;
+}
+
+/*---------------------------------------- CHECKOUT NOW ----------------------------------------*/
+
+.formContainer .orderWarranty {
+    border: 1px solid #0085ca;
+}
+
+.formContainer .orderWarranty .warrantyOption {
+    background-color: #0085ca;
+}
+
+/*---------------------------------------- ARTICLE CONTENT ----------------------------------------*/
+
+#headerPublication {
+    background-color: #8bc741;
+}
+
+/*---------------------------------------- PRODUCT INFO ----------------------------------------*/
+
+.productInfoFeatures {
+    background-color: #efefef;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin: 30px 0;
+}
+
+.productInfo2 {
+    background-color: #efefef;
+}
+
+/*---------------------------------------- UPSELL ----------------------------------------*/
+
+.noThanks a {
+    font-size: 13px;
+}
+
+.upsellInfo {
+    background-color: #efefef;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 30px 0;
+    padding: 20px;
+}
+
+.upsellLogo {
+    margin-bottom: 15px;
+}
+
+.upsellPhoto {
+    border: 5px solid #fff;
+}
+
+.upsell select {
+    font-size: 19px;
+    margin: 0 auto;
+    max-width: 300px;
+    outline: none;
+    padding: 4px 0px 4px 4px;
+    width: 100%;
+    -webkit-appearance: menulist;
+}
+
+.upsell .priceText {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+/*----- Extra Small -----*/
+@media(max-width: 767px){
+
+    .upsellInfo {
+        font-size: 16px;
+        line-height: 1.25em;
+        margin: 20px 0;
+    }
+
+}
+
+/*---------------------------------------- THANK YOU ----------------------------------------*/
+
+.sectionThankYou h4 {
+    color: #0085ca;
+}
+
+/*---------------------------------------- FORMS ----------------------------------------*/
+
+.orderWarranty {
+    border: 1px solid #8bc741;
+}
+
+.warrantyOption {
+    background-color: #8bc741;
+}
+
+/*-------------------------------------RECENT ORDERS SLIDE UP----------------------------*/
+
+
+#recentBox{
+    width: 260px;
+    padding: 15px;
+    height: auto;
+    position: fixed;
+    z-index: 500;
+    left: 15px;
+    bottom: -115px;
+    background: #fff;
+    display: none;
+    box-shadow: 0px 0px 5px #000;
+}
+
+#recentImg{
+    width: 80px;
+    height: auto;
+    float: left;
+}
+
+#recentText{
+    width: calc(100% - 95px);
+    height: auto;
+    float: left;
+    font-size: 12px;
+    font-family: 'Open Sans';
+    margin-left: 15px;
+}

@@ -1,0 +1,21 @@
+
+body {
+  background-color: #FFF;
+  color: #222;
+}
+
+.navbar a:link {
+    color: #222 !important;
+}
+
+.navbar a:visited {
+    color: #222 !important;
+}
+
+.navbar a:hover {
+    color: #222 !important;
+}
+
+.navbar a:active {
+    color: #222 !important;
+}

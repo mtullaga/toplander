@@ -1,0 +1,70 @@
+/* ::::: http://blogoplus.com/bs/bg/strizhenko/style.css ::::: */
+
+* { margin: 0px; padding: 0px; }
+body { background: rgb(255, 255, 255) url('../images/background.png') repeat scroll 0% 0%; font-family: "Tahoma","Verdana","Arial",sans-serif; font-size: 14px; line-height: 23px; width: 100%; }
+a { color: rgb(10, 120, 194); outline: medium none; text-decoration: underline; }
+a:hover { text-decoration: none; }
+p { margin: 0px 0px 11px; }
+strong, b { font-weight: bolder; }
+img { border: medium none; }
+h1 { margin: 10px 0px; font-size: 21px; }
+h2 { margin: 10px 0px; font-size: 22px; }
+h3 { margin: 2px 0px 10px; font-size: 20px; font-weight: normal; }
+img { max-width: 100%; }
+.container { max-width: 960px; margin: 0px auto; }
+.header { max-width: 960px; margin: 0px auto 20px; background: transparent url('../images/header.png') no-repeat scroll 0% 0%; height: 131px; }
+.header { max-width: 960px; margin: 0px auto 20px; background: transparent url('../images/header.png') no-repeat scroll 0% 0%; height: 131px; box-shadow: 0px 1px 2px rgb(129, 129, 129); text-transform: uppercase; color: rgb(255, 255, 255); position: relative; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; }
+.header h1 { position: absolute; top: 45px; left: 45px; }
+.header div { position: absolute; font-weight: bold; top: 25px; }
+.header .h-comment { right: 255px; }
+.header .h-popular { right: 152px; }
+.header .h-likes { right: 38px; }
+.header .header-blog {position: absolute; left: 45px; font-weight: bold; top: -25px;}
+.left-column { float: left; width: 62%; background: white none repeat scroll 0% 0%; box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3); margin-right: 12px; padding: 30px; margin-bottom: 10px; }
+.sidebar { float: right; width: 28%; font-size: 12px; box-sizing: border-box; }
+.sidebar-last-posts { background: white none repeat scroll 0% 0%; box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3); padding: 10px; margin-bottom: 20px; }
+.sidebar-last-post { margin-bottom: 0px; }
+.sidebar-last-post a { color: rgb(72, 155, 31); }
+.sidebar-last-post-info { font-size: 11px; margin-bottom: 15px; }
+.sidebar-last-post-info-login { color: rgb(187, 34, 92); margin-right: 5px; }
+.sidebar-last-post-info-date { margin-right: 5px; color: rgb(119, 119, 119); }
+.sidebar-last-post-info-comments { color: rgb(119, 119, 119); text-decoration: underline; }
+.sidebar-bloggers { text-align: center; background: white none repeat scroll 0% 0%; box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3); padding: 10px; margin-bottom: 20px; }
+.sidebar-bloggers h3 { text-align: left; }
+.sidebar-bloggers-avatar { display: inline-block; }
+.sidebar-bloggers img { margin: 5px; }
+.footer { clear: both; margin-left: 220px; margin-bottom: 20px; font-size: 12px; color: rgb(119, 119, 119); }
+.photo { width: 100%; height: auto; }
+.vk-container { font-family: tahoma,arial,verdana,sans-serif,Lucida Sans; font-size: 11px; line-height: 17px; color: black; text-decoration: none; }
+.vk-link { text-decoration: none ! important; cursor: default ! important; }
+.vk-header { background: rgb(218, 226, 232) none repeat scroll 0% 0%; padding: 4px 4px 4px 6px; margin-bottom: 10px; }
+.vk-logo { background: transparent url('../images/vk-logo.gif') no-repeat scroll 0% 0%; width: 16px; height: 16px; float: right; margin-top: -1px; }
+.vk-header-text { padding: 2px 3px 1px; line-height: 100%; color: rgb(69, 104, 142); font-weight: bold; }
+.vk-avatar img { float: left; margin-right: 10px; }
+.vk-comment, .vk-comment-load { margin-bottom: 15px; position: relative; border-bottom: 1px solid rgb(218, 225, 232); padding-bottom: 15px; }
+.vk-comment:last-child { border-bottom: 0px none; }
+.vk-comment-name { color: rgb(43, 88, 122); font-weight: bold; font-size: 12px; }
+.vk-comment-text { margin-left: 60px; }
+.vk-comment-date { margin-left: 60px; color: rgb(153, 153, 153); }
+.vk-comment-like { position: absolute; right: -5px; bottom: 10px; background: transparent url('../images/like.png') no-repeat scroll left center; width: 30px; height: 16px; display: inline-block; }
+.vk-comment-like:hover { opacity: 0.5; cursor: pointer; }
+.vk-comment-like-count { padding-left: 14px; font-weight: bold; color: rgb(114, 149, 178); font-size: 10px; }
+.vk-comment-answer { color: rgb(43, 88, 122); }
+.vk-comment-answer:hover { opacity: 0.5; cursor: pointer; }
+.order_button { text-transform: uppercase; text-decoration: none; line-height: 1; display: inline-block; padding: 15px 25px; font-size: 15px; font-weight: 700; color: rgb(255, 255, 255); background: rgba(0, 0, 0, 0) linear-gradient(35deg, rgb(9, 150, 232) 30%, rgb(28, 204, 255) 70%, rgb(27, 165, 214)) repeat scroll 0% 0%; text-shadow: 0px -1px 1px rgb(9, 163, 250), 0px 1px 1px rgb(9, 144, 223); box-shadow: 0px 0px 38px rgba(0, 0, 0, 0.15) inset; border: 1px solid rgb(28, 204, 255); }
+.order_button:hover { text-decoration: none; color: rgb(255, 255, 255); transform: scale(1.1); }
+.round-5 { border-radius: 5px; }
+.text-center { text-align: center; }
+.transition { transition: all 0.5s ease 0s; }
+@media all and (max-width: 760px) {
+  .left-column { width: 100%; box-sizing: border-box; }
+  .sidebar { display: none; }
+  .header { background: transparent url('../images/header-mini.jpg') repeat scroll right center; }
+  .footer { margin: 20px 0px 10px; text-align: center; }
+  .left-column > img { width: 60% !important; float: none !important; margin: 10px auto !important; display: block; }
+  .left-column > img.goriz, .vk-comment-text img { width: 100% !important; }
+  .order_button { font-size: 13px;}
+   .header div { display: none; }
+    .header h1 { position: relative; top: 26px; margin: auto; display: block; width: 200px; left: 0px; text-align: center; }
+    .header-blog{ display: none; }
+}

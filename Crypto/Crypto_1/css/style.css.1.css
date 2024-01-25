@@ -1,0 +1,14 @@
+.typography .title{
+    color: #333;
+    font-weight: 700;
+}
+
+.typography .graph{
+    width: 100%;
+}
+
+.typography .img-desc{
+    font-size: 14px;
+    margin-top: .5em;
+    margin-bottom: 3em;
+}

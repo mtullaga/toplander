@@ -1,0 +1,10 @@
+
+iframe.playble_banner__iframe{
+    height: 350px;
+    width: 100%;
+}
+@media screen and (max-width:640px){
+    iframe.playble_banner__iframe{
+        height: 250px;
+    }
+}

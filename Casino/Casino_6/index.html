@@ -1,0 +1,692 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="https://cdn.dolly.media/501ce04dfb42371fc86ef4fd9afd1b54/favicon.png" />
+	<title>Star News</title>
+	<!--  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700,900" rel="stylesheet">-->
+	<link rel="stylesheet" href="css/VS96WQQIY23F.css">
+	<link rel="stylesheet" href="css/C8MQPVPFQHRN.css">
+	<script type="text/javascript">
+	function date_en(e) {
+		var a = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"),
+			t = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"),
+			r = new Date;
+		r.setDate(r.getDate() + e), document.write(a[r.getDay()] + ", " + t[r.getMonth()] + " " + r.getDate() + ", " + r.getFullYear())
+	}
+
+	function date_it(e) {
+		var a = new Array("Domenica", "Lunedi", "Martedì", "Mercoledì", "Giovedi", "Venerdì", "Sabato"),
+			t = new Array("Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"),
+			r = new Date;
+		r.setDate(r.getDate() + e), document.write(a[r.getDay()] + "." + r.getDate() + " " + t[r.getMonth()] + " " + r.getFullYear())
+	}
+
+	function date_de(e) {
+		var a = new Array("Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"),
+			t = new Array("Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"),
+			r = new Date;
+		r.setDate(r.getDate() + e), document.write(a[r.getDay()] + " " + r.getDate() + ". " + t[r.getMonth()] + " " + r.getFullYear())
+	}
+
+	function date_de_v1(e) {
+		var a = new Array("Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"),
+			t = new Array("Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"),
+			r = new Date;
+		r.setDate(r.getDate() + e), document.write(a[r.getDay()] + ", dem " + r.getDate() + ". " + t[r.getMonth()] + " " + r.getFullYear())
+	}
+
+	function date_no(e) {
+		var a = new Array("Søndag", "Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag"),
+			t = new Array("Januar", "Februar", "Mars", "April", "Kan", "Juni", "Juli", "August", "September", "Oktober", "November", "Desember"),
+			r = new Date;
+		r.setDate(r.getDate() + e), document.write(a[r.getDay()] + ". " + r.getDate() + " " + t[r.getMonth()] + " " + r.getFullYear())
+	}
+
+	function date_se(e) {
+		var a = new Array("Söndag", "Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag"),
+			t = new Array("Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli", "Augusti", "September", "Oktober", "November", "December"),
+			r = new Date;
+		r.setDate(r.getDate() + e), document.write(a[r.getDay()] + ", " + r.getDate() + " " + t[r.getMonth()] + " " + r.getFullYear())
+	}
+
+	function date_fi(e) {
+		var a = new Array("Sunnuntai", "Maanantai", "Tiistai", "Keskiviikko", "Torstai", "Perjantai", "Lauantai"),
+			t = new Array("Tammikuu", "Helmikuu", "Maaliskuu", "Huhtikuu", "Saattaa", "Kesäkuu", "Heinäkuu", "Elokuu", "Syyskuu", "Lokakuu", "Marraskuu", "Joulukuu"),
+			r = new Date;
+		r.setDate(r.getDate() + e), document.write(a[r.getDay()] + ", " + r.getDate() + ". " + t[r.getMonth()] + " " + r.getFullYear())
+	}
+
+	function date_da(e, a = "0") {
+		var t = new Array("Søndag", "Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag"),
+			r = new Array("Januar", "Februar", "Marts", "April", "Maj", "Juni", "Juli", "August", "September", "Oktober", "November", "December"),
+			n = new Date;
+		n.setDate(n.getDate() + e), "1" == a ? document.write(n.getDate() + ". " + r[n.getMonth()] + " " + n.getFullYear()) : document.write(t[n.getDay()] + ", " + n.getDate() + ". " + r[n.getMonth()] + " " + n.getFullYear())
+	}
+
+	function date_ar(e) {
+		var a = new Array("كانون الثاني", " فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", " اكتوبر", " نوفمبر", "ديسمبر"),
+			t = new Date;
+		t.setDate(t.getDate() + e), document.write(t.getDate() + "  " + a[t.getMonth()] + " " + t.getFullYear())
+	}
+
+	function date_nl(e) {
+		var a = new Array("zondag", "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag"),
+			t = new Array("Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"),
+			r = new Date;
+		r.setDate(r.getDate() + e), document.write(a[r.getDay()] + ", " + r.getDate() + " " + t[r.getMonth()] + " " + r.getFullYear())
+	}
+
+	function date_pl(e) {
+		var a = new Array("Niedziela", "Poniedziałek", "Wtorek", "Sroda", "Czwartek", "Piątek", "Sobota"),
+			t = new Array("Stycznia", "Lutego", "Marca", "Kwietnia", "Maja", "Czerwca", "Lipca", "Sierpnia", "Września", "Października", "Listopada", "Grudnia"),
+			r = new Date;
+		r.setDate(r.getDate() + e), document.write(a[r.getDay()] + ". " + r.getDate() + " " + t[r.getMonth()] + ", " + r.getFullYear())
+	}
+
+	function date_br(e, a = "0") {
+		var t = new Array("Domingo", "Segunda-feira", "terça", "Quarta-feira", "Quinta-feira", "Sexta-feira", "sábado"),
+			r = new Array("Janeiro", "Fevereiro", "Marcha", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"),
+			n = new Date;
+		n.setDate(n.getDate() + e), "1" == a ? document.write(n.getDate() + " de " + r[n.getMonth()] + " de " + n.getFullYear()) : document.write(t[n.getDay()] + ", " + n.getDate() + " de " + r[n.getMonth()] + " de " + n.getFullYear())
+	}
+
+	function date_es(e, a = "0") {
+		var t = new Array("domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"),
+			r = new Array("enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "ggosto", "septiembre", "octubre", "noviembre", "diciembre"),
+			n = new Date;
+		n.setDate(n.getDate() + e), "1" == a ? document.write(n.getDate() + " de " + r[n.getMonth()] + " de " + n.getFullYear()) : document.write(t[n.getDay()] + ", " + n.getDate() + " de " + r[n.getMonth()] + " de " + n.getFullYear())
+	}
+
+	function date_cz(e) {
+		var a = new Array("Neděle", "pondělí", "úterý", "středa", "Čtvrtek", "pátek", "sobota"),
+			t = new Array("ledna", "února", "března", "dubna", "května", "června", "července", "srpna", "září", "října", "listopadu", "prosince"),
+			r = new Date;
+		r.setDate(r.getDate() + e), document.write(a[r.getDay()] + ", " + r.getDate() + ". " + t[r.getMonth()] + " " + r.getFullYear())
+	}
+
+	function date_ice(e) {
+		var a = new Array("Sunnudagur", "Mánudagur", "Þriðjudagur", "Miðvikudagur", "Fimmtudagur", "Föstudagur", "Laugardagur"),
+			t = new Array("Janúar", "Febrúar", "Mars", "Apríl", "Maí", "Júní", "Júlí", "Ágúst", "September", "Október", "Nóvember", "Desember"),
+			r = new Date;
+		r.setDate(r.getDate() + e), document.write(a[r.getDay()] + ", " + r.getDate() + " " + t[r.getMonth()] + ", " + r.getFullYear())
+	}
+
+	function date_lt(e) {
+		var a = new Array("sekmadienis", "pirmadienis", "antradienis", "trečiadienis", "ketvirtadienis", "penktadienis", "šeštadienis"),
+			t = new Array("sausio mėn", "vasario mėn", "kovas", "balandis", "gegužė", "birželio mėn", "liepa", "rugpjūtis", "rugsėjo mėn", "spalio mėn", "lapkritį", "gruodį"),
+			r = new Date;
+		r.setDate(r.getDate() + e), document.write(r.getFullYear() + " m. " + t[r.getMonth()] + " " + r.getDate() + " d., " + a[r.getDay()])
+	}
+
+	function date_hr(e) {
+		var a = new Array("nedjelja", "ponedjeljak", "utorak", "Wednesday", "srijeda", "petak", "subota"),
+			t = new Array("siječanj", "veljača", "ožujak", "travanj", "svibanj", "lipanj", "srpanj", "kolovoz", "rujan", "listopad", "studeni", "prosinac"),
+			r = new Date;
+		r.setDate(r.getDate() + e), document.write(a[r.getDay()] + ". " + r.getDate() + ". " + t[r.getMonth()] + " " + r.getFullYear())
+	}
+
+	function date_ee(e) {
+		var a = new Array("Pühapäeval", "Esmaspäev", "Teisipäev", "Kolmapäev", "Neljapäev", "Reede", "Laupäev"),
+			t = new Array("Jaanuaril", "Veebruaril", "Märtsil", "Aprillil", "Mai", "Juuni", "Juuli", "august", "Septembril", "October", "Novembril", "Detsembril"),
+			r = new Date;
+		r.setDate(r.getDate() + e), document.write(a[r.getDay()] + ". " + r.getDate() + ". " + t[r.getMonth()] + " " + r.getFullYear())
+	}
+
+	function date_ru(e) {
+		var a = new Array("Воскресенье", "понедельник", "вторник", "среда", "Четверг", "пятница", "суббота"),
+			t = new Array("январь", "февраль", "Март", "апрель", "май", "июнь", "июль", "августейший", "сентябрь", "октября", "ноябрь", "Декабрь"),
+			r = new Date;
+		r.setDate(r.getDate() + e), document.write(a[r.getDay()] + ", " + r.getDate() + ". " + t[r.getMonth()] + " " + r.getFullYear())
+	}
+
+	function date_fr(e) {
+		var a = new Array("dimanche", "lundi", "mardi", "mercredi", "jeudi ", "vendredi", "samedi"),
+			t = new Array("janvier", "février", "mars", "avril", "mai", "juin", "juillet", "aout", "septembre", "octobre", "novembre", "décembre"),
+			r = new Date;
+		r.setDate(r.getDate() + e), document.write(a[r.getDay()] + ", " + r.getDate() + " " + t[r.getMonth()] + ", " + r.getFullYear())
+	}
+
+	function date_tr(e) {
+		var a = new Array("Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"),
+			t = new Array("Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"),
+			r = new Date;
+		r.setDate(r.getDate() + e), document.write(a[r.getDay()] + ", " + t[r.getMonth()] + " " + r.getDate() + ", " + r.getFullYear())
+	}
+
+	function date_slov(e) {
+		var a = new Array("Nedeľa", "Pondelok", "Utorok", "Streda", "Štvrtok", "Piatok", "Sobota"),
+			t = new Array("Január", "Február", "Marec", "Apríl", "Máj", "Jún", "Júl", "August", "September", "Október", "November", "December"),
+			r = new Date;
+		r.setDate(r.getDate() + e), document.write(a[r.getDay()] + ", " + t[r.getMonth()] + " " + r.getDate() + ", " + r.getFullYear())
+	}
+
+	function date_gr(e) {
+		var a = new Array("Κυριακή", "Δευτέρα", "Τρίτη", "Τετάρτη", "Πέμπτη", "Παρασκευή", "Σάββατο"),
+			t = new Array("Ιανουαρίου", "Φεβρουαρίου", "Μαρτίου", "Απριλίου", "Μαΐου", "Ιουνίου", "Ιουλίου", "Αυγούστου", "Σεπτεμβρίου", "Οκτωβρίου", "Νοεμβρίου", "Δεκεμβρίου"),
+			r = new Date;
+		r.setDate(r.getDate() + e), document.write(a[r.getDay()] + ". " + r.getDate() + " " + t[r.getMonth()] + " " + r.getFullYear())
+	}
+	</script>
+	<script language="Javascript">
+	function dtime() {
+		var dayNames = new Array("Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag");
+		var monthNames = new Array("Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober ", "November", "Dezember");
+		var now = new Date();
+		now.setDate(now.getDate());
+		document.write(dayNames[now.getDay()] + ", dem" + (now.getDate()) + ". " + monthNames[now.getMonth()] + " " + now.getFullYear());
+	}
+	</script>
+	<style>
+	.cursor-point {
+		cursor: pointer !important;
+	}
+	.fbold {
+		font-weight: bold;
+	}
+	.green-btn-new a {
+		color: white;
+	}
+	.green-btn-new a:hover {
+		color: #e8e0e0;
+	}
+	</style>
+	<style>
+	.mirror {
+		padding-top: 70px !important;
+	}
+	@media (max-width: 767px) {
+		.mirror {
+			padding-top: 35px !important;
+		}
+	}
+	</style>
+	<script type="text/javascript">
+	</script>
+	<link rel="stylesheet" href="css/LUGONBXQBESW.css">
+	<style>
+	strong {
+		color: #363636
+	}
+	.instantLinks a,
+	.loginbtn a {
+		cursor: default;
+	}
+	.footer a.sitenotice {
+		display: inline-block
+	}
+	</style>
+</head>
+
+<body class="home">
+	 
+	
+	 
+	<h1 class="adv_h1" style="text-align:center; font-size: 14px; margin: 4px 0; font-family: 'Oswald', sans-serif; font-weight: 600; margin-top: 7px">
+Advertorial</h1>
+	<div class="container customborder">
+		<section class="topbar">
+			<div class="row">
+				<div class="col-xs-4 col-sm-3">
+					<div class="weatherBox"> <img src="images/AUFBTIALMEXL.png" alt="weather"> </div>
+				</div>
+				<div class="col-xs-4 col-sm-6">
+					<div class="logoBox"> <img src="images/FOUHSWOXCPS0.png" alt="logo"> </div>
+				</div>
+				<div class="col-xs-4 col-sm-3">
+					<div class="instantLinks">
+						<p> <span class="fbold">Jobs</span> <span>|</span> <span class="fbold">Property</span><span>|</span> <span class="fbold">Show</span> </p>
+						<p class="loginbtn"> <span class="fbold">Login<i class="fa fa-user-o" aria-hidden="true"></i></span> <span class="fbold"> About</span> </p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="mainmenu"> <span class="language">Edition: EN  <a href="#" class="fa fa-caret-down" aria-hidden="true"></a></span>
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="#">START PAGE</a>
+							</li>
+							<li><a href="#">NEWS</a>
+							</li>
+							<li><a href="#">LIFESTYLE</a>
+							</li>
+							<li><a href="#">STARS</a>
+							</li>
+							<li><a href="#">SPORT</a>
+							</li>
+							<li><a href="#">VIDEO</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<p class="infobox">Start&gt; Stars&gt; TV&gt; So celebrities actually do make their own money</p>
+		</section>
+		<section class="celebrityReveals">
+			<h1><span>A Celebrity Reveals:</span> That’s How I Got Rich Overnight!</h1>
+			<h2>Anyone can do this in 5 minutes or less</h2>
+			<div class="celebrityBox"> <img src="images/MU5Z3O0GBA0Q.jpg" alt="celebimg">
+				<div class="celebritydetails">
+					<p>From Gregory Turner for Star News5</p>
+					<p><strong>Updated:</strong>
+						<script language="Javascript">
+	 
+		var dayNames = new Array("Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag");
+		var monthNames = new Array("Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober ", "November", "Dezember");
+		var now = new Date();
+		now.setDate(now.getDate());
+		document.write(dayNames[now.getDay()] + ", dem" + (now.getDate()) + ". " + monthNames[now.getMonth()] + " " + now.getFullYear());
+	 
+	</script> 
+					</p>
+				</div>
+			</div>
+			<div class="celebimgbox"> <img src="images/72PJ0KVUOASP.jpg" alt="celebbigimg">
+				<p>Reporter Gregory Turner investigated the income-generating System, which gained popularity in the US and worldwide.</p>
+				<hr> </div>
+			<div class="row">
+				<div class="col-md-1">
+					<ul class="social-network social-circle">
+						<li><a href="#" class="envelope" title="envelope"><i class="fa fa-envelope"></i></a>
+						</li>
+						<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+						</li>
+						<li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
+						</li>
+						<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-11">
+					<p><strong><span class="usr_city"></span>, <span class="usr_country_iso"></span> -</strong> Social Media is recently full of Headlines about an American celebrity, who made millions with a "Secret System" from the United States. A source from the celebrities social circle accidentally revealed that information and since then it has been shared via Facebook and on national television. Here at Star News5 we want to find out the truth about this "secret system" and whether it really works and we want to find out which celebrity has made a fortune with it. </p>
+					<p>Someone found out that a celebrity was making millions with a system called "Bmillions". At first this system got popular in the United States where many people earned thousands and even millions of dollars with little effort, just by using a simple trick. At the beginning of the year, the US documentary show "60 Minutes" published a report, that surveyed people who had used the system. They explained, that the reason, why the system has been kept secret, was, that everybody could use it.</p>
+					<p>An insider who doesn’t want to be named in this documentary said that this system could make the American working class rich overnight. This is making the political elite nervous, because they want to stay in control.</p>
+					<p>The good news for all people in <span class="usr_country"></span>: There are no restrictions in <span class="usr_country"></span> that prohibit this technique! Since January 2017 hundreds of new millionaires have been created in <span class="usr_city"></span> alone using this system.</p>
+					<p>A source from a leading consulting company found out: Bmillions creates more millionaires per week than normal lotteries. It is a fact that 90% of our new clients, that get financial advice, make most of their money with Bmillions. It is interesting that those people had a normal job before. They were working in construction, were sitting in offices or some were even unemployed. And now they are making more money than the top brokers of the country.</p>
+					<p>While doing our research, Star News5 found out about an American with the name of Richard Mooney, who published a diary about his earnings in the first week. Before earning his money with Bmillions he had a poorly paid job at a used car dealership. This story got famous across the internet. We published an excerpt from his diary with an exclusive article by Mr. Mooney himself. Star News5 has checked whether the text is credible and it is. This is just an example of hundreds of American’s who started with Bmillions this year. The following excerpt from a diary is an amazing report of the first week of Richard Mooney.</p>
+				</div>
+			</div>
+			<div class="celebimgbox2"> <img src="images/6V7VAYCPXWHX.jpg" alt="celewithlaptop">
+				<div class="row">
+					<div class="col-sm-7">
+						<p>Richard Mooney - The self made millionaire</p>
+					</div>
+					<div class="col-sm-5">
+						<p class="txtrit">Photo: Instagram</p>
+					</div>
+				</div>
+				<hr> </div>
+		</section>
+		<section class="sevenDayTest">
+			<h4 class="text-center">My 7 Day Test With Bmillions</h4>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="textBox">
+						<p><strong>Day 1</strong>
+						</p>
+						<p> On the first day I registered with a simple registration form. Then I bought a ticket for a combination of Powerball, Eurojackpot and Lotto 6aus49 with 2 shares for 25.98 % . I was looking forward to playing since I've heard all the stories of persons who made a lot of money with this system. (Step by step instruction below) I went to bed and decided to check back the next day after work. </p>
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="textBox">
+						<p><strong>Day 2</strong>
+						</p>
+						<p> On day 2, I woke up and had to hurry to get to work. I had overslept. I was late to get the train. When I arrived at the office I checked my e-mails and drank my coffee. Then I wanted to check my tickets. It was already 10:45am - 12 hours after I bought my first ticket at Bmillions. I logged in and I was nervous and excited at the same time. Would my money still be there? I was concerned. I opened the overview of the site. At first I thought there was a mistake. Was this my account? I checked the account name again. Yes it was mine. I almost spilled my coffee! I saw that my new account balance was $1,550. Unbelievable! Within just 12 hours I made a profit of more than $1,500 with a deposit of less than $115. While I slept! I am glad that I took a screenshot of my account so you can see what I saw that morning. I contacted my account manager at Bmillions. He was less surprised than I was. That is normal, he said, "Often times we see people earn even more during the first 12 hours." I was so impressed that it really worked. I couldn’t really focus on my work. </p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="buttonsBox">
+						<p class="titlesm">Welcome: Richard Mooney</p>
+						<p class="titlesm">Your Account Number: 6/000357172</p>
+						<p class="redbox">Your Account Balance: $1,550.00 USD</p>
+						<p class="dateTime">10:56:35 PST 12 January 2017</p>
+						<div class="box">
+							<p>
+								</p><div class="button green"><span class="fa fa-database" aria-hidden="true"></span>Deposit</div>
+							<p></p>
+							<p>
+								</p><div class="button blue"><span class="blue  fa fa-user" aria-hidden="true"></span>Portfolio</div>
+								<div class="button blue"><span class="blue fa fa-clock-o" aria-hidden="true"></span>History</div>
+								<div class="button red"><span class="red fa fa-times-circle" aria-hidden="true"></span>Logout</div>
+							<p></p>
+							<p>
+								</p><div class="ph-float"> <a href="#" class="ph-button ph-btn-blue cursor-point outer-link">Market data</a> </div>
+								<div class="ph-float"> <a href="#" class="ph-button ph-btn-blue cursor-point outer-link">User info</a> </div>
+							<p></p>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<!-- ================================================ -->
+				<div class="col-sm-12">
+					<div class="textBox">
+						<p><strong>Day 3</strong>
+						</p>
+						<p>On the 3rd day I was really into it. I saw that the system is not a complicated one that was only made for experts and mathematicians. It was so easy. Just buy a ticket with different shares and start to earn money. On the third day I bought two more tickets. When I went to bed, my account balance was at $11,405! I started dreaming about spending the money. I would be able to pay my credit card debt. I could buy a luxury car. But I decided to wait and see how much more I would be earning.</p>
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="textBox">
+						<p><strong>Day 4</strong>
+						</p>
+						<p>Today everything improved. I gained further winnings. At the end of the day my balance was at $38,785! This was more than I earned in one year. Within just 4 days I had earned enough to travel around the world with my girlfriend. First class! At that point she didn’t even know about my success! I reserved a table at a 5 Star restaurant in order to tell her this incredible story. I decided to pay for her college tuition, so she can continue to work on her career in fashion. This money will change our lives.</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="buttonsBox">
+						<p class="titlesm">Welcome: Richard Mooney</p>
+						<p class="titlesm">Your Account Number: 6/000357172</p>
+						<p class="redbox">Your Account Balance: $38,785.00 USD</p>
+						<p class="dateTime">08:31:43 PST 14 January 2017</p>
+						<div class="box">
+							<p>
+								</p><div class="button green"><span class="fa fa-database" aria-hidden="true"></span>Deposit</div>
+							<p></p>
+							<p>
+								</p><div class="button blue"><span class="blue  fa fa-user" aria-hidden="true"></span>Portfolio</div>
+								<div class="button blue"><span class="blue fa fa-clock-o" aria-hidden="true"></span>History</div>
+								<div class="button red"><span class="red fa fa-times-circle" aria-hidden="true"></span>Logout</div>
+							<p></p>
+							<p>
+								</p><div class="ph-float"> <a href="#" class="ph-button ph-btn-blue cursor-point outer-link">Market data</a> </div>
+								<div class="ph-float"> <a href="#" class="ph-button ph-btn-blue cursor-point outer-link">User info</a> </div>
+							<p></p>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<!-- ===================================== -->
+				<div class="col-sm-12">
+					<div class="textBox">
+						<p><strong>Day 5</strong>
+						</p>
+						<p>On day 5 I realized that things were about to get serious. My balance had now exceeded $100,000. I felt this unbelievable joy but I was also scared. I had so much money in MY account, how should I handle that? Luckily Bmillions was capable of helping me. “We create so many millionaires so we have our own department to support them. It’s called the “Diamond Club" and when you reach the level of $100,000 or more we will consult you about how to manage this large sum of money.” But I already knew what I wanted to do. I had a wish list. I wanted to pay my debts which were around $8000. As I mentioned before, I also wanted to pay the debt for my girlfriend. Next month would be my mothers birthday and I decided to get her a present she would like. I went to a Mercedes dealership and went on a test drive with a new car. The price was over $60,000 and I didn’t want to pay that much. But it felt so great to know that if the business would continue to go well I would be able to buy this car without using credit.</p>
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="textBox">
+						<p><strong>Day 6</strong>
+						</p>
+						<p>When I woke up on the 6th day, I checked my statistic on my smartphone. I didn’t have to hurry to catch the train since I already leased a convertible. Of course that was expensive but I wanted to see the look on the face of my boss when I drove up in an elegant black Porsche 911 convertible. I felt like Gordon Gekko in the movie "Wall Street" and it was awesome! I decided that I wouldn’t work for minimum wage anymore. Especially when I can make so much more money working from home with this new platform. (although it is not really work).</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="text-center"> <img src="images/XUV7P9QXUYND.jpg" alt="car"> </div>
+				</div>
+				<div class="col-sm-8">
+					<div class="textBox">
+						<p><strong>Day 7</strong>
+						</p>
+						<p>The last day of my diary" was on a Sunday. I didn’t have to work on Sunday’s and that day wasn’t any different. But that didn’t stop my account from growing. All over the world there are lotteries - everyday. My account was growing while I was reading the newspaper or drinking coffee. Maybe I should pinch myself to make sure that I am not dreaming. Imagine how I felt. The final amount on my account was $1,075,235.81! Yes that is correct. I made more than 1 million dollars! And this was in MY FIRST WEEK! At that point of time I had withdrawn most of my money. I didn’t want to risk losing it, although there was probably was no risk. I left around $5,000 in my account and withdrew more than a million dollars to my private bank account. Within 5 minutes I got a call from my bank advisor. We just received a million dollars in your bank account, Mr. Mooney. Where does this money come from? he asked. When I answered: "From Bmillions", he paused and then said: "Just as I thought.” You are not the first customer of this bank who made a lot of money with this platform” Then he invited me to talk about investment possibilities. Imagine that. Just 1 week before he denied me a credit card because of past debt. I worked minimum wage and barely made enough to cover my bills. And now the manager rolls out the red carpet and invites me to a private meeting</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="buttonsBox">
+						<p class="titlesm">Welcome: Richard Mooney</p>
+						<p class="titlesm">Your Account Number: 6/000357172</p>
+						<p class="redbox">Your Account Balance: $1,075,235.81 USD</p>
+						<p class="dateTime">02:28:52 PST 17 January 2017</p>
+						<div class="box">
+							<p>
+								</p><div class="button green"><span class="fa fa-database" aria-hidden="true"></span>Deposit</div>
+							<p></p>
+							<p>
+								</p><div class="button blue"><span class="blue  fa fa-user" aria-hidden="true"></span>Portfolio</div>
+								<div class="button blue"><span class="blue fa fa-clock-o" aria-hidden="true"></span>History</div>
+								<div class="button red"><span class="red fa fa-times-circle" aria-hidden="true"></span>Logout</div>
+							<p></p>
+							<p>
+								</p><div class="ph-float"> <a href="#" class="ph-button ph-btn-blue cursor-point outer-link">Market data</a> </div>
+								<div class="ph-float"> <a href="#" class="ph-button ph-btn-blue cursor-point outer-link">User info</a> </div>
+							<p></p>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="midbox">
+				<p class="conclusion"><strong>Conclusion:</strong> As a consumer you might have doubts about the results this platform can possess but you should give it a try. The results are real. After our survey we are happy to see people succeeding with it. Remember: You have nothing to lose since the platform offers a full refund of your initial deposit if you decide that you don’t want to play. There are several sites that offer Bmillions but not all of them offer the best quality and guarantees and therefore we have a special offer which you can only get at Star News5. Just follow the Links <strong><a href="#" class="outer-link">(FREE REGISTRATION)</a> </strong>, that I give and you will gain VIP access immediately to this deal.</p>
+				<p class="signature"><img src="images/0SOH4YFE4ASC.png" alt="sig">
+				</p>
+				<p>In these economically difficult times everybody deserves a chance to earn money. Not just rich celebrities and bank managers, who keep all secrets to themselves. This is the reason why we at Star News5 has decided to reveal their secret. You might not be earning millions right away but even $10,000 will make a difference. You can pay your debts and you don’t have to worry about bills and rent and you can even enjoy the vacation of a lifetime!</p>
+				<p>I hope that you are lucky and make the extra Euros, just like Richard. I wish you all the best.</p>
+				<hr class="light">
+				<h4>Step-By-Step Instructions</h4>
+				<p><strong>Step 1 – Registration</strong>
+				</p>
+				<p>First of all, you will have to open a new account. Don’t worry; it’s not at all complicated and is completed in just a few minutes. That is where all payments will flow and where you can later also withdraw your earnings. As has already been explained in the journal, you only need to click briefly through a couple of questions. </p>
+				<p class="link"><a href="#" class="outer-link"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Simply click on this link in order to register.</a>
+				</p>
+				<hr class="hrwhite">
+				<p><strong>Step 2 – The Deposit</strong>
+				</p>
+				<p>A window will now open in which you can make your first deposit. There you can choose how much money you would like to deposit. It is important that you know this: you are depositing the money with Bmillions, one of the largest Lottery brands. All payments are absolutely safe and disbursements are also processed as quickly as possible. </p>
+				<p>You have to make up your own mind about how much you can or want to deposit. You are, in principle, investing money. The more you deposit, the more you will earn. We recommend a deposit of 100 euros, so that you will already be doubling your money within the very first day! The higher your deposit, the more money you can deploy as well.</p>
+				<hr class="hrwhite">
+				<p><strong>Step 3 – The Choice of Ticket</strong>
+				</p>
+				<p>Now comes the most important point - choosing the right ticket.</p>
+				<p>In our test, we have done exactly what Richard told us to do.
+					<!-- We have only chosen tickets that have promised us an immediate return of at least 65%. -->That’s all you have to do.</p>
+				<hr class="light">
+				<div class="grayBox" id="grayBox">
+					<p><a href="#" class="outer-link"><strong>Editors Note:</strong></a> This deal is a 1 time, temporary special offer, only extended to our most exclusive users. We are offering this to you completely free today only!</p>
+					<p><a href="#" class="outer-link"><strong> Last Day: </strong></a> Because of the great demand, this offer ends on
+						<script language="Javascript">
+	 
+		var dayNames = new Array("Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag");
+		var monthNames = new Array("Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober ", "November", "Dezember");
+		var now = new Date();
+		now.setDate(now.getDate());
+		document.write(dayNames[now.getDay()] + ", dem" + (now.getDate()) + ". " + monthNames[now.getMonth()] + " " + now.getFullYear());
+	 
+	</script> .</p>
+					<p>Why not check out 24 Option right now!</p>
+					<p><img src="images/RWG3DHNYQ3Y5.png" alt="arrow"> <strong><a href="#" class="outer-link">Use This Link and Take Advantage of This 1 Time Special Offer Now</a> </strong> </p>
+					<p>
+						 <a class="link outer-link" href="#">Offer valid until 
+						 
+						 <script language="Javascript">
+	 
+		var dayNames = new Array("Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag");
+		var monthNames = new Array("Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober ", "November", "Dezember");
+		var now = new Date();
+		now.setDate(now.getDate());
+		document.write(dayNames[now.getDay()] + ", dem" + (now.getDate()) + ". " + monthNames[now.getMonth()] + " " + now.getFullYear());
+	 
+	</script> </a> 
+					</p>
+				</div>
+			</section>
+		</section>
+		<div class="leaveComment">
+			<h6>Leave A Comment</h6>
+			<hr>
+			<div class="leaveCommentBox">
+				<form action="#" method="get">
+					<div class="row">
+						<div class="col-xs-2 col-sm-1"> <img src="images/186OABNMJR1P.jpg" alt="noimg"> </div>
+						<div class="col-xs-10 col-sm-11">
+							<textarea name="" class="form-control"></textarea>
+						</div>
+						<div class="col-xs-12">
+							<button class="btn btn-default">Send</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="recentComments">
+			<h5>Recent Facebook Comments</h5>
+			<div class="row">
+				<div class="col-md-1">
+					<div class="userimg"> <img src="images/MVZN5EQCEIMN.jpg" alt="user1"> </div>
+				</div>
+				<div class="col-md-11">
+					<div class="userDetail">
+						<p class="userTitle">Thomas Scott</p>
+						<p class="sayings">Persons like that make money every time they take a crap. How much luck can one person have in life?</p>
+						<p> Reply • Like • 1 hour ago </p>
+					</div>
+				</div>
+			</div>
+			<hr class="hrgray">
+			<!-- =========================== -->
+			<div class="row">
+				<div class="col-md-1">
+					<div class="userimg"> <img src="images/9RZSZ2LT0CL5.jpg" alt="user2"> </div>
+				</div>
+				<div class="col-md-11">
+					<div class="userDetail">
+						<p class="userTitle">Warren Rhymes</p>
+						<p class="sayings">What does that have to do with luck? I am aware of Bmillions myself for almost year now and have meanwhile turned a 100 dollar deposit into a small fortune. People like you, Thomas, will never be rich because you simply never want to believe anything.</p>
+						<p> Reply • Like • 1 hour ago </p>
+					</div>
+				</div>
+			</div>
+			<hr class="hrgray">
+			<!-- =========================== -->
+			<div class="row">
+				<div class="col-md-1">
+					<div class="userimg"> <img src="images/VH219C2P9XFU.jpg" alt="user3"> </div>
+				</div>
+				<div class="col-md-11">
+					<div class="userDetail">
+						<p class="userTitle">Frank Seagle</p>
+						<p class="sayings">Sounds quite nice but can anyone here also confirm it?</p>
+						<p> Reply • Like • 1 hour ago </p>
+					</div>
+				</div>
+			</div>
+			<hr class="hrgray">
+			<!-- =========================== -->
+			<div class="row">
+				<div class="col-md-1">
+					<div class="userimg"> <img src="images/2M9VGQKKDBUZ.jpg" alt="user4"> </div>
+				</div>
+				<div class="col-md-11">
+					<div class="userDetail">
+						<p class="userTitle">Sandra Weidemann</p>
+						<p class="sayings">I saw it inadvertently in a report on CNN a short time ago, and tried it out as well. Thanks to it, I am already earning just under 2,000 dollars per month and I am online not more than once a week to monitor my account.</p>
+						<p> Reply • Like • 1 hour ago </p>
+					</div>
+				</div>
+			</div>
+			<hr class="hrgray">
+			<!-- =========================== -->
+			<div class="row">
+				<div class="col-md-1">
+					<div class="userimg"> <img src="images/00JYQMNGS45B.jpg" alt="user5"> </div>
+				</div>
+				<div class="col-md-11">
+					<div class="userDetail">
+						<p class="userTitle">Maxine D.</p>
+						<p class="sayings">Frank and Thomas, I can reassure you. You’ll never believe how much I hate such things but my daughter convinced me to do it and I now make just under 1,000 dollars every day.</p>
+						<p> Reply • Like • 1 hour ago </p>
+					</div>
+				</div>
+			</div>
+			<hr class="hrgray">
+			<!-- =========================== -->
+			<div class="row">
+				<div class="col-md-1">
+					<div class="userimg"> <img src="images/TXSVK3W2GVIP.jpg" alt="user6"> </div>
+				</div>
+				<div class="col-md-11">
+					<div class="userDetail">
+						<p class="userTitle">Lucy Fried</p>
+						<p class="sayings">If it’s that simple, why isn’t everyone doing it? It all sounds too good to be true.</p>
+						<p> Reply • Like • 1 hour ago </p>
+					</div>
+				</div>
+			</div>
+			<hr class="hrgray">
+			<!-- =========================== -->
+			<div class="row">
+				<div class="col-md-1">
+					<div class="userimg"> <img src="images/WR7SYGGDLWCL.jpg" alt="user7"> </div>
+				</div>
+				<div class="col-md-11">
+					<div class="userDetail">
+						<p class="userTitle">Jane Mullens</p>
+						<p class="sayings">Unbelievable what kind of life those two are leading. I very much enjoy peeking in on them on TV.</p>
+						<p> Reply • Like • 1 hour ago </p>
+					</div>
+				</div>
+			</div>
+			<hr class="hrgray">
+			<!-- =========================== -->
+			<div class="row">
+				<div class="col-md-1">
+					<div class="userimg"> <img src="images/SM56BBB8MHWM.jpg" alt="user8"> </div>
+				</div>
+				<div class="col-md-11">
+					<div class="userDetail">
+						<p class="userTitle">Bernd</p>
+						<p class="sayings">Unbelievable what kind of life those two are leading. I very much enjoy peeking in on them on TV.</p>
+						<p> Reply • Like • 1 hour ago </p>
+					</div>
+				</div>
+			</div>
+			<hr class="hrgray">
+			<!-- =========================== -->
+			<div class="row">
+				<div class="col-md-1">
+					<div class="userimg"> <img src="images/HYD1N3OFERY3.jpg" alt="user9"> </div>
+				</div>
+				<div class="col-md-11">
+					<div class="userDetail">
+						<p class="userTitle">Rhia</p>
+						<p class="sayings">I can only confirm that it works. I myself am a successful player at Bmillions. If you start with 100 dollars today, you can already have made an easy 2,500 dollars by day-after-tomorrow. It doesn’t get any easier than that.</p>
+						<p> Reply • Like • 1 hour ago </p>
+					</div>
+				</div>
+			</div>
+			<hr class="hrgray">
+			<!-- =========================== -->
+			<div class="row">
+				<div class="col-md-1">
+					<div class="userimg"> <img src="images/LSHIHPV1WM3N.jpg" alt="user10"> </div>
+				</div>
+				<div class="col-md-11">
+					<div class="userDetail">
+						<p class="userTitle">Alexandra Royce</p>
+						<p class="sayings">you haven’t got all your marbles any more. I get Hartz4 and thanks to Bmillions, I now earn money myself. People like you are simply disgusting!</p>
+						<p> Reply • Like • 1 hour ago </p>
+					</div>
+				</div>
+			</div> <img src="images/https://cdn.dolly.media/501ce04dfb42371fc86ef4fd9afd1b54/aff_i?offer_id=&amp;aff_id=" width="1" height="1" style="position: absolute; left: -9999px; margin: 0px; padding: 0px; top: -9999px;">
+			<hr class="hrgray">
+			<p class="fbplugin">Facebook Social Plugin</p>
+			<hr class="hrgray">
+			<div class="footer">
+				<p> <a class="sitenotice" href="#" target="_blank">Site Notice</a> | <a class="sitenotice" href="#" target="_blank">Privacy</a> | <a class="sitenotice" href="#" target="_blank">Earning Disclaimer</a> </p> <img src="images/FOUHSWOXCPS0.png" alt="logo">
+				<p class="footercopyright">© 2020 Star News5. All Rights Reserved.</p>
+			</div>
+			<!-- =========================== -->
+		</div>
+		 
+		 
+	</div>
+	<style>
+	@import url(css/css.css);
+	* {
+		font-family: 'Arimo';
+	}
+	</style>
+	 
+
+
+
+
+
+</body>
+
+</html>

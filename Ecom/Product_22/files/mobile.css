@@ -1,0 +1,392 @@
+.sticky-cta {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 921px) {
+  .comment-text {
+    width: 68% !important;
+  }
+}
+
+@media screen and (min-width: 678px) and (max-width: 920px) {
+  .reply-profile-pic img {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .product-name {
+    display: none;
+  }
+
+  .attention-bar {
+    display: none;
+  }
+
+  .fb-testimonials img {
+    max-width: none !important;
+  }
+
+  .styleInput {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 30px;
+    max-width: 93%;
+    min-width: 90%;
+    font-size: 14px;
+  }
+
+  .replyStyleInput {
+    border: 1px solid #ccc;
+    width: 90%;
+    height: 30px;
+    max-width: 93%;
+    min-width: 90%;
+    font-size: 14px;
+  }
+
+  #newPostInput {
+    width: 100%;
+    height: 48px;
+    padding: 7px;
+    border: 0;
+    font-size: 14px !important;
+  }
+  #newPostArea img {
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+    width: 60px;
+  }
+
+  .comment {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    line-height: 30px;
+  }
+  .subcomment {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    line-height: 30px;
+  }
+  .comment-text {
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .newReplyArea {
+    background: #f6f7f9;
+    height: 40px;
+    width: 100%;
+  }
+
+  .post-btn .reply-post-btn .newCancelButton {
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .reply-post-btn {
+    width: 60px !important;
+    height: 40px !important;
+  }
+
+  .post-btn {
+    width: 60px !important;
+  }
+
+  .newCancelButton {
+    cursor: pointer;
+    width: 68px !important;
+    height: 40px !important;
+  }
+}
+
+
+
+@media screen and (max-width: 677px) {
+  .reply-area table {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 15%;
+  }
+  .reply-area table, .subcomment {
+    margin-left: 15%;
+  }
+
+  .like-btn-count {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .product-name {
+    display: none;
+  }
+  .attention-bar {
+    display: none;
+  }
+  .blog-title p {
+    font-weight: 400;
+    font-size: 22px;
+  }
+  .blog-title strong {
+    font-weight: 600 !important;
+  }
+  .trends {
+    letter-spacing: -2px;
+  }
+  .trending-country img {
+    display: inline-block;
+  }
+  .attention-bar a,
+  .article-promo a {
+    text-decoration: underline;
+  }
+  .article-promo strong {
+    font-weight: 700;
+  }
+  .fb-testimonials img {
+    max-width: none !important;
+  }
+
+  #comment-count {
+    font-weight: 700;
+    margin-bottom: 22px;
+    margin-top: 8px;
+  }
+
+  table td {
+    padding: 0px;
+  }
+
+  .styleInput {
+    width: 100%;
+    border: 1px solid #ccc;
+
+    font-size: 14px;
+  }
+  #newPostInput {
+    width: 100%;
+    height: 50px;
+    padding: 7px;
+    border: 0;
+    font-size: 14px !important;
+  }
+  #newPostArea img {
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+    width: 60px;
+  }
+
+  .profile-pic img {
+    margin-top: 5px;
+    max-width: 50px !important;
+    margin-right: 10px !important;
+  }
+  .border-none {
+    border: none !important;
+  }
+
+  .overal-rating img {
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+  }
+
+  .customer-ratings p {
+    font-size: 17px !important;
+    font-weight: 400;
+  }
+
+  .stat {
+    display: flex;
+    align-items: center;
+  }
+
+  .rating-containers p {
+    margin-bottom: 0px !important;
+  }
+
+  .blog-title-rating {
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: -2px;
+  }
+  .blog-title-rating strong {
+    font-weight: 600;
+  }
+
+  /* comment container */
+  .comment {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    line-height: 30px;
+  }
+
+  .subcomment {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    line-height: 30px;
+  }
+
+  .comment-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .comment-image {
+    width: 100px;
+    height: auto;
+    max-height: 120px;
+    padding: 2px;
+    border: 1px solid #adadad;
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  .comment-section img:not(.flag):not(.like-icon):not(.comment-image) {
+    width: 50px;
+    height: 50px;
+    max-height: 120px;
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  .comment .profile-picture-reply {
+    width: 50px;
+    height: 50px;
+    max-height: 120px;
+    padding-top: 0px;
+    margin-right: 10px;
+    display: inline-block;
+  }
+  .comment .profile-picture {
+    width: 50px;
+    height: 50px;
+    max-height: 120px;
+    margin-top: 5px;
+    padding-top: 0px;
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  .comment-text {
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .comment-section .username {
+    color: #3658a6;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px;
+  }
+
+  .comment-section .user_location,
+  .comment-section .publish_date {
+    display: flex;
+    align-items: center;
+    color: #999;
+    gap: 5px;
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .name-location {
+    display: flex;
+    gap: 5px;
+  }
+
+  .action-buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  .facebook-button {
+    font-size: 13px;
+    color: #3658a6;
+  }
+
+  .action-buttons img {
+    height: 18px;
+    border: none;
+    padding: 2px;
+    margin-right: 0px;
+    margin-top: 0px;
+    display: inline-block;
+  }
+
+  .replyStyleInput {
+    border: 1px solid #ccc;
+    width: 82%;
+    height: 30px;
+
+    font-size: 14px;
+  }
+  #newReplyInput {
+    width: 100%;
+    height: 50px;
+    padding: 7px;
+    border: 0;
+    font-size: 14px !important;
+  }
+  .newReplyArea {
+    background: #f6f7f9;
+    height: 40px;
+    width: 100%;
+  }
+
+  .post-btn .reply-post-btn .newCancelButton {
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .reply-post-btn {
+    width: 60px !important;
+    height: 40px !important;
+  }
+
+  .post-btn {
+    width: 60px !important;
+  }
+
+  .newCancelButton {
+    cursor: pointer;
+    width: 68px !important;
+    height: 40px !important;
+  }
+
+  #footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #floating-cta .container {
+    display: flex;
+    justify-content: flex-start;
+  }
+}

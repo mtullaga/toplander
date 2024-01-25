@@ -1,0 +1,20 @@
+h2.title {
+  color: #505050;
+  font-weight: 700;
+  font-size: 21px;
+  margin: 37px 0 20px 0;
+}
+
+.typography .invest-list {
+  margin-left: 40px;
+}
+
+.typography .invest-list li {
+  list-style: outside disc;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.typography p {
+  margin: 1em auto;
+}
