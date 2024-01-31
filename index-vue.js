@@ -96,7 +96,7 @@ new Vue({
 
             if (el == 'Leadgen') {
                 for (let index = 1; index <= 17; index++) {
-                    await fetch('./'+el+'/'+el+'_'+index+'/index.html')
+                    await fetch('./'+el+'1/'+el+'_'+index+'/index.html')
                     .then(response => response.text())
                     .then(html => {
                         const parser = new DOMParser();
@@ -105,8 +105,8 @@ new Vue({
                         titleElement = titleElement ? titleElement.textContent : 'Title Not Found'
                         this.leadgen.push({
                             title: titleElement.trim(),
-                            image: el+'/'+el+'_'+index+'/Screenshot.png',
-                            linkto: this.baseURL + '' + el +'/'+el+'_'+index+'/index.html',
+                            image: el+'1/'+el+'_'+index+'/Screenshot.png',
+                            linkto: this.baseURL + '' + el +'1/'+el+'_'+index+'/index.html',
                             id: el+''+ind+''+index
                         })
                     }).catch(error => console.error('Error fetching HTML:', error));
