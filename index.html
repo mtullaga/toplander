@@ -48,19 +48,36 @@
           aria-controls="justified-tabpanel-7" aria-selected="false"> Sweeps </a>
       </li>
     </ul>
-      <div class="tab-content pt-5" id="tab-content">
+      <div class="tab-content pt-5 pb-5" id="tab-content">
         <div class="tab-pane active" id="justified-tabpanel-0" role="tabpanel" aria-labelledby="justified-tab-0">
           <h3>App Install Lander List</h3><br>
+          <!-- <button @click="openLink">CLick</button> -->
           <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
 
-            <div class="col">
+            <div class="col mt-5" v-for="(lander, ind) in appinstall" :key="ind">
               <div class="card h-100">
-                <img src="AppInstalls/AppInstalls_1/Screenshot.png" class="card-img-top" style="max-height: 200px;" alt="Card Image 1">
-                <div class="card-body">
-                  <h5 class="card-title">Card Title 1</h5>
-                  <button class="btn btn-primary">Preview</button>
+                <img :src="lander.image" class="card-img-top" style="height: 150px;" :alt="lander.title" data-bs-toggle="modal" :data-bs-target="'#modal'+lander.id">
+
+                <div class="card-footer text-body-secondary text-center">
+                  <h5 class="card-title text-center">{{ lander.title }}</h5>
+                  <a class="btn btn-primary" :href="lander.linkto" target="_blank">OPEN SITE</a>
                 </div>
               </div>
+
+                <!-- Full-Screen Image Modal -->
+                <div class="modal fade" :id="'modal'+lander.id" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-fullscreen" style="overflow: auto;" data-bs-dismiss="modal">
+                    <div class="modal-content" style="background-color: transparent; overflow: auto;">
+                      <div class="modal-header" style="border: 0px;">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body text-center" style="overflow: auto;">
+                        <!-- Full-screen image -->
+                        <img :src="lander.image" alt="Full-Screen Image" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
 
         </div>
@@ -68,25 +85,233 @@
       <div class="tab-pane" id="justified-tabpanel-1" role="tabpanel" aria-labelledby="justified-tab-1">
         <h3>Casino Lander List </h3>
         <br>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
 
+          <div class="col mt-5" v-for="(lander, ind) in casino" :key="ind">
+            <div class="card h-100">
+              <img :src="lander.image" class="card-img-top" style="height: 150px;" :alt="lander.title" data-bs-toggle="modal" :data-bs-target="'#modal'+lander.id">
+
+              <div class="card-footer text-body-secondary text-center">
+                <h5 class="card-title text-center">{{ lander.title }}</h5>
+                <a class="btn btn-primary" :href="lander.linkto" target="_blank">OPEN SITE</a>
+              </div>
+            </div>
+
+            <!-- Full-Screen Image Modal -->
+            <div class="modal fade" :id="'modal'+lander.id" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen" style="overflow: auto;" data-bs-dismiss="modal">
+                <div class="modal-content" style="background-color: transparent; overflow: auto;">
+                  <div class="modal-header" style="border: 0px;">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center" style="overflow: auto;">
+                    <!-- Full-screen image -->
+                    <img :src="lander.image" alt="Full-Screen Image" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
       <div class="tab-pane" id="justified-tabpanel-2" role="tabpanel" aria-labelledby="justified-tab-2">
         <h3>Crypto Lander List </h3>
+        <br>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+
+          <div class="col mt-5" v-for="(lander, ind) in crypto" :key="ind">
+            <div class="card h-100">
+              <img :src="lander.image" class="card-img-top" style="height: 150px;" :alt="lander.title" data-bs-toggle="modal" :data-bs-target="'#modal'+lander.id">
+
+              <div class="card-footer text-body-secondary text-center">
+                <h5 class="card-title text-center">{{ lander.title }}</h5>
+                <a class="btn btn-primary" :href="lander.linkto" target="_blank">OPEN SITE</a>
+              </div>
+            </div>
+
+            <!-- Full-Screen Image Modal -->
+            <div class="modal fade" :id="'modal'+lander.id" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen" style="overflow: auto;" data-bs-dismiss="modal">
+                <div class="modal-content" style="background-color: transparent; overflow: auto;">
+                  <div class="modal-header" style="border: 0px;">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center" style="overflow: auto;">
+                    <!-- Full-screen image -->
+                    <img :src="lander.image" alt="Full-Screen Image" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
       <div class="tab-pane" id="justified-tabpanel-3" role="tabpanel" aria-labelledby="justified-tab-3">
         <h3>Ecom Lander List </h3>
+        <br>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+
+          <div class="col mt-5" v-for="(lander, ind) in ecom" :key="ind">
+            <div class="card h-100">
+              <img :src="lander.image" class="card-img-top" style="height: 150px;" :alt="lander.title" data-bs-toggle="modal" :data-bs-target="'#modal'+lander.id">
+
+              <div class="card-footer text-body-secondary text-center">
+                <h5 class="card-title text-center">{{ lander.title }}</h5>
+                <a class="btn btn-primary" :href="lander.linkto" target="_blank">OPEN SITE</a>
+              </div>
+            </div>
+
+            <!-- Full-Screen Image Modal -->
+            <div class="modal fade" :id="'modal'+lander.id" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen" style="overflow: auto;" data-bs-dismiss="modal">
+                <div class="modal-content" style="background-color: transparent; overflow: auto;">
+                  <div class="modal-header" style="border: 0px;">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center" style="overflow: auto;">
+                    <!-- Full-screen image -->
+                    <img :src="lander.image" alt="Full-Screen Image" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
       <div class="tab-pane" id="justified-tabpanel-4" role="tabpanel" aria-labelledby="justified-tab-4">
         <h3>Leadgen Lander List </h3>
+        <br>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+
+          <div class="col mt-5" v-for="(lander, ind) in leadgen" :key="ind">
+            <div class="card h-100">
+              <img :src="lander.image" class="card-img-top" style="height: 150px;" :alt="lander.title" data-bs-toggle="modal" :data-bs-target="'#modal'+lander.id">
+
+              <div class="card-footer text-body-secondary text-center">
+                <h5 class="card-title text-center">{{ lander.title }}</h5>
+                <a class="btn btn-primary" :href="lander.linkto" target="_blank">OPEN SITE</a>
+              </div>
+            </div>
+
+            <!-- Full-Screen Image Modal -->
+            <div class="modal fade" :id="'modal'+lander.id" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen" style="overflow: auto;" data-bs-dismiss="modal">
+                <div class="modal-content" style="background-color: transparent; overflow: auto;">
+                  <div class="modal-header" style="border: 0px;">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center" style="overflow: auto;">
+                    <!-- Full-screen image -->
+                    <img :src="lander.image" alt="Full-Screen Image" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
       <div class="tab-pane" id="justified-tabpanel-5" role="tabpanel" aria-labelledby="justified-tab-5">
         <h3>Mobile Content Lander List </h3>
+        <br>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+
+          <div class="col mt-5" v-for="(lander, ind) in mobcontent" :key="ind">
+            <div class="card h-100">
+              <img :src="lander.image" class="card-img-top" style="height: 150px;" :alt="lander.title" data-bs-toggle="modal" :data-bs-target="'#modal'+lander.id">
+
+              <div class="card-footer text-body-secondary text-center">
+                <h5 class="card-title text-center">{{ lander.title }}</h5>
+                <a class="btn btn-primary" :href="lander.linkto" target="_blank">OPEN SITE</a>
+              </div>
+            </div>
+
+            <!-- Full-Screen Image Modal -->
+            <div class="modal fade" :id="'modal'+lander.id" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen" style="overflow: auto;" data-bs-dismiss="modal">
+                <div class="modal-content" style="background-color: transparent; overflow: auto;">
+                  <div class="modal-header" style="border: 0px;">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center" style="overflow: auto;">
+                    <!-- Full-screen image -->
+                    <img :src="lander.image" alt="Full-Screen Image" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
       <div class="tab-pane" id="justified-tabpanel-6" role="tabpanel" aria-labelledby="justified-tab-6">
         <h3>Nutra Lander List </h3>
+        <br>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+
+          <div class="col mt-5" v-for="(lander, ind) in nutra" :key="ind">
+            <div class="card h-100">
+              <img :src="lander.image" class="card-img-top" style="height: 150px;" :alt="lander.title" data-bs-toggle="modal" :data-bs-target="'#modal'+lander.id">
+
+              <div class="card-footer text-body-secondary text-center">
+                <h5 class="card-title text-center">{{ lander.title }}</h5>
+                <a class="btn btn-primary" :href="lander.linkto" target="_blank">OPEN SITE</a>
+              </div>
+            </div>
+
+            <!-- Full-Screen Image Modal -->
+            <div class="modal fade" :id="'modal'+lander.id" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen" style="overflow: auto;" data-bs-dismiss="modal">
+                <div class="modal-content" style="background-color: transparent; overflow: auto;">
+                  <div class="modal-header" style="border: 0px;">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center" style="overflow: auto;">
+                    <!-- Full-screen image -->
+                    <img :src="lander.image" alt="Full-Screen Image" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
       <div class="tab-pane" id="justified-tabpanel-7" role="tabpanel" aria-labelledby="justified-tab-7">
         <h3>Sweeps Lander List </h3>
+        <br>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+
+          <div class="col mt-5" v-for="(lander, ind) in sweeps" :key="ind">
+            <div class="card h-100">
+              <img :src="lander.image" class="card-img-top" style="height: 150px;" :alt="lander.title" data-bs-toggle="modal" :data-bs-target="'#modal'+lander.id">
+
+              <div class="card-footer text-body-secondary text-center">
+                <h5 class="card-title text-center">{{ lander.title }}</h5>
+                <a class="btn btn-primary" :href="lander.linkto" target="_blank">OPEN SITE</a>
+              </div>
+            </div>
+
+            <!-- Full-Screen Image Modal -->
+            <div class="modal fade" :id="'modal'+lander.id" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen" style="overflow: auto;" data-bs-dismiss="modal">
+                <div class="modal-content" style="background-color: transparent; overflow: auto;">
+                  <div class="modal-header" style="border: 0px;">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center" style="overflow: auto;">
+                    <!-- Full-screen image -->
+                    <img :src="lander.image" alt="Full-Screen Image" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
